@@ -2,17 +2,6 @@
   
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-    <!-- BEGIN - Application Primary nav section -->
-    <nav class="tabs is-small is-centered">
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li class="is-active"><router-link to="/SwatFlow">Swat Flow</router-link></li>
-        <li><router-link to="/SwatNote">Swat Note</router-link></li>
-        <li><router-link to="/SwatTools">Swat Tools</router-link></li>
-        <li><router-link to="/SwatLinks">Swat Links</router-link></li>
-      </ul>  
-    </nav>
-    <!-- END - Application Primary nav section -->
     
     <!-- BEGIN - 403 Website Errors Text -->
     <article id="wsod-message" class="message is-danger">

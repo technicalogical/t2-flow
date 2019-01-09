@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 // mutation function from the `vuex-map-fields` module.
 import { getField, updateField } from "vuex-map-fields";
 
+window.$ = window.jQuery = require('jquery');
 
 Vue.use(VueClipboard);
 new Vue({

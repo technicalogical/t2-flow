@@ -2,17 +2,6 @@
 
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck" class="hello">
-    <!-- BEGIN - Application Primary nav section -->
-    <nav class="tabs is-small is-centered">
-      <ul>
-        <li class="is-active"><router-link to="/">Home</router-link></li>
-        <li><router-link to="/SwatFlow">Swat Flow</router-link></li>
-        <li><router-link to="/SwatNote">Swat Note</router-link></li>
-        <li><router-link to="/SwatTools">Swat Tools</router-link></li>
-        <li><router-link to="/SwatLinks">Swat Links</router-link></li>
-      </ul>  
-    </nav>
-    <!-- END - Application Primary nav section -->
     
     <!-- START - Message of Swat FLow Chart -->
     <div class="content " id="flow-start-message">
