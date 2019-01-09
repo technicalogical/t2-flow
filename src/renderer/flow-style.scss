@@ -112,7 +112,7 @@ a:active {
 
 #time {
   position: absolute;
-  top: 15px;
+  top: 20px;
   padding: 0px;
   margin: 0px;
   left: 50%;
@@ -218,7 +218,7 @@ footer {
   margin-right: auto;
   height: 20px;
   width: 138px; 
-  top: 6px;
+  top: 20px;
   background-image: url(./assets/images/ftsmall.png);
 }
 
@@ -227,7 +227,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  top: 12px;
+  top: 28px;
   font-size: 10px;
   letter-spacing: .1em
 }
@@ -247,8 +247,8 @@ footer {
 
 #helper-two {
   position: absolute;
-  top: 1px;
-  right: 2px;
+  bottom: 0px;
+  right: 5px;
   margin: 0px;
   padding: 0px;
 
@@ -354,8 +354,8 @@ footer {
 #flow-start-message {
   position: relative;
   margin: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 /* END | Swat Flow Vue CSS */
 

@@ -21,6 +21,8 @@
           <i class="fas fa-th fa-lg"></i>
         </span>
       </a>
+
+      <!-- BEGIN Dropdown navigation section -->
       <nav id="prime">
         <ul>
           <a class="icon has-text-success" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
@@ -28,10 +30,11 @@
           <a class="icon" title="SWAT Note"><router-link class="far fa-comments" to="/SwatNote"></router-link></a>
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
           <a class="icon" title="SWAT Links"><router-link class="fas fa-external-link-alt" to="/SwatLinks"></router-link></a>
-          <a href="x.co/webcrm" target="_blank" class="icon" title="Launch CRM"><li class="fas fa-search"></li></a>
+          <a href="http://www.x.co/webcrm" target="_blank" class="icon" title="Launch CRM"><li class="fas fa-search"></li></a>
           <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li class="far fa-clock"></li></a>
         </ul>  
       </nav>
+      <!-- END Dropdown navigation section -->
 
       <!-- Button to close application -->
       <p class="buttons is-right">
@@ -58,22 +61,20 @@
       <footer>
 
         <!-- Button to link to the conlfuence page -->
-        <p id="helper-one" class="buttons">
+        <p id="helper-two" class="buttons">
           <a class="button is-white" href="http://x.co/flowtool" target="_blank" title="Give Feedback">
             <span class="icon has-text-dark">
               <i id="helper-icon" class="far fa-comment-alt is-lg"></i>
             </span>
           </a>
         </p>
-        <p id="helper-two" class="buttons">
-          <a class="button is-white" href="" target="_blank" title="color mode">
-            <span class="icon has-text-dark">
-              <i id="helper-icon" class="fas fa-glasses is-lg"></i>
-            </span>
-          </a>
-        </p>
+
+        <!-- Application footer image -->
         <div id="footer-img"></div>
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.2.32</strong> (<strong>Windu</strong>)</p>  
+
+        <!-- Application version note -->
+        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.2.32</strong> (<strong>Windu</strong>)</p>
+
       </footer>
     <!-- END - Application footer section -->
   </div>
@@ -99,6 +100,8 @@ export default {
   },
 };
 
+
+// Javascript for time piece
 var myVar = setInterval(function() {
   myTimer();
 }, 1000);
@@ -108,8 +111,13 @@ function myTimer() {
   document.getElementById("clock").innerHTML = d.toLocaleTimeString();
 }
 
+// jQuery insertion for $ dependancy
+import JQuery from 'jquery'
+let $ = JQuery
+
+// jQuery for Deck menu functionality
 $(document).ready(function(){
-  $("#deck-icon").click(function(){
+ $("#deck-icon").click(function(){
     $("#prime").slideToggle("fast");
   });
 });
