@@ -2,8 +2,8 @@
 <div id="flow-deck-two">
     
     <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
       </div>
     </article>
@@ -17,12 +17,12 @@
       </div> 
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell WSS (Website Security). Customer has an issue with their configuration file. 
+          Sell <strong>WSS (Website Security)</strong>. Your customer has an issue with their configuration file. 
         </div>
       </article>
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell WPPS (Wordpress Premium Support). WPPS can help enusre customer has correct config file for website.
+          Sell <strong>WPPS (Wordpress Premium Support)</strong>. This product can help enusre your customer has a correct config file for their website.
         </div>
       </article>
 

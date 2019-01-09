@@ -41,7 +41,7 @@
     <!--  BEGIN Copy paste notes section -->
     <div id="call-notes" class="content is-info">
       
-      <p>#SWAT</p>
+      <p>#SWAT 1</p>
       <p>Customer name: {{ name }} </p>
       <p>Situation: {{ sitch }} </p>
       <p>Domain(s): {{ domain }} </p>

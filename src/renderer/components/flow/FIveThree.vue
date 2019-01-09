@@ -4,8 +4,8 @@
   <div id="flow-deck">
     
     <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message">
+      <div class="notification is-dark has-text-centered">
         <strong>503</strong> Server Response Error
       </div>
     </article>
@@ -18,19 +18,19 @@
         <p>Which platform is the customer website Hosted on?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fiveothree/mwp/MwpY" class="button is-light">
+          <router-link to="/flow/fiveothree/mwp/MwpY" class="button is-dark">
             <span class="icon has-text-success">
               <i class="fas fa-server"></i>
             </span>
             <span>Website is hosted on <strong>Managed Wordpress</strong></span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYes" class="button is-light">
-            <span class="icon has-text-dark">
+          <router-link to="/flow/fiveothree/linux/LinYes" class="button is-dark">
+            <span class="icon has-text-danger">
               <i class="fas fa-server"></i>
             </span>
             <span>Website is hosted on <strong>Linux (Cpanel)</strong></span>
           </router-link>
-          <router-link to="/flow/fiveothree/win/WinYes" class="button is-light">
+          <router-link to="/flow/fiveothree/win/WinYes" class="button is-dark">
             <span class="icon has-text-info">
               <i class="fas fa-server"></i>
             </span>
@@ -64,4 +64,4 @@ export default {
 }
 </script>
 
-<style src="../../flow-style.scss"></style>
+<style></style>

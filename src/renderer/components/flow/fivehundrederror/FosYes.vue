@@ -2,8 +2,8 @@
   <div id="flow-deck-two">
     
     <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
       </div>
     </article>
@@ -12,12 +12,12 @@
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
-      <article class="message is-small is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-         Transfer your customer to a Tier 2 agent for further assistance with troubleshooting Managed Wordpress.
+         At this point you have done all that you can as a <strong>Tier 1</strong> agent. Advise the customer and transfer your call to a <strong>Tier 2</strong> agent for further assistance with troubleshooting Managed Wordpress.
         </div>
       </article>
 

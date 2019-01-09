@@ -2,8 +2,8 @@
 <div id="flow-deck-two">
     
     <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
       </div>
     </article>
@@ -11,8 +11,8 @@
 
     
     <!-- BEGIN 500 Error flow section -->
-    <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
+    <div class="content " id="flow">    
+      <div class="notification is-danger has-text-centered">
         <strong>STOP HERE</strong>.
       </div>
       <article class="message is-small is-success">

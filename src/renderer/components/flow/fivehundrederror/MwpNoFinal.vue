@@ -2,8 +2,8 @@
 <div id="flow-deck-two">
     
     <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
       </div>
     </article>

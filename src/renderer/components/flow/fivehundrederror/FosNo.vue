@@ -2,8 +2,8 @@
   <div id="flow-deck-two">
     
     <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
       </div>
     </article>
@@ -17,8 +17,8 @@
         <strong>STOP HERE</strong> 
       </div>
       
-      <article class="message is-info">
-        <div class="message-body">
+      <article class="message is-success is-small">
+        <div class="message-body is-small">
           Offer <strong>WPPS (Wordpress Premium support)</strong> to help the customer overcome their issue.
         </div>
       </article>
