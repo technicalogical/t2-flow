@@ -3,19 +3,19 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - Managed WordPress 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Managed WordPress</strong> 503 Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Managed WordPress 503 Server response Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- Managed WordPress BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Scan the site using <strong>Gtmetrix</strong>. Is the site able to be scanned?</p>
+        <p>Scan the site using <a href="https://gtmetrix.com/" target="_blank" title="Go To GTmetrix" ><strong>GTmetrix</strong></a> or <a href="https://tools.pingdom.com/" target="_blank" title="Go To Pingdom" ><strong>Pingdom</strong></a>. Is the site able to be scanned?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/mwp/MwpYyes" class="button is-light">
@@ -43,7 +43,7 @@
         <!-- END - Back button -->
       <router-view/>
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Managed WordPress 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -51,9 +51,9 @@
 </template>
 
 <script>
-export default {
+  export default {
   
 }
 </script>
 
-<style src="../../../../flow-style.scss"></style>
+<style></style>

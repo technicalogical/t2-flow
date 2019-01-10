@@ -3,34 +3,37 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+     <!-- BEGIN - Managed WordPress 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Managed WordPress</strong> 503 Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Managed WordPress 503 Server response Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Managed WordPress 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
+
       <div class="content is-medium">
-        <p>Resubmit and flush the site in <strong>TZ (Toolzilla)</strong>. Is the site now loading in the browser?</p>
+        <p>Resubmit and flush the site in <a href="https://toolzilla.int.godaddy.com/index.php/AccountSearch/View" target="_blank" title="Toolzilla" ><strong>TZ</strong></a>. Is the site now loading in the browser?</p>
       </div>
+
       <p class="buttons">
           <router-link to="/flow/fiveothree/mwp/MwpYyesFinal" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. The website is now loading in browser</span>
+            <span><strong>Yes</strong>. The website now loads in browser</span>
           </router-link>  
           <router-link to="/flow/fiveothree/mwp/MwpYnoFinal" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. The website is not loading in browser</span>
+            <span><strong>No</strong>. The website does not load in browser</span>
           </router-link>
         </p>
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
           <router-link to="/flow/fiveothree/mwp/MwpY" class="button is-small is-info">
@@ -41,9 +44,11 @@
           </router-link>
         </p>
         <!-- END - Back button -->
+
       <router-view/>
+
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Managed WordPress 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -51,9 +56,9 @@
 </template>
 
 <script>
-export default {
+  export default {
   
 }
 </script>
 
-<style src="../../../../flow-style.scss"></style>
+<style></style>

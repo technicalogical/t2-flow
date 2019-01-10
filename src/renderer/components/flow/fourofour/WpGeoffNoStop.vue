@@ -49,4 +49,4 @@ export default {
 }
 </script>
 
-<style src="../../../flow-style.scss"></style>
+<style></style>

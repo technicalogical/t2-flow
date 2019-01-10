@@ -15,7 +15,7 @@
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Which platform is the customer website Hosted on?</p>
+        <p>Which platform is the customer's website Hosted on?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/mwp/MwpY" class="button is-dark">

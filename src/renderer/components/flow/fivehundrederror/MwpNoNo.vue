@@ -36,8 +36,8 @@
 
 <script>
 export default {
-  name: 'FiveError'
+  
 }
 </script>
 
-<style src="../../../flow-style.scss"></style>
+<style></style>
