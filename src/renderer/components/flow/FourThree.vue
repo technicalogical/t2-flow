@@ -4,8 +4,8 @@
   <div id="flow-deck">
     
     <!-- BEGIN - 403 Website Errors Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message has-text-centered is-small">
+      <div class="notification is-dark">
         <strong>403</strong> Website Error
       </div>
     </article>

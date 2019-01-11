@@ -1,21 +1,21 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - Plesk 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Plesk 503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Plesk 503 Server response Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Plesk 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
           Advise the customer that there may be issues with their code. They should reveiw their code further to prevent this from happening again.
         </div>

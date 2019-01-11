@@ -3,16 +3,16 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - Plesk 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Plesk 503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Plesk 503 Server response Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Plesk 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
         <p>Stop and Start the <strong>IIS App Pool</strong>. is the site now able to load in browser?</p>
@@ -31,6 +31,7 @@
             <span><strong>No</strong>. The website does not load in browser</span>
           </router-link>
         </p>
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
           <router-link to="/flow/fiveothree/win/WinYes" class="button is-small is-info">
@@ -41,9 +42,11 @@
           </router-link>
         </p>
         <!-- END - Back button -->
+
       <router-view/>
+
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Plesk 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

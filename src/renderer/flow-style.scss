@@ -438,6 +438,42 @@ footer {
 /* END | Swat Note Vue CSS */
 
 /* START | Swat Tools & Links Vue CSS */
+#ssl-tool-input {
+  position: relative;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 0px;
+  width: 90%;
+  height: 60px;
+}
+
+#ssl-search {
+  width: 230px;
+  float: left;
+}
+
+#ssl-go {
+  float: right;
+}
+
+#output-area {
+  position: relative;
+  margin: 0px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  border: 0px;
+  width: 90%;
+  height: 260px;
+}
+
+#ssl-fix {
+  top: 1px;
+}
+
 #tool-page {
   position: relative;
   width: 80%;

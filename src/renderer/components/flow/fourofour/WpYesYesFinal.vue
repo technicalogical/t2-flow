@@ -2,8 +2,8 @@
   <div id="flow-deck-two">
     
     <!-- BEGIN - 404 Website Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
         <strong>404</strong> Website Error
       </div>
     </article>
@@ -15,7 +15,7 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
           Advise the customer to Log into their Wordpress Dashboard and "refresh" the permalinks.
         </div>

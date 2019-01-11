@@ -1,13 +1,13 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - cPanel 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>cPanel 503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - cPanel 503 Server response Error Text -->
 
     
     <!-- BEGIN 503 Error flow section -->
@@ -17,7 +17,7 @@
       </div>
       <article class="message is-small is-info">
         <div class="message-body">
-          Advise the customer reveiw their files further. There is an issue somewhere within the code of their website.
+          Advise the customer to reveiw their files further. There is an issue somewhere within the code of their website.
         </div>
       </article>
       <article class="message is-small is-success">

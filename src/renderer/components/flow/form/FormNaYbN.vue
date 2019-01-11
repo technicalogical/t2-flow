@@ -1,10 +1,10 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- Form mail Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>Form Mail Error</strong>
+    <!-- BEGIN - Form mail Error Text -->
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
+        <strong>Form Mail</strong> Error
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -15,7 +15,7 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
           Advise the customer to update their email address in the form. This will resolve their issue.
         </div>

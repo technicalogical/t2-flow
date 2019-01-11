@@ -1,10 +1,10 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- Form mail Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>Form Mail Error</strong>
+    <!-- BEGIN - Form mail Error Text -->
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
+        <strong>Form Mail</strong> Error
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -12,12 +12,12 @@
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Transfer the customer to a Tier 2 agent for further troubleshooting.
+          Transfer the customer to a <strong>Tier 2</strong> agent for further troubleshooting.
         </div>
       </article>
       

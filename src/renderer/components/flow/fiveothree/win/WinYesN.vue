@@ -1,23 +1,23 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - Plesk 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Plesk 503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Plesk 503 Server response Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Plesk 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Transfer the customer to a Tier 2 agent for further troubleshooting.
+          You have done everything that you can as a <strong>Tier 1</strong> agent. Advise the customer that you will be transfering the call to a <strong>Tier 2</strong> agent for further troubleshooting.
         </div>
       </article>
 
@@ -33,9 +33,11 @@
       <!-- END - Back button -->
 
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+
       <router-view/>
+
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Plesk 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

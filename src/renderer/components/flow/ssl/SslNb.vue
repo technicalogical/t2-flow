@@ -4,8 +4,8 @@
   <div id="flow-deck">
     
     <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>SSL</strong> Website Error
       </div>
     </article>
@@ -15,7 +15,7 @@
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Deactivate any present control files i.e. <strong>.htaccess and web.config</strong>. Is the error still present?</p>
+        <p>Deactivate any present control files i.e. <strong>.htaccess</strong> and <strong>web.config</strong>. Is the error still present?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/ssl/SslNbY" class="button is-light">

@@ -1,13 +1,13 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- BEGIN - 403 Website Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - 403 Website Errors Text -->
+    <article id="wsod-message" class="message has-text-centered is-small">
+      <div class="notification is-dark">
         <strong>403</strong> Website Error
       </div>
     </article>
-    <!-- END - 403 Website Error Text -->
+    <!-- END - 403 Website Errors Text -->
 
     
     <!-- BEGIN 403 Error flow section -->
@@ -15,9 +15,9 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Advise the customer that they need to upload a valid index file to their hosting for the website to load correctly.
+          Advise the customer that they need to upload a valid index file to their hosting file strucutre for the website to load correctly.
         </div>
       </article>
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>

@@ -3,32 +3,32 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - Plesk 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Plesk 503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Plesk 503 Server response Error Text -->
 
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is <strong>Plesk</strong>control panel accessible?</p>
+        <p>Is <strong>Plesk</strong> control panel accessible?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/win/WinYesY" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. The Plesk control pannel is accessible</span>
+            <span><strong>Yes</strong>. Plesk control pannel is accessible</span>
           </router-link>  
           <router-link to="/flow/fiveothree/win/WinYesN" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. The Plesk control pannel is not accessible</span>
+            <span><strong>No</strong>. Plesk control pannel is not accessible</span>
           </router-link>
         </p>
         <!-- BEGIN - Back button -->

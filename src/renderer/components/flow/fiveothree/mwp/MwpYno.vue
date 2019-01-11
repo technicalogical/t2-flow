@@ -3,7 +3,7 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-     <!-- BEGIN - Managed WordPress 503 Server response Error Text -->
+    <!-- BEGIN - Managed WordPress 503 Server response Error Text -->
     <article id="wsod-message" class="message is-small">
       <div class="notification is-dark has-text-centered">
         <strong>Managed WordPress</strong> 503 Server Response Error

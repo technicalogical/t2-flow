@@ -1,10 +1,10 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- Form mail Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>Form Mail Error</strong>
+    <!-- BEGIN - Form mail Error Text -->
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
+        <strong>Form Mail</strong> Error
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -17,7 +17,7 @@
       </div>
       <article class="message is-small is-info">
         <div class="message-body">
-          Advise the customer that they need to change the subject line they are using for the form mail. Have them send another form mail after they have completed this step.
+          Advise the customer that they need to change the subject line they are using for form mail. Have them send another form mail after they have completed this step.
         </div>
       </article>
       <article class="message is-small is-success">

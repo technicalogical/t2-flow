@@ -3,13 +3,13 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- 404 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - 404 Website Error Text -->
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
         <strong>404</strong> Website Error
       </div>
     </article>
-    <!-- END - 404 Error / WSOD Text -->
+    <!-- END - 404 Website Error Text -->
 
     
     <!-- BEGIN 404 Error flow section -->

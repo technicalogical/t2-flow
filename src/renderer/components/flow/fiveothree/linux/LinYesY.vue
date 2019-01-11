@@ -3,19 +3,19 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - cPanel 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>cPanel 503</strong> Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - cPanel 503 Server response Error Text -->
 
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Check concurrent connections and usage data. Are <strong>cPanel</strong> resources spiking?</p>
+        <p>Check concurrent connections and usage data. Are the <strong>cPanel</strong> resources spiking?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/linux/LinYesYyes" class="button is-light">

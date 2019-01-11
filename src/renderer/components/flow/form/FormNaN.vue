@@ -1,10 +1,10 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- Form mail Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>Form Error</strong>
+    <!-- BEGIN - Form mail Error Text -->
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
+        <strong>Form Mail</strong> Error
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -17,7 +17,7 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          Advise the customer that they will need to further troubleshoot the form. The mail function is working. 
+          Advise the customer that they will need to further troubleshoot the form on their own. The mail function is working. 
         </div>
       </article>
       <article class="message is-success is-small">

@@ -1,21 +1,21 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
-        <strong>503</strong> Server Response Error
+    <!-- BEGIN - Managed WordPress 503 Server response Error Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
+        <strong>Managed WordPress</strong> 503 Server Response Error
       </div>
     </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- END - Managed WordPress 503 Server response Error Text -->
 
     
-    <!-- BEGIN 503 Error flow section -->
+    <!-- BEGIN Managed WordPress 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER.</strong>
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
           Transfer the customer to a Tier 2 agent for further troubleshooting.
         </div>
@@ -35,7 +35,7 @@
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END 503 Error flow section -->
+    <!-- END Managed WordPress 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->

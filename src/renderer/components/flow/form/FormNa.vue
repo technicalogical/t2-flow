@@ -4,8 +4,8 @@
   <div id="flow-deck">
     
     <!-- BEGIN - Form mail Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
         <strong>Form Mail</strong> Error
       </div>
     </article>
@@ -15,7 +15,7 @@
     <!-- BEGIN Form mail Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Mail function is working. Fill out the customer's form and send. Did that also show in <strong>Splunk</strong>?</p>
+        <p>Mail function is working. Fill out the customer's form and send test. Did that also show in <strong>Splunk</strong>?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/form/FormNaY" class="button is-light">

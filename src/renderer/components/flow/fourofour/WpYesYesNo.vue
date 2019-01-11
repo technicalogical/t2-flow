@@ -2,8 +2,8 @@
   <div id="flow-deck-two">
     
     <!-- BEGIN - 404 Website Error Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <article id="wsod-message" class="message is-small has-text-centered">
+      <div class="notification is-dark">
         <strong>404</strong> Website Error
       </div>
     </article>
@@ -12,12 +12,12 @@
     
     <!-- BEGIN 404 Error flow section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Transfer customer to a Teir 2 agent for further troubleshooting.
+          Transfer customer to a <strong>Teir 2</strong> agent for further troubleshooting.
         </div>
       </article>
 

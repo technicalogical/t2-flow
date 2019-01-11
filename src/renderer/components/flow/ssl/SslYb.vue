@@ -1,9 +1,9 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - SSL Website Errors Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>SSL</strong> Website Error
       </div>
     </article>
@@ -15,9 +15,15 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Advise that due to the <strong>third party</strong> nature of the certificate they will need to troubleshoot to resolve the issue with the SSL.
+          Advise that due to the <strong>third party</strong> nature of the certificate they will need to troubleshoot to resolve the issue with the SSL on thier own.
+        </div>
+      </article>
+
+      <article class="message is-success is-small">
+        <div class="message-body">
+          Offer <strong>HELP</strong> documentation for the customer to follow while troubleshooting the SSL.
         </div>
       </article>
 
@@ -31,14 +37,11 @@
         </router-link>
       </p>
       <!-- END - Back button -->
-
-      <article class="message is-success">
-        <div class="message-body">
-          Offer <strong>HELP</strong> documentation for the customer to follow while troubleshooting the SSL.
-        </div>
-      </article>
+      
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+      
       <router-view/>
+
     </div>
     <!-- END SSL Website Errors section -->
 

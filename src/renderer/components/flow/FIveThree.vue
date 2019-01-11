@@ -4,7 +4,7 @@
   <div id="flow-deck">
     
     <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message">
+    <article id="wsod-message" class="message is-small">
       <div class="notification is-dark has-text-centered">
         <strong>503</strong> Server Response Error
       </div>

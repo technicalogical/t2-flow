@@ -1,9 +1,9 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - SSL Website Errors Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>SSL</strong> Website Error
       </div>
     </article>

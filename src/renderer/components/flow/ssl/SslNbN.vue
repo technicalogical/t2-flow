@@ -1,9 +1,9 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - SSL Website Errors Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>SSL</strong> Website Error
       </div>
     </article>
@@ -15,7 +15,7 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
           You have resolved the issue for the customer. The website should be loading in browser as intended.
         </div>

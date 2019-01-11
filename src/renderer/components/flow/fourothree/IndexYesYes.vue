@@ -1,23 +1,23 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - 403 Website Errors Text -->
+    <article id="wsod-message" class="message has-text-centered is-small">
+      <div class="notification is-dark">
         <strong>403</strong> Website Error
       </div>
     </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- END - 403 Website Errors Text -->
 
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Transfer the customer to a Tier 2 agent so that they can troubleshoot further.
+          Transfer the customer to a <strong>Tier 2</strong> agent so that they can troubleshoot further.
         </div>
       </article>
 

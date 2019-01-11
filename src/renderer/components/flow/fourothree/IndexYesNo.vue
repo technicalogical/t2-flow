@@ -1,13 +1,13 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - 403 Website Errors Text -->
+    <article id="wsod-message" class="message has-text-centered is-small">
+      <div class="notification is-dark">
         <strong>403</strong> Website Error
       </div>
     </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- END - 403 Website Errors Text -->
 
     
     <!-- BEGIN 500 Error flow section -->
@@ -15,7 +15,7 @@
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
           Advise the customer to correct the spelling of their index file in order to show the website correctly.
         </div>

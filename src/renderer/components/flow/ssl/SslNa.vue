@@ -1,9 +1,9 @@
 <template>
   <div id="flow-deck-two">
     
-    <!-- SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-danger">
-      <div class="notification is-danger">
+    <!-- BEGIN - SSL Website Errors Text -->
+    <article id="wsod-message" class="message is-small">
+      <div class="notification is-dark has-text-centered">
         <strong>SSL</strong> Website Error
       </div>
     </article>
@@ -12,12 +12,12 @@
     
     <!-- BEGIN SSL Website Errors section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
-      <article class="message is-info">
+      <article class="message is-info is-small">
         <div class="message-body">
-          Transfer the customer to a Tier 2 agent for further torubleshooting.
+          You have done all that you can as a <strong>Tier 1</strong> agent. Advise your customer and transfer them to a <strong>Tier 2</strong> agent for further torubleshooting.
         </div>
       </article>
 
