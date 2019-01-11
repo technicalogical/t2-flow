@@ -7,7 +7,7 @@
     <div id="tool-page" class="content is-small">
 
       <!-- Swat Tools opening note -->
-      <div id="tool-note" class="notification is-dark has-text-centered">
+      <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
         <strong>SWAT Tools</strong>
       </div>
 
@@ -15,10 +15,9 @@
       <form id="ssl-deck">
 
         <!-- BEGIN Swat SSL input section -->
-        <br>
         <div id="ssl-tool-input" class="content">
   
-          <center><h4>SSL Lookup</h4></center>
+          <center><a id="ssl-title" class="button is-small is-static is-dark"><strong>SSL Lookup</strong></a></center>
           <div class="field">
             <div id="ssl-search" class="control has-icons-left has-icons-right">
               <input v-model="domainName" class="input is-small" type="text" placeholder="Domain(s)" />
@@ -64,7 +63,7 @@
                   </a>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="ip" placeholder="Domain Name" readonly>
+                  <input class="input  is-small" type="text" v-model="ip" placeholder="Certificate IP Address" readonly>
                 </p>
               </div>
             </div>
@@ -78,7 +77,7 @@
                   </a>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="commonName" placeholder="Domain Name" readonly>
+                  <input class="input  is-small" type="text" v-model="commonName" placeholder="Common Name" readonly>
                 </p>
               </div>
             </div>
@@ -92,7 +91,7 @@
                   </a>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="expireDate" placeholder="Domain Name" readonly>
+                  <input class="input  is-small" type="text" v-model="expireDate" placeholder="Expire Date" readonly>
                 </p>
               </div>
             </div>
@@ -106,7 +105,7 @@
                   </a>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="issuer" placeholder="Domain Name" readonly>
+                  <input class="input  is-small" type="text" v-model="issuer" placeholder="Issuer" readonly>
                 </p>
               </div>
             </div>
@@ -120,7 +119,21 @@
                   </a>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input is-small" type="text" v-model="serialNumber" placeholder="Domain Name" readonly>
+                  <input class="input is-small" type="text" v-model="serialNumber" placeholder="Serial Number" readonly>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="field-body">
+            <div class="field is-expanded">
+              <div class="field has-addons">
+                <p class="control">
+                  <a class="button is-static is-small">
+                    Subject Alternates:
+                  </a>
+                </p>
+                <p id="ssl-fix" class="control is-expanded">
+                  <input class="input is-small" type="text" v-model="sans" placeholder="SANS" readonly>
                 </p>
               </div>
             </div>
@@ -151,7 +164,8 @@ export default {
       commonName: '',
       expireDate: '',
       issuer: '',
-      serialNumber: ''
+      serialNumber: '',
+      sans: '' 
     }
   },
   methods: {

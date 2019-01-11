@@ -25,7 +25,7 @@
       <!-- BEGIN Dropdown navigation section -->
       <nav id="prime">
         <ul>
-          <a class="icon has-text-success" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
+          <a class="icon" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
           <a class="icon" title="SWAT Flow"><router-link class="far fa-file-alt" to="/SwatFlow"></router-link></a>
           <a class="icon" title="SWAT Note"><router-link class="far fa-comments" to="/SwatNote"></router-link></a>
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
@@ -73,7 +73,7 @@
         <div id="footer-img"></div>
 
         <!-- Application version note -->
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.2.32</strong> (<strong>Windu</strong>)</p>
+        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.3.03</strong> (<strong>Windu</strong>)</p>
 
       </footer>
     <!-- END - Application footer section -->
