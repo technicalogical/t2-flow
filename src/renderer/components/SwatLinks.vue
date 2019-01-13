@@ -8,7 +8,7 @@
 
       <!-- Swat Tools opening note -->
       <div class="notification is-dark">
-        Here you will find strategically organized groupings of the most useful links tactically aquired from <strong>GoDaddy</strong> tribal knowledge. It is a primary recommendation that you bookmark your favorites in browser to be better prepared for future troubleshooting.
+        These are the most commonly used links strategically aquired from <strong>GoDaddy</strong> tribal knowledge.
       </div>
 
       <!-- Tool page title -->
@@ -19,7 +19,7 @@
       <!-- BEGIN - Swat Tool Tabs -->
       <div id="tool-tabs">
         <div id="tool-tab-left">
-          <router-link to="/tools/HostingTools" class="button is-small is-dark">
+          <router-link to="/links/HostingLinks" class="button is-small is-dark">
             <span class="icon is-large has-text-success">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
@@ -28,7 +28,7 @@
         </div>
 
         <div id="tool-tab-right">
-          <router-link to="/tools/WebsiteTools" class="button is-small is-dark">
+          <router-link to="/links/WebsiteLinks" class="button is-small is-dark">
             <span><strong>Website Links</strong></span>
             <span class="icon is-large has-text-success">
               <i class="fa fa-angle-right fa-2x"></i>

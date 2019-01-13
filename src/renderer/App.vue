@@ -73,7 +73,7 @@
         <div id="footer-img"></div>
 
         <!-- Application version note -->
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.3.03</strong> (<strong>Windu</strong>)</p>
+        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.4.01</strong> (<strong>Zephyr</strong>)</p>
 
       </footer>
     <!-- END - Application footer section -->

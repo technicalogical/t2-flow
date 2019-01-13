@@ -8,7 +8,7 @@
 
       <!-- Swat Tools opening note -->
       <div class="notification is-dark">
-        Here you will find a grouping of the most useful Website specific links tactically aquired from <strong>GoDaddy</strong> tribal knowledge. It is a primary recommendation that you bookmark your favorites in browser to be better prepared for future troubleshooting.
+        These are the most useful Website specific links tactically aquired from <strong>GoDaddy</strong> tribal knowledge.
       </div>
 
       <!-- Tool page title -->

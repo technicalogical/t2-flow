@@ -209,7 +209,7 @@ footer {
   position: absolute;
   margin: 0px;
   padding: 0px;
-  border:0px;
+  border-top: 0px;
   bottom: 0px;
   height: 70px;
   width: 100%;
@@ -307,6 +307,7 @@ footer {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
+  font-size: 14px;
   color: black;
   top: 260px;
   display: block;
@@ -378,6 +379,10 @@ footer {
   height: 600px;
 }
 
+#note-sitch {
+  margin-bottom: 15px;
+}
+
 #swat-note-input {
   position: relative;
   display: block;
@@ -399,12 +404,12 @@ footer {
 #call-notes {
   position: relative;
   display: block;
-  top: 25px;
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
   background-color: hsl(0, 0%, 96%);
+  border: 1px solid hsl(0, 0%, 80%);
   border-radius: 4px;
   width: 70%;
   height: 170px;
@@ -418,22 +423,12 @@ footer {
   font-size: 12px;
 }
 
-#call-notes section {
-  text-align: left;
-}
-
-#note-buttons {
+#notehelp {
   position: relative;
-  top: 35px;
-  display: block;
-  bottom: 0px;
+  top: -16px;
+  left: 2px;
   margin: 0px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px;
-  border: 0px;
-  width: 70%;
-  height: 30px;
 }
 
 #closed {
@@ -443,15 +438,26 @@ footer {
   top: -20px;
   left: 100px;
 }
+
+#deco {
+  background-color: #262626;
+}
 /* END | Swat Note Vue CSS */
 
 /* START | Swat Tools & Links Vue CSS */
+#tool-start {
+  position: relative;
+  width: 60%;
+  text-align: center;
+  top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
 #ssl-title {
   margin-bottom: 6px;
-  padding-left: 60px;
-  padding-right: 60px;
-  background-color: hsl(0, 0%, 21%);
-  color: hsl(0, 0%, 100%);
 }
 
 #ssl-tool-input {
@@ -484,11 +490,30 @@ footer {
   padding: 0px;
   border: 0px;
   width: 90%;
-  height: 260px;
+  height: 400px;
 }
 
 #ssl-fix {
   top: 1px;
+}
+
+#ssl-sans {
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  -webkit-app-region: no-drag;
+}
+
+#ssl-sans ul {
+  list-style-type: none;
+}
+
+#ssl-sans-title {
+  border-bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
 }
 
 #tool-page {
@@ -597,6 +622,61 @@ footer {
   margin-top: 5px;
   margin-right: 5px;
   width: 65px;
+}
+
+#mx-list {
+  margin: 0px;
+  padding: 0px;
+  height: 60px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  -webkit-app-region: no-drag;
+}
+
+#mx-list ul {
+  list-style-type: none;
+}
+
+#txt-list {
+  margin: 0px;
+  padding: 5px;
+  height: 80px;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  -webkit-app-region: no-drag;
+}
+
+#txt-list ul {
+  width: 100%;
+  margin: 0px;
+  list-style-type: none;
+}
+
+#txt-list ul li {
+  width: 100%;
+}
+
+#txt-sep {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+#ns-list {
+  margin: 0px;
+  padding: 0px;
+  height: 95px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  -webkit-app-region: no-drag;
+}
+
+#ns-list ul {
+  list-style-type: none;
 }
 /* END | Swat Tool Vue CSS */
 

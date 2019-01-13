@@ -38,7 +38,7 @@
 
     <!-- BEGIN swat motto statement -->
     <div id="swat-motto">
-      <p><strong>"Solve, Wow, Advocate, Transfer".</strong></p>
+      <p><strong>"Solve, Wow, Advocate, Transfer."</strong></p>
     </div>
     <!-- END swat motto statement -->
 

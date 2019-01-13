@@ -8,36 +8,21 @@
 
       <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <strong>SWAT Tools</strong>
+        <strong>S.W.A.T. SSL Lookup</strong>
       </div>
 
-     <!-- BEGIN Start button -->
-    <div id="tool-start" class="field is-grouped">
-      <p class="control">
-        <router-link id="ssl-title" to="tools/SwatDNS" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-success">
-            <i class="fa fa-globe"></i>
-          </span>
-          <span><strong>S.W.A.T. DNS Lookup</strong></span>
-        </router-link>
-        <br>
-        <router-link id="ssl-title" to="tools/SwatSSL" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-success">
-            <i class="fas fa-unlock-alt"></i>
-          </span>
-          <span><strong>S.W.A.T. SSL Lookup</strong></span>
-        </router-link>
-      </p>
-    </div>
-    <!-- END Start button -->
+      <!--BEGIN Swat DNS section -->
+      <form id="tool-deck">
 
-      <!--BEGIN Swat DNS section
-      <form id="ssl-deck">
-
-       BEGIN Swat SSL input section
+        <!-- BEGIN Swat SSL input section -->
         <div id="ssl-tool-input" class="content">
   
-          <center><span id="ssl-title" class="button is-small is-static is-dark"><strong>SSL Lookup</strong></span></center>
+          <router-link id="ssl-title" to="/SwatTools" class="button is-small is-dark">
+            <span class="icon is-large has-text-success">
+              <i class="fa fa-angle-left fa-2x"></i>
+            </span>
+            <span><strong>Back</strong></span>
+          </router-link>
           <div class="field">
             <div id="ssl-search" class="control has-icons-left has-icons-right">
               <input v-model="domainName" class="input is-small" type="text" placeholder="Domain(s)" />
@@ -45,20 +30,20 @@
                 <i class="fas fa-globe"></i>
               </span>
             </div>
-           BEGIN Search button section
+            <!-- BEGIN Search button section -->
             <button id="ssl-go"  v-on:click="handleLookup" class="button is-small is-dark" value="">
               <span class="icon has-text-success">
                 <i class="fas fa-search"></i>
               </span>
               <span>Search</span>
             </button>
-            END Search button section
+            <!-- END Search button section -->
           </div>
           
         </div>
-        END Swat SSL input section
+        <!-- END Swat SSL input section -->
 
-        BEGIN SSL Readout section
+        <!-- BEGIN SSL Readout section -->
         <div v-if="submitted" id="output-area" class="content">
           <div class="field-body">
             <div class="field is-expanded">
@@ -83,7 +68,7 @@
                   </a>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="ip" placeholder="Certificate IP Address" readonly>
+                  <input class="input  is-small" type="text" v-model="ip" placeholder="IP Address" readonly>
                 </p>
               </div>
             </div>
@@ -145,14 +130,18 @@
             </div>
           </div>
           <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">Subject Alternative Names:</span>
-          <div class="control">
-            <textarea id="ssl-sans" class="textarea is-small has-fixed-size" placeholder="Fixed size textarea" rows="5" cols="30" v-model="sans" wrap="hard" readonly></textarea>
+          <div id="ssl-sans" class="content">
+            <ul>
+              <li v-for="s in sans">
+                {{ s }}
+              </li>
+            </ul>
           </div>
         </div>
-         END SSL Readout section
+        <!-- END SSL Readout section -->
 
       </form>
-      END Swat DNS section -->
+      <!--END Swat DNS section -->
       
     </div>
     <!-- END Swat DNS section -->
@@ -175,7 +164,10 @@ export default {
       expireDate: '',
       issuer: '',
       serialNumber: '',
-      sans: '' 
+
+      // I ALSO CHANGED SANS TO AN ARRAY SO WE
+      // CAN ITERATE OVER IT
+      sans: [],
     }
   },
   methods: {

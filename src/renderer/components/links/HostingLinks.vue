@@ -8,7 +8,7 @@
 
       <!-- Swat Tools opening note -->
       <div class="notification is-dark">
-        These are a collection of links primarliy related to hosting needs, sourced from the  <strong>GoDaddy</strong> tribal knowledge base. Bookmark your favorites in browser to be better prepared for future troubleshooting.
+        This is a collection of links primarliy related to hosting needs, sourced from <strong>GoDaddy</strong> tribal knowledge base.
       </div>
 
       <!-- Tool page title -->

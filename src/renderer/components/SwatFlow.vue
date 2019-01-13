@@ -6,7 +6,7 @@
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="content is-small">
       <div class="notification is-dark">
-        These are the <strong>Swat Flow Charts</strong>, designed to guide you quickly through the most common issues our customers are facing.
+        These are the <strong>Swat Flow Charts</strong>, designed to guide you quickly through the most common issues our customers are facing everyday.
       </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->

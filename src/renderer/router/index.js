@@ -110,9 +110,14 @@ import LinYesYnoD from '@/components/flow/fiveothree/linux/LinYesYnoD'
 import LinYesN from '@/components/flow/fiveothree/linux/LinYesN'
 // END 503 error imported routes
 
+// BEGIN Swat Links imported routes
+import HostingLinks from '@/components/links/HostingLinks'
+import WebsiteLinks from '@/components/links/WebsiteLinks'
+// END Swat Links imported routes
+
 // BEGIN Swat Tools imported routes
-import HostingTools from '@/components/tools/HostingTools'
-import WebsiteTools from '@/components/tools/WebsiteTools'
+import SwatDNS from '@/components/tools/SwatDNS'
+import SwatSSL from '@/components/tools/SwatSSL'
 // END Swat Tools imported routes
 
 Vue.use(Router)
@@ -150,14 +155,24 @@ export default new Router({
       component: SwatSettings
     },
     {
-      path: '/tools/HostingTools',
-      name: 'Hosting Tools',
-      component: HostingTools
+      path: '/links/HostingLinks',
+      name: 'Hosting Links',
+      component: HostingLinks
     },
     {
-      path: '/tools/WebsiteTools',
-      name: 'Website Tools',
-      component: WebsiteTools
+      path: '/links/WebsiteLinks',
+      name: 'Website Links',
+      component: WebsiteLinks
+    },
+    {
+      path: '/tools/SwatDNS',
+      name: 'SWAT DNS',
+      component: SwatDNS
+    },
+    {
+      path: '/tools/SwatSSL',
+      name: 'SWAT SSL',
+      component: SwatSSL
     },
     {
       path: '/flow/No',

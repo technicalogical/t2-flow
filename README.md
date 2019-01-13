@@ -6,7 +6,7 @@
 
 ``` bash
 # install dependencies
-yarn install
+yarn add ***
 
 # serve with hot reload at localhost:8080
 yarn run dev - This will allow for hot reload upon saving changes.
@@ -20,11 +20,11 @@ swat-flow-tool
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-S.W.A.T. tool for T1 and T2 work flow
+S.W.A.T. tool for T1 call flow
 
-An S.F.T. (SWAT FLOW TOOL) is designed to refine the SWAT Flow Chart into a small footprint standalone application that will serve the same purpose but without requiring multiple tabs and windows keeping the flowchart at the agent’s fingertips. Not every agent can memorize every url we need to do our jobs, not every agent keeps organized tabs in their browsers, most agents are rather disorganized when it comes to keeping tabs open and accessible.
+The S.F.T. (SWAT FLOW TOOL) is designed to refine the SWAT Flow Chart into a small footprint standalone application that will serve the same purpose but without requiring multiple tabs and windows keeping the flowchart at the agent’s fingertips. Not every agent can memorize every url we need to do our jobs, not every agent keeps organized tabs in their browsers, most agents are rather disorganized when it comes to keeping tabs open and accessible.
 
-By creating a standalone application it allows for there to be a specific and dialed focus on the troubleshooting flow where the agent is focused on the specific results of their query. This would be the short term focus of the tool. Long term focus would be to build in additional functionality that would streamline the setup and readiness of the T1 / T2 agent as they are introduced into this roll.
+By creating a standalone application it allows for there to be a specific and dialed focus on the troubleshooting flow where the agent is focused on the specific results of their query. This would be the short term focus of the tool. Long term focus would be to build in additional functionality that would streamline the setup and readiness of the T1 agent as they are introduced into this roll.
 
 Goals:
 

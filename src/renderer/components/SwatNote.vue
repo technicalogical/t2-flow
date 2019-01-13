@@ -5,71 +5,51 @@
 
     <!-- BEGIN Swat Note input section -->
     <div id="swat-note-input" class="content">
-      <p class="help is-danger has-text-weight-bold">THIS PAGE DOES NOT STORE CUSTOMER DATA</p>
-      <div class="field">
-        <div class="control has-icons-left has-icons-right">
-          <input id="filled1" v-model="name" class="input is-small" type="text" placeholder="Customer Name" />
-          <span class="icon is-small is-left has-text-success">
-            <i class="fas fa-user"></i>
-          </span>
+      <center><p class="help is-danger has-text-weight-bold">THIS PAGE DOES NOT STORE CUSTOMER DATA</p></center>
+      <div class="field-body">
+        <div class="field is-expanded">
+          <div class="field has-addons">
+            <p class="control">
+              <a class="button is-static  is-small">
+                Customer Name:
+              </a>
+            </p>
+            <p id="ssl-fix" class="control is-expanded">
+              <input class="input  is-small" type="text" v-model="name" placeholder="Customer Name">
+            </p>
+          </div>
         </div>
       </div>
-      <div id="sitch-text" class="control">
-        <textarea id="filled2" v-model="sitch" class="textarea is-small has-fixed-size" placeholder="Customer's situation"></textarea>
+       <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">Customer Situation:</span>
+      <div id="note-sitch" class="control">
+        <textarea id="ssl-sans" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
       </div>
-      <div class="field">
-        <div class="control has-icons-left has-icons-right">
-          <input id="filled3" v-model="domain" class="input is-small" type="text" placeholder="Domain(s)" />
-          <span class="icon is-small is-left has-text-success">
-            <i class="fas fa-globe"></i>
-          </span>
-        </div>
-        <p class="help is-info">Seperate multiple domains with commas.</p>
-      </div>
-      <div class="field">
-        <div class="control has-icons-left has-icons-right">
-          <input id="filled4" v-model="method" class="input is-small" type="text" placeholder="Flow method" />
-          <span class="icon is-small is-left has-text-success">
-            <i class="far fa-file-alt"></i>
-          </span>
-          <p class="help is-info">List which flows you used to resolve issue.</p>
+      <div class="field-body">
+        <div class="field is-expanded">
+          <div class="field has-addons">
+            <p class="control">
+              <a class="button is-static  is-small">
+                Domain(s):
+              </a> 
+            </p>
+            <p id="ssl-fix" class="control is-expanded">
+              <input class="input  is-small" type="text" v-model="domain" placeholder="Domain Name">
+            </p>
+          </div>
+          <p id="notehelp" class="help is-small is-info">Seperate domains using commas (,)</p>
         </div>
       </div>
     </div>
     <!-- END Swat Note input section -->
     
     <!--  BEGIN Copy paste notes section -->
-    <div id="call-notes" class="content is-info">
-      
-      <p>#SWAT 1</p>
+    <div id="call-notes" class="content is-info" wrap="hard">  
+      <p>#SWAT1</p>
       <p>Customer name: {{ name }} </p>
       <p>Situation: {{ sitch }} </p>
       <p>Domain(s): {{ domain }} </p>
-      <p>Methods: {{ method }} </p>
-
     </div>
     <!-- END Copy paste notes section -->
-
-      <!-- BEGIN Note buttons section -->
-      <p id="note-buttons" class="buttons">
-        <button class="button is-small is-dark" value="" v-clipboard:copy="'#SWAT ' 
-        + ' Name: ' + name
-        + ' Situation: ' + sitch
-        + ' Domain: ' + domain
-        + ' Method: ' + method">
-          <span class="icon has-text-success">
-            <i class="fas fa-clipboard"></i>
-          </span>
-          <span>Copy to Clipboard</span>
-        </button>
-        <button type="button" value="" class="button is-small is-danger" onclick="document.getElementById('note-deck').reset()" >
-          <span class="icon">
-            <i class="fas fa-times-circle"></i>
-          </span>
-          <span><strong>RESET</strong></span>
-        </button> 
-      </p>
-      <!-- END Note buttons section -->
 
   </form>
   <!-- END - Primary application deck -->
@@ -90,7 +70,6 @@ export default {
       'name',
       'sitch',
 	    'domain',
-	    'method',
     ]),
   },
 }
