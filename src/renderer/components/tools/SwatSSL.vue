@@ -49,12 +49,12 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static  is-small">
+                  <strong><a class="button is-static  is-small has-text-info">
                     Domain:
-                  </a>
+                  </a></strong>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="domainName" placeholder="Domain Name" readonly>
+                  <input class="input is-small" type="text" v-model="domainName" placeholder="Domain Name" readonly>
                 </p>
               </div>
             </div>
@@ -63,9 +63,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static  is-small">
+                  <strong><a class="button is-static is-small has-text-info">
                     IP:
-                  </a>
+                  </a></strong>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="ip" placeholder="IP Address" readonly>
@@ -77,9 +77,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static  is-small">
+                  <strong><a class="button is-static is-small has-text-info">
                     Common Name:
-                  </a>
+                  </a></strong>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="commonName" placeholder="Common Name" readonly>
@@ -91,9 +91,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static  is-small">
+                  <strong><a class="button is-static is-small has-text-info">
                     Expire Date:
-                  </a>
+                  </a></strong>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="expireDate" placeholder="Expire Date" readonly>
@@ -105,9 +105,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static  is-small">
+                  <strong><a class="button is-static is-small has-text-info">
                     Issuer:
-                  </a>
+                  </a></strong>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="issuer" placeholder="Issuer" readonly>
@@ -119,9 +119,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static is-small">
+                  <strong><a class="button is-static is-small has-text-info">
                     Serial Number:
-                  </a>
+                  </a></strong>
                 </p>
                 <p id="ssl-fix" class="control is-expanded">
                   <input class="input is-small" type="text" v-model="serialNumber" placeholder="Serial Number" readonly>
@@ -129,7 +129,7 @@
               </div>
             </div>
           </div>
-          <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">Subject Alternative Names:</span>
+          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">Subject Alternative Names:</span></strong>
           <div id="ssl-sans" class="content">
             <ul>
               <li v-for="s in sans">

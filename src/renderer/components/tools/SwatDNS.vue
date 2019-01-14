@@ -54,9 +54,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <a class="button is-static  is-small">
+                  <strong><a class="button is-static  is-small has-text-info">
                     A Record(s):
-                  </a>
+                  </a></strong>
                 </p>
                 <p v-for="a in aRecords" id="ssl-fix" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="aRecords" placeholder="A Record IP Address" readonly>
@@ -66,7 +66,7 @@
           </div>
 
           <!-- Mx Records -->
-          <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">MX Record(s):</span>
+          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">MX Record(s):</span></strong>
           <div id="mx-list" class="content">
             <ul>
               <li v-for="mx in mxRecords">
@@ -77,7 +77,7 @@
           <br>
 
           <!-- TXT Records -->
-          <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">TXT Record(s):</span>
+          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">TXT Record(s):</span></strong>
           <div id="txt-list" class="content">
             <ul>
               <li id="txt-sep" v-for="txt in txtRecords">
@@ -88,7 +88,7 @@
           <br>
 
           <!-- NS Records -->
-          <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">NS Record(s):</span>
+          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">NS Record(s):</span></strong>
           <div id="ns-list" class="content">
             <ul>
               <li v-for="ns in nsRecords">

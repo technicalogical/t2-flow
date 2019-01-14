@@ -60,6 +60,38 @@
     <!-- BEGIN - Application footer section -->
       <footer>
 
+        <!-- GoDaddy.com Front of site menu -->
+        <div id="gd-menu" class="dropdown is-small is-up">
+          <div class="dropdown-trigger">
+            <button class="button is-small is-dark" title="GoDaddy.com Quick Links" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>GoDaddy.com</span>
+              <span class="icon has-text-success">
+                <i class="fas fa-angle-up" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
+            <div class="dropdown-content is-small">
+              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-backup" target="_blank" title="Website Backups" class="dropdown-item is-small">
+                Website Backups
+              </a>
+              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-security" target="_blank" title="Website Security" class="dropdown-item is-small">
+                Website Security
+              </a>
+              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/ssl-certificate" target="_blank" title="SSL Standard" class="dropdown-item is-small">
+                SSL
+              </a>
+              <a id="gd-menu-item" href="https://www.godaddy.com/wordpress/premium-support" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+                WordPress Premium Support
+              </a>
+              <hr class="dropdown-divider">
+              <div id="gd-menu-item" title="WordPress Premium Support" class="dropdown-item is-small">
+                <strong><p>Press (esc) to close</p></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Button to link to the conlfuence page -->
         <p id="helper-two" class="buttons">
           <a class="button is-white" href="http://x.co/flowtool" target="_blank" title="Give Feedback">
@@ -120,6 +152,46 @@ $(document).ready(function(){
  $("#deck-icon").click(function(){
     $("#prime").slideToggle("fast");
   });
+});
+
+// Test
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Dropdowns
+  var $dropdowns = getAll('.dropdown:not(.is-hoverable)');
+
+  if ($dropdowns.length > 0) {
+    $dropdowns.forEach(function ($el) {
+      $el.addEventListener('click', function (event) {
+        event.stopPropagation();
+        $el.classList.toggle('is-active');
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      closeDropdowns();
+    });
+  }
+
+  function closeDropdowns() {
+    $dropdowns.forEach(function ($el) {
+      $el.classList.remove('is-active');
+    });
+  }
+
+  // Close dropdowns if ESC pressed
+  document.addEventListener('keydown', function (event) {
+    var e = event || window.event;
+    if (e.keyCode === 27) {
+      closeDropdowns();
+    }
+  });
+
+  // Functions
+
+  function getAll(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+  }
 });
 </script>
 
