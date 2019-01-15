@@ -12,8 +12,8 @@
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">

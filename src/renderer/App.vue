@@ -63,8 +63,8 @@
         <!-- GoDaddy.com Front of site menu -->
         <div id="gd-menu" class="dropdown is-small is-up">
           <div class="dropdown-trigger">
-            <button class="button is-small is-dark" title="GoDaddy.com Quick Links" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>GoDaddy.com</span>
+            <button class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>GD Links</span>
               <span class="icon has-text-success">
                 <i class="fas fa-angle-up" aria-hidden="true"></i>
               </span>
@@ -72,17 +72,17 @@
           </div>
           <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
             <div class="dropdown-content is-small">
-              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-backup" target="_blank" title="Website Backups" class="dropdown-item is-small">
-                Website Backups
+              <a id="gd-menu-item" href="https://www.godaddy.com/wordpress/premium-support" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+                WordPress Premium Support
               </a>
               <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-security" target="_blank" title="Website Security" class="dropdown-item is-small">
                 Website Security
               </a>
+              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-backup" target="_blank" title="Website Backups" class="dropdown-item is-small">
+                Website Backups
+              </a>
               <a id="gd-menu-item" href="https://www.godaddy.com/web-security/ssl-certificate" target="_blank" title="SSL Standard" class="dropdown-item is-small">
                 SSL
-              </a>
-              <a id="gd-menu-item" href="https://www.godaddy.com/wordpress/premium-support" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
-                WordPress Premium Support
               </a>
               <hr class="dropdown-divider">
               <div id="gd-menu-item" title="WordPress Premium Support" class="dropdown-item is-small">

@@ -14,7 +14,7 @@
     <div class="content has-text-centered" id="flow">
       <!-- BEGIN - Primary application deck -->
       <div class="content is-medium" id="flow-deck-two">
-      <p>Inspect customer's file structure. Do you se any strange files or obvious malware?</p>
+      <p>Inspect customer's file structure. Do you see any strange files or obvious malware?</p>
       <p class="buttons">
           <router-link to="/flow/fivehundrederror/WpadYes" class="button is-light">
             <span class="icon has-text-success">

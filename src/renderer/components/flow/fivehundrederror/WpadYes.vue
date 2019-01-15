@@ -21,7 +21,7 @@
         </div>
         <br>
         <div class="message-body">
-          The customer may also need <strong>WPPS (Website Premium Support)</strong> for fixing broken files after the clean up.
+          The customer may also need <strong>WPPS (Wor Premium Support)</strong> for fixing broken files after the clean up.
         </div>
       </article>
 
