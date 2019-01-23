@@ -8,7 +8,7 @@
 
       <!-- BEGIN Home page logo section -->
       <div id="logo-main">
-        
+        <img src="../assets/images/blue-01.png">
       </div>
       <!-- END Home page logo section -->
 

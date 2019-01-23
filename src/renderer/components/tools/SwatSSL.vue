@@ -164,9 +164,6 @@ export default {
       expireDate: '',
       issuer: '',
       serialNumber: '',
-
-      // I ALSO CHANGED SANS TO AN ARRAY SO WE
-      // CAN ITERATE OVER IT
       sans: [],
     }
   },
