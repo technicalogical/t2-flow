@@ -22,13 +22,13 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. Yes the website performs poorly.</span>
+            <span><strong>Yes</strong>. The website performs poorly.</span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYesYnoD" class="button is-light">
+          <router-link to="/flow/fiveothree/linux/LinYesYyes" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. cPanel Resources are not spiking.</span>
+            <span><strong>No</strong>. The website is properly optimized.</span>
           </router-link>
         </p>
       	  <!-- BEGIN - Back button -->

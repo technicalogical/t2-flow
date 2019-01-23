@@ -17,7 +17,7 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          You have done all that you can as a <strong>Tier 1</strong> agent. Advise your customer and transfer them to a <strong>Tier 2</strong> agent for further torubleshooting.
+          You have done all that you can as a <strong>Tier 1</strong> agent. Advise your customer and transfer them to a <strong>Tier 2</strong> agent for further troubleshooting.
         </div>
       </article>
 

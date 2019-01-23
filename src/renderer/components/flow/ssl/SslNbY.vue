@@ -23,7 +23,7 @@
 
       <article class="message is-small is-success">
         <div class="message-body">
-          If thes website is Wordpress based offer <strong>WPPS (Wordpress Premium Support)</strong> to help resolve the issue.
+          If this website is Wordpress based offer <strong>WPPS (Wordpress Premium Support)</strong> to help resolve the issue.
         </div>
       </article>
 

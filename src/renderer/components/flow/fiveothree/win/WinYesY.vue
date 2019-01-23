@@ -15,7 +15,7 @@
     <!-- BEGIN Plesk 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Stop and Start the <strong>IIS App Pool</strong>. is the site now able to load in browser?</p>
+        <p>Stop and Start the <strong>IIS App Pool</strong>. Is the site now able to load in browser?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/win/WinYesYyes" class="button is-light">

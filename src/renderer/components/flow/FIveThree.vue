@@ -34,7 +34,7 @@
             <span class="icon has-text-info">
               <i class="fas fa-server"></i>
             </span>
-            <span>Website is hosted on <strong>Winodws (Plesk)</strong></span>
+            <span>Website is hosted on <strong>Windows (Plesk)</strong></span>
           </router-link>
         </p>
       

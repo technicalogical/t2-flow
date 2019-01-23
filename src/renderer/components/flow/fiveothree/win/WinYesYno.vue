@@ -15,7 +15,7 @@
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>disable the control files for this website. Does the site load now?</p>
+        <p>Disable the control files for this website. Does the site load now?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/win/WinYesYnoY" class="button is-light">

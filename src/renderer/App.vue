@@ -12,6 +12,7 @@
     <div id="time">
       <p id="clock"></p>
     </div>
+    
     <!-- Button to close the app -->
     <div id="app-top-links">
 

@@ -17,13 +17,13 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          Advise that due to the <strong>third party</strong> nature of the certificate they will need to troubleshoot to resolve the issue with the SSL on thier own.
+          Advise the customer that they will need to rekey this certificate as the serial number needs to be updated and corrected on the server.
         </div>
       </article>
 
       <article class="message is-success is-small">
         <div class="message-body">
-          Offer <strong>HELP</strong> documentation for the customer to follow while troubleshooting the SSL.
+          Offer <strong>HELP</strong> documentation for the customer to complete corresponding steps once this process is completed.
         </div>
       </article>
 

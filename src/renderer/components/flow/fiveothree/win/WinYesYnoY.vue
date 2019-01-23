@@ -17,7 +17,7 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          Transfer the customer to a Tier 2 agent for further asistance.
+          Transfer the customer to a Tier 2 agent for further assistance.
         </div>
       </article>
 
