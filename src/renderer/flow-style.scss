@@ -1,7 +1,5 @@
 /* Full Application CSS for swat-flow-tool */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -100,7 +98,6 @@ a:active {
 
 #deck-icon:hover {
   color: hsl(217, 71%, 53%);
-  transform: rotate(20deg); 
 }
 
 #close-btn {
@@ -143,9 +140,6 @@ a:active {
   width: 450px;
 }
 
-#prime a:hover {
-  transform: rotate(20deg);
-}
 /* END | Primary App Deck CSS */
 
 /* BEGIN | App top nav CSS */
@@ -253,9 +247,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   height: 20px;
-  width: 138px; 
+  width: 133px; 
   top: 20px;
-  background-image: url(./assets/images/ftsmall.png);
 }
 
 #app-vers {
@@ -280,7 +273,6 @@ footer {
 
 #helper-icon:hover {
   color: hsl(217, 71%, 53%);
-  transform: rotate(20deg);
 }
 
 #helper-two {
@@ -309,9 +301,8 @@ footer {
 
 #logo-main {
   position: relative;
-  width: 50px;
-  height: 50px;
-  background-image: url(./assets/images/flow50.png);
+  width: 64px;
+  height: 64px;
   text-align: center;
   top: 70px;
   display: block;

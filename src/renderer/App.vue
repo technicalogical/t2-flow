@@ -28,9 +28,9 @@
         <ul>
           <a class="icon" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
           <a class="icon" title="SWAT Flow"><router-link class="far fa-file-alt" to="/SwatFlow"></router-link></a>
-          <a class="icon" title="SWAT Note"><router-link class="far fa-comments" to="/SwatNote"></router-link></a>
+          <a class="icon" title="SWAT Note"><router-link class="fas fa-sticky-note" to="/SwatNote"></router-link></a>
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
-          <a class="icon" title="SWAT Links"><router-link class="fas fa-external-link-alt" to="/SwatLinks"></router-link></a>
+          <a class="icon" title="SWAT Links"><router-link class="fas fa-link" to="/SwatLinks"></router-link></a>
           <a href="http://www.x.co/webcrm" target="_blank" class="icon" title="Launch CRM"><li class="fas fa-search"></li></a>
           <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li class="far fa-clock"></li></a>
         </ul>  
@@ -103,10 +103,12 @@
         </p>
 
         <!-- Application footer image -->
-        <div id="footer-img"></div>
+        <div id="footer-img">
+          <img src="../renderer/assets/images/flowtool-blu-xs.png">
+        </div>
 
         <!-- Application version note -->
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.4.01</strong> (<strong>Zephyr</strong>)</p>
+        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.4.03</strong> (<strong>Zephyr</strong>)</p>
 
       </footer>
     <!-- END - Application footer section -->
