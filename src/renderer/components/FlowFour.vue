@@ -6,7 +6,7 @@
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="content is-small">
       <div class="notification is-dark">
-        These are the <strong>Swat Call Flows</strong>. They will guide you through the on call troubleshooting process. Below are your most commonly used call flows.
+        <strong>S.W.A.T.</strong> Even More Flows
       </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
@@ -51,11 +51,11 @@
             </span>
             <span><strong>SSL</strong> Errors</span>
           </router-link>
-          <router-link to="/flow/CpEmail" class="button is-dark is-small">
+          <router-link to="/flow/SslError" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>cPanel</strong> Email issues</span>
+            <span><strong>New</strong> Flow</span>
           </router-link>
           <router-link to="/flow/SslError" class="button is-dark is-small">
             <span class="icon has-text-success">
@@ -85,7 +85,7 @@
     <div id="flow-toggle" >
       <div class="go-left">
         <p class="buttons">
-          <router-link to="/FlowFour" class="button is-small is-dark">
+          <router-link to="/FlowThree" class="button is-small is-dark">
             <span id="go-hover" class="icon is-large">
               <i class="fas fa-chevron-left"></i>
             </span>
@@ -94,8 +94,8 @@
       </div>
       <div class="go-right">
         <p class="buttons">
-          <router-link to="/FlowTwo" class="button is-small is-dark">
-            <span id="go-hover" class="icon is-small">
+          <router-link to="/SwatFlow" class="button is-small is-dark">
+            <span id="go-hover" class="icon is-large">
               <i class="fas fa-chevron-right"></i>
             </span>
           </router-link>

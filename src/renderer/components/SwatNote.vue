@@ -5,14 +5,14 @@
 
     <!-- BEGIN Swat Note input section -->
     <div id="swat-note-input" class="content">
-      <center><p class="help is-danger has-text-weight-bold">THIS PAGE DOES NOT STORE CUSTOMER DATA</p></center>
+      <center><p id="warnme" class="help has-text-light has-text-weight-bold">THIS PAGE DOES NOT STORE CUSTOMER DATA</p></center>
       <div class="field-body">
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <a class="button is-static  is-small">
+              <strong><a class="button is-static has-text-info  is-small">
                 Customer Name:
-              </a>
+              </a></strong>
             </p>
             <p id="ssl-fix" class="control is-expanded">
               <input class="input  is-small" type="text" v-model="name" placeholder="Customer Name">
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-       <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">Customer Situation:</span>
+       <strong><span id="ssl-sans-title" class="button is-static has-text-info is-small is-fullwidth">Customer Situation:</span></strong>
       <div id="note-sitch" class="control">
         <textarea id="ssl-sans" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
       </div>
@@ -28,15 +28,15 @@
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <a class="button is-static  is-small">
+              <strong><a class="button is-static has-text-info  is-small">
                 Domain(s):
-              </a> 
+              </a></strong>
             </p>
             <p id="ssl-fix" class="control is-expanded">
               <input class="input  is-small" type="text" v-model="domain" placeholder="Domain Name">
             </p>
           </div>
-          <p id="notehelp" class="help is-small is-info">Seperate domains using commas (,)</p>
+          <strong><p id="notehelp" class="help is-small is-info">Seperate domains using commas (,)</p></strong>
         </div>
       </div>
     </div>

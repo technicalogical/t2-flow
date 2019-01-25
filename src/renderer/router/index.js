@@ -18,6 +18,10 @@ import FourFour from '@/components/flow/FourFour'
 import FiveThree from '@/components/flow/FiveThree'
 import FormError from '@/components/flow/FormError'
 import No from '@/components/flow/No'
+import FlowTwo from '@/components/FlowTwo'
+import FlowThree from '@/components/FlowThree'
+import FlowFour from '@/components/FlowFour'
+import CpEmail from '@/components/flow/CpEmail'
 //SWAT Flow main menu routes
 
 // BEGIN Form Mail error imported routes
@@ -120,10 +124,33 @@ import SwatDNS from '@/components/tools/SwatDNS'
 import SwatSSL from '@/components/tools/SwatSSL'
 // END Swat Tools imported routes
 
+// BEGIN cPanel Email imported routes
+import cpmR from '@/components/flow/cpemail/cpmR'
+import cpmRy from '@/components/flow/cpemail/cpmRy'
+import cpmRn from '@/components/flow/cpemail/cpmRn'
+import cpmS from '@/components/flow/cpemail/cpmS'
+import cpmSy from '@/components/flow/cpemail/cpmSy'
+import cpmSyL from '@/components/flow/cpemail/cpmSyL'
+import cpmSyR from '@/components/flow/cpemail/cpmSyR'
+import cpmSyRc from '@/components/flow/cpemail/cpmSyRc'
+import cpmSyRw from '@/components/flow/cpemail/cpmSyRw'
+import cpmSyRwY from '@/components/flow/cpemail/cpmSyRwY'
+import cpmSyRwYy from '@/components/flow/cpemail/cpmSyRwYy'
+import cpmSyRwYn from '@/components/flow/cpemail/cpmSyRwYn'
+import cpmSyRwYnY from '@/components/flow/cpemail/cpmSyRwYnY'
+import cpmSyRwYnN from '@/components/flow/cpemail/cpmSyRwYnN'
+import cpmSyRwN from '@/components/flow/cpemail/cpmSyRwN'
+import cpmSyRwNy from '@/components/flow/cpemail/cpmSyRwNy'
+import cpmSyRwNn from '@/components/flow/cpemail/cpmSyRwNn'
+import cpmSn from '@/components/flow/cpemail/cpmSn'
+// END cPanel Email imported routes
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
+
+    //END Primary Menu Routes
     {
       path: '/',
       name: 'SwatHome',
@@ -145,14 +172,19 @@ export default new Router({
       component: SwatTools
     },
     {
+      path: '/tools/SwatDNS',
+      name: 'SWAT DNS',
+      component: SwatDNS
+    },
+    {
+      path: '/tools/SwatSSL',
+      name: 'SWAT SSL',
+      component: SwatSSL
+    },
+    {
       path: '/SwatLinks',
       name: 'Swat Links',
       component: SwatLinks
-    },
-    {
-      path: '/SwatSettings',
-      name: 'Swat Settings',
-      component: SwatSettings
     },
     {
       path: '/links/HostingLinks',
@@ -165,20 +197,45 @@ export default new Router({
       component: WebsiteLinks
     },
     {
-      path: '/tools/SwatDNS',
-      name: 'SWAT DNS',
-      component: SwatDNS
-    },
-    {
-      path: '/tools/SwatSSL',
-      name: 'SWAT SSL',
-      component: SwatSSL
+      path: '/SwatSettings',
+      name: 'Swat Settings',
+      component: SwatSettings
     },
     {
       path: '/flow/No',
       name: 'No',
       component: No
     },
+    //END Primary Menu Routes
+
+    //BEGIN SWAT Flow pages
+    {
+      path: '/FlowTwo',
+      name: 'Flow Two',
+      component: FlowTwo
+    },
+    {
+      path: '/FlowThree',
+      name: 'Flow Three',
+      component: FlowThree
+    },
+    {
+      path: '/FlowFour',
+      name: 'Flow Four',
+      component: FlowFour
+    },
+    //END SWAT Flow pages
+
+    //BEGIN - cPanel Email Flow
+    {
+      path: '/flow/CpEmail',
+      name: 'CpEmail',
+      component: CpEmail,
+    },
+    //END - cPanel Email Flow
+
+
+    // BEGIN - 500 Error Flow
     {
       path: '/flow/FiveError',
       name: 'FiveError',
@@ -254,6 +311,9 @@ export default new Router({
       name: 'MwpNoFinal',
       component: MwpNoFinal
     },
+    // END - 500 Error Flow
+
+    // BEGIN - 403 Error Flow
     {
       path: '/flow/FourThree',
       name: 'FourThree',
@@ -279,6 +339,9 @@ export default new Router({
       name: 'IndexNo',
       component: IndexNo
     },
+    // END - 403 Error Flow
+
+    // BEGIN - 404 Error Flow
     {
       path: '/flow/FourFour',
       name: 'FourFour',
@@ -329,6 +392,9 @@ export default new Router({
       name: 'WpGeoffNoStop',
       component: WpGeoffNoStop,
     },
+    // END - 404 Error Flow
+
+    // BEGIN - 503 Error Flow
     {
       path: '/flow/FiveThree',
       name: 'FiveThree',
@@ -444,6 +510,9 @@ export default new Router({
       name: 'LinYesN',
       component: LinYesN,
     },
+    // END - 503 Error Flow
+
+    // BEGIN - Form Mail Error Flow
     {
       path: '/flow/FormError',
       name: 'FormError',
@@ -504,8 +573,10 @@ export default new Router({
       name: 'FormNaN',
       component: FormNaN,
     },
+    // END - Form Mail Error Flow
 
-    //BEGIN SSL routes
+
+    //BEGIN - SSL Error Flow
     {
       path: '/flow/SslError',
       name: 'SslError',
@@ -566,7 +637,100 @@ export default new Router({
       name: 'SslNbN',
       component: SslNbN,
     },
-    // END SSL Routes
+    //END - SSL Error Flow
+
+    //BEGIN - cPanel Email Issue Flow
+    {
+      path: '/flow/cpemail/cpmR',
+      name: 'cpmR',
+      component: cpmR,
+    },
+    {
+      path: '/flow/cpemail/cpmRy',
+      name: 'cpmRy',
+      component: cpmRy,
+    },
+    {
+      path: '/flow/cpemail/cpmRn',
+      name: 'cpmRn',
+      component: cpmRn,
+    },
+    {
+      path: '/flow/cpemail/cpmS',
+      name: 'cpmS',
+      component: cpmS,
+    },
+    {
+      path: '/flow/cpemail/cpmSy',
+      name: 'cpmSy',
+      component: cpmSy,
+    },
+    {
+      path: '/flow/cpemail/cpmSyL',
+      name: 'cpmSyL',
+      component: cpmSyL,
+    },
+    {
+      path: '/flow/cpemail/cpmSyR',
+      name: 'cpmSyR',
+      component: cpmSyR,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRc',
+      name: 'cpmSyRc',
+      component: cpmSyRc,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRw',
+      name: 'cpmSyRw',
+      component: cpmSyRw,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwY',
+      name: 'cpmSyRwY',
+      component: cpmSyRwY,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwYy',
+      name: 'cpmSyRwYy',
+      component: cpmSyRwYy,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwYn',
+      name: 'cpmSyRwYn',
+      component: cpmSyRwYn,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwYnY',
+      name: 'cpmSyRwYnY',
+      component: cpmSyRwYnY,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwYnN',
+      name: 'cpmSyRwYnN',
+      component: cpmSyRwYnN,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwN',
+      name: 'cpmSyRwN',
+      component: cpmSyRwN,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwNy',
+      name: 'cpmSyRwNy',
+      component: cpmSyRwNy,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwNn',
+      name: 'cpmSyRwNn',
+      component: cpmSyRwNn,
+    },
+    {
+      path: '/flow/cpemail/cpmSn',
+      name: 'cpmSn',
+      component: cpmSn,
+    },
+    //END - cPanel Email Issue Flow
 
   ]
 })

@@ -203,7 +203,7 @@ footer {
   position: absolute;
   margin: 0px;
   padding: 0px;
-  border-top: 0px solid red;
+  border-top: 0px;
   bottom: 0px;
   height: 70px;
   width: 100%;
@@ -362,6 +362,15 @@ footer {
   top: 10px;
 }
 
+#flow-break {
+  position: relative;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  border-top: 1px solid  hsl(0, 0%, 88%);
+}
+
 #wsod-message {
   position: relative;
   margin: 0px;
@@ -387,6 +396,21 @@ footer {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+#flow-pagi {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+
+  height: 40px;
+  width: 50%;
+  border: 1px solid blue;
+}
+
+
+
+
 /* END | Swat Flow Vue CSS */
 
 /* BEGIN | Swat Note Vue CSS */
@@ -462,6 +486,37 @@ footer {
 
 #deco {
   background-color: #262626;
+}
+
+#warnme {
+  background-color: hsl(348, 100%, 61%);
+  padding: 4px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#flow-toggle {
+  position: absolute;
+  top: 320px;
+  width: 95%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 30px;
+  border: 0px;
+} 
+
+.go-left {
+  left: 0px;
+  float: left;
+}
+
+.go-right {
+  float: right;
+}
+
+#go-hover:hover {
+  color: hsl(141, 71%, 48%)
 }
 /* END | Swat Note Vue CSS */
 
