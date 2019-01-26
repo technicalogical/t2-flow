@@ -15,20 +15,20 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is the customer using <strong>email client</strong> or <strong>webmail</strong>?</p>
+        <p>Can you successfully send an email to yourself from the webmail client?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmSyI" class="button is-light">
+        <router-link to="/flow/cpemail/cpmSyRcY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span>Customer is using <strong>webmail</strong></span>
+          <span><strong>Yes.</strong> Email sent succesfully.</span>
         </router-link>  
-        <router-link to="/flow/cpemail/cpmSyC" class="button is-light">
+        <router-link to="/flow/cpemail/cpmSyRcN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span>Customer is using <strong>email client</strong></span>
+          <span><strong>No.</strong> Email failed to send.</span>
         </router-link>
       </p>
 

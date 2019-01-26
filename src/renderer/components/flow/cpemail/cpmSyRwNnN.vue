@@ -12,12 +12,12 @@
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          		Advise the customer that the email is functioning as intended. They will need to check the junk or spam folder for the recipient account.
+          		At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to a Tier 2 agent.
         </div>
       </article>
       

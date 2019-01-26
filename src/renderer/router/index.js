@@ -127,12 +127,24 @@ import SwatSSL from '@/components/tools/SwatSSL'
 // BEGIN cPanel Email imported routes
 import cpmR from '@/components/flow/cpemail/cpmR'
 import cpmRy from '@/components/flow/cpemail/cpmRy'
+import cpmRyL from '@/components/flow/cpemail/cpmRyL'
+import cpmRyLn from '@/components/flow/cpemail/cpmRyLn'
+import cpmRyLy from '@/components/flow/cpemail/cpmRyLy'
+import cpmRyLyN from '@/components/flow/cpemail/cpmRyLyN'
+import cpmRyLyY from '@/components/flow/cpemail/cpmRyLyY'
+import cpmRyR from '@/components/flow/cpemail/cpmRyR'
 import cpmRn from '@/components/flow/cpemail/cpmRn'
 import cpmS from '@/components/flow/cpemail/cpmS'
 import cpmSy from '@/components/flow/cpemail/cpmSy'
 import cpmSyL from '@/components/flow/cpemail/cpmSyL'
 import cpmSyR from '@/components/flow/cpemail/cpmSyR'
 import cpmSyRc from '@/components/flow/cpemail/cpmSyRc'
+import cpmSyRcNn from '@/components/flow/cpemail/cpmSyRcNn'
+import cpmSyRcNy from '@/components/flow/cpemail/cpmSyRcNy'
+import cpmSyRcNyN from '@/components/flow/cpemail/cpmSyRcNyN'
+import cpmSyRcNyY from '@/components/flow/cpemail/cpmSyRcNyY'
+import cpmSyRcN from '@/components/flow/cpemail/cpmSyRcN'
+import cpmSyRcY from '@/components/flow/cpemail/cpmSyRcY'
 import cpmSyRw from '@/components/flow/cpemail/cpmSyRw'
 import cpmSyRwY from '@/components/flow/cpemail/cpmSyRwY'
 import cpmSyRwYy from '@/components/flow/cpemail/cpmSyRwYy'
@@ -141,7 +153,11 @@ import cpmSyRwYnY from '@/components/flow/cpemail/cpmSyRwYnY'
 import cpmSyRwYnN from '@/components/flow/cpemail/cpmSyRwYnN'
 import cpmSyRwN from '@/components/flow/cpemail/cpmSyRwN'
 import cpmSyRwNy from '@/components/flow/cpemail/cpmSyRwNy'
+import cpmSyRwNyN from '@/components/flow/cpemail/cpmSyRwNyN'
+import cpmSyRwNyY from '@/components/flow/cpemail/cpmSyRwNyY'
 import cpmSyRwNn from '@/components/flow/cpemail/cpmSyRwNn'
+import cpmSyRwNnY from '@/components/flow/cpemail/cpmSyRwNnY'
+import cpmSyRwNnN from '@/components/flow/cpemail/cpmSyRwNnN'
 import cpmSn from '@/components/flow/cpemail/cpmSn'
 // END cPanel Email imported routes
 
@@ -651,6 +667,36 @@ export default new Router({
       component: cpmRy,
     },
     {
+      path: '/flow/cpemail/cpmRyL',
+      name: 'cpmRyL',
+      component: cpmRyL,
+    },
+    {
+      path: '/flow/cpemail/cpmRyLn',
+      name: 'cpmRyLn',
+      component: cpmRyLn,
+    },
+    {
+      path: '/flow/cpemail/cpmRyLy',
+      name: 'cpmRyLy',
+      component: cpmRyLy,
+    },
+    {
+      path: '/flow/cpemail/cpmRyLyN',
+      name: 'cpmRyLyN',
+      component: cpmRyLyN,
+    },
+    {
+      path: '/flow/cpemail/cpmRyLyY',
+      name: 'cpmRyLyY',
+      component: cpmRyLyY,
+    },
+    {
+      path: '/flow/cpemail/cpmRyR',
+      name: 'cpmRyR',
+      component: cpmRyR,
+    },
+    {
       path: '/flow/cpemail/cpmRn',
       name: 'cpmRn',
       component: cpmRn,
@@ -679,6 +725,36 @@ export default new Router({
       path: '/flow/cpemail/cpmSyRc',
       name: 'cpmSyRc',
       component: cpmSyRc,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcN',
+      name: 'cpmSyRcN',
+      component: cpmSyRcN,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNn',
+      name: 'cpmSyRcNn',
+      component: cpmSyRcNn,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNy',
+      name: 'cpmSyRcNy',
+      component: cpmSyRcNy,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNyY',
+      name: 'cpmSyRcNyY',
+      component: cpmSyRcNyY,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNyN',
+      name: 'cpmSyRcNyN',
+      component: cpmSyRcNyN,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcY',
+      name: 'cpmSyRcY',
+      component: cpmSyRcY,
     },
     {
       path: '/flow/cpemail/cpmSyRw',
@@ -716,9 +792,34 @@ export default new Router({
       component: cpmSyRwN,
     },
     {
+      path: '/flow/cpemail/cpmSyRwNn',
+      name: 'cpmSyRwNn',
+      component: cpmSyRwNn,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwNnY',
+      name: 'cpmSyRwNnY',
+      component: cpmSyRwNnY,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwNnN',
+      name: 'cpmSyRwNnN',
+      component: cpmSyRwNnN,
+    },
+    {
       path: '/flow/cpemail/cpmSyRwNy',
       name: 'cpmSyRwNy',
       component: cpmSyRwNy,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwNyN',
+      name: 'cpmSyRwNyN',
+      component: cpmSyRwNyN,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRwNyY',
+      name: 'cpmSyRwNyY',
+      component: cpmSyRwNyY,
     },
     {
       path: '/flow/cpemail/cpmSyRwNn',

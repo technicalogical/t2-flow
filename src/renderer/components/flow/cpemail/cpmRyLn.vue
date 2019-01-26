@@ -17,13 +17,13 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          			Advise the customer that they will need to complete the steps required to have the "bad account" status removed.
+          	At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to a Tier 2 agent.
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmSyRwNn" class="button is-small is-info">
+        <router-link to="/flow/cpemail/cpmRyL" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

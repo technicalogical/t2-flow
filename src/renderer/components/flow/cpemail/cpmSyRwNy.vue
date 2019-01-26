@@ -18,13 +18,13 @@
         <p>Have they completed all the steps <strong>required</strong> in order to have the limit removed?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmSyRwNyN" class="button is-light">
+        <router-link to="/flow/cpemail/cpmSyRwNyY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
           <span><strong>Yes.</strong> They are being rate limited.</span>
         </router-link>  
-        <router-link to="/flow/cpemail/cpmSyRwNyY" class="button is-light">
+        <router-link to="/flow/cpemail/cpmSyRwNyN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>

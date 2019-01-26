@@ -15,26 +15,26 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is <strong>MX entry (email routing)</strong> set to "local mail exchanger"?</p>
+        <p>Have they completed all the steps required in order to have the limit removed?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmRyR" class="button is-light">
+        <router-link to="/flow/cpemail/cpmSyRcNyY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span>This is set to <strong>remote</strong></span>
+          <span><strong>Yes.</strong> They have.</span>
         </router-link>  
-        <router-link to="/flow/cpemail/cpmRyL" class="button is-light">
+        <router-link to="/flow/cpemail/cpmSyRcNyN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span>This is set to <strong>local</strong></span>
+          <span><strong>No.</strong> They have not.</span>
         </router-link>
       </p>
 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmR" class="button is-small is-info">
+        <router-link to="/flow/cpemail/cpmSyRcN" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

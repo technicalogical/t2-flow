@@ -17,13 +17,13 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          			Advise the customer that they will need to complete the steps required to have the "bad account" status removed.
+          		Advise the customer they will need to complete all of the steps before we can remove the limit. They will need to call back when that is completed.
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmSyRwNn" class="button is-small is-info">
+        <router-link to="/flow/cpemail/cpmSyRcNy" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
