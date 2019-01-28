@@ -31,7 +31,7 @@
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
           <a class="icon" title="SWAT Links"><router-link class="fas fa-link" to="/SwatLinks"></router-link></a>
           <a href="http://www.x.co/webcrm" target="_blank" class="icon" title="Launch CRM"><li class="fas fa-search"></li></a>
-          <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li class="far fa-clock"></li></a>
+          <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li><img src="../renderer/assets/icons/png/workday.png"></li></a>
         </ul>  
       </nav>
       <!-- END Dropdown navigation section -->

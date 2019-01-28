@@ -57,23 +57,23 @@
             </span>
             <span><strong>cPanel</strong> Email issues</span>
           </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+          <router-link to="/flow/Ftp" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
+            <span><strong>FTP</strong> Support</span>
           </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+          <router-link to="/flow/Malware" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
+            <span>Identifying <strong>Malware</strong></span>
           </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+          <router-link to="/flow/Splunk" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
+            <span><strong>SPLUNK</strong> Usage</span>
           </router-link>
         </p>
       </div> 
@@ -108,14 +108,16 @@
 
     
     <router-view/>
-    <!-- BEGIN Flow pagination
-      <div id="flow-pagi" class="pagidot ">
-        <ul>
-          <li></li>
-          <li></li>
+    <!-- BEGIN Flow pagination -->
+      <div id="flow-pagi" class="pagidot pagination-wrapper">
+        <ul class="pagination">
+          <li><router-link to="/SwatFlow" class="active"></router-link></li>
+          <li><router-link to="/FlowTwo"></router-link></li>
+          <li><router-link to="/FlowThree"></router-link></li>
+          <li><router-link to="/FlowFour"></router-link></li>
         </ul>
       </div>
-     END - Flow gaination -->
+    <!-- END - Flow gaination -->
   </div>
   <!-- END - Primary application deck -->
   

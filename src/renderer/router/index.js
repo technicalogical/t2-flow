@@ -17,11 +17,13 @@ import FourThree from '@/components/flow/FourThree'
 import FourFour from '@/components/flow/FourFour'
 import FiveThree from '@/components/flow/FiveThree'
 import FormError from '@/components/flow/FormError'
-import No from '@/components/flow/No'
+import CpEmail from '@/components/flow/CpEmail'
+import Ftp from '@/components/flow/Ftp'
+import Splunk from '@/components/flow/Splunk'
+import Malware from '@/components/flow/Malware'
 import FlowTwo from '@/components/FlowTwo'
 import FlowThree from '@/components/FlowThree'
 import FlowFour from '@/components/FlowFour'
-import CpEmail from '@/components/flow/CpEmail'
 //SWAT Flow main menu routes
 
 // BEGIN Form Mail error imported routes
@@ -161,6 +163,51 @@ import cpmSyRwNnN from '@/components/flow/cpemail/cpmSyRwNnN'
 import cpmSn from '@/components/flow/cpemail/cpmSn'
 // END cPanel Email imported routes
 
+// BEGIN FTP Support imported routes
+import Cftp from '@/components/flow/ftp/create/Cftp'
+import CftpL from '@/components/flow/ftp/create/CftpL'
+import CftpLc from '@/components/flow/ftp/create/CftpLc'
+import CftpLf from '@/components/flow/ftp/create/CftpLf'
+import CftpW from '@/components/flow/ftp/create/CftpW'
+import CftpWp from '@/components/flow/ftp/create/CftpWp'
+import CftpWf from '@/components/flow/ftp/create/CftpWf'
+import CftpM from '@/components/flow/ftp/create/CftpM'
+import Tftp from '@/components/flow/ftp/troubleshoot/Tftp'
+import TftpY from '@/components/flow/ftp/troubleshoot/TftpY'
+import TftpYn from '@/components/flow/ftp/troubleshoot/TftpYn'
+import TftpYnY from '@/components/flow/ftp/troubleshoot/TftpYnY'
+import TftpYnN from '@/components/flow/ftp/troubleshoot/TftpYnN'
+import TftpYnNa from '@/components/flow/ftp/troubleshoot/TftpYnNa'
+import TftpYnNb from '@/components/flow/ftp/troubleshoot/TftpYnNb'
+import TftpYy from '@/components/flow/ftp/troubleshoot/TftpYy'
+import TftpN from '@/components/flow/ftp/troubleshoot/TftpN'
+import TftpNy from '@/components/flow/ftp/troubleshoot/TftpNy'
+import TftpNn from '@/components/flow/ftp/troubleshoot/TftpNn'
+import TftpNnY from '@/components/flow/ftp/troubleshoot/TftpNnY'
+import TftpNnN from '@/components/flow/ftp/troubleshoot/TftpNnN'
+import TftpNnNy from '@/components/flow/ftp/troubleshoot/TftpNnNy'
+import TftpNnNn from '@/components/flow/ftp/troubleshoot/TftpNnNn'
+import TftpNnNnN from '@/components/flow/ftp/troubleshoot/TftpNnNnN'
+import TftpNnNnNa from '@/components/flow/ftp/troubleshoot/TftpNnNnNa'
+import TftpNnNnNb from '@/components/flow/ftp/troubleshoot/TftpNnNnNb'
+import TftpNnNnY from '@/components/flow/ftp/troubleshoot/TftpNnNnY'
+// END FTP Support imported routes
+
+// BEGIN Identifying Malware imported routes
+import MalY from '@/components/flow/malware/MalY'
+import MalN from '@/components/flow/malware/MalN'
+import MalNy from '@/components/flow/malware/MalNy'
+import MalNn from '@/components/flow/malware/MalNn'
+// END Identifying Malware imported routes
+
+// BEGIN SPlunk usage imported routes
+import SplunkA from '@/components/flow/splunk/SplunkA'
+import SplunkC from '@/components/flow/splunk/SplunkC'
+import SplunkCy from '@/components/flow/splunk/SplunkCy'
+import SplunkCn from '@/components/flow/splunk/SplunkCn'
+import SplunkD from '@/components/flow/splunk/SplunkD'
+// END SPlunk usage imported routes
+
 Vue.use(Router)
 
 export default new Router({
@@ -217,11 +264,6 @@ export default new Router({
       name: 'Swat Settings',
       component: SwatSettings
     },
-    {
-      path: '/flow/No',
-      name: 'No',
-      component: No
-    },
     //END Primary Menu Routes
 
     //BEGIN SWAT Flow pages
@@ -242,12 +284,7 @@ export default new Router({
     },
     //END SWAT Flow pages
 
-    //BEGIN - cPanel Email Flow
-    {
-      path: '/flow/CpEmail',
-      name: 'CpEmail',
-      component: CpEmail,
-    },
+    
     //END - cPanel Email Flow
 
 
@@ -655,7 +692,12 @@ export default new Router({
     },
     //END - SSL Error Flow
 
-    //BEGIN - cPanel Email Issue Flow
+    //BEGIN - cPanel Email Flow
+    {
+      path: '/flow/CpEmail',
+      name: 'CpEmail',
+      component: CpEmail,
+    },
     {
       path: '/flow/cpemail/cpmR',
       name: 'cpmR',
@@ -833,5 +875,208 @@ export default new Router({
     },
     //END - cPanel Email Issue Flow
 
+    //BEGIN - FTP Support Flow
+    {
+      path: '/flow/Ftp',
+      name: 'Ftp',
+      component: Ftp,
+    },
+    {
+      path: '/flow/ftp/create/Cftp',
+      name: 'Cftp',
+      component: Cftp,
+    },
+    {
+      path: '/flow/ftp/create/CftpL',
+      name: 'CftpL',
+      component: CftpL,
+    },
+    {
+      path: '/flow/ftp/create/CftpLc',
+      name: 'CftpLc',
+      component: CftpLc,
+    },
+    {
+      path: '/flow/ftp/create/CftpLf',
+      name: 'CftpLf',
+      component: CftpLf,
+    },
+    {
+      path: '/flow/ftp/create/CftpW',
+      name: 'CftpW',
+      component: CftpW,
+    },
+    {
+      path: '/flow/ftp/create/CftpWp',
+      name: 'CftpWp',
+      component: CftpWp,
+    },
+    {
+      path: '/flow/ftp/create/CftpWf',
+      name: 'CftpWf',
+      component: CftpWf,
+    },
+    {
+      path: '/flow/ftp/create/CftpM',
+      name: 'CftpM',
+      component: CftpM,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/Tftp',
+      name: 'Tftp',
+      component: Tftp,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpY',
+      name: 'TftpY',
+      component: TftpY,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpYy',
+      name: 'TftpYy',
+      component: TftpYy,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpYn',
+      name: 'TftpYn',
+      component: TftpYn,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpYnY',
+      name: 'TftpYnY',
+      component: TftpYnY,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpYnN',
+      name: 'TftpYnN',
+      component: TftpYnN,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpYnNa',
+      name: 'TftpYnNa',
+      component: TftpYnNa,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpYnNb',
+      name: 'TftpYnNb',
+      component: TftpYnNb,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpN',
+      name: 'TftpN',
+      component: TftpN,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNy',
+      name: 'TftpNy',
+      component: TftpNy,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNn',
+      name: 'TftpNn',
+      component: TftpNn,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnY',
+      name: 'TftpNnY',
+      component: TftpNnY,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnN',
+      name: 'TftpNnN',
+      component: TftpNnN,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnNy',
+      name: 'TftpNnNy',
+      component: TftpNnNy,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnNn',
+      name: 'TftpNnNn',
+      component: TftpNnNn,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnNnY',
+      name: 'TftpNnNnY',
+      component: TftpNnNnY,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnNnN',
+      name: 'TftpNnNnN',
+      component: TftpNnNnN,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnNnNa',
+      name: 'TftpNnNnNa',
+      component: TftpNnNnNa,
+    },
+    {
+      path: '/flow/ftp/troubleshoot/TftpNnNnNb',
+      name: 'TftpNnNnNb',
+      component: TftpNnNnNb,
+    },
+    //END - FTP Support Flow
+
+    //BEGIN - Malware Support Flow
+    {
+      path: '/flow/Malware',
+      name: 'Malware',
+      component: Malware,
+    },
+    {
+      path: '/flow/malware/MalY',
+      name: 'MalY',
+      component: MalY,
+    },
+    {
+      path: '/flow/malware/MalN',
+      name: 'MalN',
+      component: MalN,
+    },
+    {
+      path: '/flow/malware/MalNy',
+      name: 'MalNy',
+      component: MalNy,
+    },
+    {
+      path: '/flow/malware/MalNn',
+      name: 'MalNn',
+      component: MalNn,
+    },
+    //END - Malware Support Flow
+
+    //BEGIN - Splunk Flow
+    {
+      path: '/flow/Splunk',
+      name: 'Splunk',
+      component: Splunk,
+    },
+    {
+      path: '/flow/splunk/SplunkC',
+      name: 'SplunkC',
+      component: SplunkC,
+    },
+    {
+      path: '/flow/splunk/SplunkCy',
+      name: 'SplunkCy',
+      component: SplunkCy,
+    },
+    {
+      path: '/flow/splunk/SplunkCn',
+      name: 'SplunkCn',
+      component: SplunkCn,
+    },
+    {
+      path: '/flow/splunk/SplunkA',
+      name: 'SplunkA',
+      component: SplunkA,
+    },
+    {
+      path: '/flow/splunk/SplunkD',
+      name: 'SplunkD',
+      component: SplunkD,
+    },
+    //END - Splunk Flow
   ]
 })

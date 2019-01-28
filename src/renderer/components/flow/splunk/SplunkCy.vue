@@ -4,7 +4,7 @@
     <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-small has-text-centered">
       <div class="notification is-dark">
-         <strong>cPanel Email Issues</strong>
+          <strong>Splunk</strong> log usage
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -17,13 +17,13 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          		Advise the customer to update the DNS to match that of the cPanel hosting platform. This will resolve this issue for the customer.
+          <p>The remote host is not responding. Advise the customer to reach out to the recipient mail provider for further troubleshooting. Everything is working as intended on this end.</p>
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmR" class="button is-small is-info">
+        <router-link to="/flow/splunk/SplunkC" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

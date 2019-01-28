@@ -108,14 +108,16 @@
 
     
     <router-view/>
-    <!-- BEGIN Flow pagination
-      <div id="flow-pagi" class="pagidot ">
-        <ul>
-          <li></li>
-          <li></li>
+    <!-- BEGIN Flow pagination -->
+      <div id="flow-pagi" class="pagidot pagination-wrapper">
+        <ul class="pagination">
+          <li><router-link to="/SwatFlow"></router-link></li>
+          <li><router-link to="/FlowTwo" class="active"></router-link></li>
+          <li><router-link to="/FlowThree"></router-link></li>
+          <li><router-link to="/FlowFour"></router-link></li>
         </ul>
       </div>
-     END - Flow gaination -->
+    <!-- END - Flow pagination -->
   </div>
   <!-- END - Primary application deck -->
   

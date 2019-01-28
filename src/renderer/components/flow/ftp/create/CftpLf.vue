@@ -4,7 +4,7 @@
     <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-small has-text-centered">
       <div class="notification is-dark">
-         <strong>cPanel Email Issues</strong>
+         <strong>FTP</strong> (File Transfer Protocol) Support
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -12,18 +12,22 @@
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>Create 4gh FTP User</strong>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          		Advise the customer to update the DNS to match that of the cPanel hosting platform. This will resolve this issue for the customer.
+          <p>From the Hosting Details page go to FTP Users. Here the customer will be able to create additional FTP users.</p>
         </div>
       </article>
-      
+      <article class="message is-danger is-small">
+        <div class="message-body">
+          <p>This will trigger an Orion event. Advise the customer of the expected time frame for completion of this process.</p>
+        </div>
+      </article> 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmR" class="button is-small is-info">
+        <router-link to="/flow/ftp/create/CftpL" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
