@@ -36,6 +36,12 @@
             </span>
             <span>It shows <strong>ACCEPTED</strong>.</span>
           </router-link>
+          <router-link to="/flow/splunk/SplunkP" class="button is-light">
+            <span class="icon has-text-success">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            <span>It shows <strong>PERM-ERR</strong>.</span>
+          </router-link>
         </p>
       
         <!-- BEGIN - Back button -->

@@ -6,7 +6,7 @@
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="content is-small">
       <div class="notification is-dark">
-        <strong>S.W.A.T.</strong> More Flows
+        <center><strong>S.W.A.T.</strong> Check Flows</center>
       </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
@@ -15,65 +15,11 @@
     <div class="content" id="flow">
       <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <router-link to="/flow/FiveError" class="button is-dark is-small">
+          <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>500 Error</strong></span>
-          </router-link>  
-          <router-link to="/flow/FourThree" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>403</strong> Site Error</span>
-          </router-link>
-          <router-link to="/flow/FourFour" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>404</strong> Site Error</span>
-          </router-link>
-          <router-link to="/flow/FiveThree" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>503</strong> Error</span>
-          </router-link>
-          <router-link to="/flow/FormError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>Form Mail</strong> Issues</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>SSL</strong> Errors</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>New</strong> Flow</span>
+            <span>Server <strong>Uptime</strong> Check</span>
           </router-link>
         </p>
       </div> 

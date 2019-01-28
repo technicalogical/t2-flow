@@ -202,11 +202,97 @@ import MalNn from '@/components/flow/malware/MalNn'
 
 // BEGIN SPlunk usage imported routes
 import SplunkA from '@/components/flow/splunk/SplunkA'
+import SplunkAy from '@/components/flow/splunk/SplunkAy'
+import SplunkAn from '@/components/flow/splunk/SplunkAn'
 import SplunkC from '@/components/flow/splunk/SplunkC'
 import SplunkCy from '@/components/flow/splunk/SplunkCy'
 import SplunkCn from '@/components/flow/splunk/SplunkCn'
 import SplunkD from '@/components/flow/splunk/SplunkD'
+import SplunkDy from '@/components/flow/splunk/SplunkDy'
+import SplunkDyY from '@/components/flow/splunk/SplunkDyY'
+import SplunkDyN from '@/components/flow/splunk/SplunkDyN'
+import SplunkDn from '@/components/flow/splunk/SplunkDn'
+import SplunkDnB from '@/components/flow/splunk/SplunkDnB'
+import SplunkDnC from '@/components/flow/splunk/SplunkDnC'
+import SplunkDnD from '@/components/flow/splunk/SplunkDnD'
+import SplunkDnS from '@/components/flow/splunk/SplunkDnS'
+import SplunkP from '@/components/flow/splunk/SplunkP'
 // END SPlunk usage imported routes
+
+// BEGIN Debug mode imported routes
+import Debug from '@/components/flow/howto/debugmode/Debug'
+import DebugC from '@/components/flow/howto/debugmode/DebugC'
+import DebugCy from '@/components/flow/howto/debugmode/DebugCy'
+import DebugCn from '@/components/flow/howto/debugmode/DebugCn'
+import DebugCnY from '@/components/flow/howto/debugmode/DebugCnY'
+import DebugCnN from '@/components/flow/howto/debugmode/DebugCnN'
+import DebugF from '@/components/flow/howto/debugmode/DebugF'
+import DebugM from '@/components/flow/howto/debugmode/DebugM'
+import DebugW from '@/components/flow/howto/debugmode/DebugW'
+import DebugWf from '@/components/flow/howto/debugmode/DebugWf'
+import DebugWfY from '@/components/flow/howto/debugmode/DebugWfY'
+import DebugWfN from '@/components/flow/howto/debugmode/DebugWfN'
+import DebugWp from '@/components/flow/howto/debugmode/DebugWp'
+import DebugWpY from '@/components/flow/howto/debugmode/DebugWpY'
+import DebugWpN from '@/components/flow/howto/debugmode/DebugWpN'
+//END Debug mode imported routes
+
+// BEGIN Server uptime imported routes
+import Uptime from '@/components/flow/howto/uptime/Uptime'
+import UptimeL from '@/components/flow/howto/uptime/UptimeL'
+import UptimeLs from '@/components/flow/howto/uptime/UptimeLs'
+import UptimeLsY from '@/components/flow/howto/uptime/UptimeLsY'
+import UptimeLsYy from '@/components/flow/howto/uptime/UptimeLsYy'
+import UptimeLsYn from '@/components/flow/howto/uptime/UptimeLsYn'
+import UptimeLsN from '@/components/flow/howto/uptime/UptimeLsN'
+import UptimeLsNy from '@/components/flow/howto/uptime/UptimeLsNy'
+import UptimeLsNn from '@/components/flow/howto/uptime/UptimeLsNn'
+import UptimeLsNnY from '@/components/flow/howto/uptime/UptimeLsNnY'
+import UptimeLsNnN from '@/components/flow/howto/uptime/UptimeLsNnN'
+import UptimeLv from '@/components/flow/howto/uptime/UptimeLv'
+import UptimeLvY from '@/components/flow/howto/uptime/UptimeLvY'
+import UptimeLvN from '@/components/flow/howto/uptime/UptimeLvN'
+import UptimeLvNy from '@/components/flow/howto/uptime/UptimeLvNy'
+import UptimeLvNn from '@/components/flow/howto/uptime/UptimeLvNn'
+import UptimeLvNnY from '@/components/flow/howto/uptime/UptimeLvNnY'
+import UptimeLvNnN from '@/components/flow/howto/uptime/UptimeLvNnN'
+import UptimeW from '@/components/flow/howto/uptime/UptimeW'
+import UptimeWs from '@/components/flow/howto/uptime/UptimeWs'
+import UptimeWv from '@/components/flow/howto/uptime/UptimeWv'
+import UptimeWvY from '@/components/flow/howto/uptime/UptimeWvY'
+import UptimeWvN from '@/components/flow/howto/uptime/UptimeWvN'
+import UptimeWvNy from '@/components/flow/howto/uptime/UptimeWvNy'
+import UptimeWvNn from '@/components/flow/howto/uptime/UptimeWvNn'
+import UptimeWvNnY from '@/components/flow/howto/uptime/UptimeWvNnY'
+import UptimeWvNnN from '@/components/flow/howto/uptime/UptimeWvNnN'
+// END Server uptime imported routes
+
+// BEGIN Sucuri tickets imported routes
+import Sucuri from '@/components/flow/howto/sucuri/Sucuri'
+import SucuriB from '@/components/flow/howto/sucuri/SucuriB'
+import SucuriC from '@/components/flow/howto/sucuri/SucuriC'
+import SucuriCy from '@/components/flow/howto/sucuri/SucuriCy'
+import SucuriCyY from '@/components/flow/howto/sucuri/SucuriCyY'
+import SucuriCyN from '@/components/flow/howto/sucuri/SucuriCyN'
+import SucuriCyNy from '@/components/flow/howto/sucuri/SucuriCyNy'
+import SucuriCyNn from '@/components/flow/howto/sucuri/SucuriCyNn'
+import SucuriCn from '@/components/flow/howto/sucuri/SucuriCn'
+import SucuriF from '@/components/flow/howto/sucuri/SucuriF'
+import SucuriFy from '@/components/flow/howto/sucuri/SucuriFy'
+import SucuriFyY from '@/components/flow/howto/sucuri/SucuriFyY'
+import SucuriFyYy from '@/components/flow/howto/sucuri/SucuriFyYy'
+import SucuriFyYyY from '@/components/flow/howto/sucuri/SucuriFyYyY'
+import SucuriFyYyN from '@/components/flow/howto/sucuri/SucuriFyYyN'
+import SucuriFyYn from '@/components/flow/howto/sucuri/SucuriFyYn'
+import SucuriFyYnY from '@/components/flow/howto/sucuri/SucuriFyYnY'
+import SucuriFyYnN from '@/components/flow/howto/sucuri/SucuriFyYnN'
+import SucuriFyN from '@/components/flow/howto/sucuri/SucuriFyN'
+import SucuriFn from '@/components/flow/howto/sucuri/SucuriFn'
+// END Sucuri tickets imported routes
+
+// BEGIN WPPS imported routes
+import Wpps from '@/components/flow/howto/wpps/Wpps'
+// END WPPS imported routes
 
 Vue.use(Router)
 
@@ -1073,10 +1159,392 @@ export default new Router({
       component: SplunkA,
     },
     {
+      path: '/flow/splunk/SplunkAy',
+      name: 'SplunkAy',
+      component: SplunkAy,
+    },
+    {
+      path: '/flow/splunk/SplunkAn',
+      name: 'SplunkAn',
+      component: SplunkAn,
+    },
+    {
       path: '/flow/splunk/SplunkD',
       name: 'SplunkD',
       component: SplunkD,
     },
+    {
+      path: '/flow/splunk/SplunkDy',
+      name: 'SplunkDy',
+      component: SplunkDy,
+    },
+    {
+      path: '/flow/splunk/SplunkDyY',
+      name: 'SplunkDyY',
+      component: SplunkDyY,
+    },
+    {
+      path: '/flow/splunk/SplunkDyN',
+      name: 'SplunkDyN',
+      component: SplunkDyN,
+    },
+    {
+      path: '/flow/splunk/SplunkDn',
+      name: 'SplunkDn',
+      component: SplunkDn,
+    },
+    {
+      path: '/flow/splunk/SplunkDnB',
+      name: 'SplunkDnB',
+      component: SplunkDnB,
+    },
+    {
+      path: '/flow/splunk/SplunkDnC',
+      name: 'SplunkDnC',
+      component: SplunkDnC,
+    },
+    {
+      path: '/flow/splunk/SplunkDnD',
+      name: 'SplunkDnD',
+      component: SplunkDnD,
+    },
+    {
+      path: '/flow/splunk/SplunkDnS',
+      name: 'SplunkDnS',
+      component: SplunkDnS,
+    },
+    {
+      path: '/flow/splunk/SplunkP',
+      name: 'SplunkP',
+      component: SplunkP,
+    },
     //END - Splunk Flow
+
+    // BEGIN - Debug mode Flow
+    {
+      path: '/flow/howto/debugmode/Debug',
+      name: 'Debug',
+      component: Debug,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugC',
+      name: 'DebugC',
+      component: DebugC,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugCy',
+      name: 'DebugCy',
+      component: DebugCy,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugCn',
+      name: 'DebugCn',
+      component: DebugCn,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugCnY',
+      name: 'DebugCnY',
+      component: DebugCnY,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugCnN',
+      name: 'DebugCnN',
+      component: DebugCnN,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugF',
+      name: 'DebugF',
+      component: DebugF,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugM',
+      name: 'DebugM',
+      component: DebugM,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugW',
+      name: 'DebugW',
+      component: DebugW,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugWf',
+      name: 'DebugWf',
+      component: DebugWf,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugWfY',
+      name: 'DebugWfY',
+      component: DebugWfY,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugWfN',
+      name: 'DebugWfN',
+      component: DebugWfN,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugWp',
+      name: 'DebugWp',
+      component: DebugWp,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugWpY',
+      name: 'DebugWpY',
+      component: DebugWpY,
+    },
+    {
+      path: '/flow/howto/debugmode/DebugWpN',
+      name: 'DebugWpN',
+      component: DebugWpN,
+    },
+    // END - Debug mode Flow
+
+    // BEGIN - Server Uptime Flow
+    {
+      path: '/flow/howto/uptime/Uptime',
+      name: 'Uptime',
+      component: Uptime,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeL',
+      name: 'UptimeL',
+      component: UptimeL,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLs',
+      name: 'UptimeLs',
+      component: UptimeLs,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsY',
+      name: 'UptimeLsY',
+      component: UptimeLsY,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsYy',
+      name: 'UptimeLsYy',
+      component: UptimeLsYy,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsYn',
+      name: 'UptimeLsYn',
+      component: UptimeLsYn,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsN',
+      name: 'UptimeLsN',
+      component: UptimeLsN,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsNy',
+      name: 'UptimeLsNy',
+      component: UptimeLsNy,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsNn',
+      name: 'UptimeLsNn',
+      component: UptimeLsNn,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsNnY',
+      name: 'UptimeLsNnY',
+      component: UptimeLsNnY,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLsNnN',
+      name: 'UptimeLsNnN',
+      component: UptimeLsNnN,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLv',
+      name: 'UptimeLv',
+      component: UptimeLv,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLvY',
+      name: 'UptimeLvY',
+      component: UptimeLvY,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLvN',
+      name: 'UptimeLvN',
+      component: UptimeLvN,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLvNy',
+      name: 'UptimeLvNy',
+      component: UptimeLvNy,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLvNn',
+      name: 'UptimeLvNn',
+      component: UptimeLvNn,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLvNnY',
+      name: 'UptimeLvNnY',
+      component: UptimeLvNnY,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeLvNnN',
+      name: 'UptimeLvNnN',
+      component: UptimeLvNnN,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeW',
+      name: 'UptimeW',
+      component: UptimeW,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWs',
+      name: 'UptimeWs',
+      component: UptimeWs,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWv',
+      name: 'UptimeWv',
+      component: UptimeWv,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWvY',
+      name: 'UptimeWvY',
+      component: UptimeWvY,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWvN',
+      name: 'UptimeWvN',
+      component: UptimeWvN,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWvNy',
+      name: 'UptimeWvNy',
+      component: UptimeWvNy,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWvNn',
+      name: 'UptimeWvNn',
+      component: UptimeWvNn,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWvNnY',
+      name: 'UptimeWvNnY',
+      component: UptimeWvNnY,
+    },
+    {
+      path: '/flow/howto/uptime/UptimeWvNnN',
+      name: 'UptimeWvNnN',
+      component: UptimeWvNnN,
+    },
+    // END - Server Uptime Flow
+
+    // BEGIN- Sucuri ticket Flow
+    {
+      path: '/flow/howto/sucuri/Sucuri',
+      name: 'Sucuri',
+      component: Sucuri,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriB',
+      name: 'SucuriB',
+      component: SucuriB,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriC',
+      name: 'SucuriC',
+      component: SucuriC,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriCy',
+      name: 'SucuriCy',
+      component: SucuriCy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriCyY',
+      name: 'SucuriCyY',
+      component: SucuriCyY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriCyN',
+      name: 'SucuriCyN',
+      component: SucuriCyN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriCyNy',
+      name: 'SucuriCyNy',
+      component: SucuriCyNy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriCyNn',
+      name: 'SucuriCyNn',
+      component: SucuriCyNn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriCn',
+      name: 'SucuriCn',
+      component: SucuriCn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriF',
+      name: 'SucuriF',
+      component: SucuriF,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFy',
+      name: 'SucuriFy',
+      component: SucuriFy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyY',
+      name: 'SucuriFyY',
+      component: SucuriFyY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyYy',
+      name: 'SucuriFyYy',
+      component: SucuriFyYy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyYyY',
+      name: 'SucuriFyYyY',
+      component: SucuriFyYyY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyYyN',
+      name: 'SucuriFyYyN',
+      component: SucuriFyYyN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyYn',
+      name: 'SucuriFyYn',
+      component: SucuriFyYn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyYnY',
+      name: 'SucuriFyYnY',
+      component: SucuriFyYnY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyYnN',
+      name: 'SucuriFyYnN',
+      component: SucuriFyYnN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFyN',
+      name: 'SucuriFyN',
+      component: SucuriFyN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriFn',
+      name: 'SucuriFn',
+      component: SucuriFn,
+    },
+    // END - Sucuri ticket Flow
+
+    // BEGIN - WPPS Flow
+    {
+      path: '/flow/howto/wpps/Wpps',
+      name: 'Wpps',
+      component: Wpps,
+    },
+    // END - WPPS Flow
   ]
 })

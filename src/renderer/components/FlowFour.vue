@@ -15,42 +15,6 @@
     <div class="content" id="flow">
       <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <router-link to="/flow/FiveError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>500 Error</strong></span>
-          </router-link>  
-          <router-link to="/flow/FourThree" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>403</strong> Site Error</span>
-          </router-link>
-          <router-link to="/flow/FourFour" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>404</strong> Site Error</span>
-          </router-link>
-          <router-link to="/flow/FiveThree" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>503</strong> Error</span>
-          </router-link>
-          <router-link to="/flow/FormError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>Form Mail</strong> Issues</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>SSL</strong> Errors</span>
-          </router-link>
           <router-link to="/flow/SslError" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>

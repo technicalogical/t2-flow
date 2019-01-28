@@ -15,26 +15,38 @@
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>The message was accepted on our relay servers and was sent. Does <strong>Splunk</strong> also show a message with the action <strong>"DELIVERED"</strong> above it?</p>
+        <p>What is the "reason" that is displayed in the logs?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/splunk/SplunkAy" class="button is-light">
+          <router-link to="/flow/splunk/SplunkDnB" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>it shows <strong>DELIVERED</strong>.</span>
+            <span>It shows <strong>BAD-ACCT</strong>.</span>
           </router-link>  
-          <router-link to="/flow/splunk/SplunkAn" class="button is-light">
+          <router-link to="/flow/splunk/SplunkDnC" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It does not show <strong>DELIVERED</strong>.</span>
+            <span>It shows <strong>CMAE-SPAM</strong>.</span>
+          </router-link>
+          <router-link to="/flow/splunk/SplunkDnS" class="button is-light">
+            <span class="icon has-text-success">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            <span>It shows <strong>BAD-SUB / BAD-SUB-HASH</strong>.</span>
+          </router-link>
+          <router-link to="/flow/splunk/SplunkDnD" class="button is-light">
+            <span class="icon has-text-success">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            <span>It shows <strong>BAD-DOMAIN</strong>.</span>
           </router-link>
         </p>
       
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/flow/Splunk" class="button is-small is-info">
+          <router-link to="/flow/splunk/SplunkD" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
