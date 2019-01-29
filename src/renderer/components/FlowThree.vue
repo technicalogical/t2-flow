@@ -21,6 +21,18 @@
             </span>
             <span>Server <strong>Uptime</strong> Check</span>
           </router-link>
+          <router-link to="/flow/mwp/Migsync" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>MWP</strong> Migration/Sync</span>
+          </router-link>
+          <router-link to="/flow/Ftp" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>FTP</strong> Support</span>
+          </router-link>
         </p>
       </div> 
     </div>

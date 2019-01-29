@@ -4,7 +4,7 @@
     <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-small has-text-centered">
       <div class="notification is-dark">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
+         <center><strong>WPPS</strong> "HOW TO"</center>
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -17,13 +17,13 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          <p>There are no php driven errors occurring in the hosting. If there is an issue, it is being caused by other events.</p>
+          <p>Advise the customer that there is more information required. Help to gather that information if possible. Advise that WPPS can not proceed until they have this information.</p>
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/howto/debugmode/DebugCn" class="button is-small is-info">
+        <router-link to="/flow/howto/wpps/WppsE" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

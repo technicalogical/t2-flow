@@ -14,27 +14,30 @@
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>What do you need to do with WPPS (WordPress Premium Support)?</p>
+        <p>Click <strong>SETUP</strong> For this product. Complete the following then continue.</p>
+      </div>
+      <div class="field">
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-success"><i class="fas fa-check"></i></span>
+            <span class="tag is-dark">Fill in the wp-login credentials.</span>
+          </div>
+        </div>
+        <br>
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-success"><i class="fas fa-check"></i></span>
+            <span class="tag is-dark">Fill in the FTP credentials.</span>
+          </div>
+        </div>
       </div>
       <p class="buttons">
-        <router-link to="/flow/howto/wpps/WppsP" class="button is-light">
+        <router-link to="/flow/howto/wpps/WppsPn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>WPPS</strong> Product Setup.</span>
+          <span><strong>Continue</strong> to next steps.</span>
         </router-link>  
-        <router-link to="/flow/howto/wpps/WppsN" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-check-circle"></i>
-          </span>
-          <span>New <strong>WPPS</strong> Ticket.</span>
-        </router-link>
-        <router-link to="/flow/howto/wpps/WppsE" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-check-circle"></i>
-          </span>
-          <span><strong>WPPS</strong> Product Setup.</span>
-        </router-link>
       </p>
       
       <!-- BEGIN - Back button -->

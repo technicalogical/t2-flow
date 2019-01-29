@@ -6,7 +6,7 @@
     <!-- 500 Error / WSOD Text -->
     <article id="wsod-message" class="message is-small">
       <div class="notification is-dark has-text-centered">
-        <strong>cPanel Email Issues</strong>
+        <strong>Managed WordPress Migration / Sync</strong>
       </div>
     </article>
     <!-- END - 500 Error / WSOD Text -->
@@ -15,26 +15,26 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is the customer having issues with sending emails, or receiving emails?</p>
+        <p>Are you able to restart the migration?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/cpemail/cpmR" class="button is-light">
+        <router-link to="/flow/cpemail/MigsyncMy" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span>Having issues <strong>receiving</strong></span>
+          <span><strong>Yes</strong>. The migration is restarted.</span>
         </router-link>  
-        <router-link to="/flow/cpemail/cpmS" class="button is-light">
+        <router-link to="/flow/cpemail/MigsyncMn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span>Having issues <strong>sending</strong></span>
+          <span><strong>No</strong>. The migration failed.</span>
         </router-link>
       </p>
 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/SwatFlow" class="button is-small is-info">
+        <router-link to="/flow/mwp/MigsyncM" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

@@ -57,11 +57,11 @@
             </span>
             <span><strong>cPanel</strong> Email issues</span>
           </router-link>
-          <router-link to="/flow/Ftp" class="button is-dark is-small">
+          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>FTP</strong> Support</span>
+            <span><strong>Transfer</strong> PFC</span>
           </router-link>
           <router-link to="/flow/Malware" class="button is-dark is-small">
             <span class="icon has-text-success">

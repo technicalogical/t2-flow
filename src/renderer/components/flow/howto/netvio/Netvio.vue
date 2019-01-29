@@ -3,37 +3,43 @@
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
+    <!-- BEGIN - Net Vio how to Text -->
     <article id="wsod-message" class="message is-small">
       <div class="notification is-dark has-text-centered">
-        <center><strong>WPPS</strong> "HOW TO"</center>
+        <center><strong>Net Vio</strong> "How To" Flows</center>
       </div>
     </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- END - Net Vio how to Text -->
 
-    <!-- BEGIN SSL Error flow section -->
+    <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Manage the WPPS (WordPress Premium Support) Product. Click on the ticket number. Read through and understand what is happening in the ticket. What is the current status?</p>
+        <p>What type of Net Vio is the customer dealing with?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/howto/wpps/WppsEm" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioR" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Requires more information.</span>
+          <span><strong>File Repo</strong> Network violation.</span>
         </router-link>  
-        <router-link to="/flow/howto/wpps/WppsEc" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioM" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Ticket is closed.</span>
+          <span><strong>Malware/Phishing</strong> Network violation.</span>
         </router-link>
-        <router-link to="/flow/howto/wpps/WppsEo" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioC" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Ticket is still open.</span>
+          <span><strong>Copy write</strong> Network violation.</span>
+        </router-link>
+        <router-link to="/flow/howto/netvio/NetvioD" class="button is-light">
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          <span><strong>Database limit</strong> Network violation.</span>
         </router-link>
       </p>
       
@@ -50,7 +56,7 @@
 
       <router-view/>
     </div>
-    <!-- END SSL Error flow section -->
+    <!-- END Net Vio flow section -->
 
   </div>
   <!-- END - Primary application deck -->

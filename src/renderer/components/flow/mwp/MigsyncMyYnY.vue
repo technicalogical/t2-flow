@@ -4,7 +4,7 @@
     <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-small has-text-centered">
       <div class="notification is-dark">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
+         <strong>Managed WordPress Migration / Sync</strong>
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -12,18 +12,18 @@
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
-      <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          <p>There are no php driven errors occurring in the hosting. If there is an issue, it is being caused by other events.</p>
+          <p>At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to a Tier 2 agent.</p>
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/howto/debugmode/DebugCn" class="button is-small is-info">
+        <router-link to="/flow/mwp/MigsyncMyYn" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

@@ -6,7 +6,8 @@
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="content is-small">
       <div class="notification is-dark">
-        <strong>S.W.A.T.</strong> Even More Flows
+        <center><strong>S.W.A.T.</strong> Miscellaneous <strong>Flows</strong></center><br>
+        <p>There are some options on this page that are <strong>DIY</strong> products. You will be connected directly to the Help articles for those products.</p>
       </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
@@ -15,30 +16,36 @@
     <div class="content" id="flow">
       <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+          <a href="https://www.godaddy.com/help/search-engine-visibility" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+            <span><strong>SEO</strong> & <strong>SEV</strong></span>
+          </a>
+          <a href="https://www.godaddy.com/help/website-builder-7" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+            <span><strong>Website Builder</strong></span>
+          </a>
+          <a href="https://www.godaddy.com/help/gocentral" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
+            <span><strong>Go</strong>Central</span>
+          </a>
+          <a href="https://www.godaddy.com/help/office-365-from-godaddy" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>New</strong> Flow</span>
-          </router-link>
+            <span><strong>O365</strong></span>
+          </a>
+          <a href="https://www.godaddy.com/help/godaddy-email-marketing" target="_blank" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>GEM</strong></span>
+          </a>
         </p>
       </div> 
     </div>

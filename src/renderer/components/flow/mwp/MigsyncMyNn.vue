@@ -4,7 +4,7 @@
     <!-- BEGIN - Form mail Error Text -->
     <article id="wsod-message" class="message is-small has-text-centered">
       <div class="notification is-dark">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
+         <strong>Managed WordPress Migration / Sync</strong>
       </div>
     </article>
     <!-- END - Form mail Error Text -->
@@ -17,13 +17,18 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          <p>There are no php driven errors occurring in the hosting. If there is an issue, it is being caused by other events.</p>
+          <p>Advise the customer that this site needs to be migrated manually.</p>
+        </div>
+      </article>
+      <article class="message is-success is-small">
+        <div class="message-body">
+          <p>Offer the Paid Migration service as an option.</p>
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/howto/debugmode/DebugCn" class="button is-small is-info">
+        <router-link to="/flow/mwp/MigsyncMyN" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

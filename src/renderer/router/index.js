@@ -24,6 +24,7 @@ import Malware from '@/components/flow/Malware'
 import FlowTwo from '@/components/FlowTwo'
 import FlowThree from '@/components/FlowThree'
 import FlowFour from '@/components/FlowFour'
+import Transfer from '@/components/flow/pfc/Transfer'
 //SWAT Flow main menu routes
 
 // BEGIN Form Mail error imported routes
@@ -270,6 +271,31 @@ import UptimeWvNnN from '@/components/flow/howto/uptime/UptimeWvNnN'
 // BEGIN Sucuri tickets imported routes
 import Sucuri from '@/components/flow/howto/sucuri/Sucuri'
 import SucuriB from '@/components/flow/howto/sucuri/SucuriB'
+import SucuriBd from '@/components/flow/howto/sucuri/SucuriBd'
+import SucuriBdY from '@/components/flow/howto/sucuri/SucuriBdY'
+import SucuriBdN from '@/components/flow/howto/sucuri/SucuriBdN'
+import SucuriBs from '@/components/flow/howto/sucuri/SucuriBs'
+import SucuriBsD from '@/components/flow/howto/sucuri/SucuriBsD'
+import SucuriBsDy from '@/components/flow/howto/sucuri/SucuriBsDy'
+import SucuriBsDyY from '@/components/flow/howto/sucuri/SucuriBsDyY'
+import SucuriBsDyN from '@/components/flow/howto/sucuri/SucuriBsDyN'
+import SucuriBsDyNy from '@/components/flow/howto/sucuri/SucuriBsDyNy'
+import SucuriBsDyNn from '@/components/flow/howto/sucuri/SucuriBsDyNn'
+import SucuriBsDn from '@/components/flow/howto/sucuri/SucuriBsDn'
+import SucuriBsT from '@/components/flow/howto/sucuri/SucuriBsT'
+import SucuriBsTy from '@/components/flow/howto/sucuri/SucuriBsTy'
+import SucuriBsTyD from '@/components/flow/howto/sucuri/SucuriBsTyD'
+import SucuriBsTyDy from '@/components/flow/howto/sucuri/SucuriBsTyDy'
+import SucuriBsTyDn from '@/components/flow/howto/sucuri/SucuriBsTyDn'
+import SucuriBsTyH from '@/components/flow/howto/sucuri/SucuriBsTyH'
+import SucuriBsTn from '@/components/flow/howto/sucuri/SucuriBsTn'
+import SucuriBsTnY from '@/components/flow/howto/sucuri/SucuriBsTnY'
+import SucuriBsTnN from '@/components/flow/howto/sucuri/SucuriBsTnN'
+import SucuriBsW from '@/components/flow/howto/sucuri/SucuriBsW'
+import SucuriBsWy from '@/components/flow/howto/sucuri/SucuriBsWy'
+import SucuriBsWn from '@/components/flow/howto/sucuri/SucuriBsWn'
+import SucuriBsWnY from '@/components/flow/howto/sucuri/SucuriBsWnY'
+import SucuriBsWnN from '@/components/flow/howto/sucuri/SucuriBsWnN'
 import SucuriC from '@/components/flow/howto/sucuri/SucuriC'
 import SucuriCy from '@/components/flow/howto/sucuri/SucuriCy'
 import SucuriCyY from '@/components/flow/howto/sucuri/SucuriCyY'
@@ -293,9 +319,47 @@ import SucuriFn from '@/components/flow/howto/sucuri/SucuriFn'
 // BEGIN WPPS imported routes
 import Wpps from '@/components/flow/howto/wpps/Wpps'
 import WppsE from '@/components/flow/howto/wpps/WppsE'
+import WppsEc from '@/components/flow/howto/wpps/WppsEc'
+import WppsEcY from '@/components/flow/howto/wpps/WppsEcY'
+import WppsEcN from '@/components/flow/howto/wpps/WppsEcN'
+import WppsEm from '@/components/flow/howto/wpps/WppsEm'
+import WppsEo from '@/components/flow/howto/wpps/WppsEo'
 import WppsN from '@/components/flow/howto/wpps/WppsN'
 import WppsP from '@/components/flow/howto/wpps/WppsP'
+import WppsPn from '@/components/flow/howto/wpps/WppsPn'
 // END WPPS imported routes
+
+// BEGIN MWP migration / sync imported routes
+import Migsync from '@/components/flow/mwp/Migsync'
+import MigsyncM from '@/components/flow/mwp/MigsyncM'
+import MigsyncMy from '@/components/flow/mwp/MigsyncMy'
+import MigsyncMyY from '@/components/flow/mwp/MigsyncMyY'
+import MigsyncMyYy from '@/components/flow/mwp/MigsyncMyYy'
+import MigsyncMyYyY from '@/components/flow/mwp/MigsyncMyYyY'
+import MigsyncMyYyN from '@/components/flow/mwp/MigsyncMyYyN'
+import MigsyncMyYn from '@/components/flow/mwp/MigsyncMyYn'
+import MigsyncMyYnY from '@/components/flow/mwp/MigsyncMyYnY'
+import MigsyncMyYnN from '@/components/flow/mwp/MigsyncMyYnN'
+import MigsyncMyN from '@/components/flow/mwp/MigsyncMyN'
+import MigsyncMyNy from '@/components/flow/mwp/MigsyncMyNy'
+import MigsyncMyNn from '@/components/flow/mwp/MigsyncMyNn'
+import MigsyncMn from '@/components/flow/mwp/MigsyncMn'
+import MigsyncS from '@/components/flow/mwp/MigsyncS'
+// END MWP migration / sync imported routes
+
+// BEGIN Net Vio imported routes
+import Netvio from '@/components/flow/howto/netvio/Netvio'
+import NetvioC from '@/components/flow/howto/netvio/NetvioC'
+import NetvioD from '@/components/flow/howto/netvio/NetvioD'
+import NetvioM from '@/components/flow/howto/netvio/NetvioM'
+import NetvioMm from '@/components/flow/howto/netvio/NetvioMm'
+import NetvioMmY from '@/components/flow/howto/netvio/NetvioMmY'
+import NetvioMmN from '@/components/flow/howto/netvio/NetvioMmN'
+import NetvioMp from '@/components/flow/howto/netvio/NetvioMp'
+import NetvioMpY from '@/components/flow/howto/netvio/NetvioMpY'
+import NetvioMpN from '@/components/flow/howto/netvio/NetvioMpN'
+import NetvioR from '@/components/flow/howto/netvio/NetvioR'
+// END Net Vio imported routes
 
 Vue.use(Router)
 
@@ -1447,6 +1511,131 @@ export default new Router({
       component: SucuriB,
     },
     {
+      path: '/flow/howto/sucuri/SucuriBd',
+      name: 'SucuriBd',
+      component: SucuriBd,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBdY',
+      name: 'SucuriBdY',
+      component: SucuriBdY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBdN',
+      name: 'SucuriBdN',
+      component: SucuriBdN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBs',
+      name: 'SucuriBs',
+      component: SucuriBs,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsD',
+      name: 'SucuriBsD',
+      component: SucuriBsD,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsDy',
+      name: 'SucuriBsDy',
+      component: SucuriBsDy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsDyY',
+      name: 'SucuriBsDyY',
+      component: SucuriBsDyY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsDyN',
+      name: 'SucuriBsDyN',
+      component: SucuriBsDyN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsDyNy',
+      name: 'SucuriBsDyNy',
+      component: SucuriBsDyNy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsDyNn',
+      name: 'SucuriBsDyNn',
+      component: SucuriBsDyNn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsDn',
+      name: 'SucuriBsDn',
+      component: SucuriBsDn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsT',
+      name: 'SucuriBsT',
+      component: SucuriBsT,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTy',
+      name: 'SucuriBsTy',
+      component: SucuriBsTy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTyD',
+      name: 'SucuriBsTyD',
+      component: SucuriBsTyD,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTyDy',
+      name: 'SucuriBsTyDy',
+      component: SucuriBsTyDy,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTyDn',
+      name: 'SucuriBsTyDn',
+      component: SucuriBsTyDn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTyH',
+      name: 'SucuriBsTyH',
+      component: SucuriBsTyH,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTn',
+      name: 'SucuriBsTn',
+      component: SucuriBsTn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTnY',
+      name: 'SucuriBsTnY',
+      component: SucuriBsTnY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsTnN',
+      name: 'SucuriBsTnN',
+      component: SucuriBsTnN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsW',
+      name: 'SucuriBsW',
+      component: SucuriBsW,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsWn',
+      name: 'SucuriBsWn',
+      component: SucuriBsWn,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsWnY',
+      name: 'SucuriBsWnY',
+      component: SucuriBsWnY,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsWnN',
+      name: 'SucuriBsWnN',
+      component: SucuriBsWnN,
+    },
+    {
+      path: '/flow/howto/sucuri/SucuriBsWy',
+      name: 'SucuriBsWy',
+      component: SucuriBsWy,
+    },
+    {
       path: '/flow/howto/sucuri/SucuriC',
       name: 'SucuriC',
       component: SucuriC,
@@ -1550,6 +1739,31 @@ export default new Router({
       component: WppsE,
     },
     {
+      path: '/flow/howto/wpps/WppsEc',
+      name: 'WppsEc',
+      component: WppsEc,
+    },
+    {
+      path: '/flow/howto/wpps/WppsEcY',
+      name: 'WppsEcY',
+      component: WppsEcY,
+    },
+    {
+      path: '/flow/howto/wpps/WppsEcN',
+      name: 'WppsEcN',
+      component: WppsEcN,
+    },
+    {
+      path: '/flow/howto/wpps/WppsEm',
+      name: 'WppsEm',
+      component: WppsEm,
+    },
+    {
+      path: '/flow/howto/wpps/WppsEo',
+      name: 'WppsEo',
+      component: WppsEo,
+    },
+    {
       path: '/flow/howto/wpps/WppsN',
       name: 'WppsN',
       component: WppsN,
@@ -1559,6 +1773,155 @@ export default new Router({
       name: 'WppsP',
       component: WppsP,
     },
+    {
+      path: '/flow/howto/wpps/WppsPn',
+      name: 'WppsPn',
+      component: WppsPn,
+    },
     // END - WPPS Flow
+
+    // BEGIN - MWP migration/sync flow
+    {
+      path: '/flow/mwp/Migsync',
+      name: 'Migsync',
+      component: Migsync,
+    },
+    {
+      path: '/flow/mwp/MigsyncM',
+      name: 'MigsyncM',
+      component: MigsyncM,
+    },
+    {
+      path: '/flow/mwp/MigsyncMy',
+      name: 'MigsyncMy',
+      component: MigsyncMy,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyY',
+      name: 'MigsyncMyY',
+      component: MigsyncMyY,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyYy',
+      name: 'MigsyncMyYy',
+      component: MigsyncMyYy,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyYyY',
+      name: 'MigsyncMyYyY',
+      component: MigsyncMyYyY,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyYyN',
+      name: 'MigsyncMyYyN',
+      component: MigsyncMyYyN,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyYn',
+      name: 'MigsyncMyYn',
+      component: MigsyncMyYn,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyYnY',
+      name: 'MigsyncMyYnY',
+      component: MigsyncMyYnY,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyYnN',
+      name: 'MigsyncMyYnN',
+      component: MigsyncMyYnN,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyN',
+      name: 'MigsyncMyN',
+      component: MigsyncMyN,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyNy',
+      name: 'MigsyncMyNy',
+      component: MigsyncMyNy,
+    },
+    {
+      path: '/flow/mwp/MigsyncMyNn',
+      name: 'MigsyncMyNn',
+      component: MigsyncMyNn,
+    },
+    {
+      path: '/flow/mwp/MigsyncMn',
+      name: 'MigsyncMn',
+      component: MigsyncMn,
+    },
+    {
+      path: '/flow/mwp/MigsyncS',
+      name: 'MigsyncS',
+      component: MigsyncS,
+    },
+    // END - MWP migration/sync flow
+
+    // BEGIN - Transfer PFC Checklist
+    {
+      path: '/flow/pfc/Transfer',
+      name: 'Transfer',
+      component: Transfer,
+    },
+    // END - Transfer PFC Checklist
+
+    // BEGIN - Net Vio flow
+    {
+      path: '/flow/howto/netvio/Netvio',
+      name: 'Netvio',
+      component: Netvio,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioC',
+      name: 'NetvioC',
+      component: NetvioC,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioD',
+      name: 'NetvioD',
+      component: NetvioD,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioM',
+      name: 'NetvioM',
+      component: NetvioM,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioMm',
+      name: 'NetvioMm',
+      component: NetvioMm,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioMmY',
+      name: 'NetvioMmY',
+      component: NetvioMmY,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioMmN',
+      name: 'NetvioMmN',
+      component: NetvioMmN,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioMp',
+      name: 'NetvioMp',
+      component: NetvioMp,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioMpY',
+      name: 'NetvioMpY',
+      component: NetvioMpY,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioMpN',
+      name: 'NetvioMpN',
+      component: NetvioMpN,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioR',
+      name: 'NetvioR',
+      component: NetvioR,
+    },
+    // END - Net Vio flow
   ]
 })
