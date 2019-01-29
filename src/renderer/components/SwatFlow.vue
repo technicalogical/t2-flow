@@ -6,7 +6,7 @@
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="content is-small">
       <div class="notification is-dark">
-        These are the <strong>Swat Flow Charts</strong>, designed to guide you quickly through the most common issues our customers are facing everyday.
+        These are the <strong>Swat Call Flows</strong>. They will guide you through the on call troubleshooting process. Below are your most commonly used call flows.
       </div>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
@@ -19,25 +19,25 @@
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>500 Error</strong> W.S.O.D. (white screen of death)</span>
+            <span><strong>500 Error</strong></span>
           </router-link>  
           <router-link to="/flow/FourThree" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>403</strong> Website Error</span>
+            <span><strong>403</strong> Site Error</span>
           </router-link>
           <router-link to="/flow/FourFour" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>404</strong> Website Error</span>
+            <span><strong>404</strong> Site Error</span>
           </router-link>
           <router-link to="/flow/FiveThree" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>
             </span>
-            <span><strong>503</strong> Server Response Error</span>
+            <span><strong>503</strong> Error</span>
           </router-link>
           <router-link to="/flow/FormError" class="button is-dark is-small">
             <span class="icon has-text-success">
@@ -51,13 +51,73 @@
             </span>
             <span><strong>SSL</strong> Errors</span>
           </router-link>
+          <router-link to="/flow/CpEmail" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>cPanel</strong> Email issues</span>
+          </router-link>
+          <router-link to="/flow/Ftp" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>FTP</strong> Support</span>
+          </router-link>
+          <router-link to="/flow/Malware" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span>Identifying <strong>Malware</strong></span>
+          </router-link>
+          <router-link to="/flow/Splunk" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>SPLUNK</strong> Usage</span>
+          </router-link>
         </p>
       </div> 
+      <div id="flow-break"></div>
     </div>
     <!-- END - Primary application deck -->
 
-    <router-view/>
+    <!-- BEGIN - Flow page toggles -->
+    <div id="flow-toggle" >
+      <div class="go-left">
+        <p class="buttons">
+          <router-link to="/FlowFour" class="button is-small is-dark">
+            <span id="go-hover" class="icon is-large">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+          </router-link>
+        </p>
+      </div>
+      <div class="go-right">
+        <p class="buttons">
+          <router-link to="/FlowTwo" class="button is-small is-dark">
+            <span id="go-hover" class="icon is-small">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </router-link>
+        </p>
+      </div>    
+    </div>
+    <!-- END - Flow page toggles -->
 
+    
+
+    
+    <router-view/>
+    <!-- BEGIN Flow pagination -->
+      <div id="flow-pagi" class="pagidot pagination-wrapper">
+        <ul class="pagination">
+          <li><router-link to="/SwatFlow" class="active"></router-link></li>
+          <li><router-link to="/FlowTwo"></router-link></li>
+          <li><router-link to="/FlowThree"></router-link></li>
+          <li><router-link to="/FlowFour"></router-link></li>
+        </ul>
+      </div>
+    <!-- END - Flow gaination -->
   </div>
   <!-- END - Primary application deck -->
   

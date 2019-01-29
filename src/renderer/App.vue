@@ -32,7 +32,7 @@
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
           <a class="icon" title="SWAT Links"><router-link class="fas fa-link" to="/SwatLinks"></router-link></a>
           <a href="http://www.x.co/webcrm" target="_blank" class="icon" title="Launch CRM"><li class="fas fa-search"></li></a>
-          <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li class="far fa-clock"></li></a>
+          <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li><img src="../renderer/assets/icons/png/workday.png"></li></a>
         </ul>  
       </nav>
       <!-- END Dropdown navigation section -->
@@ -65,7 +65,7 @@
         <div id="gd-menu" class="dropdown is-small is-up">
           <div class="dropdown-trigger">
             <button class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>GD Links</span>
+              <span><img src="../renderer/assets/icons/png/godaddy.png"></span>
               <span class="icon has-text-success">
                 <i class="fas fa-angle-up" aria-hidden="true"></i>
               </span>
@@ -108,7 +108,12 @@
         </div>
 
         <!-- Application version note -->
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.4.03</strong> (<strong>Zephyr</strong>)</p>
+        <div id="app-vers">
+          <div class="tags has-addons">
+            <span class="tag is-black">Beta version 1.4.6</span>
+            <span class="tag verse is-link">(Zephyr)</span>
+          </div>
+        </div>
 
       </footer>
     <!-- END - Application footer section -->

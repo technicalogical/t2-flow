@@ -27,6 +27,13 @@
           </span>
           <span><strong>S.W.A.T. SSL Lookup</strong></span>
         </router-link>
+        <!-- <br>
+        <a id="ssl-title" class="button is-small is-dark is-fullwidth">
+          <span class="icon is-large has-text-success">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span><strong>Full Site Check</strong></span>
+        </a> -->
       </p>
     </div>
     <!-- END Start button -->
