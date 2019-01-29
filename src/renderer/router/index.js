@@ -292,6 +292,9 @@ import SucuriFn from '@/components/flow/howto/sucuri/SucuriFn'
 
 // BEGIN WPPS imported routes
 import Wpps from '@/components/flow/howto/wpps/Wpps'
+import WppsE from '@/components/flow/howto/wpps/WppsE'
+import WppsN from '@/components/flow/howto/wpps/WppsN'
+import WppsP from '@/components/flow/howto/wpps/WppsP'
 // END WPPS imported routes
 
 Vue.use(Router)
@@ -369,10 +372,6 @@ export default new Router({
       component: FlowFour
     },
     //END SWAT Flow pages
-
-    
-    //END - cPanel Email Flow
-
 
     // BEGIN - 500 Error Flow
     {
@@ -1544,6 +1543,21 @@ export default new Router({
       path: '/flow/howto/wpps/Wpps',
       name: 'Wpps',
       component: Wpps,
+    },
+    {
+      path: '/flow/howto/wpps/WppsE',
+      name: 'WppsE',
+      component: WppsE,
+    },
+    {
+      path: '/flow/howto/wpps/WppsN',
+      name: 'WppsN',
+      component: WppsN,
+    },
+    {
+      path: '/flow/howto/wpps/WppsP',
+      name: 'WppsP',
+      component: WppsP,
     },
     // END - WPPS Flow
   ]

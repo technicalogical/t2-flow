@@ -54,11 +54,11 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><a class="button is-static  is-small has-text-info">
+                  <strong><span class="button is-small has-text-light is-link">
                     A Record(s):
-                  </a></strong>
+                  </span></strong>
                 </p>
-                <p v-for="a in aRecords" id="ssl-fix" class="control is-expanded">
+                <p v-for="a in aRecords" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="aRecords" placeholder="A Record IP Address" readonly>
                 </p>
               </div>
@@ -66,7 +66,7 @@
           </div>
 
           <!-- Mx Records -->
-          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">MX Record(s):</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">MX Record(s):</span></strong>
           <div id="mx-list" class="content">
             <ul>
               <li v-for="mx in mxRecords">
@@ -77,7 +77,7 @@
           <br>
 
           <!-- TXT Records -->
-          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">TXT Record(s):</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">TXT Record(s):</span></strong>
           <div id="txt-list" class="content">
             <ul>
               <li id="txt-sep" v-for="txt in txtRecords">
@@ -88,7 +88,7 @@
           <br>
 
           <!-- NS Records -->
-          <strong><span id="ssl-sans-title" class="button is-static is-small is-fullwidth has-text-info">NS Record(s):</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">NS Record(s):</span></strong>
           <div id="ns-list" class="content">
             <ul>
               <li v-for="ns in nsRecords">

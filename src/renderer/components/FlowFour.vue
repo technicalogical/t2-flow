@@ -41,7 +41,6 @@
           </router-link>
         </p>
       </div> 
-      <div id="flow-break"></div>
     </div>
     <!-- END - Primary application deck -->
 

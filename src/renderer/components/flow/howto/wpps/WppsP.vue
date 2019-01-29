@@ -33,13 +33,13 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Existing <strong>WPPS</strong> Ticket.</span>
+          <span><strong>WPPS</strong> Product Setup.</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/FlowTwo" class="button is-small is-info">
+        <router-link to="/flow/howto/wpps/Wpps" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

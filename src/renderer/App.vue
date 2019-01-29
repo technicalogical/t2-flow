@@ -64,7 +64,7 @@
         <div id="gd-menu" class="dropdown is-small is-up">
           <div class="dropdown-trigger">
             <button class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>GD Links</span>
+              <span><img src="../renderer/assets/icons/png/godaddy.png"></span>
               <span class="icon has-text-success">
                 <i class="fas fa-angle-up" aria-hidden="true"></i>
               </span>
@@ -107,7 +107,12 @@
         </div>
 
         <!-- Application version note -->
-        <p id="app-vers" class="is-italic"><strong>Beta</strong> ver <strong>1.4.03</strong> (<strong>Zephyr</strong>)</p>
+        <div id="app-vers">
+          <div class="tags has-addons">
+            <span class="tag is-black">Beta version 1.4.6</span>
+            <span class="tag verse is-link">(Zephyr)</span>
+          </div>
+        </div>
 
       </footer>
     <!-- END - Application footer section -->

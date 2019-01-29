@@ -10,17 +10,17 @@
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <strong><a class="button is-static has-text-info  is-small">
+              <strong><span class="button has-text-light is-link is-small">
                 Customer Name:
-              </a></strong>
+              </span></strong>
             </p>
-            <p id="ssl-fix" class="control is-expanded">
-              <input class="input  is-small" type="text" v-model="name" placeholder="Customer Name">
+            <p class="control is-expanded">
+              <input class="input is-small" type="text" v-model="name" placeholder="Customer Name">
             </p>
           </div>
         </div>
       </div>
-       <strong><span id="ssl-sans-title" class="button is-static has-text-info is-small is-fullwidth">Customer Situation:</span></strong>
+       <strong><span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth">Customer Situation:</span></strong>
       <div id="note-sitch" class="control">
         <textarea id="ssl-sans" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
       </div>
@@ -28,15 +28,15 @@
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <strong><a class="button is-static has-text-info  is-small">
+              <strong><span class="button is-link has-text-light is-small">
                 Domain(s):
-              </a></strong>
+              </span></strong>
             </p>
-            <p id="ssl-fix" class="control is-expanded">
+            <p class="control is-expanded">
               <input class="input  is-small" type="text" v-model="domain" placeholder="Domain Name">
             </p>
           </div>
-          <strong><p id="notehelp" class="help is-small is-info">Seperate domains using commas (,)</p></strong>
+          <strong><p id="notehelp" class="help is-small is-link">Seperate domains using commas (,)</p></strong>
         </div>
       </div>
     </div>
