@@ -22,7 +22,7 @@
       </div>
        <strong><span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth">Customer Situation:</span></strong>
       <div id="note-sitch" class="control">
-        <textarea id="ssl-sans" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
+        <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
       </div>
       <div class="field-body">
         <div class="field is-expanded">
@@ -43,13 +43,24 @@
     <!-- END Swat Note input section -->
     
     <!--  BEGIN Copy paste notes section -->
-    <div id="call-notes" class="content is-info" wrap="hard">  
+    <strong><span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth">CRM Call Notes</span></strong>
+    <div id="callnotes" class="content is-info getme" wrap="hard">  
       <p>#SWAT1</p>
-      <p>Customer name: {{ name }} </p>
-      <p>Situation: {{ sitch }} </p>
-      <p>Domain(s): {{ domain }} </p>
+      <p>Customer name: {{ name }}</p>
+      <p>Situation: {{ sitch }}</p> 
+      <p>Domain(s): {{ domain }}</p> 
     </div>
     <!-- END Copy paste notes section -->
+
+    <div id="copy-clear" class="buttons">
+      <button id="copyButton"  class="button is-small is-dark btn" data-clipboard-action="copy" data-clipboard-target="#callnotes" title="Click to copy your notes to clipboard">
+        <span class="icon is-medium has-text-link">
+          <i class="fas fa-copy"></i>
+        </span>
+        <span>Copy Your Notes</span>
+      </button>
+      <button class="button is-small is-danger reset">Clear Notes</button>
+    </div>
 
   </form>
   <!-- END - Primary application deck -->
@@ -57,6 +68,19 @@
 </template>
 
 <script>
+
+// Copy to clipboard function for notes
+var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+// End to clipboard function for notes 
+
 import { mapFields } from 'vuex-map-fields';
 
 export default {
@@ -72,7 +96,18 @@ export default {
 	    'domain',
     ]),
   },
-}
+};
+
+// jQuery insertion for $ dependancy
+import JQuery from 'jquery'
+let $ = JQuery
+
+$(document).ready(function(){
+$(".reset").click(function(){
+/* Single line Reset function executes on click of Reset Button */
+$("#note-deck")[0].reset();
+});});
+
 </script>
 
 <style></style>

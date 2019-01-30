@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import '../../../node_modules/bulma/css/bulma.css';
+import '../../../node_modules/bulma/css/bulma.css'
 
 // BEGIN Primary imported routes
 import SwatHome from '@/components/SwatHome'
