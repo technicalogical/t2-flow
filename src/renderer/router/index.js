@@ -377,6 +377,44 @@ import NetvioRnYnN from '@/components/flow/howto/netvio/NetvioRnYnN'
 import NetvioRnN from '@/components/flow/howto/netvio/NetvioRnN'
 // END Net Vio imported routes
 
+// BEGIN Paid Migration imported routes
+import Mig from '@/components/flow/migration/Mig'
+import MigY from '@/components/flow/migration/MigY'
+import MigYy from '@/components/flow/migration/MigYy'
+import MigYn from '@/components/flow/migration/MigYn'
+import MigN from '@/components/flow/migration/MigN'
+import MigNy from '@/components/flow/migration/MigNy'
+import MigNyY from '@/components/flow/migration/MigNyY'
+import MigNyYy from '@/components/flow/migration/MigNyYy'
+import MigNyYyY from '@/components/flow/migration/MigNyYyY'
+import MigNyYyN from '@/components/flow/migration/MigNyYyN'
+import MigNyYyNy from '@/components/flow/migration/MigNyYyNy'
+import MigNyYyNyY from '@/components/flow/migration/MigNyYyNyY'
+import MigNyYyNyYy from '@/components/flow/migration/MigNyYyNyYy'
+import MigNyYyNyYyY from '@/components/flow/migration/MigNyYyNyYyY'
+import MigNyYyNyYyYy from '@/components/flow/migration/MigNyYyNyYyYy'
+import MigNyYyNyYyYn from '@/components/flow/migration/MigNyYyNyYyYn'
+import MigNyYyNyYyYnY from '@/components/flow/migration/MigNyYyNyYyYnY'
+import MigNyYyNyYyYnN from '@/components/flow/migration/MigNyYyNyYyYnN'
+import MigNyYyNyYyN from '@/components/flow/migration/MigNyYyNyYyN'
+import MigNyYyNyYyNn from '@/components/flow/migration/MigNyYyNyYyNn'
+import MigNyYyNyYyNnY from '@/components/flow/migration/MigNyYyNyYyNnY'
+import MigNyYyNyYyNnN from '@/components/flow/migration/MigNyYyNyYyNnN'
+import MigNyYyNyYyNy from '@/components/flow/migration/MigNyYyNyYyNy'
+import MigNyYyNyYyNyY from '@/components/flow/migration/MigNyYyNyYyNyY'
+import MigNyYyNyYyNyYy from '@/components/flow/migration/MigNyYyNyYyNyYy'
+import MigNyYyNyYyNyYn from '@/components/flow/migration/MigNyYyNyYyNyYn'
+import MigNyYyNyYyNyYnY from '@/components/flow/migration/MigNyYyNyYyNyYnY'
+import MigNyYyNyYyNyYnN from '@/components/flow/migration/MigNyYyNyYyNyYnN'
+import MigNyYyNyYyNyN from '@/components/flow/migration/MigNyYyNyYyNyN'
+import MigNyYyNyYn from '@/components/flow/migration/MigNyYyNyYn'
+import MigNyYyNyN from '@/components/flow/migration/MigNyYyNyN'
+import MigNyYyNn from '@/components/flow/migration/MigNyYyNn'
+import MigNyYn from '@/components/flow/migration/MigNyYn'
+import MigNyN from '@/components/flow/migration/MigNyN'
+import MigNn from '@/components/flow/migration/MigNn'
+// END Paid Migration imported routes
+
 Vue.use(Router)
 
 export default new Router({
@@ -2019,5 +2057,184 @@ export default new Router({
       component: NetvioRnN,
     },
     // END - Net Vio flow
+
+    // BEGIN - Paid Migration flow
+    {
+      path: '/flow/migration/Mig',
+      name: 'Mig',
+      component: Mig,
+    },
+    {
+      path: '/flow/migration/MigY',
+      name: 'MigY',
+      component: MigY,
+    },
+    {
+      path: '/flow/migration/MigYy',
+      name: 'MigYy',
+      component: MigYy,
+    },
+    {
+      path: '/flow/migration/MigYn',
+      name: 'MigYn',
+      component: MigYn,
+    },
+    {
+      path: '/flow/migration/MigN',
+      name: 'MigN',
+      component: MigN,
+    },
+    {
+      path: '/flow/migration/MigNy',
+      name: 'MigNy',
+      component: MigNy,
+    },
+    {
+      path: '/flow/migration/MigNyY',
+      name: 'MigNyY',
+      component: MigNyY,
+    },
+    {
+      path: '/flow/migration/MigNyYy',
+      name: 'MigNyYy',
+      component: MigNyYy,
+    },
+    {
+      path: '/flow/migration/MigNyYyY',
+      name: 'MigNyYyY',
+      component: MigNyYyY,
+    },
+    {
+      path: '/flow/migration/MigNyYyN',
+      name: 'MigNyYyN',
+      component: MigNyYyN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNy',
+      name: 'MigNyYyNy',
+      component: MigNyYyNy,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyY',
+      name: 'MigNyYyNyY',
+      component: MigNyYyNyY,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYy',
+      name: 'MigNyYyNyYy',
+      component: MigNyYyNyYy,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyY',
+      name: 'MigNyYyNyYyY',
+      component: MigNyYyNyYyY,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyYy',
+      name: 'MigNyYyNyYyYy',
+      component: MigNyYyNyYyYy,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyYn',
+      name: 'MigNyYyNyYyYn',
+      component: MigNyYyNyYyYn,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyYnY',
+      name: 'MigNyYyNyYyYnY',
+      component: MigNyYyNyYyYnY,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyYnN',
+      name: 'MigNyYyNyYyYnN',
+      component: MigNyYyNyYyYnN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyN',
+      name: 'MigNyYyNyYyN',
+      component: MigNyYyNyYyN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNy',
+      name: 'MigNyYyNyYyNy',
+      component: MigNyYyNyYyNy,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNyY',
+      name: 'MigNyYyNyYyNyY',
+      component: MigNyYyNyYyNyY,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNyYy',
+      name: 'MigNyYyNyYyNyYy',
+      component: MigNyYyNyYyNyYy,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNyYn',
+      name: 'MigNyYyNyYyNyYn',
+      component: MigNyYyNyYyNyYn,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNyYnY',
+      name: 'MigNyYyNyYyNyYnY',
+      component: MigNyYyNyYyNyYnY,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNyYnN',
+      name: 'MigNyYyNyYyNyYnN',
+      component: MigNyYyNyYyNyYnN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNyN',
+      name: 'MigNyYyNyYyNyN',
+      component: MigNyYyNyYyNyN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNn',
+      name: 'MigNyYyNyYyNn',
+      component: MigNyYyNyYyNn,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNnY',
+      name: 'MigNyYyNyYyNnY',
+      component: MigNyYyNyYyNnY,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYyNnN',
+      name: 'MigNyYyNyYyNnN',
+      component: MigNyYyNyYyNnN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyYn',
+      name: 'MigNyYyNyYn',
+      component: MigNyYyNyYn,
+    },
+    {
+      path: '/flow/migration/MigNyYyNyN',
+      name: 'MigNyYyNyN',
+      component: MigNyYyNyN,
+    },
+    {
+      path: '/flow/migration/MigNyYyNn',
+      name: 'MigNyYyNn',
+      component: MigNyYyNn,
+    },
+
+    {
+      path: '/flow/migration/MigNyYn',
+      name: 'MigNyYn',
+      component: MigNyYn,
+    },
+    {
+      path: '/flow/migration/MigNyN',
+      name: 'MigNyN',
+      component: MigNyN,
+    },
+    {
+      path: '/flow/migration/MigNn',
+      name: 'MigNn',
+      component: MigNn,
+    },
+    // END - Paid Migration flow
   ]
 })

@@ -22,7 +22,7 @@ function createWindow () {
     height: 700,
     minWidth: 450,
     minHeigth: 700,
-    maxWidth: 450,
+    maxWidth: 1000,
     maxHeight: 700,
     backgroundColor: '#fff',
   })

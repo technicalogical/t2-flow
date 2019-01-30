@@ -36,7 +36,7 @@
               <input class="input  is-small" type="text" v-model="domain" placeholder="Domain Name">
             </p>
           </div>
-          <strong><p id="notehelp" class="help is-small is-link">Seperate domains with commas (,)</p></strong>
+          <strong><p id="notehelp" class="help is-small is-link">Separate domains with commas (,)</p></strong>
         </div>
       </div>
     </div>

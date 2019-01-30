@@ -33,6 +33,12 @@
             </span>
             <span><strong>FTP</strong> Support</span>
           </router-link>
+          <router-link to="/flow/migration/Mig" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>Paid</strong> Migration</span>
+          </router-link>
         </p>
       </div> 
     </div>
