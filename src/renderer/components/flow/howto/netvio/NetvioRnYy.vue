@@ -14,26 +14,26 @@
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Has the customer removed the files listed in the IRIS ticket? They received this list via email.</p>
+        <p>Sell the customer the upgraded hosting. Is the current hosting suspended?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/howto/netvio/NetvioRy" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioRnYyY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Yes</strong>. They have removed the files.</span>
+          <span><strong>Yes</strong>. The hosting is suspended.</span>
         </router-link>  
-        <router-link to="/flow/howto/netvio/NetvioRn" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioRnYyN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>No</strong>.  They have not removed the files.</span>
+          <span><strong>No</strong>.  The hosting is not suspended.</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/howto/netvio/Netvio" class="button is-small is-info">
+        <router-link to="/flow/howto/netvio/NetvioRnY" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

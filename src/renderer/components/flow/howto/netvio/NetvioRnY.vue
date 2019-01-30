@@ -14,26 +14,26 @@
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Has the customer removed the files listed in the IRIS ticket? They received this list via email.</p>
+        <p>Is the customer willing to upgrade to a higher hosting platform?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/howto/netvio/NetvioRy" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioRnYy" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Yes</strong>. They have removed the files.</span>
+          <span><strong>Yes</strong>. The customer would like to upgrade.</span>
         </router-link>  
-        <router-link to="/flow/howto/netvio/NetvioRn" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioRnYn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>No</strong>.  They have not removed the files.</span>
+          <span><strong>No</strong>.  The customer does not want to upgrade.</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/howto/netvio/Netvio" class="button is-small is-info">
+        <router-link to="/flow/howto/netvio/NetvioRn" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

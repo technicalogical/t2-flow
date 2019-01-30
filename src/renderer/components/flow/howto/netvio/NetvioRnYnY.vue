@@ -14,26 +14,26 @@
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Has the customer removed the files listed in the IRIS ticket? They received this list via email.</p>
+        <p>Have the customer guide you to where these files are being used in the hosting. Validate that they are in fact a necessity. Are they being used?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/howto/netvio/NetvioRy" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioRnYnYy" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Yes</strong>. They have removed the files.</span>
+          <span><strong>Yes</strong>. These files belong to customers.</span>
         </router-link>  
-        <router-link to="/flow/howto/netvio/NetvioRn" class="button is-light">
+        <router-link to="/flow/howto/netvio/NetvioRnYnYn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>No</strong>.  They have not removed the files.</span>
+          <span><strong>No</strong>.  These files do not belong to customers.</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/howto/netvio/Netvio" class="button is-small is-info">
+        <router-link to="/flow/howto/netvio/NetvioRnYn" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

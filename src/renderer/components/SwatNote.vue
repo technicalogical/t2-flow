@@ -59,7 +59,6 @@
         </span>
         <span>Copy Your Notes</span>
       </button>
-      <button class="button is-small is-danger reset">Clear Notes</button>
     </div>
 
   </form>

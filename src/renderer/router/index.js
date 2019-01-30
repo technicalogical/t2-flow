@@ -350,6 +350,8 @@ import MigsyncS from '@/components/flow/mwp/MigsyncS'
 // BEGIN Net Vio imported routes
 import Netvio from '@/components/flow/howto/netvio/Netvio'
 import NetvioC from '@/components/flow/howto/netvio/NetvioC'
+import NetvioCy from '@/components/flow/howto/netvio/NetvioCy'
+import NetvioCn from '@/components/flow/howto/netvio/NetvioCn'
 import NetvioD from '@/components/flow/howto/netvio/NetvioD'
 import NetvioM from '@/components/flow/howto/netvio/NetvioM'
 import NetvioMm from '@/components/flow/howto/netvio/NetvioMm'
@@ -359,6 +361,20 @@ import NetvioMp from '@/components/flow/howto/netvio/NetvioMp'
 import NetvioMpY from '@/components/flow/howto/netvio/NetvioMpY'
 import NetvioMpN from '@/components/flow/howto/netvio/NetvioMpN'
 import NetvioR from '@/components/flow/howto/netvio/NetvioR'
+import NetvioRy from '@/components/flow/howto/netvio/NetvioRy'
+import NetvioRn from '@/components/flow/howto/netvio/NetvioRn'
+import NetvioRnY from '@/components/flow/howto/netvio/NetvioRnY'
+import NetvioRnYy from '@/components/flow/howto/netvio/NetvioRnYy'
+import NetvioRnYyY from '@/components/flow/howto/netvio/NetvioRnYyY'
+import NetvioRnYyN from '@/components/flow/howto/netvio/NetvioRnYyN'
+import NetvioRnYyNy from '@/components/flow/howto/netvio/NetvioRnYyNy'
+import NetvioRnYyNn from '@/components/flow/howto/netvio/NetvioRnYyNn'
+import NetvioRnYn from '@/components/flow/howto/netvio/NetvioRnYn'
+import NetvioRnYnY from '@/components/flow/howto/netvio/NetvioRnYnY'
+import NetvioRnYnYy from '@/components/flow/howto/netvio/NetvioRnYnYy'
+import NetvioRnYnYn from '@/components/flow/howto/netvio/NetvioRnYnYn'
+import NetvioRnYnN from '@/components/flow/howto/netvio/NetvioRnYnN'
+import NetvioRnN from '@/components/flow/howto/netvio/NetvioRnN'
 // END Net Vio imported routes
 
 Vue.use(Router)
@@ -1878,6 +1894,16 @@ export default new Router({
       component: NetvioC,
     },
     {
+      path: '/flow/howto/netvio/NetvioCy',
+      name: 'NetvioCy',
+      component: NetvioCy,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioCn',
+      name: 'NetvioCn',
+      component: NetvioCn,
+    },
+    {
       path: '/flow/howto/netvio/NetvioD',
       name: 'NetvioD',
       component: NetvioD,
@@ -1921,6 +1947,76 @@ export default new Router({
       path: '/flow/howto/netvio/NetvioR',
       name: 'NetvioR',
       component: NetvioR,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRy',
+      name: 'NetvioRy',
+      component: NetvioRy,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRn',
+      name: 'NetvioRn',
+      component: NetvioRn,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnY',
+      name: 'NetvioRnY',
+      component: NetvioRnY,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYy',
+      name: 'NetvioRnYy',
+      component: NetvioRnYy,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYyY',
+      name: 'NetvioRnYyY',
+      component: NetvioRnYyY,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYyN',
+      name: 'NetvioRnYyN',
+      component: NetvioRnYyN,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYyNy',
+      name: 'NetvioRnYyNy',
+      component: NetvioRnYyNy,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYyNn',
+      name: 'NetvioRnYyNn',
+      component: NetvioRnYyNn,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYn',
+      name: 'NetvioRnYn',
+      component: NetvioRnYn,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYnY',
+      name: 'NetvioRnYnY',
+      component: NetvioRnYnY,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYnYy',
+      name: 'NetvioRnYnYy',
+      component: NetvioRnYnYy,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYnYn',
+      name: 'NetvioRnYnYn',
+      component: NetvioRnYnYn,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnYnN',
+      name: 'NetvioRnYnN',
+      component: NetvioRnYnN,
+    },
+    {
+      path: '/flow/howto/netvio/NetvioRnN',
+      name: 'NetvioRnN',
+      component: NetvioRnN,
     },
     // END - Net Vio flow
   ]
