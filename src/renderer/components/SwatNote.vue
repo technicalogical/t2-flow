@@ -54,7 +54,7 @@
 
     <div id="copy-clear" class="buttons">
       <button id="copyButton"  class="button is-small is-dark btn" data-clipboard-action="copy" data-clipboard-target="#callnotes" title="Click to copy your notes to clipboard">
-        <span class="icon is-medium has-text-link">
+        <span class="icon is-medium has-text-success">
           <i class="fas fa-copy"></i>
         </span>
         <span>Copy Your Notes</span>

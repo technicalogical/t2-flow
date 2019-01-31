@@ -17,7 +17,7 @@
       <div class="content is-medium">
         <p>One or more of the following criteria must be met before transferring your call to Tier 2.</p>
       </div>
-      <div class="field">
+      <div id="pfcdeck" class="field">
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-success"><i class="fas fa-check"></i></span>

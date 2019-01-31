@@ -23,23 +23,26 @@
             </span>
             <span><strong>Back</strong></span>
           </router-link>
-          <div class="field">
-            <div id="ssl-search" class="control has-icons-left has-icons-right">
-              <input v-model="domainName" class="input is-small" type="text" placeholder="Domain(s)" />
-              <span class="icon is-small is-left has-text-success">
-                <i class="fas fa-globe"></i>
-              </span>
-            </div>
-            <!-- BEGIN Search button section -->
-            <button id="ssl-go"  v-on:click="handleLookup" class="button is-small is-dark" value="">
-              <span class="icon has-text-success">
-                <i class="fas fa-search"></i>
-              </span>
-              <span>Search</span>
-            </button>
-            <!-- END Search button section -->
-          </div>
           
+          <div class="field has-addons ">
+            <div id="ssl-search" class="control ">
+              <p class="control has-icons-left">
+                <input class="input is-small is-hovered" v-model="domainName" type="text" placeholder="Search Domain Name">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </p>
+            </div>
+            <div class="control">
+              <button v-on:click="handleLookup" class="button is-small is-dark">
+                <span class="icon is-medium has-text-success">
+                  <i class="fas fa-search"></i>
+                </span>
+                <span>Search</span>
+              </button>
+            </div>
+          </div>
+
         </div>
         <!-- END Swat SSL input section -->
 

@@ -27,7 +27,7 @@
       <nav id="prime">
         <ul>
           <a class="icon" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
-          <a class="icon" title="SWAT Flow"><router-link class="far fa-file-alt" to="/SwatFlow"></router-link></a>
+          <a class="icon" title="SWAT Flow"><router-link class="fas fa-file-alt" to="/SwatFlow"></router-link></a>
           <a class="icon" title="SWAT Note"><router-link class="fas fa-sticky-note" to="/SwatNote"></router-link></a>
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
           <a class="icon" title="SWAT Links"><router-link class="fas fa-link" to="/SwatLinks"></router-link></a>

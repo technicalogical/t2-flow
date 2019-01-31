@@ -456,6 +456,14 @@ footer {
 .pagination a:hover {
   opacity: .50;
 }
+
+#pfcdeck {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
 /* END | Swat Flow Vue CSS */
 
 /* BEGIN | Swat Note Vue CSS */
@@ -620,8 +628,7 @@ footer {
 }
 
 #ssl-search {
-  width: 230px;
-  float: left;
+  width: 80%;
 }
 
 #ssl-go {
