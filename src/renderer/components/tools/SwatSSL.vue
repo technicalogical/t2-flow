@@ -52,7 +52,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link  is-small has-text-light">
+                  <strong><span class="button is-dark  is-small has-text-light">
                     Domain:
                   </span></strong>
                 </p>
@@ -66,7 +66,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
+                  <strong><span class="button is-dark is-small has-text-light">
                     IP:
                   </span></strong>
                 </p>
@@ -80,7 +80,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
+                  <strong><span class="button is-dark is-small has-text-light">
                     Common Name:
                   </span></strong>
                 </p>
@@ -94,7 +94,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
+                  <strong><span class="button is-dark is-small has-text-light">
                     Expire Date:
                   </span></strong>
                 </p>
@@ -108,7 +108,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
+                  <strong><span class="button is-dark is-small has-text-light">
                     Issuer:
                   </span></strong>
                 </p>
@@ -122,7 +122,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
+                  <strong><span class="button is-dark is-small has-text-light">
                     Serial Number:
                   </span></strong>
                 </p>
@@ -132,7 +132,7 @@
               </div>
             </div>
           </div>
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">Subject Alternative Names:</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-dark is-small is-fullwidth has-text-light">Subject Alternative Names:</span></strong>
           <div id="ssl-sans" class="content">
             <ul>
               <li v-for="s in sans">

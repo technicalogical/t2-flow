@@ -1,7 +1,7 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <form id="note-deck">
+  <div id="note-deck">
 
     <!-- BEGIN Swat Note input section -->
     <div id="swat-note-input" class="content">
@@ -53,7 +53,9 @@
     <!-- END Copy paste notes section -->
 
     <div id="copy-clear" class="buttons">
-      <button id="copyButton"  class="button is-small is-dark btn" data-clipboard-action="copy" data-clipboard-target="#callnotes" title="Click to copy your notes to clipboard">
+      <button id="copyButton"  class="button is-small is-dark btn" v-clipboard:copy="message"
+      v-clipboard:success="onCopy"
+      v-clipboard:error="onError" title="Click to copy your notes to clipboard">
         <span class="icon is-medium has-text-success">
           <i class="fas fa-copy"></i>
         </span>
@@ -61,7 +63,7 @@
       </button>
     </div>
 
-  </form>
+  </div>
   <!-- END - Primary application deck -->
     
 </template>
@@ -69,15 +71,7 @@
 <script>
 
 // Copy to clipboard function for notes
-var clipboard = new ClipboardJS('.btn');
 
-    clipboard.on('success', function(e) {
-        console.log(e);
-    });
-
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
 // End to clipboard function for notes 
 
 import { mapFields } from 'vuex-map-fields';
@@ -94,19 +88,8 @@ export default {
       'sitch',
 	    'domain',
     ]),
-  },
+  }
 };
-
-// jQuery insertion for $ dependancy
-import JQuery from 'jquery'
-let $ = JQuery
-
-$(document).ready(function(){
-$(".reset").click(function(){
-/* Single line Reset function executes on click of Reset Button */
-$("#note-deck")[0].reset();
-});});
-
 </script>
 
 <style></style>

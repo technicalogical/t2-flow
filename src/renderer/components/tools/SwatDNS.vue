@@ -54,7 +54,7 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-small has-text-light is-link">
+                  <strong><span class="button is-small has-text-light is-dark">
                     A Record(s):
                   </span></strong>
                 </p>
@@ -66,7 +66,7 @@
           </div>
 
           <!-- Mx Records -->
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">MX Record(s):</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-dark is-small is-fullwidth has-text-light">MX Record(s):</span></strong>
           <div id="mx-list" class="content">
             <ul>
               <li v-for="mx in mxRecords">
@@ -77,7 +77,7 @@
           <br>
 
           <!-- TXT Records -->
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">TXT Record(s):</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-dark is-small is-fullwidth has-text-light">TXT Record(s):</span></strong>
           <div id="txt-list" class="content">
             <ul>
               <li id="txt-sep" v-for="txt in txtRecords">
@@ -88,7 +88,7 @@
           <br>
 
           <!-- NS Records -->
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">NS Record(s):</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-dark is-small is-fullwidth has-text-light">NS Record(s):</span></strong>
           <div id="ns-list" class="content">
             <ul>
               <li v-for="ns in nsRecords">

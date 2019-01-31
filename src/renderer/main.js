@@ -3,7 +3,6 @@ import axios from 'axios'
 import Vuex from 'vuex'
 import App from './App'
 import router from './router'
-import VueClipboard from 'vue-clipboard2'
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
@@ -14,24 +13,6 @@ import { getField, updateField } from "vuex-map-fields";
 
 window.$ = window.jQuery = require('jquery');
 
-Vue.use(VueClipboard);
-new Vue({
-  el: '#note-deck',
-  
-  data: function () {
-    return {
-      message: 'Copy These Text'
-    }
-  },
-  methods: {
-    onCopy: function (e) {
-      alert('You just copied: ' + e.text)
-    },
-    onError: function (e) {
-      alert('Failed to copy texts')
-    }
-  }
-})
 Vue.use(Vuex);
 Vue.config.productionTip = false;
 
