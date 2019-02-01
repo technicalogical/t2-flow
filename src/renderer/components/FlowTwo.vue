@@ -39,6 +39,12 @@
             </span>
             <span><strong>Net Vio</strong></span>
           </router-link>
+          <router-link to="/flow/ssl/howto/Ssl" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span><strong>SSL</strong> Setup</span>
+          </router-link>
         </p>
       </div> 
     </div>

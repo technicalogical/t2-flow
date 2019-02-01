@@ -56,6 +56,27 @@ import SslNbY from '@/components/flow/ssl/SslNbY'
 import SslNbN from '@/components/flow/ssl/SslNbN'
 // END SSL error imported routes
 
+// BEGIN SSL Setup imported routes
+import Ssl from '@/components/flow/ssl/howto/Ssl'
+import Essl from '@/components/flow/ssl/howto/Essl'
+import EsslC from '@/components/flow/ssl/howto/EsslC'
+import EsslN from '@/components/flow/ssl/howto/EsslN'
+import Dssl from '@/components/flow/ssl/howto/Dssl'
+import DsslE from '@/components/flow/ssl/howto/DsslE'
+import DsslN from '@/components/flow/ssl/howto/DsslN'
+import DsslNd from '@/components/flow/ssl/howto/DsslNd'
+import DsslNdT from '@/components/flow/ssl/howto/DsslNdT'
+import DsslNdTn from '@/components/flow/ssl/howto/DsslNdTn'
+import DsslNdTy from '@/components/flow/ssl/howto/DsslNdTy'
+import DsslNdY from '@/components/flow/ssl/howto/DsslNdY'
+import DsslNdYy from '@/components/flow/ssl/howto/DsslNdYy'
+import DsslNdYyG from '@/components/flow/ssl/howto/DsslNdYyG'
+import DsslNdYyT from '@/components/flow/ssl/howto/DsslNdYyT'
+import DsslNdYn from '@/components/flow/ssl/howto/DsslNdYn'
+import DsslNw from '@/components/flow/ssl/howto/DsslNw'
+import DsslNu from '@/components/flow/ssl/howto/DsslNu'
+// END SSL Setup imported routes
+
 // BEGIN 500 error imported routes
 import Fos from '@/components/flow/fivehundrederror/Fos'
 import FosYes from '@/components/flow/fivehundrederror/FosYes'
@@ -894,6 +915,99 @@ export default new Router({
       component: SslNbN,
     },
     //END - SSL Error Flow
+
+    //BEGIN - SSL Setup flow
+    {
+      path: '/flow/ssl/howto/Ssl',
+      name: 'Ssl',
+      component: Ssl,
+    },
+    {
+      path: '/flow/ssl/howto/Essl',
+      name: 'Essl',
+      component: Essl,
+    },
+    {
+      path: '/flow/ssl/howto/EsslC',
+      name: 'EsslC',
+      component: EsslC,
+    },
+    {
+      path: '/flow/ssl/howto/EsslN',
+      name: 'EsslN',
+      component: EsslN,
+    },
+    {
+      path: '/flow/ssl/howto/Dssl',
+      name: 'Dssl',
+      component: Dssl,
+    },
+    {
+      path: '/flow/ssl/howto/DsslE',
+      name: 'DsslE',
+      component: DsslE,
+    },
+    {
+      path: '/flow/ssl/howto/DsslN',
+      name: 'DsslN',
+      component: DsslN,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNd',
+      name: 'DsslNd',
+      component: DsslNd,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdT',
+      name: 'DsslNdT',
+      component: DsslNdT,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdTn',
+      name: 'DsslNdTn',
+      component: DsslNdTn,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdTy',
+      name: 'DsslNdTy',
+      component: DsslNdTy,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdY',
+      name: 'DsslNdY',
+      component: DsslNdY,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdYyG',
+      name: 'DsslNdYyG',
+      component: DsslNdYyG,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdYyT',
+      name: 'DsslNdYyT',
+      component: DsslNdYyT,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdYy',
+      name: 'DsslNdYy',
+      component: DsslNdYy,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNdYn',
+      name: 'DsslNdYn',
+      component: DsslNdYn,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNw',
+      name: 'DsslNw',
+      component: DsslNw,
+    },
+    {
+      path: '/flow/ssl/howto/DsslNu',
+      name: 'DsslNu',
+      component: DsslNu,
+    },
+    //END - SSL Setup flow
 
     //BEGIN - cPanel Email Flow
     {
