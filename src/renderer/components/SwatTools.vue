@@ -15,14 +15,14 @@
     <div id="tool-start" class="field is-grouped">
       <p class="control">
         <router-link id="ssl-title" to="tools/SwatDNS" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-success">
+          <span class="icon is-large has-text-link">
             <i class="fa fa-globe"></i>
           </span>
           <span><strong>S.W.A.T. DNS Lookup</strong></span>
         </router-link>
         <br>
         <router-link id="ssl-title" to="tools/SwatSSL" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-success">
+          <span class="icon is-large has-text-link">
             <i class="fas fa-unlock-alt"></i>
           </span>
           <span><strong>S.W.A.T. SSL Lookup</strong></span>

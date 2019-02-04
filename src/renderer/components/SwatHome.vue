@@ -7,8 +7,8 @@
     <div class="content " id="flow-start-message">
 
       <!-- BEGIN Home page logo section -->
-      <div id="logo-main">
-        <img src="../assets/images/blue-01.png">
+      <div id="logo-main" title="S.W.A.T. Flow Tool">
+        <img src="../assets/images/blue.png">
       </div>
       <!-- END Home page logo section -->
 

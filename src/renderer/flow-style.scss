@@ -1,5 +1,9 @@
 /* Full Application CSS for swat-flow-tool */
 
+.darkTheme {
+  background-color: #262626;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -30,6 +34,7 @@ input[type="reset"],
 input[type="button"],
 input[type="text"],
 input[type="tel"],
+input[type="number"],
 button,
 select,
 a,
@@ -503,6 +508,16 @@ footer {
   -webkit-app-region: no-drag;
 }
 
+#pre-text {
+  margin: 0px;
+  padding: 5px;
+  height: 50px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  -webkit-app-region: no-drag;
+}
+
 #callnotes {
   position: relative;
   display: block;
@@ -553,6 +568,75 @@ footer {
   border-radius: 3px;
 }
 
+#kime {
+  background-color: hsl(217, 71%, 53%);
+  padding: 4px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#preme {
+  background-color: hsl(217, 71%, 53%);
+  padding: 4px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+#kinotes {
+  position: relative;
+  display: block;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: hsl(0, 0%, 96%);
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  width: 70%;
+  height: 170px;
+  overflow: scroll;
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region: no-drag;
+  text-align: left;
+}
+
+#kinotes p { 
+  margin: 5px;
+  font-size: 12px;
+}
+
+#kilink {
+  border: 0px;
+  text-align: center;
+}
+
+#kilink a {
+  display: inline-block;
+}
+
+#prenotes {
+  position: relative;
+  display: block;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: hsl(0, 0%, 96%);
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  width: 70%;
+  height: 170px;
+  overflow: scroll;
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region: no-drag;
+  text-align: left;
+}
+
+#prenotes p { 
+  margin: 5px;
+  font-size: 12px;
+}
+
 #flow-toggle {
   position: absolute;
   top: 320px;
@@ -574,7 +658,7 @@ footer {
 }
 
 #go-hover:hover {
-  color: hsl(141, 71%, 48%)
+  color: hsl(217, 71%, 53%)
 }
 
 #note-copy-title {
@@ -597,6 +681,14 @@ footer {
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#copyButton:hover {
+  color: hsl(0, 0%, 14%);
+}
+
+#noteswap {
+  width: 30px;
 }
 /* END | Swat Note Vue CSS */
 

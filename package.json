@@ -1,6 +1,6 @@
 {
   "name": "swat-flow-tool",
-  "version": "1.4.7",
+  "version": "1.5.8",
   "author": "macegd",
   "description": "A Flow Tool Project",
   "license": "MIT",
@@ -44,7 +44,7 @@
       "icon": "build/icons/icon.icns"
     },
     "win": {
-      "icon": "src/renderer/assets/icons/win/icon.ico"
+      "icon": "src/renderer/assets/icons/favicon.ico"
     },
     "linux": {
       "icon": "build/icons"
@@ -54,9 +54,9 @@
     "@vue/cli": "^3.3.0",
     "axios": "^0.18.0",
     "bulma": "^0.7.2",
+    "clipboard": "^2.0.4",
     "jquery": "^3.3.1",
     "vue": "^2.5.22",
-    "vue-clipboard2": "^0.2.1",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.2",
     "vue-select": "^2.5.1",

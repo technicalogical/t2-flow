@@ -27,7 +27,7 @@
       <nav id="prime">
         <ul>
           <a class="icon" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
-          <a class="icon" title="SWAT Flow"><router-link class="fas fa-file-alt" to="/SwatFlow"></router-link></a>
+          <router-link class="icon" title="SWAT Flow" to="/SwatFlow"><img src="../renderer/assets/icons/png/fgo-blk.png"></router-link>
           <a class="icon" title="SWAT Note"><router-link class="fas fa-sticky-note" to="/SwatNote"></router-link></a>
           <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
           <a class="icon" title="SWAT Links"><router-link class="fas fa-link" to="/SwatLinks"></router-link></a>
@@ -39,7 +39,7 @@
 
       <!-- Button to close application -->
       <p class="buttons is-right">
-        <a id="close-btn" onclick="self.close()" class="button is-small is-white" title="Close SWAT Tool">
+        <a id="close-btn" onclick="self.close()" class="button is-small is-white" title="Close Flow Tool">
           <span class="icon">
             <i class="fas fa-times fa-lg"></i>
           </span> 
@@ -66,7 +66,7 @@
           <div class="dropdown-trigger">
             <button class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
               <span><img src="../renderer/assets/icons/png/godaddy.png"></span>
-              <span class="icon has-text-success">
+              <span class="icon has-text-light">
                 <i class="fas fa-angle-up" aria-hidden="true"></i>
               </span>
             </button>
@@ -110,7 +110,7 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.4.7</span>
+            <span class="tag is-dark">Beta version 1.5.8</span>
             <span class="tag verse is-link">(Zephyr)</span>
           </div>
         </div>
@@ -125,6 +125,16 @@ import { mapFields } from 'vuex-map-fields';
 
 export default {
   name: 'App',
+  data: function(){
+    return {
+      darkTheme: false,
+    }
+  },
+  methods: {
+    handleThemeChange: function () {
+      this.darkTheme= !this.darkTheme;
+    }
+  },
   computed: {
     // The `mapFields` function takes an array of
     // field names and generates corresponding
@@ -135,7 +145,11 @@ export default {
       'sitch',
 	    'domain',
       'method',
-      'selected'
+      'selected',
+      'inc',
+      'kidomain',
+      'cusnum',
+      'guid'
     ]),
   },
 };

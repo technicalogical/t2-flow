@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import '../../../node_modules/bulma/css/bulma.css'
+import '../../../node_modules/bulma/css/bulma.min.css'
 
 // BEGIN Primary imported routes
 import SwatHome from '@/components/SwatHome'
 import SwatFlow from '@/components/SwatFlow'
 import SwatNote from '@/components/SwatNote'
+import KiNote from '@/components/note/KiNote'
+import PreNote from '@/components/note/PreNote'
 import SwatTools from '@/components/SwatTools'
 import SwatLinks from '@/components/SwatLinks'
 import SwatSettings from '@/components/SwatSettings'
@@ -456,6 +458,16 @@ export default new Router({
       path: '/SwatNote',
       name: 'Swat Note',
       component: SwatNote
+    },
+    {
+      path: '/note/PreNote',
+      name: 'Pre Note',
+      component: PreNote
+    },
+    {
+      path: '/note/KiNote',
+      name: 'KI Note',
+      component: KiNote
     },
     {
       path: '/SwatTools',
@@ -1179,11 +1191,6 @@ export default new Router({
       path: '/flow/cpemail/cpmSyRwNyY',
       name: 'cpmSyRwNyY',
       component: cpmSyRwNyY,
-    },
-    {
-      path: '/flow/cpemail/cpmSyRwNn',
-      name: 'cpmSyRwNn',
-      component: cpmSyRwNn,
     },
     {
       path: '/flow/cpemail/cpmSn',

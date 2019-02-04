@@ -21,7 +21,14 @@ const store = new Vuex.Store({
     name: '',
     sitch: '',
 	  domain: '',
-	  method: ''
+    inc:'',
+    kidomain:'',
+    cusnum:'',
+    guid:'',
+    predom:'',
+    phost:'',
+    psitch:'',
+    pquest:''
   },
   getters: {
     // Add the `getField` getter to the
