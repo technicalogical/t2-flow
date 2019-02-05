@@ -110,7 +110,7 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.5.8</span>
+            <span class="tag is-dark">Beta version 1.5.9</span>
             <span class="tag verse is-link">(Zephyr)</span>
           </div>
         </div>

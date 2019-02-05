@@ -34,7 +34,7 @@
       
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/flow/ssl/howto/Dssl" class="button is-small is-info">
+          <router-link to="/flow/ssl/howto/DsslEr" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>

@@ -15,26 +15,26 @@
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Check domain with SSL checker. Is there an SSL installed?</p>
+        <p>Manually type <strong>"https://"</strong> before the domain in the address bar. Does it show secure?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/ssl/howto/DsslEeY" class="button is-light">
+          <router-link to="/flow/ssl/howto/DsslEpYy" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span><strong>Yes</strong>. There is an SSL installed.</span>
+            <span><strong>Yes</strong>. It shows secure.</span>
           </router-link>  
-          <router-link to="/flow/ssl/howto/DsslEeN" class="button is-light">
+          <router-link to="/flow/ssl/howto/DsslEpYe" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span>There is <strong>no</strong> SSL installed</span>
+            <span><strong>No</strong>. It shows SSL error.</span>
           </router-link>
         </p>
       
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/flow/ssl/howto/DsslE" class="button is-small is-info">
+          <router-link to="/flow/ssl/howto/DsslEp" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>

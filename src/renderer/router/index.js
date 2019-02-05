@@ -66,7 +66,13 @@ import EsslN from '@/components/flow/ssl/howto/EsslN'
 import Dssl from '@/components/flow/ssl/howto/Dssl'
 import DsslE from '@/components/flow/ssl/howto/DsslE'
 import DsslEe from '@/components/flow/ssl/howto/DsslEe'
+import DsslEeY from '@/components/flow/ssl/howto/DsslEeY'
+import DsslEeN from '@/components/flow/ssl/howto/DsslEeN'
 import DsslEp from '@/components/flow/ssl/howto/DsslEp'
+import DsslEpY from '@/components/flow/ssl/howto/DsslEpY'
+import DsslEpYy from '@/components/flow/ssl/howto/DsslEpYy'
+import DsslEpYe from '@/components/flow/ssl/howto/DsslEpYe'
+import DsslEpN from '@/components/flow/ssl/howto/DsslEpN'
 import DsslEr from '@/components/flow/ssl/howto/DsslEr'
 import DsslErA from '@/components/flow/ssl/howto/DsslErA'
 import DsslErAa from '@/components/flow/ssl/howto/DsslErAa'
@@ -996,9 +1002,39 @@ export default new Router({
       component: DsslEe,
     },
     {
+      path: '/flow/ssl/howto/DsslEeY',
+      name: 'DsslEeY',
+      component: DsslEeY,
+    },
+    {
+      path: '/flow/ssl/howto/DsslEeN',
+      name: 'DsslEeN',
+      component: DsslEeN,
+    },
+    {
       path: '/flow/ssl/howto/DsslEp',
       name: 'DsslEp',
       component: DsslEp,
+    },
+    {
+      path: '/flow/ssl/howto/DsslEpN',
+      name: 'DsslEpN',
+      component: DsslEpN,
+    },
+    {
+      path: '/flow/ssl/howto/DsslEpY',
+      name: 'DsslEpY',
+      component: DsslEpY,
+    },
+    {
+      path: '/flow/ssl/howto/DsslEpYy',
+      name: 'DsslEpYy',
+      component: DsslEpYy,
+    },
+    {
+      path: '/flow/ssl/howto/DsslEpYe',
+      name: 'DsslEpYe',
+      component: DsslEpYe,
     },
     {
       path: '/flow/ssl/howto/DsslEr',
