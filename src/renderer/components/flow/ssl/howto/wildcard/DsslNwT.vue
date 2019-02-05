@@ -15,26 +15,26 @@
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Start the SSL setup process and advise the customer to enter the CSR information into the Add-on domain section.</p>
+        <p>The customer will need to generate a CSR from their third party hosting provider before they can continue. Does the customer already have the CSR request completed?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/ssl/howto/DsslNdYnG" class="button is-light">
+          <router-link to="/flow/ssl/howto/wildcard/DsslNwTy" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span>It is registered with <strong>GoDaddy</strong>.</span>
+            <span><strong>Yes</strong>. Customer has <strong>CSR</strong> ready.</span>
           </router-link>  
-          <router-link to="/flow/ssl/howto/DsslNdYnT" class="button is-light">
+          <router-link to="/flow/ssl/howto/wildcard/DsslNwTn" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span>It is registered with <strong>third party</strong></span>
+            <span><strong>No</strong>. Customer does not have <strong>CSR</strong>.</span>
           </router-link>
         </p>
       
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/flow/ssl/howto/DsslNdY" class="button is-small is-info">
+          <router-link to="/flow/ssl/howto/wildcard/DsslNw" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>

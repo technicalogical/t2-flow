@@ -32,7 +32,7 @@
               <input class="input  is-small" type="text" v-model="phost" placeholder="Hosting Plan">
             </p>
           </div>
-          <strong><span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth">What have you tired?</span></strong>
+          <strong><span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth">What have you tried?</span></strong>
           <div id="note-sitch" class="control">
             <textarea id="pre-text" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="psitch" wrap="hard"></textarea>
           </div>

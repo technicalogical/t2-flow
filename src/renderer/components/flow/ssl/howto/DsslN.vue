@@ -24,13 +24,13 @@
             </span>
             <span><strong>DSSL</strong> (DIY SSL)</span>
           </router-link>  
-          <router-link to="/flow/ssl/howto/DsslNu" class="button is-light">
+          <router-link to="/flow/ssl/howto/ucc/DsslNu" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
             <span><strong>UCC/SAN</strong> DSSL</span>
           </router-link>
-          <router-link to="/flow/ssl/howto/DsslNw" class="button is-light">
+          <router-link to="/flow/ssl/howto/wildcard/DsslNw" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
