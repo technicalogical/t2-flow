@@ -4,10 +4,8 @@
   <div id="swat-deck" class="hello">
 
     <!-- START Opening comments for Swat FLow Chart -->
-    <div id="flow-start-message" class="content is-small">
-      <div class="notification is-dark">
-        These are the <strong>Swat Call Flows</strong>. They will guide you through the on call troubleshooting process. Below are your most commonly used call flows.
-      </div>
+    <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <center><p><b>S.W.A.T.</b> Call Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
@@ -17,63 +15,63 @@
         <p class="buttons">
           <router-link to="/flow/FiveError" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>500 Error</strong></span>
+            <span><b>500</b> Error</span>
           </router-link>  
           <router-link to="/flow/FourThree" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>403</strong> Site Error</span>
+            <span><b>403</b> Site Error</span>
           </router-link>
           <router-link to="/flow/FourFour" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>404</strong> Site Error</span>
+            <span><b>404</b> Site Error</span>
           </router-link>
           <router-link to="/flow/FiveThree" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>503</strong> Error</span>
+            <span><b>503</b> Error</span>
           </router-link>
           <router-link to="/flow/FormError" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>Form Mail</strong> Issues</span>
+            <span><b>Form Mail</b> Issues</span>
           </router-link>
           <router-link to="/flow/SslError" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>SSL</strong> Errors</span>
+            <span><b>SSL</b> Errors</span>
           </router-link>
           <router-link to="/flow/CpEmail" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>cPanel</strong> Email issues</span>
+            <span><b>cPanel</b> Email issues</span>
           </router-link>
           <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>Transfer</strong> PFC</span>
+            <span><b>Transfer</b> PFC</span>
           </router-link>
           <router-link to="/flow/Malware" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span>Identifying <strong>Malware</strong></span>
+            <span>Identifying <b>Malware</b></span>
           </router-link>
           <router-link to="/flow/Splunk" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>SPLUNK</strong> Usage</span>
+            <span><b>SPLUNK</b> Usage</span>
           </router-link>
         </p>
       </div> 

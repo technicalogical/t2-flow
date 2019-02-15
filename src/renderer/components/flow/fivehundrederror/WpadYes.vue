@@ -1,27 +1,25 @@
 <template>
-<div id="flow-deck-two">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>500 Error</b> / W.S.O.D. (White Screen of Death)</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content" id="flow">    
       <div class="notification is-danger has-text-centered">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div>
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell <strong>WSS (Website Security)</strong>. Customer needs to address the malicious files in their website.
+          Sell <b>WSS (Website Security)</b>. Customer needs to address the malicious files in their website.
         </div>
         <br>
         <div class="message-body">
-          The customer may also need <strong>WPPS (Wor Premium Support)</strong> for fixing broken files after the clean up.
+          The customer may also need <b>WPPS (Wor Premium Support)</b> for fixing broken files after the clean up.
         </div>
       </article>
 

@@ -1,34 +1,32 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - cPanel 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel 503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - cPanel 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Check concurrent connections and usage data. Are the <strong>cPanel</strong> resources spiking?</p>
+        <p>Check concurrent connections and usage data. Are the <b>cPanel</b> resources spiking?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/fiveothree/linux/LinYesYyes" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. cPanel Resources are spiking.</span>
+            <span><b>Yes</b>. cPanel Resources are spiking.</span>
           </router-link>  
           <router-link to="/flow/fiveothree/linux/LinYesYno" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. cPanel Resources are not spiking.</span>
+            <span><b>No</b>. cPanel Resources are not spiking.</span>
           </router-link>
         </p>
       	  <!-- BEGIN - Back button -->

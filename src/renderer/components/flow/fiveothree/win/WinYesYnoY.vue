@@ -1,23 +1,23 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - Plesk 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>Plesk 503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - Plesk 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-info">
-        <strong>TIME TO TRANSFER</strong>.
+        <b>TIME TO TRANSFER</b>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          Transfer the customer to a Tier 2 agent for further assistance.
+          <p>Transfer the customer to a Tier 2 agent for further assistance.</p>
         </div>
       </article>
 

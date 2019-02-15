@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 503 Error flow section -->
@@ -18,23 +16,23 @@
         <p>Which platform is the customer's website Hosted on?</p>
       </div>
       <p class="buttons">
-          <router-link to="/flow/fiveothree/mwp/MwpY" class="button is-dark">
+          <router-link to="/flow/fiveothree/mwp/MwpY" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-server"></i>
             </span>
-            <span>Website is hosted on <strong>Managed Wordpress</strong></span>
+            <span>Website is hosted on <b>Managed Wordpress</b></span>
           </router-link>  
-          <router-link to="/flow/fiveothree/linux/LinYes" class="button is-dark">
+          <router-link to="/flow/fiveothree/linux/LinYes" class="button is-dark is-small">
             <span class="icon has-text-danger">
               <i class="fas fa-server"></i>
             </span>
-            <span>Website is hosted on <strong>Linux (Cpanel)</strong></span>
+            <span>Website is hosted on <b>Linux (Cpanel)</b></span>
           </router-link>
-          <router-link to="/flow/fiveothree/win/WinYes" class="button is-dark">
+          <router-link to="/flow/fiveothree/win/WinYes" class="button is-dark is-small">
             <span class="icon has-text-info">
               <i class="fas fa-server"></i>
             </span>
-            <span>Website is hosted on <strong>Windows (Plesk)</strong></span>
+            <span>Website is hosted on <b>Windows (Plesk)</b></span>
           </router-link>
         </p>
       

@@ -1,28 +1,28 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - Plesk 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>Plesk 503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - Plesk 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN Plesk 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          Advise the customer that there may be issues with their code. They should reveiw their code further to prevent this from happening again.
+          <p>Advise the customer that there may be issues with their code. They should reveiw their code further to prevent this from happening again.</p>
         </div>
       </article>
       <article class="message is-small is-success">
         <div class="message-body">
-          Discuss adding <strong>website backups</strong> to this hosting for the future. Show the customer where this function is located in their hosting so they may be able to resolve this issue on their own in the future.
+          <p>Discuss adding <b>website backups</b> to this hosting for the future. Show the customer where this function is located in their hosting so they may be able to resolve this issue on their own in the future.</p>
         </div>
       </article>
 

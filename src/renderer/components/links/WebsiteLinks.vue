@@ -7,13 +7,8 @@
     <div id="tool-page" class="content is-small">
 
       <!-- Swat Tools opening note -->
-      <div class="notification is-dark">
-        These are the most useful Website specific links tactically aquired from <strong>GoDaddy</strong> tribal knowledge.
-      </div>
-
-      <!-- Tool page title -->
-      <div id="tool-tab-center">
-        <p class="is-size-6"><strong>Website Links</strong></p>
+      <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>Website</b> Links</p>
       </div>
 
       <!-- BEGIN - Swat Tool Tabs -->
@@ -21,9 +16,9 @@
         <div id="tool-tab-left">
           <router-link to="/SwatLinks" class="button is-small is-dark">
             <span class="icon is-large has-text-success">
-              <i class="fa fa-angle-left fa-2x"></i>
+              <i id="itcolor" class="fa fa-angle-left fa-2x"></i>
             </span>
-            <span><strong>Swat Tools</strong></span>
+            <span><b>Swat</b> Tools</span>
           </router-link>
         </div>
         <div id="tool-tab-right">
@@ -38,117 +33,125 @@
         <!-- GTmetrix -->
         <a href="https://gtmetrix.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>GTmetrix</strong></span>
+          <span><b>GTmetrix</b></span>
         </a>
 
         <!-- Pingdom -->
         <a href="https://tools.pingdom.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>Pingdom</strong></span>
+          <span><b>Pingdom</b></span>
         </a>
       
         <p id="link-help" class="help">DNS</p>
         <!-- Whatsmydns -->
         <a href="https://www.whatsmydns.net/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>Whatsmydns</strong></span>
+          <span><b>Whatsmydns</b></span>
         </a>
 
         <!-- Google apps Dig -->
         <a href="https://toolbox.googleapps.com/apps/dig/#CNAME/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>Google Apps DNS Dig</strong></span>
+          <span><b>Google</b> Apps DNS Dig</span>
         </a>
 
         <!-- Dig Web interface -->
         <a href="https://www.digwebinterface.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>DIG Web Interface</strong></span>
+          <span><b>DIG</b> Web Interface</span>
         </a>
         
         <!-- DNS Trails -->
         <a href="https://securitytrails.com/dns-trails" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>DNS Trails</strong></span>
+          <span><b>DNS Trails</b></span>
         </a>
 
         <p id="link-help" class="help">SSL validation</p>
         <!-- SSL Shopper -->
         <a href="https://www.sslshopper.com/ssl-checker.html" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-lock"></i>
+            <i id="itcolor" class="fas fa-lock"></i>
           </span>
-          <span><strong>SSL Shopper</strong></span>
+          <span><b>SSL</b> Shopper</span>
         </a>
 
         <!-- Why no padlock -->
         <a href="https://www.whynopadlock.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-unlock"></i>
+            <i id="itcolor" class="fas fa-unlock"></i>
           </span>
-          <span><strong>Why No Padlock</strong></span>
+          <span>Why No <b>Padlock</b></span>
         </a>
 
         <!-- SSL Checker -->
         <a href="https://www.sslchecker.com/sslchecker" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-lock"></i>
+            <i id="itcolor" class="fas fa-lock"></i>
           </span>
-          <span><strong>SSL Checker</strong></span>
+          <span><b>SSL</b> Checker</span>
         </a>
 
         <p id="link-help" class="help">Website propagation</p>
         <!-- Host tracker -->
         <a href="https://www.host-tracker.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>Host Tracker</strong></span>
+          <span>Host Tracker</span>
         </a>
 
         <!-- GEO peeker -->
         <a href="https://geopeeker.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>GeoPeeker</strong></span>
+          <span><b>GeoPeeker</b></span>
         </a>
 
         <!-- ShotSherpa -->
         <a href="https://shotsherpa.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>ShotSherpa</strong></span>
+          <span><b>ShotSherpa</b></span>
         </a>
 
         <p id="link-help" class="help">Black-list checking</p>       
         <!-- Spam Haus Look-up -->
         <a href="https://www.spamhaus.org/lookup/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>SPAMHAUS Look-up</strong></span>
+          <span><b>SPAMHAUS</b> Look-up</span>
         </a>
 
         <!-- nuestar domain blacklist check -->
         <a href="https://www.ultratools.com/tools/spamDBLookup" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-globe"></i>
+            <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span><strong>Domain black-list check</strong></span>
+          <span>Domain <b>black-list</b> check</span>
+        </a>
+
+        <!-- nuestar domain blacklist check -->
+        <a href="https://www.abuseat.org/lookup.cgi" target="_blank" class="button is-small is-dark">
+          <span class="icon has-text-success">
+            <i id="itcolor" class="fas fa-globe"></i>
+          </span>
+          <span>aduceat.<b>org</b></span>
         </a>
       
     </div>

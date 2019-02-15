@@ -1,23 +1,21 @@
 <template>
-  <div id="flow-deck-two">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>500 Error</b> / W.S.O.D. (White Screen of Death)</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-info">
-        <strong>TIME TO TRANSFER</strong>.
+        <b>TIME TO TRANSFER</b>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-         At this point you have done all that you can as a <strong>Tier 1</strong> agent. Advise the customer and transfer your call to a <strong>Tier 2</strong> agent for further assistance with troubleshooting Managed Wordpress.
+         <p>At this point you have done all that you can as a <b>Tier 1</b> agent. Advise the customer and transfer your call to a <b>Tier 2</b> agent for further assistance with troubleshooting Managed Wordpress.</p>
         </div>
       </article>
 

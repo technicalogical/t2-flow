@@ -1,12 +1,11 @@
 <template>
   <div id="app">
 
-    <!-- BEGIN - Font Awesome & Google Font support option -->   
+    <!-- BEGIN - Font Awesome support option -->   
     <link rel="stylesheet" 
         href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!-- END - Font Awesome & Google Font support option -->
+    <!-- END - Font Awesome support option -->
 
     <!-- BEGIN - Application top links section -->
     <div id="time">
@@ -110,8 +109,8 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.5.9</span>
-            <span class="tag verse is-link">(Zephyr)</span>
+            <span class="tag is-dark">Beta version 1.6.13</span>
+            <span id="ibcolor" class="tag verse is-link">(Zephyr)</span>
           </div>
         </div>
 

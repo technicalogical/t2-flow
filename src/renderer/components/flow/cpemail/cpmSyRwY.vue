@@ -1,34 +1,32 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel Email Issues</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>cPanel Email</b> issues</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Check the <strong>Splunk</strong> log for this email. Does it show <strong>"CLNT-FAILED"</strong> messages?</p>
+        <p>Check the <b>Splunk</b> log for this email. Does it show <b>"CLNT-FAILED"</b> messages?</p>
       </div>
       <p class="buttons">
         <router-link to="/flow/cpemail/cpmSyRwYy" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>Yes.</strong> it shows <strong>CLNT-FAILED</strong></span>
+          <span><b>Yes.</b> it shows <b>CLNT-FAILED</b></span>
         </router-link>  
         <router-link to="/flow/cpemail/cpmSyRwYn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>No.</strong> it does not show <strong>CLNT-FAILED</strong></span>
+          <span><b>No.</b> it does not show <b>CLNT-FAILED</b></span>
         </router-link>
       </p>
 

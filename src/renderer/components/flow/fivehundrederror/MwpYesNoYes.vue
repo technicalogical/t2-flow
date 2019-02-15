@@ -1,28 +1,26 @@
 <template>
-<div id="flow-deck-two">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>500 Error</b> / W.S.O.D. (White Screen of Death)</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div> 
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell <strong>WSS (Website Security)</strong>. Your customer has an issue with their configuration file. 
+          Sell <b>WSS (Website Security)</b>. Your customer has an issue with their configuration file. 
         </div>
       </article>
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell <strong>WPPS (Wordpress Premium Support)</strong>. This product can help enusre your customer has a correct config file for their website.
+          Sell <b>WPPS (Wordpress Premium Support)</b>. This product can help enusre your customer has a correct config file for their website.
         </div>
       </article>
 

@@ -8,7 +8,7 @@
 
       <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <strong>S.W.A.T. SSL Lookup</strong>
+        <p><b>SSL</b> Lookup</p>
       </div>
 
       <!--BEGIN Swat DNS section -->
@@ -21,7 +21,7 @@
             <span class="icon is-large has-text-light">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
-            <span><strong>Back</strong></span>
+            <span>Back</span>
           </router-link>
           
           <div class="field has-addons ">
@@ -52,9 +52,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link  is-small has-text-light">
-                    Domain:
-                  </span></strong>
+                  <span class="button is-link  is-small has-text-light">
+                    <b>Domain:</b>
+                  </span>
                 </p>
                 <p class="control is-expanded">
                   <input class="input is-small" type="text" v-model="domainName" placeholder="Domain Name" readonly>
@@ -66,9 +66,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
-                    IP:
-                  </span></strong>
+                  <span class="button is-link is-small has-text-light">
+                    <b>IP:</b>
+                  </span>
                 </p>
                 <p class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="ip" placeholder="IP Address" readonly>
@@ -80,9 +80,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
-                    Common Name:
-                  </span></strong>
+                  <span class="button is-link is-small has-text-light">
+                    <b>Common Name:</b>
+                  </span>
                 </p>
                 <p class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="commonName" placeholder="Common Name" readonly>
@@ -94,9 +94,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
-                    Expire Date:
-                  </span></strong>
+                  <span class="button is-link is-small has-text-light">
+                    <b>Expire Date:</b>
+                  </span>
                 </p>
                 <p class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="expireDate" placeholder="Expire Date" readonly>
@@ -108,9 +108,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
-                    Issuer:
-                  </span></strong>
+                  <span class="button is-link is-small has-text-light">
+                    <b>Issuer:</b>
+                  </span>
                 </p>
                 <p class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="issuer" placeholder="Issuer" readonly>
@@ -122,9 +122,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-link is-small has-text-light">
-                    Serial Number:
-                  </span></strong>
+                  <span class="button is-link is-small has-text-light">
+                    <b>Serial Number:</b>
+                  </span>
                 </p>
                 <p class="control is-expanded">
                   <input class="input is-small" type="text" v-model="serialNumber" placeholder="Serial Number" readonly>
@@ -132,7 +132,7 @@
               </div>
             </div>
           </div>
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">Subject Alternative Names:</span></strong>
+          <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>Subject Alternative Names:</b></span>
           <div id="ssl-sans" class="content">
             <ul>
               <li v-for="s in sans">

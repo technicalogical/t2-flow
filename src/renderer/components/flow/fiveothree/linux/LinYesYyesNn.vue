@@ -1,28 +1,28 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - cPanel 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel 503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - cPanel 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div>
       <article class="message is-small is-info">
         <div class="message-body">
-          Advise the customer to reveiw their files further. There is an issue somewhere within the code of their website.
+          <p>Advise the customer to reveiw their files further. There is an issue somewhere within the code of their website.</p>
         </div>
       </article>
       <article class="message is-small is-success">
         <div class="message-body">
-          Discuss possible upgrade to the hosting platform to meet the resource needs of the website. The customer may need <strong>WPPS (Wordpress Premium Support)</strong> if this is a Wordpress based website.
+          <p>Discuss possible upgrade to the hosting platform to meet the resource needs of the website. The customer may need <b>WPPS (Wordpress Premium Support)</b> if this is a Wordpress based website.</p>
         </div>
       </article>
 

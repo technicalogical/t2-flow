@@ -26,6 +26,7 @@ function createWindow () {
     maxWidth: 450,
     maxHeight: 700,
     maximizable: false,
+    transparent: false,
     backgroundColor: '#fff',
   })
 

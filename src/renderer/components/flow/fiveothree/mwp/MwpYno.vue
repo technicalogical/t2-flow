@@ -1,22 +1,20 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - Managed WordPress 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>Managed WordPress</strong> 503 Server Response Error
-      </div>
-    </article>
-    <!-- END - Managed WordPress 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN Managed WordPress 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
 
       <div class="content is-medium">
-        <p>Resubmit and flush the site in <a href="https://toolzilla.int.godaddy.com/index.php/AccountSearch/View" target="_blank" title="Toolzilla" ><strong>TZ</strong></a>. Is the site now loading in the browser?</p>
+        <p>Resubmit and flush the site in <a href="https://toolzilla.int.godaddy.com/index.php/AccountSearch/View" target="_blank" title="Toolzilla" ><b>TZ</b></a>. Is the site now loading in the browser?</p>
       </div>
 
       <p class="buttons">
@@ -24,13 +22,13 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. The website now loads in browser</span>
+            <span><b>Yes</b>. The website now loads in browser</span>
           </router-link>  
           <router-link to="/flow/fiveothree/mwp/MwpYnoFinal" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. The website does not load in browser</span>
+            <span><b>No</b>. The website does not load in browser</span>
           </router-link>
         </p>
 

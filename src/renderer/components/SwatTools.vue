@@ -3,163 +3,49 @@
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
 
+    
+
     <!-- BEGIN Swat DNS section -->
     <div id="tool-page" class="content is-small">
 
       <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <strong>SWAT Tools</strong>
+        <p><b>S.W.A.T.</b> Tools</p>
       </div>
 
-     <!-- BEGIN Start button -->
-    <div id="tool-start" class="field is-grouped">
-      <p class="control">
-        <router-link id="ssl-title" to="tools/SwatDNS" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-link">
-            <i class="fa fa-globe"></i>
-          </span>
-          <span><strong>S.W.A.T. DNS Lookup</strong></span>
-        </router-link>
-        <br>
-        <router-link id="ssl-title" to="tools/SwatSSL" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-link">
-            <i class="fas fa-unlock-alt"></i>
-          </span>
-          <span><strong>S.W.A.T. SSL Lookup</strong></span>
-        </router-link>
-        <!-- <br>
-        <a id="ssl-title" class="button is-small is-dark is-fullwidth">
-          <span class="icon is-large has-text-success">
-            <i class="fab fa-twitter"></i>
-          </span>
-          <span><strong>Full Site Check</strong></span>
-        </a> -->
-      </p>
-    </div>
-    <!-- END Start button -->
-
-      <!--BEGIN Swat DNS section
-      <form id="ssl-deck">
-
-       BEGIN Swat SSL input section
-        <div id="ssl-tool-input" class="content">
-  
-          <center><span id="ssl-title" class="button is-small is-static is-dark"><strong>SSL Lookup</strong></span></center>
-          <div class="field">
-            <div id="ssl-search" class="control has-icons-left has-icons-right">
-              <input v-model="domainName" class="input is-small" type="text" placeholder="Domain(s)" />
-              <span class="icon is-small is-left has-text-success">
-                <i class="fas fa-globe"></i>
-              </span>
-            </div>
-           BEGIN Search button section
-            <button id="ssl-go"  v-on:click="handleLookup" class="button is-small is-dark" value="">
-              <span class="icon has-text-success">
-                <i class="fas fa-search"></i>
-              </span>
-              <span>Search</span>
-            </button>
-            END Search button section
-          </div>
-          
-        </div>
-        END Swat SSL input section
-
-        BEGIN SSL Readout section
-        <div v-if="submitted" id="output-area" class="content">
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="field has-addons">
-                <p class="control">
-                  <a class="button is-static  is-small">
-                    Domain:
-                  </a>
-                </p>
-                <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="domainName" placeholder="Domain Name" readonly>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="field has-addons">
-                <p class="control">
-                  <a class="button is-static  is-small">
-                    IP:
-                  </a>
-                </p>
-                <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="ip" placeholder="Certificate IP Address" readonly>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="field has-addons">
-                <p class="control">
-                  <a class="button is-static  is-small">
-                    Common Name:
-                  </a>
-                </p>
-                <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="commonName" placeholder="Common Name" readonly>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="field has-addons">
-                <p class="control">
-                  <a class="button is-static  is-small">
-                    Expire Date:
-                  </a>
-                </p>
-                <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="expireDate" placeholder="Expire Date" readonly>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="field has-addons">
-                <p class="control">
-                  <a class="button is-static  is-small">
-                    Issuer:
-                  </a>
-                </p>
-                <p id="ssl-fix" class="control is-expanded">
-                  <input class="input  is-small" type="text" v-model="issuer" placeholder="Issuer" readonly>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="field has-addons">
-                <p class="control">
-                  <a class="button is-static is-small">
-                    Serial Number:
-                  </a>
-                </p>
-                <p id="ssl-fix" class="control is-expanded">
-                  <input class="input is-small" type="text" v-model="serialNumber" placeholder="Serial Number" readonly>
-                </p>
-              </div>
-            </div>
-          </div>
-          <span id="ssl-sans-title" class="button is-static is-small is-fullwidth">Subject Alternative Names:</span>
-          <div class="control">
-            <textarea id="ssl-sans" class="textarea is-small has-fixed-size" placeholder="Fixed size textarea" rows="5" cols="30" v-model="sans" wrap="hard" readonly></textarea>
-          </div>
-        </div>
-         END SSL Readout section
-
-      </form>
-      END Swat DNS section -->
+      <!-- BEGIN Start button -->
+      <div id="tool-start" class="field is-grouped">
+        <p class="control">
+          <router-link id="ssl-title" to="tools/SwatDNS" class="button is-small is-dark is-fullwidth">
+            <span class="icon is-large has-text-info">
+              <i class="fa fa-globe"></i>
+            </span>
+            <span><b>DNS</b> LOOKUP</span>
+          </router-link>
+          <br>
+          <router-link id="ssl-title" to="tools/SwatSSL" class="button is-small is-dark is-fullwidth">
+            <span class="icon is-large has-text-info">
+              <i class="fas fa-unlock-alt"></i>
+            </span>
+            <span><b>SSL</b> LOOKUP</span>
+          </router-link>
+          <br>
+          <router-link id="ssl-title" to="tools/SwatSPEED" class="button is-small is-dark is-fullwidth">
+            <span class="icon is-large has-text-info">
+              <i class="fas fa-medkit"></i>
+            </span>
+            <span><b>SPEED</b> CHECK</span>
+          </router-link>
+          <br>
+          <router-link id="ssl-title" to="tools/SwatWPPS" class="button is-small is-dark is-fullwidth">
+            <span class="icon is-large has-text-info">
+              <i class="fas fa-shield-alt"></i>
+            </span>
+            <span><b>WPPS</b> CHECK</span>
+          </router-link>
+        </p>
+      </div>
+      <!-- END Start button -->
       
     </div>
     <!-- END Swat DNS section -->

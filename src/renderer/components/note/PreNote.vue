@@ -5,14 +5,14 @@
 
     <!-- BEGIN KI Note input section -->
     <div id="swat-note-input" class="content is-link">
-      <center><p id="preme" class="help has-text-light has-text-weight-bold">Pre Tech Chat Template</p></center>
+      <center><p id="preme" class="help has-text-light"><b>Pre Tech Chat Template</b></p></center>
       <div class="field-body">
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <strong><span class="button has-text-light is-link is-small">
-                Domain:
-              </span></strong>
+              <span class="button has-text-light is-link is-small">
+                <b>Domain:</b>
+              </span>
             </p>
             <p class="control is-expanded">
               <input class="input is-small" type="text" v-model="predom" placeholder="Domain Name">
@@ -24,19 +24,19 @@
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <strong><span class="button is-link has-text-light is-small">
-                Hosting Plan:
-              </span></strong>
+              <span class="button is-link has-text-light is-small">
+                <b>Hosting Plan:</b>
+              </span>
             </p>
             <p class="control is-expanded">
               <input class="input  is-small" type="text" v-model="phost" placeholder="Hosting Plan">
             </p>
           </div>
-          <strong><span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth">What have you tried?</span></strong>
+          <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>What have you tried?</b></span>
           <div id="note-sitch" class="control">
             <textarea id="pre-text" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="psitch" wrap="hard"></textarea>
           </div>
-          <strong><span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth">What's your question?</span></strong>
+          <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>What's your question?</b></span>
           <div id="note-sitch" class="control">
             <textarea id="pre-text" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="pquest" wrap="hard"></textarea>
           </div>
@@ -46,7 +46,7 @@
     <!-- END KI Note input section -->
     
     <!--  BEGIN Copy paste notes section -->
-    <strong><span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth">KI Call Notes</span></strong>
+    <span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth"><b>KI Call Notes</b></span>
     <div id="prenotes" class="content is-info getme" wrap="hard">  
       <p>Domain: {{ predom }}</p>
       <p>Hosting: {{ phost }}</p> 
@@ -57,10 +57,10 @@
 
     <div id="copy-clear" class="buttons">
       <router-link id="noteswap" to="/note/KiNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
-        <strong>KI</strong>
+        <b>KI</b>
       </router-link>
       <router-link id="noteswap" to="/SwatNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
-        <strong>T1</strong>
+        <b>T1</b>
       </router-link>
       <button id="copyButton"  class="button is-small is-link btn" data-clipboard-target="#prenotes" title="Click to copy your notes to clipboard">
         <span class="icon is-medium has-text-light">

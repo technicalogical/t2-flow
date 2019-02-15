@@ -7,7 +7,7 @@
     <div class="content " id="flow-start-message">
 
       <!-- BEGIN Home page logo section -->
-      <div id="logo-main" title="S.W.A.T. Flow Tool">
+      <div id="logo-main" title="Inbound Flow Tool">
         <img src="../assets/images/blue.png">
       </div>
       <!-- END Home page logo section -->
@@ -18,19 +18,19 @@
     <div id="get-start" class="field is-grouped">
       <p class="control">
         <router-link to="/SwatFlow" class="button is-small is-fullwidth is-dark">
-          <strong>S.W.A.T. Flow</strong>
+          <p>S.W.A.T. <b>Flow</b></p>
         </router-link>
         <br>
         <router-link to="/SwatNote" class="button is-small is-fullwidth is-dark">
-          <strong>S.W.A.T. Note</strong>
+          <p>S.W.A.T. <b>Note</b></p>
         </router-link>
         <br>
         <router-link to="/SwatTools" class="button is-small is-fullwidth is-dark">
-          <strong>S.W.A.T. Tools</strong>
+          <p>S.W.A.T. <b>Tools</b></p>
         </router-link>
         <br>
         <router-link to="/SwatLinks" class="button is-small is-fullwidth is-dark">
-          <strong>S.W.A.T. Links</strong>
+          <p>S.W.A.T. <b>Links</b></p>
         </router-link>
       </p>
     </div>

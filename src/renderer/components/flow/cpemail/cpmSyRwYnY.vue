@@ -1,23 +1,23 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - Form mail Error Text -->
-    <article id="wsod-message" class="message is-small has-text-centered">
-      <div class="notification is-dark">
-         <strong>cPanel Email Issues</strong>
-      </div>
-    </article>
-    <!-- END - Form mail Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>cPanel Email</b> issues</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          		Advise the customer that the email is functioning as intended. They will need to check the junk or spam folder for the recipient account.
+          <p>Advise the customer that the email is functioning as intended. They will need to check the junk or spam folder for the recipient account.</p>
         </div>
       </article>
       

@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel Email Issues</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>cPanel Email</b> issues</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->

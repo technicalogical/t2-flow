@@ -1,13 +1,11 @@
 <template>
-<div id="flow-deck-two">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>500 Error / W.S.O.D. (White Screen of Death)</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>500 Error</b> / W.S.O.D. (White Screen of Death)</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->
@@ -20,13 +18,13 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. There are errors.</span>
+            <span><b>Yes</b>. There are errors.</span>
           </router-link>  
           <router-link to="/flow/fivehundrederror/MwpNoFinal" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. There are no errors.</span>
+            <span><b>No</b>. There are no errors.</span>
           </router-link>
         </p>
       </div> 

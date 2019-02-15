@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - cPanel 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel 503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - cPanel 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 503 Error flow section -->
@@ -22,13 +20,13 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. The website performs poorly.</span>
+            <span><b>Yes</b>. The website performs poorly.</span>
           </router-link>  
           <router-link to="/flow/fiveothree/linux/LinYesYyes" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
-            <span><strong>No</strong>. The website is properly optimized.</span>
+            <span><b>No</b>. The website is properly optimized.</span>
           </router-link>
         </p>
       	  <!-- BEGIN - Back button -->

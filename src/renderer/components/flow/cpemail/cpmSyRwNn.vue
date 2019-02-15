@@ -1,33 +1,31 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- 500 Error / WSOD Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel Email Issues</strong>
-      </div>
-    </article>
-    <!-- END - 500 Error / WSOD Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>cPanel Email</b> issues</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Check the Splunk log. Are they being flagged for a <strong>"BAD-ACCT"</strong>?</p>
+        <p>Check the Splunk log. Are they being flagged for a <b>"BAD-ACCT"</b>?</p>
       </div>
       <p class="buttons">
         <router-link to="/flow/cpemail/cpmSyRwNnY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>Yes.</strong> They are flagged.</span>
+          <span><b>Yes.</b> They are flagged.</span>
         </router-link>  
         <router-link to="/flow/cpemail/cpmSyRwNnN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>No.</strong> They are not flagged.</span>
+          <span><b>No.</b> They are not flagged.</span>
         </router-link>
       </p>
 

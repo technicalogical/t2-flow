@@ -13,6 +13,18 @@ import SwatLinks from '@/components/SwatLinks'
 import SwatSettings from '@/components/SwatSettings'
 // END Primary imported routes
 
+// BEGIN Swat Links imported routes
+import HostingLinks from '@/components/links/HostingLinks'
+import WebsiteLinks from '@/components/links/WebsiteLinks'
+// END Swat Links imported routes
+
+// BEGIN Swat Tools imported routes
+import SwatDNS from '@/components/tools/SwatDNS'
+import SwatSSL from '@/components/tools/SwatSSL'
+import SwatSPEED from '@/components/tools/SwatSPEED'
+import SwatWPPS from '@/components/tools/SwatWPPS'
+// END Swat Tools imported routes
+
 // SWAT Flow main menu routes
 import FiveError from '@/components/flow/FiveError'
 import FourThree from '@/components/flow/FourThree'
@@ -119,6 +131,8 @@ import DsslNuYnT from '@/components/flow/ssl/howto/ucc/DsslNuYnT'
 // BEGIN 500 error imported routes
 import Fos from '@/components/flow/fivehundrederror/Fos'
 import FosYes from '@/components/flow/fivehundrederror/FosYes'
+import FosN from '@/components/flow/fivehundrederror/FosN'
+import FosNt from '@/components/flow/fivehundrederror/FosNt'
 import FosNo from '@/components/flow/fivehundrederror/FosNo'
 import Wpad from '@/components/flow/fivehundrederror/Wpad'
 import WpadYes from '@/components/flow/fivehundrederror/WpadYes'
@@ -177,16 +191,6 @@ import LinYesYnoD from '@/components/flow/fiveothree/linux/LinYesYnoD'
 import LinYesN from '@/components/flow/fiveothree/linux/LinYesN'
 // END 503 error imported routes
 
-// BEGIN Swat Links imported routes
-import HostingLinks from '@/components/links/HostingLinks'
-import WebsiteLinks from '@/components/links/WebsiteLinks'
-// END Swat Links imported routes
-
-// BEGIN Swat Tools imported routes
-import SwatDNS from '@/components/tools/SwatDNS'
-import SwatSSL from '@/components/tools/SwatSSL'
-// END Swat Tools imported routes
-
 // BEGIN cPanel Email imported routes
 import cpmR from '@/components/flow/cpemail/cpmR'
 import cpmRy from '@/components/flow/cpemail/cpmRy'
@@ -203,6 +207,10 @@ import cpmSyL from '@/components/flow/cpemail/cpmSyL'
 import cpmSyR from '@/components/flow/cpemail/cpmSyR'
 import cpmSyRc from '@/components/flow/cpemail/cpmSyRc'
 import cpmSyRcNn from '@/components/flow/cpemail/cpmSyRcNn'
+import cpmSyRcNnY from '@/components/flow/cpemail/cpmSyRcNnY'
+import cpmSyRcNnYy from '@/components/flow/cpemail/cpmSyRcNnYy'
+import cpmSyRcNnYn from '@/components/flow/cpemail/cpmSyRcNnYn'
+import cpmSyRcNnN from '@/components/flow/cpemail/cpmSyRcNnN'
 import cpmSyRcNy from '@/components/flow/cpemail/cpmSyRcNy'
 import cpmSyRcNyN from '@/components/flow/cpemail/cpmSyRcNyN'
 import cpmSyRcNyY from '@/components/flow/cpemail/cpmSyRcNyY'
@@ -522,6 +530,16 @@ export default new Router({
       component: SwatSSL
     },
     {
+      path: '/tools/SwatSPEED',
+      name: 'SWAT SPEED',
+      component: SwatSPEED
+    },
+    {
+      path: '/tools/SwatWPPS',
+      name: 'SWAT WPPS',
+      component: SwatWPPS
+    },
+    {
       path: '/SwatLinks',
       name: 'Swat Links',
       component: SwatLinks
@@ -576,6 +594,16 @@ export default new Router({
       path: '/flow/fivehundrederror/FosYes',
       name: 'FosYes',
       component: FosYes
+    },
+    {
+      path: '/flow/fivehundrederror/FosN',
+      name: 'FosN',
+      component: FosN
+    },
+    {
+      path: '/flow/fivehundrederror/FosNt',
+      name: 'FosNt',
+      component: FosNt
     },
     {
       path: '/flow/fivehundrederror/FosNo',
@@ -1328,6 +1356,26 @@ export default new Router({
       path: '/flow/cpemail/cpmSyRcNn',
       name: 'cpmSyRcNn',
       component: cpmSyRcNn,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNnY',
+      name: 'cpmSyRcNnY',
+      component: cpmSyRcNnY,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNnYy',
+      name: 'cpmSyRcNnYy',
+      component: cpmSyRcNnYy,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNnYn',
+      name: 'cpmSyRcNnYn',
+      component: cpmSyRcNnYn,
+    },
+    {
+      path: '/flow/cpemail/cpmSyRcNnN',
+      name: 'cpmSyRcNnN',
+      component: cpmSyRcNnN,
     },
     {
       path: '/flow/cpemail/cpmSyRcNy',

@@ -1,31 +1,31 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - cPanel 503 Server response Error Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>cPanel 503</strong> Server Response Error
-      </div>
-    </article>
-    <!-- END - cPanel 503 Server response Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>503</b> Server Response Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div>
       <article class="message is-small is-info">
         <div class="message-body">
-          Advise the customer that they need to review their content further for possible file issues. They may also want to conact a Developer to help.
+          <p>Advise the customer that they need to review their content further for possible file issues. They may also want to conact a Developer to help.</p>
         </div>
       </article>
       <article class="message is-small is-success">
         <div class="message-body">
-          Offer the customer <strong>WPPS (Wordpress Premium Support)</strong>. We can assist further with a premium support.
+          <p>Offer the customer <b>WPPS (Wordpress Premium Support)</b>. We can assist further with a premium support.</p>
         </div>
       </article>
-
+      
       <!-- BEGIN - Back button -->
       <p class="buttons">
         <router-link to="/flow/fiveothree/linux/LinYesYno" class="button is-small is-info">

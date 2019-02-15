@@ -4,10 +4,8 @@
   <div id="swat-deck" class="hello">
 
     <!-- START Opening comments for Swat FLow Chart -->
-    <div id="flow-start-message" class="content is-small">
-      <div class="notification is-dark">
-        <center><strong>S.W.A.T.</strong> Check Flows</center>
-      </div>
+    <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <center><p>S.W.A.T. <b>"Check"</b> Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
@@ -17,21 +15,21 @@
         <p class="buttons">
           <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span>Server <strong>Uptime</strong> Check</span>
+            <span>Server <b>Uptime</b> Check</span>
           </router-link>
           <router-link to="/flow/mwp/Migsync" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>MWP</strong> Migration/Sync</span>
+            <span><b>MWP</b> Migration/Sync</span>
           </router-link>
           <router-link to="/flow/Ftp" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>FTP</strong> Support</span>
+            <span><b>FTP</b> Support</span>
           </router-link>
           <!--<router-link to="/flow/migration/Mig" class="button is-dark is-small">
             <span class="icon has-text-success">

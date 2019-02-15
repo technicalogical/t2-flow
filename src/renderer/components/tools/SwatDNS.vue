@@ -8,7 +8,7 @@
 
       <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <strong>S.W.A.T. DNS Lookup</strong>
+        <p><b>DNS</b> Lookup</p>
       </div>
 
       <!--BEGIN Swat DNS section -->
@@ -22,7 +22,7 @@
             <span class="icon is-large has-text-light">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
-            <span><strong>Back</strong></span>
+            <span>Back</span>
           </router-link>
 
           <div class="field has-addons ">
@@ -54,9 +54,9 @@
             <div class="field is-expanded">
               <div class="field has-addons">
                 <p class="control">
-                  <strong><span class="button is-small has-text-light is-link">
-                    A Record(s):
-                  </span></strong>
+                  <span class="button is-small has-text-light is-link">
+                    <b>A Record(s):</b>
+                  </span>
                 </p>
                 <p v-for="a in aRecords" class="control is-expanded">
                   <input class="input  is-small" type="text" v-model="aRecords" placeholder="A Record IP Address" readonly>
@@ -66,7 +66,7 @@
           </div>
 
           <!-- Mx Records -->
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">MX Record(s):</span></strong>
+          <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>MX Record(s):</b></span>
           <div id="mx-list" class="content">
             <ul>
               <li v-for="mx in mxRecords">
@@ -77,7 +77,7 @@
           <br>
 
           <!-- TXT Records -->
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">TXT Record(s):</span></strong>
+          <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>TXT Record(s):</b></span>
           <div id="txt-list" class="content">
             <ul>
               <li id="txt-sep" v-for="txt in txtRecords">
@@ -88,7 +88,7 @@
           <br>
 
           <!-- NS Records -->
-          <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">NS Record(s):</span></strong>
+          <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>NS Record(s):</b></span>
           <div id="ns-list" class="content">
             <ul>
               <li v-for="ns in nsRecords">

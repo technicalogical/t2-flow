@@ -7,13 +7,8 @@
     <div id="tool-page" class="content is-small">
 
       <!-- Swat Tools opening note -->
-      <div class="notification is-dark">
-        This is a collection of links primarliy related to hosting needs, sourced from <strong>GoDaddy</strong> tribal knowledge base.
-      </div>
-
-      <!-- Tool page title -->
-      <div id="tool-tab-center">
-        <p class="is-size-6"><strong>Hosting Links</strong></p>
+      <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>Hosting</b> Links</p>
       </div>
 
       <!-- BEGIN - Swat Tool Tabs -->
@@ -23,9 +18,9 @@
         </div>
         <div id="tool-tab-right">
           <router-link to="/SwatLinks" class="button is-small is-dark">
-            <span><strong>Swat Tools</strong></span>
+            <span><b>Swat</b> Tools</span>
             <span class="icon is-large has-text-success">
-              <i class="fa fa-angle-right fa-2x"></i>
+              <i id="itcolor" class="fa fa-angle-right fa-2x"></i>
             </span>
           </router-link>
         </div>
@@ -39,74 +34,74 @@
         <!-- Restore U -->
         <a href="https://hs.int.godaddy.com/restore-u/#/index" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-server"></i>
+            <i id="itcolor" class="fas fa-server"></i>
           </span>
-          <span><strong>Restore U</strong></span>
+          <span><b>Restore U</b></span>
         </a>
 
         <!-- Migrate U -->
         <a href="https://exserv.int.godaddy.com/services/migrations" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-server"></i>
+            <i id="itcolor" class="fas fa-server"></i>
           </span>
-          <span><strong>Migrate U</strong></span>
+          <span><b>Migrate U</b></span>
         </a>
 
         <p id="link-help" class="help">General hosting tools</p>
         <!-- Hosting Kb -->
         <a href="https://confluence.godaddy.com/display/C3PHS/Hosting+Support+Knowledge+Base+-+Hitchhikers+Guide+to+Hosting" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-book"></i>
+            <i id="itcolor" class="fas fa-book"></i>
           </span>
-          <span><strong>General Hosting Knowledge Base</strong></span>
+          <span>General <b>Hosting Knowledge Base</b></span>
         </a>
 
         <!-- General hosting expert services -->
         <a href="https://confluence.godaddy.com/display/C3PHS/Expert+Services+-+Expert+Services+Menu" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-book-open"></i>
+            <i id="itcolor" class="fas fa-book-open"></i>
           </span>
-          <span><strong>Expert Services Menu</strong></span>
+          <span><b>Expert Services</b> Menu</span>
         </a>
 
         <!-- The Cheat Sheet -->
         <a href="https://godaddy.jiveon.com/community/c3/the-cheatsheet" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-file-alt"></i>
+            <i id="itcolor" class="fas fa-file-alt"></i>
           </span>
-          <span><strong>The Cheat Sheet</strong></span>
+          <span>The <b>Cheat Sheet</b></span>
         </a>
              
         <!-- C3 hub -->
         <a href="https://godaddy.jiveon.com/community/c3/c3-hub" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-th"></i>
+            <i id="itcolor" class="fas fa-th"></i>
           </span>
-          <span><strong>C3 Hub</strong></span>
+          <span><b>C3</b> Hub</span>
         </a>
         
         <!-- SPLUNK> -->
         <a href="https://godaddy.splunkcloud.com/en-US/app/ahs/search" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-envelope"></i>
+            <i id="itcolor" class="fas fa-envelope"></i>
           </span>
-          <span><strong>Splunk</strong></span>
+          <span><b>Splunk</b></span>
         </a>
 
         <!-- Approved test scripts -->
         <a href="https://confluence.godaddy.com/display/C3PHS/General+-+Tools+-+Approved+Test+Scripts" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-file-archive"></i>
+            <i id="itcolor" class="fas fa-file-archive"></i>
           </span>
-          <span><strong>Approved Test Scripts</strong></span>
+          <span><b>Approved</b> Test Scripts</span>
         </a>
 
         <!-- Toolzilla -->
         <a href="https://toolzilla.int.godaddy.com/index.php/AccountSearch/View" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
-            <i class="fas fa-toolbox"></i>
+            <i id="itcolor" class="fas fa-toolbox"></i>
           </span>
-          <span><strong>Toolzilla</strong></span>
+          <span><b>Toolzilla</b></span>
         </a>
       
     </div>

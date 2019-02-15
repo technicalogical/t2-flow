@@ -4,10 +4,8 @@
   <div id="swat-deck" class="hello">
 
     <!-- START Opening comments for Swat FLow Chart -->
-    <div id="flow-start-message" class="content is-small">
-      <div class="notification is-dark">
-        <center><strong>S.W.A.T.</strong> "<strong>How To</strong>" Flows</center>
-      </div>
+    <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <center><p>S.W.A.T. <b>"How To"</b> Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
@@ -17,33 +15,33 @@
         <p class="buttons">
           <router-link to="/flow/howto/debugmode/Debug" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span>Enable <strong>Debug</strong> mode</span>
+            <span>Enable <b>Debug</b> mode</span>
           </router-link>
           <router-link to="/flow/howto/sucuri/Sucuri" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>Sucuri</strong> support tickets</span>
+            <span><b>Sucuri</b> support tickets</span>
           </router-link>
           <router-link to="/flow/howto/wpps/Wpps" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>WPPS</strong></span>
+            <span><b>WPPS</b></span>
           </router-link>
           <router-link to="/flow/howto/netvio/Netvio" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>Net Vio</strong></span>
+            <span><b>Net Vio</b></span>
           </router-link>
           <router-link to="/flow/ssl/howto/Ssl" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>SSL</strong> Setup</span>
+            <span><b>SSL</b> Setup</span>
           </router-link>
         </p>
       </div> 

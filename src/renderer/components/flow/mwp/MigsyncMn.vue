@@ -18,13 +18,13 @@
         <p>Are you able to restart the migration?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/cpemail/MigsyncMy" class="button is-light">
+        <router-link to="/flow/cpemail/MigsyncMnY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
           <span><strong>Yes</strong>. The migration is restarted.</span>
         </router-link>  
-        <router-link to="/flow/cpemail/MigsyncMn" class="button is-light">
+        <router-link to="/flow/cpemail/MigsyncMnN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>

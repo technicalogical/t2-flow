@@ -1,8 +1,54 @@
 /* Full Application CSS for swat-flow-tool */
 
+/* Full Application CSS for swat-flow-tool */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+/* BEGIN - Application wide GoDaddy Fonts */
+@font-face {
+  font-family: 'GD Boing';
+  src: url('./fonts/GDBoing-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GD Boing Black';
+  src: url('./fonts/GDBoing-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GD Sherpa';
+  src: url('./fonts/GDSherpa-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GD Sherpa Bold';
+  src: url('./fonts/GDSherpa-Bold.otf') format('opentype');
+}
+/* END - Application wide GoDaddy Fonts */
+
 .darkTheme {
   background-color: #262626;
 }
+
+/* Begin Application system wide color */
+#ibcolor {
+  background-color: #0049FF;
+}
+#itcolor {
+  color: #0049FF;
+}
+b {
+  font-family: 'Open Sans Bold';
+}
+/* End Application system wide color */
 
 @keyframes fadein {
   from {
@@ -21,12 +67,13 @@ body {
   padding: 0px;
   width: 450px;
   font-family: 'Open Sans', sans-serif;
-  border: 1px solid #0049FF;
-  background-color: #fff
+  border: 1px solid hsl(0, 0%, 86%);
+  background-color: #fff;
+  font-family: 'GD Sherpa';
 }
 
 html{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'GD Sherpa', 'Open Sans', sans-serif;
 }
 
 input[type="submit"],
@@ -60,7 +107,7 @@ a:active {
 /* BEGIN | Primary Vue Application Vue CSS */
 #app {
   position: relative;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -270,7 +317,7 @@ footer {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 212px;
+  width: 222px;
   top: 23px;
   height: 20px;;
   border: 0px;
@@ -343,6 +390,14 @@ footer {
   border: 0px;
 }
 
+#get-start-item {
+  border: 0px solid hsl(0, 0%, 21%);
+}
+
+#get-start-item:hover {
+  border: 0px solid #0049FF;
+}
+
 #swat-motto {
   position: relative;
   width: 70%;
@@ -362,7 +417,7 @@ footer {
 /* BEGIN | Swat Flow Vue CSS */
 #swat-deck {
   position: relative;
-  top: 40px;
+  top: 20px;
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -373,14 +428,13 @@ footer {
   position: relative;
   display: block;
   margin: 0px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   border: 0px;
   width: 75%;
   height: 340px;
-  top: 10px;
+  top: 15px;
 }
 
 #flow-break {
@@ -413,9 +467,13 @@ footer {
 
 #flow-start-message {
   position: relative;
+  top: 0px;
   margin: 0px;
   margin-left: 50px;
   margin-right: 50px;
+  padding: 10px ;
+  font-family: 'Open Sans';
+  font-size: 14px;
 }
 
 #flow-pagi {
@@ -683,10 +741,6 @@ footer {
   margin-right: auto;
 }
 
-#copyButton:hover {
-  color: hsl(0, 0%, 14%);
-}
-
 #noteswap {
   width: 30px;
 }
@@ -704,8 +758,56 @@ footer {
   border: 0px;
 }
 
+#tool-note {
+  top: 0px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  padding: 10px;
+}
+
+#speedgo {
+  border-radius: 0px 4px 4px 0px;
+}
+
+#speed-instruct {
+  position: relative;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+}
+
+#wpps-start {
+  position: relative;
+  width: 85%;
+  text-align: center;
+  top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#speed-start {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
 #ssl-title {
   margin-bottom: 6px;
+}
+
+#tool-launch {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #ssl-tool-input {
@@ -907,7 +1009,7 @@ footer {
 }
 
 #txt-sep {
-  border-bottom: 1px solid hsl(204, 86%, 53%);
+  border-bottom: 1px solid #ff7900;
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
@@ -924,6 +1026,12 @@ footer {
 
 #ns-list ul {
   list-style-type: none;
+}
+
+#note-links {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 /* END | Swat Tool Vue CSS */
 

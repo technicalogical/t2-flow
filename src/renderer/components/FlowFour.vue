@@ -4,11 +4,8 @@
   <div id="swat-deck" class="hello">
 
     <!-- START Opening comments for Swat FLow Chart -->
-    <div id="flow-start-message" class="content is-small">
-      <div class="notification is-dark">
-        <center><strong>S.W.A.T.</strong> Miscellaneous <strong>Flows</strong></center><br>
-        <p>There are some options on this page that are <strong>DIY</strong> products. You will be connected directly to the Help articles for those products.</p>
-      </div>
+    <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <center><p>S.W.A.T. <b>"Miscellaneous"</b> Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
@@ -18,33 +15,33 @@
         <p class="buttons">
           <a href="https://www.godaddy.com/help/search-engine-visibility" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>SEO</strong> & <strong>SEV</strong></span>
+            <span><b>SEO</b> & <b>SEV</b></span>
           </a>
           <a href="https://www.godaddy.com/help/website-builder-7" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>Website Builder</strong></span>
+            <span>Website Builder <b>v7</b></span>
           </a>
           <a href="https://www.godaddy.com/help/gocentral" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>Go</strong>Central</span>
+            <span><b>Go</b>Central</span>
           </a>
           <a href="https://www.godaddy.com/help/office-365-from-godaddy" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>O365</strong></span>
+            <span><b>O365</b></span>
           </a>
           <a href="https://www.godaddy.com/help/godaddy-email-marketing" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
+              <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><strong>GEM</strong></span>
+            <span><b>GEM</b></span>
           </a>
         </p>
       </div> 
