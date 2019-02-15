@@ -10,21 +10,17 @@
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>Site Speed</b> Check</p>
       </div>
-
       <!--BEGIN Swat DNS section -->
       <form id="speed-deck">
-
         <!-- BEGIN Swat SSL input section -->
         <div id="speedtest-tool-input" class="content">
-
           <!-- Swat DNS Title -->
-          <router-link id="ssl-title" to="/SwatTools" class="button is-small is-link">
+         <router-link id="ssl-title" to="/SwatTools" class="button is-small is-link">
             <span class="icon is-large has-text-light">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
-            <span><b>Back</b></span>
+            <span><strong>Back</strong></span>
           </router-link>
-
           <div class="field has-addons ">
             <div id="ssl-search" class="control ">
               <p class="control has-icons-left">
@@ -39,192 +35,185 @@
                 <span class="icon is-medium has-text-light">
                   <i class="fas fa-search"></i>
                 </span>
-                <span><b>GO</b></span>
+                <span>Test</span>
               </button>
             </div>
           </div>
         </div>
-      </form>
-      <!-- END Swat Speed input section -->
+          </form>
+        <!-- END Swat Speed input section -->
  
-      <!-- BEGIN TEST Loading section -->
-      <div style="padding-top: 20vh;" v-if="testStatus === 'loading'" class="has-text-centered has-text-link content">
-        <i class="fas fa-cog fa-spin fa-3x"></i>
-      </div>
-
-      <!-- BEGIN TEST Readout section -->
-      <div v-else-if="testStatus === 'response'" id="output-area" class="content">
-         
-        <!-- BEGIN Nav Toggle section -->
-        <div class="is-pulled-right result-navigation">
-          <a v-on:click="navToScores" v-bind:class="navigationIsScores ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Scores</small></a>
-          <b>|</b>
-          <a v-on:click="navToRequests" v-bind:class="navigationIsRequests ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Requests</small></a>
-          <!-- <b>|</b> -->
-
-          <!-- <a v-on:click="navToRecommendations" v-bind:class="navigationIsRecommendations ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px;"><small>Recommendations</small></a> -->
-
+        <!-- BEGIN TEST Loading section -->
+        <div style="padding-top: 20vh;" v-if="testStatus === 'loading'" class="has-text-centered content">
+          <i class="fas fa-cog fa-spin fa-5x"></i>
         </div>
+        <!-- BEGIN TEST Readout section -->
+        <div v-else-if="testStatus === 'response'" id="output-area" class="content">
+          <!-- BEGIN Nav Toggle section -->
  
-        <br><br>
-        <!-- END Nav Toggle section -->
-
-        <!-- <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">General:</span></strong> -->
-        
-        <div class="speed-list-med content" v-if="navigationIsScores">
-          <b>Requested URL: </b>{{ requestedUrl }}
-          <br>
-          <b>Final URL: </b>{{ finalUrl }}
+ 
+          <div class="is-pulled-right result-navigation">
+            <a v-on:click="navToScores" v-bind:class="navigationIsScores ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Scores</small></a>
+            <b>|</b>
+            <a v-on:click="navToRequests" v-bind:class="navigationIsRequests ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Requests</small></a>
+            <!-- <b>|</b> -->
+            <!-- <a v-on:click="navToRecommendations" v-bind:class="navigationIsRecommendations ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px;"><small>Recommendations</small></a> -->
+          </div>
+ 
+ 
           <br><br>
-
-          <div title="Speed Index shows how quickly the contents of a page are visibly populated">
-            <b>Page Load Time: </b>{{ loadTime }}
-            <span class="is-pulled-right"><b>Speed Index Score: </b>{{ speedIndexScore }}%</span>
-            <progress v-bind:class="loadTimeBarColor" class="progress is-small" v-bind:value="speedIndexScore" max="100">{{ speedIndexScore }}</progress>
-          </div>
-          <br>
-
-          <div title="Time To First Byte identifies the time at which your server sends a response. ">
-            <!-- description: "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/network-payloads).", -->
-            <b>Time To First Byte: </b>{{ ttfb }}
-            <span class="is-pulled-right"><b >TTFB Score: </b>{{ ttfbScore }}%</span>
-            <progress v-bind:class="ttfbBarColor" class="progress is-small" v-bind:value="ttfbScore" max="100">{{ ttfbScore }}</progress>
-          </div>
-          <br>
-          <div title="Large network payloads cost users real money and are highly correlated with long load times">
-            <b>Total Page Size: </b>{{ totalSize }}
-            <span class="is-pulled-right"><b >Score: </b>{{ totalSizeScore }}%</span>
-            <progress v-bind:class="totalSizeBarColor" class="progress is-small" v-bind:value="totalSizeScore" max="100">{{ totalSizeScore }}</progress>
-          </div>
-          <br>
-          <div title="First Meaningful Paint measures when the primary content of a page is visible. ">
-            <b>First Visible: </b>{{ firstMeaningfulPaint }}
-            <span class="is-pulled-right"><b >Score: </b>{{ firstMeaningfulPaintScore }}%</span>
-            <progress v-bind:class="firstMeaningfulPaintBarColor" class="progress is-small" v-bind:value="firstMeaningfulPaintScore" max="100">{{ firstMeaningfulPaintScore }}</progress>
-          </div>
-          <br>
-          <div title="Time to interactive is the amount of time it takes for the page to become fully interactive">
-            <b>Time To Interactive: </b>{{ interactive }}
-            <span class="is-pulled-right"><b >Score: </b>{{ interactiveScore }}%</span>
-            <progress v-bind:class="interactiveBarColor" class="progress is-small" v-bind:value="interactiveScore" max="100">{{ interactiveScore }}</progress>
-          </div>
-          <br>
-          <div title="Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. ">
-            <!-- description: "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources).", -->
-            <b>Render Blocking Content: </b>{{ renderBlockingContent }}
-            <span class="is-pulled-right"><b >Score: </b>{{ renderBlockingContentScore }}%</span>
-            <progress v-bind:class="renderBlockingContentBarColor" class="progress is-small" v-bind:value="renderBlockingContentScore" max="100">{{ renderBlockingContentScore }}</progress>
-          </div>
-          <br>
-
-          <b>Opportunity Items:</b>
-          <ul>
-            <li v-for="item in renderBlockingContentList">
-              <b>URL: </b>{{ item.url }}<br>
-              <b>Wasted Ms: </b>{{ item.wastedMs }}
-            </li>
-          </ul>
-          <div title="Minifying JavaScript files can reduce payload sizes and script parse time.">
-            <!-- description: "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://developers.google.com/speed/docs/insights/MinifyResources).", -->
-            <b>Unminified JavaScript </b>
-            <span class="is-pulled-right"><b >Score: </b>{{ unminifiedJavascriptScore }}%</span>
-            <progress v-bind:class="unminifiedJavascriptBarColor" class="progress is-small" v-bind:value="unminifiedJavascriptScore" max="100">{{ unminifiedJavascriptScore }}</progress>
-          </div>
-          <br>
-
-          <div title="Minifying CSS files can reduce network payload sizes.">
-            <!-- description: "Minifying CSS files can reduce network payload sizes. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/minify-css).", -->
-            <b>Unminified CSS </b>
-            <span class="is-pulled-right"><b >Score: </b>{{ unminifiedCssScore }}%</span>
-            <progress v-bind:class="unminifiedCssBarColor" class="progress is-small" v-bind:value="unminifiedCssScore" max="100">{{ unminifiedCssScore }}</progress>
-          </div>
-        </div>
-        <!-- <strong><span style="width:124.8%; margin-left: -40px;" id="ssl-sans-title" class="button is-link is-small has-text-light">Requests:</span></strong> -->
-        <div style="width: 100%;" class="speed-list-sm content" id="request-list"v-if="navigationIsRequests">
-
-          <h5 class="title is-5">Total Requests: {{ totalNetworkRequests }}</h5>
-
-          <div class="container">
-            <ul style="list-style: none;">
-              <li v-for="(request, index) in networkRequests">
-
-                <div v-if="request.statusCode.toString()[0] == '3'">
-                  <!-- <div> -->
-                  <div class="redirect-request">
-                    <b>Resource: </b>{{ request.url }} <br>
-                    <b>Status: </b>{{ request.statusCode }} <br>
-                    <b>Size: </b>{{ request.transferSize }} bytes<br>
-                    <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
-                  </div>
-                </div>
-
-                <div v-else-if="request.url.includes('.css') || request.url.includes('.js') || request.url.includes('.html')">
-                  <!-- <div> -->
-                  <div class="code-request">
-                    <b>Resource: </b>{{ request.url }} <br>
-                    <b>Status: </b>{{ request.statusCode }} <br>
-                    <b>Size: </b>{{ request.transferSize }} bytes<br>
-                    <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
-                  </div>
-                </div>
-
-                <div v-else-if="request.url.includes('.jpg') || request.url.includes('.gif') || request.url.includes('.jpeg') || request.url.includes('.png') || request.url.includes('.svg')">
-                  <!-- <div> -->
-                  <div class="img-request">
-                    <b>Resource: </b>{{ request.url }} <br>
-                    <b>Status: </b>{{ request.statusCode }} <br>
-                    <b>Size: </b>{{ request.transferSize }} bytes<br>
-                    <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
-                  </div>
-                </div>
-
-                <div v-else>
-                  <div class="other-request">
-                    <b>Resource: </b>{{ request.url }} <br>
-                    <b>Status: </b>{{ request.statusCode }} <br>
-                    <b>Size: </b>{{ request.transferSize }} bytes<br>
-                    <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
-                  </div>
-                </div>
-
+          <!-- END Nav Toggle section -->
+          <!-- <strong><span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light">General:</span></strong> -->
+          <div class="speed-list-med content" v-if="navigationIsScores">
+            <b>Requested URL: </b>{{ requestedUrl }}
+            <br>
+            <b>Final URL: </b>{{ finalUrl }}
+            <br><br>
+            <div title="Speed Index shows how quickly the contents of a page are visibly populated">
+              <b>Page Load Time: </b>{{ loadTime }}
+              <span class="is-pulled-right"><b>Speed Index Score: </b>{{ speedIndexScore }}%</span>
+              <progress v-bind:class="loadTimeBarColor" class="progress is-small" v-bind:value="speedIndexScore" max="100">{{ speedIndexScore }}</progress>
+            </div>
+            <br>
+            <div title="Time To First Byte identifies the time at which your server sends a response. ">
+              <!-- description: "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/network-payloads).", -->
+              <b>Time To First Byte: </b>{{ ttfb }}
+              <span class="is-pulled-right"><b >TTFB Score: </b>{{ ttfbScore }}%</span>
+              <progress v-bind:class="ttfbBarColor" class="progress is-small" v-bind:value="ttfbScore" max="100">{{ ttfbScore }}</progress>
+            </div>
+            <br>
+            <div title="Large network payloads cost users real money and are highly correlated with long load times">
+              <b>Total Page Size: </b>{{ totalSize }}
+              <span class="is-pulled-right"><b >Score: </b>{{ totalSizeScore }}%</span>
+              <progress v-bind:class="totalSizeBarColor" class="progress is-small" v-bind:value="totalSizeScore" max="100">{{ totalSizeScore }}</progress>
+            </div>
+            <br>
+            <div title="First Meaningful Paint measures when the primary content of a page is visible. ">
+              <b>First Visible: </b>{{ firstMeaningfulPaint }}
+              <span class="is-pulled-right"><b >Score: </b>{{ firstMeaningfulPaintScore }}%</span>
+              <progress v-bind:class="firstMeaningfulPaintBarColor" class="progress is-small" v-bind:value="firstMeaningfulPaintScore" max="100">{{ firstMeaningfulPaintScore }}</progress>
+            </div>
+            <br>
+            <div title="Time to interactive is the amount of time it takes for the page to become fully interactive">
+              <b>Time To Interactive: </b>{{ interactive }}
+              <span class="is-pulled-right"><b >Score: </b>{{ interactiveScore }}%</span>
+              <progress v-bind:class="interactiveBarColor" class="progress is-small" v-bind:value="interactiveScore" max="100">{{ interactiveScore }}</progress>
+            </div>
+            <br>
+            <div title="Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. ">
+              <!-- description: "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources).", -->
+              <b>Render Blocking Content: </b>{{ renderBlockingContent }}
+              <span class="is-pulled-right"><b >Score: </b>{{ renderBlockingContentScore }}%</span>
+              <progress v-bind:class="renderBlockingContentBarColor" class="progress is-small" v-bind:value="renderBlockingContentScore" max="100">{{ renderBlockingContentScore }}</progress>
+            </div>
+            <br>
+            <b>Opportunity Items:</b>
+            <ul>
+              <li v-for="item in renderBlockingContentList">
+                <b>URL: </b>{{ item.url }}<br>
+                <b>Wasted Ms: </b>{{ item.wastedMs }}
               </li>
             </ul>
-          </div>
-
-        </div>
-
-        <div class="is-pulled-right" id="keys" v-if="navigationIsRequests">
-          <div class="key-text"><small><b>Redirects: </b></small></div>
-          <div id="redirect-key"></div>
-          <div class="key-text"><small><b>Code: </b></small></div>
-          <div id="code-key"></div>
-          <div class="key-text"><small><b>Images: </b></small></div>
-          <div id="img-key"></div>
-          <div class="key-text"><small><b>Other: </b></small></div>
-          <div id="other-key"></div>
-        </div>
-
-        <div class="speed-list-med content" v-if="navigationIsRecommendations">
-          <h5 class="title is-5 has-text-centered">Performance Base Recommendations</h5>
-          <div class="content">
+           <div title="Minifying JavaScript files can reduce payload sizes and script parse time.">
+              <!-- description: "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://developers.google.com/speed/docs/insights/MinifyResources).", -->
+              <b>Unminified JavaScript </b>
+              <span class="is-pulled-right"><b >Score: </b>{{ unminifiedJavascriptScore }}%</span>
+              <progress v-bind:class="unminifiedJavascriptBarColor" class="progress is-small" v-bind:value="unminifiedJavascriptScore" max="100">{{ unminifiedJavascriptScore }}</progress>
+            </div>
             <br>
-            <center><i class="fa fa-wrench fa-10x"></i></center>
-            <h2 style="color: #ff7900" class="has-text-centered title is-2">Coming Coon</h2>
+            <div title="Minifying CSS files can reduce network payload sizes.">
+              <!-- description: "Minifying CSS files can reduce network payload sizes. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/minify-css).", -->
+              <b>Unminified CSS </b>
+              <span class="is-pulled-right"><b >Score: </b>{{ unminifiedCssScore }}%</span>
+              <progress v-bind:class="unminifiedCssBarColor" class="progress is-small" v-bind:value="unminifiedCssScore" max="100">{{ unminifiedCssScore }}</progress>
+            </div>
           </div>
-        </div>
-  
+          <!-- <strong><span style="width:124.8%; margin-left: -40px;" id="ssl-sans-title" class="button is-link is-small has-text-light">Requests:</span></strong> -->
+          <div style="width: 100%;" class="speed-list-sm content" id="request-list"v-if="navigationIsRequests">
+ 
+            <h5 class="title is-5">Total Requests: {{ totalNetworkRequests }}</h5>
+ 
+            <div class="container">
+              <ul style="list-style: none;">
+                <li v-for="(request, index) in networkRequests">
+ 
+                  <div v-if="request.statusCode.toString()[0] == '3'">
+                    <!-- <div> -->
+                    <div class="redirect-request">
+                      <b>Resource: </b>{{ request.url }} <br>
+                      <b>Status: </b>{{ request.statusCode }} <br>
+                      <b>Size: </b>{{ request.transferSize }} bytes<br>
+                      <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
+                    </div>
+                  </div>
+ 
+                  <div v-else-if="request.url.includes('.css') || request.url.includes('.js') || request.url.includes('.html')">
+                    <!-- <div> -->
+                    <div class="code-request">
+                      <b>Resource: </b>{{ request.url }} <br>
+                      <b>Status: </b>{{ request.statusCode }} <br>
+                      <b>Size: </b>{{ request.transferSize }} bytes<br>
+                      <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
+                    </div>
+                  </div>
+ 
+                  <div v-else-if="request.url.includes('.jpg') || request.url.includes('.gif') || request.url.includes('.jpeg') || request.url.includes('.png') || request.url.includes('.svg')">
+                    <!-- <div> -->
+                    <div class="img-request">
+                      <b>Resource: </b>{{ request.url }} <br>
+                      <b>Status: </b>{{ request.statusCode }} <br>
+                      <b>Size: </b>{{ request.transferSize }} bytes<br>
+                      <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
+                    </div>
+                  </div>
+ 
+                  <div v-else>
+                    <div class="other-request">
+                      <b>Resource: </b>{{ request.url }} <br>
+                      <b>Status: </b>{{ request.statusCode }} <br>
+                      <b>Size: </b>{{ request.transferSize }} bytes<br>
+                      <b>Load Time: </b>{{ Math.trunc(request.endTime - request.startTime) }} ms<br>
+                    </div>
+                  </div>
+ 
+                </li>
+              </ul>
+            </div>
+ 
+ 
+          </div>
+ 
+          <div class="is-pulled-right" id="keys" v-if="navigationIsRequests">
+ 
+            <div class="key-text"><small><b>Redirects: </b></small></div>
+            <div id="redirect-key"></div>
+            <div class="key-text"><small><b>Code: </b></small></div>
+            <div id="code-key"></div>
+            <div class="key-text"><small><b>Images: </b></small></div>
+            <div id="img-key"></div>
+            <div class="key-text"><small><b>Other: </b></small></div>
+            <div id="other-key"></div>
+          </div>
+ 
+          <div class="speed-list-med content" v-if="navigationIsRecommendations">
+            <h5 class="title is-5 has-text-centered">Performance Base Recommendations</h5>
+            <div class="content">
+              <br>
+              <center><i class="fa fa-wrench fa-10x"></i></center>
+              <h2 style="color: #ff7900" class="has-text-centered title is-2">Coming Coon</h2>
+            </div>
+          </div>
+ 
+ 
         </div>
         <!-- END SSL Readout section -->
  
       <!--END Swat DNS section -->
     </div>
-
     <!-- END Swat DNS section -->
   </div>
-
   <!-- END - Primary application deck -->
 </template>
-
 <script>
  
 import axios from 'axios';
@@ -440,7 +429,6 @@ export default {
 </script>
  
 <style>
-
 .redirect-request{
   padding: 8px 12px;
   border-left-style: solid;
@@ -448,7 +436,6 @@ export default {
   border-left-width: 5px;
   margin-bottom: 8px;
 }
-
 .img-request{
   padding: 8px 12px;
   border-left-style: solid;
@@ -456,7 +443,6 @@ export default {
   border-left-width: 5px;
   margin-bottom: 8px;
 }
-
 .code-request{
   padding: 8px 12px;
   border-left-style: solid;
@@ -464,7 +450,6 @@ export default {
   border-left-width: 5px;
   margin-bottom: 8px;
 }
-
 .other-request{
   padding: 8px 12px;
   border-left-style: solid;
@@ -472,33 +457,28 @@ export default {
   border-left-width: 5px;
   margin-bottom: 8px;
 }
-
 #keys{
   margin-top: -12px;
   display: flex;
 }
-
 #redirect-key{
   width:16px;
   height:16px;
   background: #65de8f;
   margin-right: 4px;
 }
-
 #code-key{
   width:16px;
   height:16px;
   background: #62b9f3;
   margin-right: 4px;
 }
-
 #img-key{
   width:16px;
   height:16px;
   background: #ff738f;
   margin-right: 4px;
 }
-
 #other-key{
   width:16px;
   height:16px;
@@ -506,12 +486,16 @@ export default {
 }
  
 #request-list{
-  padding-right: 20px; 
+ 
+  padding-right: 20px;
+ 
 }
  
 .help-link{
   color: #ff7900 !important;
 }
+ 
+ 
  
 .speed-nav{
   display:inline;
@@ -519,16 +503,16 @@ export default {
   font-size: 1.28em;
 }
  
+ 
+ 
 .active-results-link{
   color: #ff7900 !important;
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
-
 .inactive-results-link{
   color: #888 !important;
 }
-
 .speed-list-med{
   border-style: none !important;
   margin: 0px;
@@ -541,7 +525,6 @@ export default {
   overflow: scroll;
   -webkit-app-region: no-drag;
 }
-
 .speed-list-sm{
   border-style: none !important;
   margin: 0px;
@@ -555,16 +538,28 @@ export default {
   -webkit-app-region: no-drag;
 }
  
+ 
+ 
 .loading-icon {
+ 
   position: absolute;
+ 
   top: 50%;
+ 
   left: 50%;
+ 
   width: 120px;
+ 
   height: 120px;
+ 
   margin:-60px 0 0 -60px;
+ 
   -webkit-animation:spin 4s linear infinite;
+ 
   -moz-animation:spin 4s linear infinite;
+ 
   animation:spin 4s linear infinite;
+ 
 }
  
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
