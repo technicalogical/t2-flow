@@ -22,25 +22,24 @@
             <span class="icon is-large has-text-light">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
-            <span><b>Back</b></span>
+            <span>Back</span>
           </router-link>
 
-          <div class="field has-addons ">
-            <div id="ssl-search" class="control ">
-              <p class="control has-icons-left">
-                <input class="input is-small is-hovered" v-model="domainName" type="text" placeholder="Check Site Performance">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-globe"></i>
-                </span>
-              </p>
-            </div>
-            <div class="control">
-              <button v-on:click="handleSpeedTest" class="button is-small is-link">
-                <span class="icon is-medium has-text-light">
-                  <i class="fas fa-search"></i>
-                </span>
-                <span><b>GO</b></span>
-              </button>
+          <div class="field has-addons is-grouped">
+            <div id="speed-search" class="control ">
+              <div class="field has-addons">
+                <p class="control is-expanded is-small has-icons-left">
+                  <input id="speedinput" class="input is-small is-selected" type="text" placeholder="Domain Name" v-model="domainName">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-shield-alt"></i>
+                  </span>
+                </p>
+                <p class="control">
+                  <button id="speedgo" v-on:click="handleSpeedTest" class="button is-small is-dark">
+                    <p><b>GO</b></p>
+                  </button>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -56,7 +55,7 @@
       <div v-else-if="testStatus === 'response'" id="output-area" class="content">
          
         <!-- BEGIN Nav Toggle section -->
-        <div class="is-pulled-right result-navigation">
+        <div id="result-nav" class="is-pulled-right result-navigation">
           <a v-on:click="navToScores" v-bind:class="navigationIsScores ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Scores</small></a>
           <b>|</b>
           <a v-on:click="navToRequests" v-bind:class="navigationIsRequests ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Requests</small></a>
@@ -80,7 +79,7 @@
           <div title="Speed Index shows how quickly the contents of a page are visibly populated">
             <b>Page Load Time: </b>{{ loadTime }}
             <span class="is-pulled-right"><b>Speed Index Score: </b>{{ speedIndexScore }}%</span>
-            <progress v-bind:class="loadTimeBarColor" class="progress is-small" v-bind:value="speedIndexScore" max="100">{{ speedIndexScore }}</progress>
+            <progress id="progress-t" v-bind:class="loadTimeBarColor" class="progress is-small" v-bind:value="speedIndexScore" max="100">{{ speedIndexScore }}</progress>
           </div>
           <br>
 
@@ -88,47 +87,44 @@
             <!-- description: "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/network-payloads).", -->
             <b>Time To First Byte: </b>{{ ttfb }}
             <span class="is-pulled-right"><b >TTFB Score: </b>{{ ttfbScore }}%</span>
-            <progress v-bind:class="ttfbBarColor" class="progress is-small" v-bind:value="ttfbScore" max="100">{{ ttfbScore }}</progress>
+            <progress id="progress-t" v-bind:class="ttfbBarColor" class="progress is-small" v-bind:value="ttfbScore" max="100">{{ ttfbScore }}</progress>
           </div>
           <br>
+
           <div title="Large network payloads cost users real money and are highly correlated with long load times">
             <b>Total Page Size: </b>{{ totalSize }}
             <span class="is-pulled-right"><b >Score: </b>{{ totalSizeScore }}%</span>
-            <progress v-bind:class="totalSizeBarColor" class="progress is-small" v-bind:value="totalSizeScore" max="100">{{ totalSizeScore }}</progress>
+            <progress id="progress-t" v-bind:class="totalSizeBarColor" class="progress is-small" v-bind:value="totalSizeScore" max="100">{{ totalSizeScore }}</progress>
           </div>
           <br>
+
           <div title="First Meaningful Paint measures when the primary content of a page is visible. ">
             <b>First Visible: </b>{{ firstMeaningfulPaint }}
             <span class="is-pulled-right"><b >Score: </b>{{ firstMeaningfulPaintScore }}%</span>
-            <progress v-bind:class="firstMeaningfulPaintBarColor" class="progress is-small" v-bind:value="firstMeaningfulPaintScore" max="100">{{ firstMeaningfulPaintScore }}</progress>
+            <progress id="progress-t" v-bind:class="firstMeaningfulPaintBarColor" class="progress is-small" v-bind:value="firstMeaningfulPaintScore" max="100">{{ firstMeaningfulPaintScore }}</progress>
           </div>
           <br>
+
           <div title="Time to interactive is the amount of time it takes for the page to become fully interactive">
             <b>Time To Interactive: </b>{{ interactive }}
             <span class="is-pulled-right"><b >Score: </b>{{ interactiveScore }}%</span>
-            <progress v-bind:class="interactiveBarColor" class="progress is-small" v-bind:value="interactiveScore" max="100">{{ interactiveScore }}</progress>
+            <progress id="progress-t" v-bind:class="interactiveBarColor" class="progress is-small" v-bind:value="interactiveScore" max="100">{{ interactiveScore }}</progress>
           </div>
           <br>
+
           <div title="Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. ">
             <!-- description: "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources).", -->
             <b>Render Blocking Content: </b>{{ renderBlockingContent }}
             <span class="is-pulled-right"><b >Score: </b>{{ renderBlockingContentScore }}%</span>
-            <progress v-bind:class="renderBlockingContentBarColor" class="progress is-small" v-bind:value="renderBlockingContentScore" max="100">{{ renderBlockingContentScore }}</progress>
+            <progress id="progress-t" v-bind:class="renderBlockingContentBarColor" class="progress is-small" v-bind:value="renderBlockingContentScore" max="100">{{ renderBlockingContentScore }}</progress>
           </div>
           <br>
 
-          <b>Opportunity Items:</b>
-          <ul>
-            <li v-for="item in renderBlockingContentList">
-              <b>URL: </b>{{ item.url }}<br>
-              <b>Wasted Ms: </b>{{ item.wastedMs }}
-            </li>
-          </ul>
           <div title="Minifying JavaScript files can reduce payload sizes and script parse time.">
             <!-- description: "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://developers.google.com/speed/docs/insights/MinifyResources).", -->
             <b>Unminified JavaScript </b>
             <span class="is-pulled-right"><b >Score: </b>{{ unminifiedJavascriptScore }}%</span>
-            <progress v-bind:class="unminifiedJavascriptBarColor" class="progress is-small" v-bind:value="unminifiedJavascriptScore" max="100">{{ unminifiedJavascriptScore }}</progress>
+            <progress id="progress-t" v-bind:class="unminifiedJavascriptBarColor" class="progress is-small" v-bind:value="unminifiedJavascriptScore" max="100">{{ unminifiedJavascriptScore }}</progress>
           </div>
           <br>
 
@@ -136,15 +132,26 @@
             <!-- description: "Minifying CSS files can reduce network payload sizes. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/minify-css).", -->
             <b>Unminified CSS </b>
             <span class="is-pulled-right"><b >Score: </b>{{ unminifiedCssScore }}%</span>
-            <progress v-bind:class="unminifiedCssBarColor" class="progress is-small" v-bind:value="unminifiedCssScore" max="100">{{ unminifiedCssScore }}</progress>
+            <progress id="progress-t" v-bind:class="unminifiedCssBarColor" class="progress is-small" v-bind:value="unminifiedCssScore" max="100">{{ unminifiedCssScore }}</progress>
+          </div>
+          <br>
+
+          <b>Opportunity Items: <i class="fas fa-chevron-down"></i></b>
+          <div id="opps-list">
+            <ul>
+              <li class="spd-lst" v-for="item in renderBlockingContentList">
+                <b>URL: </b>{{ item.url }}<br>
+                <b>Wasted Ms: </b>{{ item.wastedMs }}
+              </li>
+            </ul>
           </div>
         </div>
         <!-- <strong><span style="width:124.8%; margin-left: -40px;" id="ssl-sans-title" class="button is-link is-small has-text-light">Requests:</span></strong> -->
         <div style="width: 100%;" class="speed-list-sm content" id="request-list"v-if="navigationIsRequests">
 
-          <h5 class="title is-5">Total Requests: {{ totalNetworkRequests }}</h5>
+          <h5 class="title is-6"><b>Total Requests:</b> {{ totalNetworkRequests }}</h5>
 
-          <div class="container">
+          <div id="requested" class="container">
             <ul style="list-style: none;">
               <li v-for="(request, index) in networkRequests">
 
@@ -193,7 +200,7 @@
 
         </div>
 
-        <div class="is-pulled-right" id="keys" v-if="navigationIsRequests">
+        <div class="" id="keys" v-if="navigationIsRequests">
           <div class="key-text"><small><b>Redirects: </b></small></div>
           <div id="redirect-key"></div>
           <div class="key-text"><small><b>Code: </b></small></div>
@@ -233,7 +240,7 @@ export default {
   name: 'App',
   data() {
     return {
-      testStatus: 'response',
+      testStatus: '',
       navigationIsScores: true,
       navigationIsRequests: false,
       navigationIsRecommendations: false,
@@ -446,7 +453,9 @@ export default {
   border-left-style: solid;
   border-left-color: #65de8f;
   border-left-width: 5px;
-  margin-bottom: 8px;
+  border-radius: 0px 3px 3px 0px;
+  margin-bottom: 0px;
+  background-color: hsl(0, 0%, 94%);
 }
 
 .img-request{
@@ -454,7 +463,9 @@ export default {
   border-left-style: solid;
   border-left-color: #ff738f;
   border-left-width: 5px;
-  margin-bottom: 8px;
+  border-radius: 0px 3px 3px 0px;
+  margin-bottom: 0px;
+  background-color: hsl(0, 0%, 94%);
 }
 
 .code-request{
@@ -462,7 +473,9 @@ export default {
   border-left-style: solid;
   border-left-color: #62b9f3;
   border-left-width: 5px;
-  margin-bottom: 8px;
+  border-radius: 0px 3px 3px 0px;
+  margin-bottom: 0px;
+  background-color: hsl(0, 0%, 94%);
 }
 
 .other-request{
@@ -470,43 +483,81 @@ export default {
   border-left-style: solid;
   border-left-color: #ffe789;
   border-left-width: 5px;
-  margin-bottom: 8px;
+  border-radius: 0px 3px 3px 0px;
+  margin-bottom: 0px;
+  background-color: hsl(0, 0%, 94%);
 }
 
 #keys{
-  margin-top: -12px;
+  width: 300px;
+  margin: 0px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  border: 0px;
 }
 
 #redirect-key{
-  width:16px;
-  height:16px;
+  width:18px;
+  height:18px;
   background: #65de8f;
-  margin-right: 4px;
+  border: 1px solid hsl(0, 0%, 58%); 
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 12px;
 }
 
 #code-key{
-  width:16px;
-  height:16px;
+  width:18px;
+  height:18px;
   background: #62b9f3;
-  margin-right: 4px;
+  border: 1px solid hsl(0, 0%, 58%); 
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 12px;
 }
 
 #img-key{
-  width:16px;
-  height:16px;
+  width:18px;
+  height:18px;
   background: #ff738f;
-  margin-right: 4px;
+  border: 1px solid hsl(0, 0%, 58%); 
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 12px;
 }
 
 #other-key{
-  width:16px;
-  height:16px;
+  width:18px;
+  height:18px;
   background: #ffe789;
+  border: 1px solid hsl(0, 0%, 58%); 
+  border-radius: 3px;
+  margin-left: 4px;
+  margin-right: 12px;
 }
  
 #request-list{
-  padding-right: 20px; 
+  width: 100%;
+  height: 360px;
+  margin:0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+#request-list ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#requested li {
+  border: 0px;
+  padding: 5px;
+  margin: 0px;
+  font-size: 11px;
+  word-wrap: break-word;
 }
  
 .help-link{
@@ -530,16 +581,38 @@ export default {
 }
 
 .speed-list-med{
+  position: relative;
   border-style: none !important;
   margin: 0px;
   padding: 0px;
-  margin-left: -40px;
-  margin-right: -40px;
-  height: 51vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 0px 0px 4px 4px;
   overflow: scroll;
+  overflow-y: scroll;
   -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+}
+
+#opps-list {
+  border: 0px;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 4px;
+  padding-right: 15px;
+  background-color: hsl(0, 0%, 96%);
+}
+
+#opps-list li {
+  border-bottom: 1px solid hsl(0, 0%, 29%);
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.spd-lst b {
+  color: hsl(348, 100%, 61%);
 }
 
 .speed-list-sm{
@@ -565,6 +638,10 @@ export default {
   -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
   animation:spin 4s linear infinite;
+}
+
+#progress-t {
+  height: 8px;
 }
  
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }

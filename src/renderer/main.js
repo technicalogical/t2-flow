@@ -42,6 +42,14 @@ const store = new Vuex.Store({
   },
 });
 
+// Required for context menu functioning inside inputs
+const context = require('electron-contextmenu-middleware');
+
+const input = require('electron-input-menu');
+
+  context.use(input);
+  context.activate();
+
 
 /* eslint-disable no-new */
 new Vue({
