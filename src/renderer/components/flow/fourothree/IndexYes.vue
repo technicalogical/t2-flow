@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - 403 Website Errors Text -->
-    <article id="wsod-message" class="message has-text-centered is-small">
-      <div class="notification is-dark">
-        <strong>403</strong> Website Error
-      </div>
-    </article>
-    <!-- END - 403 Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>403</b> Website Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 500 Error flow section -->

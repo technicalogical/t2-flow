@@ -1,33 +1,31 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Enable Debug Mode</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is this a <strong>WordPress</strong> based website?</p>
+        <p>Is this a <b>WordPress</b> based website?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/howto/debugmode/DebugCy" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This website is <strong>WordPress</strong> based</span>
+            <span>This website is <b>WordPress</b> based</span>
           </router-link>  
           <router-link to="/flow/howto/debugmode/DebugCn" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This website is not <strong>WordPress</strong> based</span>
+            <span>This website is not <b>WordPress</b> based</span>
           </router-link>
         </p>
       

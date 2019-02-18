@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Enable Debug Mode</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
@@ -21,25 +19,25 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This is <strong>cPanel</strong> hosting</span>
+            <span>This is <b>cPanel</b> hosting</span>
           </router-link>  
           <router-link to="/flow/howto/debugmode/DebugW" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This is <strong>Windows</strong> hosting</span>
+            <span>This is <b>Windows</b> hosting</span>
           </router-link>
           <router-link to="/flow/howto/debugmode/DebugM" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This is <strong>Managed WordPress</strong> hosting</span>
+            <span>This is <b>Managed WordPress</b> hosting</span>
           </router-link>
           <router-link to="/flow/howto/debugmode/DebugF" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This is <strong>4gh</strong> hosting</span>
+            <span>This is <b>4gh</b> hosting</span>
           </router-link>
         </p>
       

@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>Splunk</strong> log usage
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>SPLUNK</b> Log Usage</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN SSL Error flow section -->
@@ -22,25 +20,25 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>CLNTMPFAIL</strong>.</span>
+            <span>It shows <b>CLNTMPFAIL</b>.</span>
           </router-link>  
           <router-link to="/flow/splunk/SplunkD" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>DROP/REJECT</strong>.</span>
+            <span>It shows <b>DROP/REJECT</b>.</span>
           </router-link>
           <router-link to="/flow/splunk/SplunkA" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>ACCEPTED</strong>.</span>
+            <span>It shows <b>ACCEPTED</b>.</span>
           </router-link>
           <router-link to="/flow/splunk/SplunkP" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>PERM-ERR</strong>.</span>
+            <span>It shows <b>PERM-ERR</b>.</span>
           </router-link>
         </p>
       

@@ -5,7 +5,7 @@
 
     <!-- BEGIN KI Note input section -->
     <div id="swat-note-input" class="content is-link">
-      <center><p id="preme" class="help has-text-light"><b>Pre Tech Chat Template</b></p></center>
+      <center><p id="preme" class="help has-text-light"><b>PRE TECH CHAT TEMPLATE</b></p></center>
       <div class="field-body">
         <div class="field is-expanded">
           <div class="field has-addons">

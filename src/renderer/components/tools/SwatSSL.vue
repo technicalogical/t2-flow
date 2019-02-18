@@ -27,7 +27,7 @@
           <div class="field has-addons ">
             <div id="ssl-search" class="control ">
               <p class="control has-icons-left">
-                <input class="input is-small is-hovered" v-model="domainName" type="text" placeholder="Search Domain Name">
+                <input id="speedinput" class="input is-small is-hovered" v-model="domainName" type="text" placeholder="Search Domain Name">
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>
@@ -47,7 +47,7 @@
         <!-- END Swat SSL input section -->
 
         <!-- BEGIN SSL Readout section -->
-        <div v-if="submitted" id="output-area" class="content">
+        <div v-if="submitted" id="dns-output-area" class="content">
           <div class="field-body">
             <div class="field is-expanded">
               <div class="field has-addons">

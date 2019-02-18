@@ -1,13 +1,13 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - 403 Website Errors Text -->
-    <article id="wsod-message" class="message has-text-centered is-small">
-      <div class="notification is-dark">
-        <strong>403</strong> Website Error
-      </div>
-    </article>
-    <!-- END - 403 Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>403</b> Website Error</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN 403 Error flow section -->
@@ -20,6 +20,18 @@
           Advise the customer that they need to upload a valid index file to their hosting file strucutre for the website to load correctly.
         </div>
       </article>
+
+      <!-- BEGIN - Back button -->
+        <p class="buttons">
+          <router-link to="/flow/FourThree" class="button is-small is-info">
+            <span class="icon has-text-light">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+            <span>BACK</span>
+          </router-link>
+        </p>
+        <!-- END - Back button -->
+
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>

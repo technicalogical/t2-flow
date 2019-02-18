@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - Net Vio how to Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <center><strong>Net Vio</strong> "How To" Flows</center>
-      </div>
-    </article>
-    <!-- END - Net Vio how to Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Net Vio</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
@@ -21,26 +19,26 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>File Repo</strong> Network violation.</span>
+          <span><b>File Repo</b> Network violation.</span>
         </router-link>  
         <router-link to="/flow/howto/netvio/NetvioM" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Malware/Phishing</strong> Network violation.</span>
+          <span><b>Malware/Phishing</b> Network violation.</span>
         </router-link>
         <router-link to="/flow/howto/netvio/NetvioC" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Copy write</strong> Network violation.</span>
+          <span><b>Copy write</b> Network violation.</span>
         </router-link>
-        <router-link to="/flow/howto/netvio/NetvioD" class="button is-light">
+        <!-- <router-link to="/flow/howto/netvio/NetvioD" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Database limit</strong> Network violation.</span>
-        </router-link>
+          <span><b>Database limit</b> Network violation.</span>
+        </router-link> -->
       </p>
       
       <!-- BEGIN - Back button -->

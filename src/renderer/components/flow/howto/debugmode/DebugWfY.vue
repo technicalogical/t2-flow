@@ -1,23 +1,23 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - Form mail Error Text -->
-    <article id="wsod-message" class="message is-small has-text-centered">
-      <div class="notification is-dark">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
-      </div>
-    </article>
-    <!-- END - Form mail Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Enable Debug Mode</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          <p>The customer needs to update their web.config file in the correct location. Provide this <a href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013?" target="_blank"><strong>article</strong></a> to guide them.</p>
+          <p>The customer needs to update their web.config file in the correct location. Provide this <a href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013?" target="_blank"><b>article</b></a> to guide them.</p>
         </div>
       </article>
       

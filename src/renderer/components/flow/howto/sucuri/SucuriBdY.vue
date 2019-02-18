@@ -1,19 +1,19 @@
 <template>
-  <div id="flow-deck-two">
+  
+  <!-- BEGIN - Primary application deck -->
+  <div id="swat-deck">
     
-    <!-- BEGIN - Form mail Error Text -->
-    <article id="wsod-message" class="message is-small has-text-centered">
-      <div class="notification is-dark">
-        <center><strong>HOW TO: Sucuri</strong> support tickets</center>
-      </div>
-    </article>
-    <!-- END - Form mail Error Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Sucuri Support Tickets</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <b>STOP HERE</b>.
       </div>
       <article class="message is-info is-small">
         <div class="message-body">

@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <center><strong>HOW TO: Sucuri</strong> support tickets</center>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Sucuri Support Tickets</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
@@ -21,13 +19,13 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Yes.</strong> Sucuri has responded.</span>
+          <span><b>Yes.</b> Sucuri has responded.</span>
         </router-link>  
         <router-link to="/flow/howto/sucuri/SucuriCyN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>No.</strong> Sucuri has not responded.</span>
+          <span><b>No.</b> Sucuri has not responded.</span>
         </router-link>
       </p>
       

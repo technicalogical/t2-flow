@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>Splunk</strong> log usage
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>SPLUNK</b> Log Usage</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN SSL Error flow section -->
@@ -22,25 +20,25 @@
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>BAD-ACCT</strong>.</span>
+            <span>It shows <b>BAD-ACCT</b>.</span>
           </router-link>  
           <router-link to="/flow/splunk/SplunkDnC" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>CMAE-SPAM</strong>.</span>
+            <span>It shows <b>CMAE-SPAM</b>.</span>
           </router-link>
           <router-link to="/flow/splunk/SplunkDnS" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>BAD-SUB / BAD-SUB-HASH</strong>.</span>
+            <span>It shows <b>BAD-SUB / BAD-SUB-HASH</b>.</span>
           </router-link>
           <router-link to="/flow/splunk/SplunkDnD" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>It shows <strong>BAD-DOMAIN</strong>.</span>
+            <span>It shows <b>BAD-DOMAIN</b>.</span>
           </router-link>
         </p>
       

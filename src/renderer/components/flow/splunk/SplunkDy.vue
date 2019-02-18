@@ -1,34 +1,32 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>Splunk</strong> log usage
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>SPLUNK</b> Log Usage</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>The Relay Server is unable to deliver messages. Are the <strong>MX</strong> records for this domain correct?</p>
+        <p>The Relay Server is unable to deliver messages. Are the <b>MX</b> records for this domain correct?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/splunk/SplunkDyY" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes.</strong> The MX records are correct.</span>
+            <span><b>Yes.</b> The MX records are correct.</span>
           </router-link>  
           <router-link to="/flow/splunk/SplunkDyN" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>No.</strong> The MX records are incorrect.</span>
+            <span><b>No.</b> The MX records are incorrect.</span>
           </router-link>
         </p>
       

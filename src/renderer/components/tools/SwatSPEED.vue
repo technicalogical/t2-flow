@@ -35,7 +35,7 @@
                   </span>
                 </p>
                 <p class="control">
-                  <button id="speedgo" v-on:click="handleSpeedTest" class="button is-small is-dark">
+                  <button id="speedgo" v-on:click="handleSpeedTest" class="button is-small is-link">
                     <p><b>GO</b></p>
                   </button>
                 </p>

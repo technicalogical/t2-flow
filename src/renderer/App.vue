@@ -2,15 +2,12 @@
   <div id="app">
 
     <!-- BEGIN - Font Awesome support option -->   
-    <link rel="stylesheet" 
-        href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" 
+        href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
     <!-- END - Font Awesome support option -->
 
     <!-- BEGIN - Application top links section -->
-    <div id="time">
-      <p id="clock"></p>
-    </div>
+    
     
     <!-- Button to close the app -->
     <div id="app-top-links">
@@ -43,7 +40,11 @@
             <i class="fas fa-times fa-lg"></i>
           </span> 
         </a>
-      </p>    
+      </p>
+
+      <div id="time">
+        <p id="clock"></p>
+      </div>    
     </div>
     <!-- END - Application top links section -->
 
@@ -93,10 +94,10 @@
         </div>
 
         <!-- Button to link to the conlfuence page -->
-        <p id="helper-two" class="buttons">
-          <a class="button is-white" href="http://x.co/flowtool" target="_blank" title="Give Feedback">
-            <span class="icon has-text-dark">
-              <i id="helper-icon" class="far fa-comment-alt is-lg"></i>
+        <p class="buttons">
+          <a id="helper-two" class="button is-white" href="http://x.co/flowtool" target="_blank" title="Give Feedback">
+            <span class="icon">
+              <i class="far fa-comment-alt is-lg"></i>
             </span>
           </a>
         </p>
@@ -109,8 +110,8 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.7.14</span>
-            <span class="tag verse is-info">(Zephyr)</span>
+            <span class="tag is-dark">Beta version 1.7.16</span>
+            <span class="tag verse is-link">(Zephyr)</span>
           </div>
         </div>
 

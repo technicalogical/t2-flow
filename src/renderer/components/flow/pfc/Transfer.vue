@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - Transfer PFC Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>TRANSFER</strong> PFC (Preflight Checklist)
-      </div>
-    </article>
-    <!-- END - Transfer PFC Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>TRANSFER</b> Pre-Flight Checklist</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN Transfer PFC Checklist section -->

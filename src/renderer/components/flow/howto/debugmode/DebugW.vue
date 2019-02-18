@@ -1,33 +1,31 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Enable Debug Mode</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is the hosting <strong>4gh</strong> or <strong>Plesk</strong>?</p>
+        <p>Is the hosting <b>4gh</b> or <b>Plesk</b>?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/howto/debugmode/DebugWp" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This is <strong>Plesk</strong> hosting.</span>
+            <span>This is <b>Plesk</b> hosting.</span>
           </router-link>  
           <router-link to="/flow/howto/debugmode/DebugWf" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span>This is <strong>4gh</strong> hosting.</span>
+            <span>This is <b>4gh</b> hosting.</span>
           </router-link>
         </p>
       

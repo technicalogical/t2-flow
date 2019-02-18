@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - Net Vio how to Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <center><strong>Net Vio</strong> "How To" Flows</center>
-      </div>
-    </article>
-    <!-- END - Net Vio how to Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Net Vio</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
@@ -21,13 +19,13 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Yes</strong>. The customer would like to upgrade.</span>
+          <span><b>Yes</b>. The customer would like to upgrade.</span>
         </router-link>  
         <router-link to="/flow/howto/netvio/NetvioRnYn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>No</strong>.  The customer does not want to upgrade.</span>
+          <span><b>No</b>.  The customer does not want to upgrade.</span>
         </router-link>
       </p>
       

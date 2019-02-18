@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <center><strong>HOW TO</strong>: Sucuri <strong>Firewall</strong> tickets</center>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Sucuri Support Tickets</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
@@ -21,13 +19,13 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>No</strong> issue with activating/redirecting.</span>
+          <span><b>No</b> issue with activating/redirecting.</span>
         </router-link>  
         <router-link to="/flow/howto/sucuri/SucuriFyYnY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>Yes</strong> there're issues with activating/redirection.</span>
+          <span><b>Yes</b> there're issues with activating/redirection.</span>
         </router-link>
       </p>
       

@@ -1,33 +1,31 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>HOW TO:</strong> enable <strong>Debug Mode.</strong>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> Enable Debug Mode</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Does the customer have a <strong>web.config</strong> file?</p>
+        <p>Does the customer have a <b>web.config</b> file?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/howto/debugmode/DebugWpY" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>Yes</strong>. there is a <strong>web.config</strong> file.</span>
+            <span><b>Yes</b>. there is a <b>web.config</b> file.</span>
           </router-link>  
           <router-link to="/flow/howto/debugmode/DebugWpN" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-check-circle"></i>
             </span>
-            <span><strong>No</strong>. there is no <strong>web.config</strong> file.</span>
+            <span><b>No</b>. there is no <b>web.config</b> file.</span>
           </router-link>
         </p>
       

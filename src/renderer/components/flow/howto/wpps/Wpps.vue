@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <center><strong>WPPS</strong> "HOW TO"</center>
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>HOW TO:</b> WordPress Premium Support</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
@@ -21,19 +19,19 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><strong>WPPS</strong> Product Setup.</span>
+          <span><b>WPPS</b> Product Setup.</span>
         </router-link>  
         <router-link to="/flow/howto/wpps/WppsN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>New <strong>WPPS</strong> Ticket.</span>
+          <span>New <b>WPPS</b> Ticket.</span>
         </router-link>
         <router-link to="/flow/howto/wpps/WppsE" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Existing <strong>WPPS</strong> Ticket.</span>
+          <span>Existing <b>WPPS</b> Ticket.</span>
         </router-link>
       </p>
       
