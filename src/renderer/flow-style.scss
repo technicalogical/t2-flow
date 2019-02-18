@@ -152,12 +152,16 @@ a:active {
   margin: 0px;
   padding: 0px;
   border: 0px;
+  border-left: 1px solid hsl(0, 0%, 86%);
+  border-top: 1px solid hsl(0, 0%, 86%);
   border-radius: 0px 0px 3px 0px;
 }
 
 #deck-icon:hover {
   background: hsl(217, 71%, 53%);
   color: hsl(0, 0%, 96%);
+  border-left: 1px solid hsl(217, 71%, 53%);
+  border-top: 1px solid hsl(217, 71%, 53%);
 }
 
 #close-btn {
@@ -166,12 +170,16 @@ a:active {
   margin: 0px;
   padding: 0px;
   border: 0px;
+  border-right: 1px solid hsl(0, 0%, 86%);
+  border-top: 1px solid hsl(0, 0%, 86%);
   border-radius: 0px 0px 0px 3px;
 }
 
 #close-btn:hover {
   color: hsl(0, 0%, 96%);
   background: hsl(348, 100%, 61%);
+  border-right: 1px solid hsl(348, 100%, 61%);
+  border-top: 1px solid hsl(348, 100%, 61%);
 }
 
 #time {
@@ -370,12 +378,16 @@ footer {
   padding: 0px;
   background: #fff;
   border: 0px;
+  border-right: 1px solid hsl(0, 0%, 86%);
+  border-bottom: 1px solid hsl(0, 0%, 86%);
   border-radius: 3px 0px 0px 0px;
 }
 
 #helper-two:hover {
   color: hsl(0, 0%, 96%);
   background: hsl(217, 71%, 53%);
+  border-right: 1px solid hsl(217, 71%, 53%);
+  border-bottom: 1px solid hsl(217, 71%, 53%);
 }
 
 /* END | App footer CSS */
