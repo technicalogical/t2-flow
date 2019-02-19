@@ -1,15 +1,13 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>SSL</strong> Product Setup
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>SSL</b> Product Setup</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN SSL Error flow section -->
@@ -22,19 +20,19 @@
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span><strong>DSSL</strong> (DIY SSL)</span>
+            <span>New <strong>DSSL</strong> (DIY SSL)</span>
           </router-link>  
           <router-link to="/flow/ssl/howto/ucc/DsslNu" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span><strong>UCC/SAN</strong> DSSL</span>
+            <span>New <strong>UCC/SAN</strong> DSSL</span>
           </router-link>
           <router-link to="/flow/ssl/howto/wildcard/DsslNw" class="button is-light">
             <span class="icon has-text-success">
               <i class="fas fa-unlock-alt"></i>
             </span>
-            <span><strong>Wild Card</strong> DSSL</span>
+            <span>New <strong>Wild Card</strong> DSSL</span>
           </router-link>
         </p>
       

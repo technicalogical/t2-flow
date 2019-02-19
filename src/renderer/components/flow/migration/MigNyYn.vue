@@ -1,15 +1,13 @@
 <template>
-  
+ 
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - Net Vio how to Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <center><strong>Paid Migration</strong> Flow</center>
-      </div>
-    </article>
-    <!-- END - Net Vio how to Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>Paid Migration</b> Flow</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">

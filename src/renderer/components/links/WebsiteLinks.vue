@@ -151,7 +151,7 @@
           <span class="icon has-text-success">
             <i id="itcolor" class="fas fa-globe"></i>
           </span>
-          <span>aduceat.<b>org</b></span>
+          <span>abuseat.<b>org</b></span>
         </a>
       
     </div>

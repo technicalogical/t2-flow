@@ -44,8 +44,8 @@
 
     <!-- END - Message of Swat FLow Chart -->
     
-    <router-view/>
-    
+      <router-view/>
+
   </div>
   <!-- END - Primary application deck -->
   

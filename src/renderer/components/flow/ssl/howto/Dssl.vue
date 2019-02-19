@@ -1,21 +1,19 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="flow-deck">
+  <div id="swat-deck">
     
-    <!-- BEGIN - SSL Website Errors Text -->
-    <article id="wsod-message" class="message is-small">
-      <div class="notification is-dark has-text-centered">
-        <strong>SSL</strong> Product Setup
-      </div>
-    </article>
-    <!-- END - SSL Website Errors Text -->
+    <!-- BEGIN - Flow Title banner -->
+      <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
+        <p><b>SSL</b> Product Setup</p>
+      </div> 
+    <!-- END - Flow Title banner -->
 
     
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Are you setting up a new ESSL or making changes to an existing ESSL?</p>
+        <p>Are you setting up a new DSSL or making changes to an existing DSSL?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/ssl/howto/DsslE" class="button is-light">

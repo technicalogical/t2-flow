@@ -1,10 +1,11 @@
 <template>
   <div id="app">
 
-    <!-- BEGIN - Font Awesome support option -->   
+    <!-- BEGIN - Stylesheet support -->   
     <link rel="stylesheet" type="text/css" 
         href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
-    <!-- END - Font Awesome support option -->
+    <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
+    <!-- END - Stylesheet support -->
 
     <!-- BEGIN - Application top links section -->
     

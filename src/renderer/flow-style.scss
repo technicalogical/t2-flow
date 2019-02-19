@@ -1,6 +1,5 @@
 /* Full Application CSS for swat-flow-tool */
-
-/* Full Application CSS for swat-flow-tool */
+@import "../../node_modules/animate.css/animate.min.css";
 
 @font-face {
   font-family: 'Open Sans';
@@ -40,12 +39,16 @@
 
 /* Begin Application system wide color */
 #ibcolor {
-  background-color: hsl(204, 86%, 53%);
+  background-color: hsl(217, 71%, 53%);
 }
 #itcolor {
-  color: hsl(204, 86%, 53%);
+  color: hsl(217, 71%, 53%);
 }
 b {
+  font-family: 'Open Sans Bold';
+}
+
+strong {
   font-family: 'Open Sans Bold';
 }
 /* End Application system wide color */
@@ -547,7 +550,7 @@ footer {
   left: 3px;
   right: 3px;
   bottom: 3px;
-  background: hsl(204, 86%, 53%);
+  background: hsl(217, 71%, 53%);
   border-radius: 50%;
 }
 .pagination a:hover {
@@ -750,7 +753,7 @@ footer {
 }
 
 #go-hover:hover {
-  color: hsl(204, 86%, 53%);
+  color: hsl(217, 71%, 53%);
 }
 
 #note-copy-title {
