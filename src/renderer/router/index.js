@@ -23,6 +23,9 @@ import SwatDNS from '@/components/tools/SwatDNS'
 import SwatSSL from '@/components/tools/SwatSSL'
 import SwatSPEED from '@/components/tools/SwatSPEED'
 import SwatWPPS from '@/components/tools/SwatWPPS'
+import SwatSUCURI from '@/components/tools/SwatSUCURI'
+import SwatWHOIS from '@/components/tools/SwatWHOIS'
+import SwatSPLUNK from '@/components/tools/SwatSPLUNK'
 // END Swat Tools imported routes
 
 // SWAT Flow main menu routes
@@ -538,6 +541,21 @@ export default new Router({
       path: '/tools/SwatWPPS',
       name: 'SWAT WPPS',
       component: SwatWPPS
+    },
+    {
+      path: '/tools/SwatSUCURI',
+      name: 'SWAT SUCURI',
+      component: SwatSUCURI
+    },
+    {
+      path: '/tools/SwatWHOIS',
+      name: 'SWAT WHOIS',
+      component: SwatWHOIS
+    },
+    {
+      path: '/tools/SwatSPLUNK',
+      name: 'SWAT SPLUNK',
+      component: SwatSPLUNK
     },
     {
       path: '/SwatLinks',

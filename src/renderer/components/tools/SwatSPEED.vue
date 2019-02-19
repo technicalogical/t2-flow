@@ -31,7 +31,7 @@
                 <p class="control is-expanded is-small has-icons-left">
                   <input id="speedinput" class="input is-small is-selected" type="text" placeholder="Domain Name" v-model="domainName">
                   <span class="icon is-small is-left">
-                    <i class="fas fa-shield-alt"></i>
+                    <i class="fas fa-stopwatch"></i>
                   </span>
                 </p>
                 <p class="control">

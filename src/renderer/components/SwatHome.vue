@@ -18,19 +18,19 @@
     <div id="get-start" class="field is-grouped">
       <p class="control">
         <router-link to="/SwatFlow" class="button is-small is-fullwidth is-dark">
-          <p>S.W.A.T. <b>Flow</b></p>
+          <p><b>SWAT</b> FLOW</p>
         </router-link>
         <br>
         <router-link to="/SwatNote" class="button is-small is-fullwidth is-dark">
-          <p>S.W.A.T. <b>Note</b></p>
+          <p><b>SWAT</b> NOTE</p>
         </router-link>
         <br>
         <router-link to="/SwatTools" class="button is-small is-fullwidth is-dark">
-          <p>S.W.A.T. <b>Tools</b></p>
+          <p><b>SWAT</b> TOOLS</p>
         </router-link>
         <br>
         <router-link to="/SwatLinks" class="button is-small is-fullwidth is-dark">
-          <p>S.W.A.T. <b>Links</b></p>
+          <p><b>SWAT</b> LINKS</p>
         </router-link>
       </p>
     </div>
@@ -38,7 +38,7 @@
 
     <!-- BEGIN swat motto statement -->
     <div id="swat-motto">
-      <p><strong>"Solve, Wow, Advocate, Transfer."</strong></p>
+      <p>"Solve, Wow, Advocate, Transfer."</p>
     </div>
     <!-- END swat motto statement -->
 

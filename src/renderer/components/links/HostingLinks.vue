@@ -30,7 +30,7 @@
       <!-- BEGIN Links section -->
       <p class="buttons">
         
-        <p id="link-help" class="help">Restores & Migrations</p>
+        <p id="link-help" class="help"><b>Restores & Migrations</b></p>
         <!-- Restore U -->
         <a href="https://hs.int.godaddy.com/restore-u/#/index" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -47,7 +47,7 @@
           <span><b>Migrate U</b></span>
         </a>
 
-        <p id="link-help" class="help">General hosting tools</p>
+        <p id="link-help" class="help"><b>General hosting tools</b></p>
         <!-- Hosting Kb -->
         <a href="https://confluence.godaddy.com/display/C3PHS/Hosting+Support+Knowledge+Base+-+Hitchhikers+Guide+to+Hosting" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">

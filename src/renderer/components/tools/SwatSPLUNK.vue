@@ -8,7 +8,7 @@
 
       <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>WPPS</b> Preflight Check</p>
+        <p><b>SPLUNK</b> Check</p>
       </div>
     
     <router-link id="ssl-title" to="/SwatTools" class="button is-small is-link">
@@ -20,7 +20,8 @@
 
     <!-- BEGIN Site speed instruction -->
     <div id="speed-instruct" class="content">
-      <p>The <b>WPPS</b> site check is intended to ensure that agents are able to correctly identify not only if there is or is not a need for WPPS services but also more specfically that the right services are being selected for the customer.</p>
+      <p>Use <b>SPLUNK</b> To check domains and email addresses</p>
+      <br>
       <p><b>Step One:</b> Drop domain name in search input.</p>
       <p><b>Step Two:</b> Click "<b>CHECK</b>".</p>
     </div>
@@ -38,7 +39,7 @@
         <p class="control is-expanded is-small has-icons-left">
           <input class="input is-small is-selected" type="text" placeholder="Domain Name" v-model="domainName">
           <span class="icon is-small is-left">
-            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-at"></i>
           </span>
         </p>
         <p class="control">
@@ -99,8 +100,9 @@ export default {
     },
     handleLookup: function (e){
       var readyUrl = this.fullUrl(this.domainName);
-      let apiPrefix = 'https://psq.wpps.int.godaddy.com/results/';
-      window.open(apiPrefix + readyUrl, "_blank");
+      let apiPrefix = 'https://godaddy.splunkcloud.com/en-US/app/ahs/search?q=search%20';
+      let apiPostfix = '&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-7d%40&latest=now&sid=1550618926.135529';
+      window.open(apiPrefix + readyUrl + apiPostfix, "_blank");
       e.preventDefault();
     }
   },

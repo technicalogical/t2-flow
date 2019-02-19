@@ -36,7 +36,7 @@
       <!--Start SWAT Links section -->
       <p class="buttons">
          
-        <p id="link-help" class="help">S.W.A.T. Team Links</p>
+        <p id="link-help" class="help"><b>S.W.A.T. Team Links</b></p>
         <!-- SWAT confluence home page -->
         <a href="https://confluence.godaddy.com/pages/viewpage.action?spaceKey=HSWAT&title=SWAT+Team+Home" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-info">
@@ -77,7 +77,7 @@
           <span><b>S.W.A.T.</b> Team Contacts</span>
         </a>
 
-        <p id="link-help" class="help">GoDaddy Refund Policy</p>  
+        <p id="link-help" class="help"><b>GoDaddy Refund Policy</b></p>  
         <!-- GoDaddy refund policy -->
         <a href="https://www.godaddy.com/agreements/showdoc?pageid=19963&prog_id=GoDaddy" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">

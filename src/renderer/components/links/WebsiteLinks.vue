@@ -29,7 +29,7 @@
 
       <p class="buttons">
 
-        <p id="link-help" class="help">Site speed</p>
+        <p id="link-help" class="help"><b>Site speed</b></p>
         <!-- GTmetrix -->
         <a href="https://gtmetrix.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -46,7 +46,7 @@
           <span><b>Pingdom</b></span>
         </a>
       
-        <p id="link-help" class="help">DNS</p>
+        <p id="link-help" class="help"><b>DNS</b></p>
         <!-- Whatsmydns -->
         <a href="https://www.whatsmydns.net/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -79,7 +79,7 @@
           <span><b>DNS Trails</b></span>
         </a>
 
-        <p id="link-help" class="help">SSL validation</p>
+        <p id="link-help" class="help"><b>SSL validation</b></p>
         <!-- SSL Shopper -->
         <a href="https://www.sslshopper.com/ssl-checker.html" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -104,7 +104,7 @@
           <span><b>SSL</b> Checker</span>
         </a>
 
-        <p id="link-help" class="help">Website propagation</p>
+        <p id="link-help" class="help"><b>Website propagation</b></p>
         <!-- Host tracker -->
         <a href="https://www.host-tracker.com/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">
@@ -129,7 +129,7 @@
           <span><b>ShotSherpa</b></span>
         </a>
 
-        <p id="link-help" class="help">Black-list checking</p>       
+        <p id="link-help" class="help"><b>Black-list checking</b></p>       
         <!-- Spam Haus Look-up -->
         <a href="https://www.spamhaus.org/lookup/" target="_blank" class="button is-small is-dark">
           <span class="icon has-text-success">

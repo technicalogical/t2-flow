@@ -65,8 +65,8 @@
         <!-- GoDaddy.com Front of site menu -->
         <div id="gd-menu" class="dropdown is-small is-up">
           <div class="dropdown-trigger">
-            <button class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span><img src="../renderer/assets/icons/png/godaddy.png"></span>
+            <button id="gmenu" class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span><p><b>G</b></p></span>
               <span class="icon has-text-light">
                 <i class="fas fa-angle-up" aria-hidden="true"></i>
               </span>
@@ -74,6 +74,16 @@
           </div>
           <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
             <div class="dropdown-content is-small">
+              <a id="gd-menu-item" href="https://www.godaddy.com/email/professional-business-email" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+                O365 professional Business Email
+              </a>
+              <a id="gd-menu-item" href="https://www.godaddy.com/websites/website-builder/plans-and-pricing" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+                GoCentral Website Builder
+              </a>
+              <a id="gd-menu-item" href="https://www.godaddy.com/smartline/" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+                Smartline
+              </a>
+               <hr class="dropdown-divider">
               <a id="gd-menu-item" href="https://www.godaddy.com/wordpress/premium-support" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
                 WordPress Premium Support
               </a>
@@ -111,7 +121,7 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.7.16</span>
+            <span class="tag is-dark">Beta version 1.7.19</span>
             <span class="tag verse is-link">(Zephyr)</span>
           </div>
         </div>

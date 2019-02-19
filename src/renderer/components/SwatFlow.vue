@@ -5,7 +5,7 @@
 
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <center><p><b>S.W.A.T.</b> Call Flows</p></center>
+        <center><p><b>SWAT</b> Call Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 

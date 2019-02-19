@@ -295,8 +295,12 @@ footer {
   z-index: 3;
 }
 
+#gmenu i:hover {
+  color: hsl(217, 71%, 53%);
+}
+
 .dropdown-content {
-  width: 185px;
+  width: 205px;
 }
 
 .dropdown-divider {
@@ -441,9 +445,10 @@ footer {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
+  font-weight: bold;
   font-size: 14px;
   color: black;
-  top: 260px;
+  top: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -800,6 +805,18 @@ footer {
   font-family: 'Open Sans';
   font-size: 14px;
   padding: 10px;
+}
+
+#who-tool {
+  position: relative;
+  float: right;
+  margin-top: 0px;
+  margin-right: 10px;
+  padding-top: 0px;
+  top: -15px;
+}
+#who-tool span:hover {
+  color: hsl(217, 71%, 53%);
 }
 
 #speed-deck {
