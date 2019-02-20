@@ -13,21 +13,21 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Are you able to restart the migration?</p>
+        <p>Was the migration able to complete?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/mwp/MigsyncMyY" class="button is-light">
+        <router-link to="/flow/mwp/MigsyncMyYn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>Yes</strong>. The migration is restarted.</span>
-        </router-link>  
-        <router-link to="/flow/mwp/MigsyncMyN" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-play-circle"></i>
-          </span>
-          <span><strong>No</strong>. The migration failed.</span>
+          <span><strong>No</strong>. The migration did not complete.</span>
         </router-link>
+        <router-link to="/flow/mwp/MigsyncMyYy" class="button is-light">
+          <span class="icon has-text-success">
+            <i class="fas fa-play-circle"></i>
+          </span>
+          <span><strong>Yes</strong>. The migration completed.</span>
+        </router-link> 
       </p>
 
       <!-- BEGIN - Back button -->

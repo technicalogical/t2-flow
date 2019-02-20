@@ -415,6 +415,8 @@ import MigsyncMyN from '@/components/flow/mwp/MigsyncMyN'
 import MigsyncMyNy from '@/components/flow/mwp/MigsyncMyNy'
 import MigsyncMyNn from '@/components/flow/mwp/MigsyncMyNn'
 import MigsyncMn from '@/components/flow/mwp/MigsyncMn'
+import MigsyncMnN from '@/components/flow/mwp/MigsyncMnN'
+import MigsyncMnY from '@/components/flow/mwp/MigsyncMnY'
 import MigsyncS from '@/components/flow/mwp/MigsyncS'
 // END MWP migration / sync imported routes
 
@@ -2313,6 +2315,16 @@ export default new Router({
       path: '/flow/mwp/MigsyncMn',
       name: 'MigsyncMn',
       component: MigsyncMn,
+    },
+    {
+      path: '/flow/mwp/MigsyncMnY',
+      name: 'MigsyncMnY',
+      component: MigsyncMnY,
+    },
+    {
+      path: '/flow/mwp/MigsyncMnN',
+      name: 'MigsyncMnN',
+      component: MigsyncMnN,
     },
     {
       path: '/flow/mwp/MigsyncS',

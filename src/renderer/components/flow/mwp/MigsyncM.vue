@@ -26,7 +26,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>No</strong>. The migration Failed.</span>
+          <span><strong>No</strong>. The migration failed.</span>
         </router-link>
       </p>
 

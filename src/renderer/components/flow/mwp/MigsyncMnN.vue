@@ -13,26 +13,26 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Has it been more than 5 hours?</p>
+        <p>Disable all plugins active on the WordPress website. Are you able to start migration now?</p>
       </div>
       <p class="buttons">
-        <router-link to="/flow/mwp/MigsyncMyYnN" class="button is-light">
+        <router-link to="/flow/cpemail/MigsyncMnY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>No</strong>. it has not been 5 hrs.</span>
+          <span><strong>Yes</strong>. The migration is restarted.</span>
+        </router-link>  
+        <router-link to="/flow/cpemail/MigsyncMnN" class="button is-light">
+          <span class="icon has-text-success">
+            <i class="fas fa-play-circle"></i>
+          </span>
+          <span><strong>No</strong>. The migration failed again.</span>
         </router-link>
-        <router-link to="/flow/mwp/MigsyncMyYnY" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-play-circle"></i>
-          </span>
-          <span><strong>Yes</strong>. it has been 5 hrs.</span>
-        </router-link> 
       </p>
 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/mwp/MigsyncMy" class="button is-small is-info">
+        <router-link to="/flow/mwp/MigsyncMn" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

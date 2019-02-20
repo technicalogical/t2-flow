@@ -13,7 +13,7 @@
     <!-- BEGIN 500 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Are you able to restart the migration?</p>
+        <p>Disable all plugins active on the WordPress website. Are you able to start migration now?</p>
       </div>
       <p class="buttons">
         <router-link to="/flow/cpemail/MigsyncMnY" class="button is-light">
@@ -26,7 +26,7 @@
           <span class="icon has-text-success">
             <i class="fas fa-play-circle"></i>
           </span>
-          <span><strong>No</strong>. The migration failed.</span>
+          <span><strong>No</strong>. The migration failed again.</span>
         </router-link>
       </p>
 
