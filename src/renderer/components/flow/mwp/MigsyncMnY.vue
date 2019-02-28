@@ -17,12 +17,12 @@
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          <p>Advise the customer that once the migration is complete they will want to check through their website to ensure everything migrated completely.</p>
+          <p>Advise the customer that there is a possible plugin issue that was preventing the migration from completing. Advise the customer that once the migration is complete they will want to check through their website to ensure everything migrated completely.</p>
         </div>
       </article>
       <article class="message is-success is-small">
         <div class="message-body">
-          <p>Consult on WPPS for possible WordPress needs after migration.</p>
+          <p>Consult on WPPS for possible WordPress plugin needs after migration completes.</p>
         </div>
       </article>
       

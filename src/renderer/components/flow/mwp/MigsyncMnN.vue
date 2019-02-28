@@ -10,26 +10,23 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN 500 Error flow section -->
-    <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Disable all plugins active on the WordPress website. Are you able to start migration now?</p>
+    <!-- BEGIN Form mail Error section -->
+    <div class="content has-text-centered" id="flow">    
+      <div class="notification is-danger">
+        <strong>STOP HERE</strong>.
       </div>
-      <p class="buttons">
-        <router-link to="/flow/cpemail/MigsyncMnY" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-play-circle"></i>
-          </span>
-          <span><strong>Yes</strong>. The migration is restarted.</span>
-        </router-link>  
-        <router-link to="/flow/cpemail/MigsyncMnN" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-play-circle"></i>
-          </span>
-          <span><strong>No</strong>. The migration failed again.</span>
-        </router-link>
-      </p>
-
+      <article class="message is-info is-small">
+        <div class="message-body">
+          <p>Advise the customer that at this time the automated migration function will not work for their WordPress website. If they have the skill, or a developer that can help, the customer can manually migrate their site to this platform.</p>
+        </div>
+      </article>
+      <article class="message is-success is-small">
+        <div class="message-body">
+          <p>Consult on a Paid For Migration to get this done for the customer.</p>
+          <p>Consult on WPPS for possible WordPress plugin needs after migration completes.</p>
+        </div>
+      </article>
+      
       <!-- BEGIN - Back button -->
       <p class="buttons">
         <router-link to="/flow/mwp/MigsyncMn" class="button is-small is-info">
@@ -40,12 +37,11 @@
         </router-link>
       </p>
       <!-- END - Back button -->
-      
 
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
-
     </div>
-    <!-- END 500 Error flow section -->
+    <!-- END Form mail Error section -->
 
   </div>
   <!-- END - Primary application deck -->
