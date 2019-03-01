@@ -12,6 +12,11 @@
       </div>
 
       <p id="who-tool" class="buttons">
+        <router-link to="tools/FlowTP" class="button is-dark is-small" title="Flow TP">
+          <span>
+            <p><b>Flow</b>TP</p>
+          </span>
+        </router-link>
         <router-link to="tools/SwatWHOIS" class="button is-dark is-small" title="GoDaddy WHOIS Search">
           <span>
             <p><b>WHOIS</b></p>

@@ -26,6 +26,7 @@ import SwatWPPS from '@/components/tools/SwatWPPS'
 import SwatSUCURI from '@/components/tools/SwatSUCURI'
 import SwatWHOIS from '@/components/tools/SwatWHOIS'
 import SwatSPLUNK from '@/components/tools/SwatSPLUNK'
+import FlowTP from '@/components/tools/FlowTP'
 // END Swat Tools imported routes
 
 // SWAT Flow main menu routes
@@ -416,7 +417,6 @@ import MigsyncMyNy from '@/components/flow/mwp/MigsyncMyNy'
 import MigsyncMyNn from '@/components/flow/mwp/MigsyncMyNn'
 import MigsyncMn from '@/components/flow/mwp/MigsyncMn'
 import MigsyncMnN from '@/components/flow/mwp/MigsyncMnN'
-
 import MigsyncMnY from '@/components/flow/mwp/MigsyncMnY'
 import MigsyncS from '@/components/flow/mwp/MigsyncS'
 // END MWP migration / sync imported routes
@@ -559,6 +559,11 @@ export default new Router({
       path: '/tools/SwatSPLUNK',
       name: 'SWAT SPLUNK',
       component: SwatSPLUNK
+    },
+    {
+      path: '/tools/FlowTP',
+      name: 'Flow TP',
+      component: FlowTP
     },
     {
       path: '/SwatLinks',

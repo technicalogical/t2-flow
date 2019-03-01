@@ -135,7 +135,7 @@
           <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>Subject Alternative Names:</b></span>
           <div id="ssl-sans" class="content">
             <ul>
-              <li v-for="s in sans">
+              <li v-for="s in sans" :key="s.sans">
                 {{ s }}
               </li>
             </ul>

@@ -58,7 +58,7 @@
                     <b>A Record(s):</b>
                   </span>
                 </p>
-                <p v-for="a in aRecords" class="control is-expanded">
+                <p v-for="a in aRecords" class="control is-expanded" :key="a.aRecords">
                   <input class="input  is-small" type="text" v-model="aRecords" placeholder="A Record IP Address" readonly>
                 </p>
               </div>
@@ -69,7 +69,7 @@
           <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>MX Record(s):</b></span>
           <div id="mx-list" class="content">
             <ul>
-              <li v-for="mx in mxRecords">
+              <li v-for="mx in mxRecords" :key="mx.mxRecords">
                 {{ mx }}
               </li>
             </ul>
@@ -80,7 +80,7 @@
           <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>TXT Record(s):</b></span>
           <div id="txt-list" class="content">
             <ul>
-              <li id="txt-sep" v-for="txt in txtRecords">
+              <li id="txt-sep" v-for="txt in txtRecords" :key="txt.txtRecords">
                 {{ txt }}
               </li>
             </ul>
@@ -91,7 +91,7 @@
           <span id="ssl-sans-title" class="button is-link is-small is-fullwidth has-text-light"><b>NS Record(s):</b></span>
           <div id="ns-list" class="content">
             <ul>
-              <li v-for="ns in nsRecords">
+              <li v-for="ns in nsRecords" :key="ns.nsRecords">
                 {{ ns }}
               </li>
             </ul>

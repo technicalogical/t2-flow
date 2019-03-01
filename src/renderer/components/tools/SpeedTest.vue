@@ -109,7 +109,7 @@
             <br>
             <b>Opportunity Items:</b>
             <ul>
-              <li v-for="item in renderBlockingContentList">
+              <li v-for="item in renderBlockingContentList" :key="item.renderBlockingContentList">
                 <b>URL: </b>{{ item.url }}<br>
                 <b>Wasted Ms: </b>{{ item.wastedMs }}
               </li>
@@ -129,13 +129,13 @@
             </div>
           </div>
           <!-- <strong><span style="width:124.8%; margin-left: -40px;" id="ssl-sans-title" class="button is-link is-small has-text-light">Requests:</span></strong> -->
-          <div style="width: 100%;" class="speed-list-sm content" id="request-list"v-if="navigationIsRequests">
+          <div style="width: 100%;" class="speed-list-sm content" id="request-list" v-if="navigationIsRequests">
  
             <h5 class="title is-5">Total Requests: {{ totalNetworkRequests }}</h5>
  
             <div class="container">
               <ul style="list-style: none;">
-                <li v-for="(request, index) in networkRequests">
+                <li v-for="request in networkRequests" :key="request.networkRequests">
  
                   <div v-if="request.statusCode.toString()[0] == '3'">
                     <!-- <div> -->
