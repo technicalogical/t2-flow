@@ -8,7 +8,7 @@
 
        <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>S.W.A.T.</b> Links</p>
+        <p><b>SWAT</b> Links</p>
       </div>
 
       <!-- BEGIN - Swat Tool Tabs -->

@@ -11,6 +11,32 @@
 
     <!-- BEGIN - Primary application deck -->
     <div class="content" id="flow">
+
+      <div class="content">
+        <p class="buttons">
+          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+            <span class="icon has-text-success">
+              <i id="itcolor" class="fas fa-play-circle"></i>
+            </span>
+            <span><b>Transfer</b> PFC</span>
+          </router-link>
+          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+            <span class="icon has-text-success">
+              <i id="itcolor" class="fas fa-play-circle"></i>
+            </span>
+            <span><b>Flow</b> Guide</span>
+          </router-link>
+          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+            <span class="icon has-text-success">
+              <i id="itcolor" class="fas fa-play-circle"></i>
+            </span>
+            <span><b>Flow</b> Index</span>
+          </router-link>
+        </p>
+      </div>
+
+      <div id="flow-break"></div>
+
       <div class="content" id="flow-deck-two">
         <p class="buttons">
           <router-link to="/flow/FiveError" class="button is-dark is-small">
@@ -55,12 +81,7 @@
             </span>
             <span><b>cPanel</b> Email issues</span>
           </router-link>
-          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>Transfer</b> PFC</span>
-          </router-link>
+          
           <router-link to="/flow/Malware" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i id="itcolor" class="fas fa-play-circle"></i>
@@ -73,9 +94,24 @@
             </span>
             <span><b>SPLUNK</b> Usage</span>
           </router-link>
+          <router-link to="/flow/slow/Slow" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <i id="itcolor" class="fas fa-play-circle"></i>
+            </span>
+            <span><b>Slow</b> Sites</span>
+          </router-link>
         </p>
       </div> 
+
       <div id="flow-break"></div>
+
+      <div id="flowinfo" class="content">
+        <center><h1>Navigating Call Flows</h1></center>
+        <p><b>One:</b> Agents can use the <b>Flow Guide</b> at the top of this page to help narrow down which call flows they should use.</p>
+        <p><b>Two:</b> Agents can tab through the organized sections of flows using the left and right page toggles.</p>
+        <p><b>Three:</b> Agents can also use the <b>Flow Index</b> to keyword search or scroll through the full list of available call flows.</p>
+      </div>
+
     </div>
     <!-- END - Primary application deck -->
 
@@ -101,11 +137,9 @@
       </div>    
     </div>
     <!-- END - Flow page toggles -->
-
-    
-
     
     <router-view/>
+
     <!-- BEGIN Flow pagination -->
       <div id="flow-pagi" class="pagidot pagination-wrapper">
         <ul class="pagination">
@@ -116,6 +150,7 @@
         </ul>
       </div>
     <!-- END - Flow gaination -->
+
   </div>
   <!-- END - Primary application deck -->
   

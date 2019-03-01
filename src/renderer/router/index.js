@@ -489,6 +489,22 @@ import MigNyN from '@/components/flow/migration/MigNyN'
 import MigNn from '@/components/flow/migration/MigNn'
 // END Paid Migration imported routes
 
+// BEGIN Slow Site imported routes
+import Slow from '@/components/flow/slow/Slow'
+import Sy from '@/components/flow/slow/Sy'
+import SyY from '@/components/flow/slow/SyY'
+import SyN from '@/components/flow/slow/SyN'
+import SyNy from '@/components/flow/slow/SyNy'
+import SyNyY from '@/components/flow/slow/SyNyY'
+import SmwY from '@/components/flow/slow/SmwY'
+import SmwYy from '@/components/flow/slow/SmwYy'
+import SmwYn from '@/components/flow/slow/SmwYn'
+import SmwN from '@/components/flow/slow/SmwN'
+import SyNyN from '@/components/flow/slow/SyNyN'
+import SyNn from '@/components/flow/slow/SyNn'
+import Sn from '@/components/flow/slow/Sn'
+// END Slow Site imported routes
+
 Vue.use(Router)
 
 export default new Router({
@@ -2663,5 +2679,73 @@ export default new Router({
       component: MigNn,
     },
     // END - Paid Migration flow
+
+    // BEGIN - Slow Site flow
+    {
+      path: '/flow/slow/Slow',
+      name: 'Slow',
+      component: Slow,
+    },
+    {
+      path: '/flow/slow/Sy',
+      name: 'Sy',
+      component: Sy,
+    },
+    {
+      path: '/flow/slow/SyY',
+      name: 'SyY',
+      component: SyY,
+    },
+    {
+      path: '/flow/slow/SyN',
+      name: 'SyN',
+      component: SyN,
+    },
+    {
+      path: '/flow/slow/SyNy',
+      name: 'SyNy',
+      component: SyNy,
+    },
+    {
+      path: '/flow/slow/SyNyY',
+      name: 'SyNyY',
+      component: SyNyY,
+    },
+    {
+      path: '/flow/slow/SmwY',
+      name: 'SmwY',
+      component: SmwY,
+    },
+    {
+      path: '/flow/slow/SmwYy',
+      name: 'SmwYy',
+      component: SmwYy,
+    },
+    {
+      path: '/flow/slow/SmwYn',
+      name: 'SmwYn',
+      component: SmwYn,
+    },
+    {
+      path: '/flow/slow/SmwN',
+      name: 'SmwN',
+      component: SmwN,
+    },
+    {
+      path: '/flow/slow/SyNyN',
+      name: 'SyNyN',
+      component: SyNyN,
+    },
+    {
+      path: '/flow/slow/SyNn',
+      name: 'SyNn',
+      component: SyNn,
+    },
+    {
+      path: '/flow/slow/Sn',
+      name: 'Sn',
+      component: Sn,
+    },
+    // END - Slow Site flow
   ]
 })

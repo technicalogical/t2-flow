@@ -39,10 +39,10 @@
 
 /* Begin Application system wide color */
 #ibcolor {
-  background-color: hsl(217, 71%, 53%);
+  background-color: hsl(204, 86%, 53%);
 }
 #itcolor {
-  color: hsl(217, 71%, 53%);
+  color: hsl(204, 86%, 53%);
 }
 b {
   font-family: 'Open Sans Bold';
@@ -161,10 +161,10 @@ a:active {
 }
 
 #deck-icon:hover {
-  background: hsl(217, 71%, 53%);
+  background: hsl(204, 86%, 53%);
   color: hsl(0, 0%, 96%);
-  border-left: 1px solid hsl(217, 71%, 53%);
-  border-top: 1px solid hsl(217, 71%, 53%);
+  border-left: 1px solid hsl(204, 86%, 53%);
+  border-top: 1px solid hsl(204, 86%, 53%);
 }
 
 #close-btn {
@@ -245,7 +245,7 @@ nav a {
 }
 
   nav a:hover {
-    color: hsl(217, 71%, 53%);
+    color: hsl(204, 86%, 53%);
   }
 
 #delta {
@@ -270,7 +270,7 @@ nav a {
 }
 
 #delta a:hover {
-  color: hsl(217, 71%, 53%);
+  color: hsl(204, 86%, 53%);
 }
 
 /* END | App top nav CSS */
@@ -296,7 +296,7 @@ footer {
 }
 
 #gmenu i:hover {
-  color: hsl(217, 71%, 53%);
+  color: hsl(204, 86%, 53%);
 }
 
 .dropdown-content {
@@ -318,7 +318,7 @@ footer {
 }
 
 #gd-menu-item:hover {
-  background-color: hsl(217, 71%, 53%);
+  background-color: hsl(204, 86%, 53%);
   color: hsl(0, 0%, 96%);
 }
 
@@ -372,7 +372,7 @@ footer {
 }
 
 #helper-icon:hover {
-  color: hsl(217, 71%, 53%);
+  color: hsl(204, 86%, 53%);
 }
 
 #helper-two {
@@ -392,9 +392,9 @@ footer {
 
 #helper-two:hover {
   color: hsl(0, 0%, 96%);
-  background: hsl(217, 71%, 53%);
-  border-right: 1px solid hsl(217, 71%, 53%);
-  border-bottom: 1px solid hsl(217, 71%, 53%);
+  background: hsl(204, 86%, 53%);
+  border-right: 1px solid hsl(204, 86%, 53%);
+  border-bottom: 1px solid hsl(204, 86%, 53%);
 }
 
 /* END | App footer CSS */
@@ -436,7 +436,7 @@ footer {
 }
 
 #get-start-item:hover {
-  border: 0px solid hsl(217, 71%, 53%);
+  border: 0px solid hsl(204, 86%, 53%);
 }
 
 #swat-motto {
@@ -555,7 +555,7 @@ footer {
   left: 3px;
   right: 3px;
   bottom: 3px;
-  background: hsl(217, 71%, 53%);
+  background: hsl(204, 86%, 53%);
   border-radius: 50%;
 }
 .pagination a:hover {
@@ -569,6 +569,28 @@ footer {
   margin-right: auto;
   border: 0px;
 }
+
+#flowinfo {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 4px;
+  background-color: hsl(0, 0%, 96%);
+  padding: 10px;
+}
+
+#flowinfo h1 {
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px; 
+}
+
+#flowinfo p {
+  font-size: 12px;
+}
+
 /* END | Swat Flow Vue CSS */
 
 /* BEGIN | Swat Note Vue CSS */
@@ -758,7 +780,7 @@ footer {
 }
 
 #go-hover:hover {
-  color: hsl(217, 71%, 53%);
+  color: hsl(204, 86%, 53%);
 }
 
 #note-copy-title {
@@ -816,7 +838,7 @@ footer {
   top: -15px;
 }
 #who-tool span:hover {
-  color: hsl(217, 71%, 53%);
+  color: hsl(204, 86%, 53%);
 }
 
 #speed-deck {
