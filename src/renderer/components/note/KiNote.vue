@@ -92,6 +92,12 @@
         </span>
         <span>Copy Your Notes</span>
       </button>
+      <button id="copyButton"  class="button is-small is-danger btn" @click="clearForm" title="Click to clear notes">
+        <span class="icon is-medium has-text-light">
+          <i class="fas fa-eraser"></i>
+        </span>
+        <span>Clear Notes</span>
+      </button>
     </div>
 
   </div>
@@ -116,6 +122,15 @@ export default {
       'cusnum',
       'guid'
     ]),
+  },
+  methods: {
+    clearForm: function(e) {
+      this.inc = "";
+      this.kidomain = "";
+      this.cusnum = "";
+      this.guid = "";
+      e.preventDefault();
+    }
   }
 };
 

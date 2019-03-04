@@ -13,27 +13,27 @@
     <div class="content has-text-centered" id="flow">
 
       <div class="content is-medium">
-        <p>Start a restore from the previous date. Did it complete successfully?</p>
+        <p>Upload a test script to the hosting. Does the test script load quickly?</p>
       </div>
 
       <p class="buttons">
-        <router-link to="/flow/slow/SmwY" class="button is-light">
+        <router-link to="/flow/slow/SmwYyNnYnY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><b>Yes.</b> The restore completed.</span>
+          <span><b>Yes.</b> Test script loads quickly.</span>
         </router-link>  
-        <router-link to="/flow/slow/SmwN" class="button is-light">
-          <span class="icon has-text-success">
+        <router-link to="/flow/slow/SmwYyNnYnN" class="button is-light">
+          <span class="icon has-text-danger">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><b>No.</b> The restore failed.</span>
+          <span><b>No.</b> It still loads slowly.</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/slow/SyNy" class="button is-small is-info">
+        <router-link to="/flow/slow/SmwYyNnY" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

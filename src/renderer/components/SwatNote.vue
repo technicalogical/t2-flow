@@ -1,7 +1,7 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="note-deck">
+  <form id="note-deck">
 
     <!-- BEGIN Swat Note input section -->
     <div id="swat-note-input" class="content">
@@ -65,9 +65,15 @@
         </span>
         <span>Copy Your Notes</span>
       </button>
+      <button id="copyButton"  class="button is-small is-danger btn" @click="clearForm" title="Click to clear notes">
+        <span class="icon is-medium has-text-light">
+          <i class="fas fa-eraser"></i>
+        </span>
+        <span>Clear Notes</span>
+      </button>
     </div>
 
-  </div>
+  </form>
   <!-- END - Primary application deck -->
     
 </template>
@@ -88,6 +94,14 @@ export default {
       'sitch',
       'domain',
     ]),
+  },
+  methods: {
+    clearForm: function(e) {
+      this.name = "";
+      this.sitch = "";
+      this.domain = "";
+      e.preventDefault();
+    }
   }
 };
 

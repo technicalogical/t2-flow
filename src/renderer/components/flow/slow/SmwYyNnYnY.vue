@@ -13,22 +13,23 @@
     <!-- BEGIN Form mail Error section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-danger">
-        <strong>STOP HERE</strong>.
+        <strong>STOP HERE</strong>
       </div>
       <article class="message is-info is-small">
         <div class="message-body">
-          <p>Advise the customer of the need to restore.</p>
+          <p>Advise the customer that they have website errors that may be contributing to the slowness of their website.</p>
         </div>
       </article>
-      <article class="message is-small">
+
+      <article class="message is-success is-small">
         <div class="message-body">
-          <p>Submit WSS Backup Restore for an available date that works for the customer. Set correct expectations for time of completion.</p>
+          <p>Consult on <b>WPPS</b> to help resolve the issue.</p>
         </div>
       </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/slow/SyNyY" class="button is-small is-info">
+        <router-link to="/flow/slow/SmwYyNnYn" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

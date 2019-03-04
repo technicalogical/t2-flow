@@ -3,17 +3,17 @@
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
     
-    <!-- BEGIN - Flow Title banner -->
+      <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>Slow</b> Site</p>
       </div> 
-    <!-- END - Flow Title banner -->
+      <!-- END - Flow Title banner -->
 
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
 
       <div class="content is-medium">
-        <p>Start a restore from the previous date. Did it complete successfully?</p>
+        <p>Is the site now performing better for the customer?</p>
       </div>
 
       <p class="buttons">
@@ -21,13 +21,13 @@
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><b>Yes.</b> Restore completed successfully.</span>
+          <span><b>Yes.</b> The website performs better.</span>
         </router-link>  
         <router-link to="/flow/slow/SmwYn" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><b>No.</b> Restore was not successful.</span>
+          <span><b>No.</b> The website still performs poorly.</span>
         </router-link>
       </p>
       

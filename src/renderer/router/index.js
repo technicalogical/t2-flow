@@ -498,6 +498,16 @@ import SyNy from '@/components/flow/slow/SyNy'
 import SyNyY from '@/components/flow/slow/SyNyY'
 import SmwY from '@/components/flow/slow/SmwY'
 import SmwYy from '@/components/flow/slow/SmwYy'
+import SmwYyY from '@/components/flow/slow/SmwYyY'
+import SmwYyN from '@/components/flow/slow/SmwYyN'
+import SmwYyNy from '@/components/flow/slow/SmwYyNy'
+import SmwYyNn from '@/components/flow/slow/SmwYyNn'
+import SmwYyNnY from '@/components/flow/slow/SmwYyNnY'
+import SmwYyNnYy from '@/components/flow/slow/SmwYyNnYy'
+import SmwYyNnYn from '@/components/flow/slow/SmwYyNnYn'
+import SmwYyNnYnY from '@/components/flow/slow/SmwYyNnYnY'
+import SmwYyNnYnN from '@/components/flow/slow/SmwYyNnYnN'
+import SmwYyNnN from '@/components/flow/slow/SmwYyNnN'
 import SmwYn from '@/components/flow/slow/SmwYn'
 import SmwN from '@/components/flow/slow/SmwN'
 import SyNyN from '@/components/flow/slow/SyNyN'
@@ -2720,6 +2730,56 @@ export default new Router({
       path: '/flow/slow/SmwYy',
       name: 'SmwYy',
       component: SmwYy,
+    },
+    {
+      path: '/flow/slow/SmwYyY',
+      name: 'SmwYyY',
+      component: SmwYyY,
+    },
+    {
+      path: '/flow/slow/SmwYyN',
+      name: 'SmwYyN',
+      component: SmwYyN,
+    },
+    {
+      path: '/flow/slow/SmwYyNy',
+      name: 'SmwYyNy',
+      component: SmwYyNy,
+    },
+    {
+      path: '/flow/slow/SmwYyNn',
+      name: 'SmwYyNn',
+      component: SmwYyNn,
+    },
+    {
+      path: '/flow/slow/SmwYyNnY',
+      name: 'SmwYyNnY',
+      component: SmwYyNnY,
+    },
+    {
+      path: '/flow/slow/SmwYyNnYy',
+      name: 'SmwYyNnYy',
+      component: SmwYyNnYy,
+    },
+    {
+      path: '/flow/slow/SmwYyNnYn',
+      name: 'SmwYyNnYn',
+      component: SmwYyNnYn,
+    },
+    {
+      path: '/flow/slow/SmwYyNnYnY',
+      name: 'SmwYyNnYnY',
+      component: SmwYyNnYnY,
+    },
+    {
+      path: '/flow/slow/SmwYyNnYnN',
+      name: 'SmwYyNnYnN',
+      component: SmwYyNnYnN,
+    },
+    {
+      path: '/flow/slow/SmwYyNnN',
+      name: 'SmwYyNnN',
+      component: SmwYyNnN,
     },
     {
       path: '/flow/slow/SmwYn',
