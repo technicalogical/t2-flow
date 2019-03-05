@@ -12,11 +12,11 @@
       </div>
 
       <p id="who-tool" class="buttons">
-        <router-link to="tools/FlowTP" class="button is-dark is-small" title="Flow TP">
+        <!-- <router-link to="tools/FlowTP" class="button is-dark is-small" title="Flow TP">
           <span>
             <p><b>Flow</b>TP</p>
           </span>
-        </router-link>
+        </router-link> -->
         <router-link to="tools/SwatWHOIS" class="button is-dark is-small" title="GoDaddy WHOIS Search">
           <span>
             <p><b>WHOIS</b></p>
@@ -33,35 +33,35 @@
       <div id="tool-start" class="field is-grouped">
         <p class="control">
           <router-link id="ssl-title" to="tools/SwatDNS" class="button is-small is-dark is-fullwidth">
-            <span class="icon is-large has-text-link">
+            <span class="icon is-large has-text-info">
               <i class="fa fa-globe"></i>
             </span>
             <span><b>DNS</b> LOOKUP</span>
           </router-link>
           <br>
           <router-link id="ssl-title" to="tools/SwatSSL" class="button is-small is-dark is-fullwidth">
-            <span class="icon is-large has-text-link">
+            <span class="icon is-large has-text-info">
               <i class="fas fa-unlock-alt"></i>
             </span>
             <span><b>SSL</b> LOOKUP</span>
           </router-link>
           <br>
           <router-link id="ssl-title" to="tools/SwatSPEED" class="button is-small is-dark is-fullwidth">
-            <span class="icon is-large has-text-link">
+            <span class="icon is-large has-text-info">
               <i class="fas fa-stopwatch"></i>
             </span>
             <span><b>SPEED</b> CHECK</span>
           </router-link>
           <br>
           <router-link id="ssl-title" to="tools/SwatWPPS" class="button is-small is-dark is-fullwidth">
-            <span class="icon is-large has-text-link">
+            <span class="icon is-large has-text-info">
               <i class="fas fa-shield-alt"></i>
             </span>
             <span><b>WPPS</b> CHECK</span>
           </router-link>
           <br>
           <router-link id="ssl-title" to="tools/SwatSUCURI" class="button is-small is-dark is-fullwidth">
-            <span class="icon is-large has-text-link">
+            <span class="icon is-large has-text-info">
               <i class="fas fa-briefcase-medical"></i>
             </span>
             <span><b>SUCURI</b> CHECK</span>

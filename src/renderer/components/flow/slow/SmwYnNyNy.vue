@@ -13,27 +13,27 @@
     <div class="content has-text-centered" id="flow">
 
       <div class="content is-medium">
-        <p>Resubmit and flush cache in <b>TZ</b>. Does this resolve the slow site issue?</p>
+        <p>Turn on debug mode. Are there any issues displayed on the website now?</p>
       </div>
 
       <p class="buttons">
-        <router-link to="/flow/slow/SmwYnY" class="button is-light">
+        <router-link to="/flow/slow/SmwYnNyNyY" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><b>Yes.</b> The website performs better.</span>
+          <span><b>Yes.</b> Customer can duplicate the issue.</span>
         </router-link>  
-        <router-link to="/flow/slow/SmwYnN" class="button is-light">
-          <span class="icon has-text-success">
+        <router-link to="/flow/slow/SmwYnNyNyN" class="button is-light">
+          <span class="icon has-text-danger">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span><b>No.</b> The website still performs poorly.</span>
+          <span><b>No.</b> Customer can not duplicate the issue.</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/slow/SmwY" class="button is-small is-info">
+        <router-link to="/flow/slow/SmwYnNyN" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

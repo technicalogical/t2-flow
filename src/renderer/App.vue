@@ -106,7 +106,7 @@
 
         <!-- Button to link to the conlfuence page -->
         <p class="buttons">
-          <a id="helper-two" class="button is-white" href="http://x.co/flowtool" target="_blank" title="Give Feedback">
+          <a id="helper-two" class="button is-white" href="https://forms.office.com/Pages/ResponsePage.aspx?id=K2Lx1aMUpkWwaQA_jcSFH83ifk09gUJEjA4J6LWpTc5URU9WMkNHOFgyMEg4RUY3R1A0QlA3UjhEMC4u" target="_blank" title="Give Feedback">
             <span class="icon">
               <i class="far fa-comment-alt is-lg"></i>
             </span>

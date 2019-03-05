@@ -509,6 +509,22 @@ import SmwYyNnYnY from '@/components/flow/slow/SmwYyNnYnY'
 import SmwYyNnYnN from '@/components/flow/slow/SmwYyNnYnN'
 import SmwYyNnN from '@/components/flow/slow/SmwYyNnN'
 import SmwYn from '@/components/flow/slow/SmwYn'
+import SmwYnY from '@/components/flow/slow/SmwYnY'
+import SmwYnN from '@/components/flow/slow/SmwYnN'
+import SmwYnNy from '@/components/flow/slow/SmwYnNy'
+import SmwYnNyY from '@/components/flow/slow/SmwYnNyY'
+import SmwYnNyYy from '@/components/flow/slow/SmwYnNyYy'
+import SmwYnNyYn from '@/components/flow/slow/SmwYnNyYn'
+import SmwYnNyYnY from '@/components/flow/slow/SmwYnNyYnY'
+import SmwYnNyYnN from '@/components/flow/slow/SmwYnNyYnN'
+import SmwYnNyN from '@/components/flow/slow/SmwYnNyN'
+import SmwYnNyNy from '@/components/flow/slow/SmwYnNyNy'
+import SmwYnNyNyY from '@/components/flow/slow/SmwYnNyNyY'
+import SmwYnNyNyN from '@/components/flow/slow/SmwYnNyNyN'
+import SmwYnNyNyNy from '@/components/flow/slow/SmwYnNyNyNy'
+import SmwYnNyNyNn from '@/components/flow/slow/SmwYnNyNyNn'
+import SmwYnNyNn from '@/components/flow/slow/SmwYnNyNn'
+import SmwYnNn from '@/components/flow/slow/SmwYnNn'
 import SmwN from '@/components/flow/slow/SmwN'
 import SyNyN from '@/components/flow/slow/SyNyN'
 import SyNn from '@/components/flow/slow/SyNn'
@@ -2785,6 +2801,86 @@ export default new Router({
       path: '/flow/slow/SmwYn',
       name: 'SmwYn',
       component: SmwYn,
+    },
+    {
+      path: '/flow/slow/SmwYnY',
+      name: 'SmwYnY',
+      component: SmwYnY,
+    },
+    {
+      path: '/flow/slow/SmwYnN',
+      name: 'SmwYnN',
+      component: SmwYnN,
+    },
+    {
+      path: '/flow/slow/SmwYnNy',
+      name: 'SmwYnNy',
+      component: SmwYnNy,
+    },
+    {
+      path: '/flow/slow/SmwYnNyY',
+      name: 'SmwYnNyY',
+      component: SmwYnNyY,
+    },
+    {
+      path: '/flow/slow/SmwYnNyYy',
+      name: 'SmwYnNyYy',
+      component: SmwYnNyYy,
+    },
+    {
+      path: '/flow/slow/SmwYnNyYn',
+      name: 'SmwYnNyYn',
+      component: SmwYnNyYn,
+    },
+    {
+      path: '/flow/slow/SmwYnNyYnY',
+      name: 'SmwYnNyYnY',
+      component: SmwYnNyYnY,
+    },
+    {
+      path: '/flow/slow/SmwYnNyYnN',
+      name: 'SmwYnNyYnN',
+      component: SmwYnNyYnN,
+    },
+    {
+      path: '/flow/slow/SmwYnNyN',
+      name: 'SmwYnNyN',
+      component: SmwYnNyN,
+    },
+    {
+      path: '/flow/slow/SmwYnNyNy',
+      name: 'SmwYnNyNy',
+      component: SmwYnNyNy,
+    },
+    {
+      path: '/flow/slow/SmwYnNyNyY',
+      name: 'SmwYnNyNyY',
+      component: SmwYnNyNyY,
+    },
+    {
+      path: '/flow/slow/SmwYnNyNyN',
+      name: 'SmwYnNyNyN',
+      component: SmwYnNyNyN,
+    },
+    {
+      path: '/flow/slow/SmwYnNyNyNy',
+      name: 'SmwYnNyNyNy',
+      component: SmwYnNyNyNy,
+    },
+    {
+      path: '/flow/slow/SmwYnNyNyNn',
+      name: 'SmwYnNyNyNn',
+      component: SmwYnNyNyNn,
+    },
+    {
+      path: '/flow/slow/SmwYnNyNn',
+      name: 'SmwYnNyNn',
+      component: SmwYnNyNn,
+    },
+    {
+      path: '/flow/slow/SmwYnNn',
+      name: 'SmwYnNn',
+      component: SmwYnNn,
     },
     {
       path: '/flow/slow/SmwN',

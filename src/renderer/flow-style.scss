@@ -3,33 +3,33 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+  src: url('assets/fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url('fonts/OpenSans-Bold.ttf') format('truetype');
+  src: url('assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
 /* BEGIN - Application wide GoDaddy Fonts */
 @font-face {
   font-family: 'GD Boing';
-  src: url('./fonts/GDBoing-Bold.ttf') format('truetype');
+  src: url('assets/fonts/GDBoing-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'GD Boing Black';
-  src: url('./fonts/GDBoing-Black.ttf') format('truetype');
+  src: url('assets/fonts/GDBoing-Black.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'GD Sherpa';
-  src: url('./fonts/GDSherpa-Regular.otf') format('opentype');
+  src: url('assets/fonts/GDSherpa-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'GD Sherpa Bold';
-  src: url('./fonts/GDSherpa-Bold.otf') format('opentype');
+  src: url('assets/fonts/GDSherpa-Bold.otf') format('opentype');
 }
 /* END - Application wide GoDaddy Fonts */
 
@@ -71,7 +71,7 @@ body {
   width: 450px;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid hsl(0, 0%, 86%);
-  background-color: #fff;
+  background-color: hsl(0, 0%, 98%);
   font-family: 'GD Sherpa';
 }
 
@@ -158,6 +158,7 @@ a:active {
   border-left: 1px solid hsl(0, 0%, 86%);
   border-top: 1px solid hsl(0, 0%, 86%);
   border-radius: 0px 0px 3px 0px;
+  background-color: hsl(0, 0%, 98%); 
 }
 
 #deck-icon:hover {
@@ -176,6 +177,7 @@ a:active {
   border-right: 1px solid hsl(0, 0%, 86%);
   border-top: 1px solid hsl(0, 0%, 86%);
   border-radius: 0px 0px 0px 3px;
+  background-color: hsl(0, 0%, 98%);
 }
 
 #close-btn:hover {
@@ -383,7 +385,7 @@ footer {
   right: 0px;
   margin: 0px;
   padding: 0px;
-  background: #fff;
+  background: hsl(0, 0%, 98%);
   border: 0px;
   border-right: 1px solid hsl(0, 0%, 86%);
   border-bottom: 1px solid hsl(0, 0%, 86%);
@@ -574,9 +576,9 @@ footer {
   position: relative;
   width: 100%;
   height: 220px;
-  border: 1px solid hsl(0, 0%, 86%);
+  border: 1px solid hsl(0, 0%, 80%);
   border-radius: 4px;
-  background-color: hsl(0, 0%, 96%);
+  background-color: hsl(0, 0%, 92%);
   padding: 10px;
 }
 
@@ -647,7 +649,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  background-color: hsl(0, 0%, 96%);
+  background-color: hsl(0, 0%, 99%);
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 0px 0px 4px 4px;
   width: 70%;
@@ -711,7 +713,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  background-color: hsl(0, 0%, 96%);
+  background-color: hsl(0, 0%, 99%);
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 0px 0px 4px 4px;
   width: 70%;
@@ -743,7 +745,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  background-color: hsl(0, 0%, 96%);
+  background-color: hsl(0, 0%, 99%);
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 0px 0px 4px 4px;
   width: 70%;
