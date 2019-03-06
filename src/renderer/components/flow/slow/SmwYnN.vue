@@ -13,7 +13,7 @@
     <div class="content has-text-centered" id="flow">
 
       <div class="content is-medium">
-        <p>Can you duplicate the slow site issue?</p>
+        <p>Can you duplicate this slow site issue?</p>
       </div>
 
       <p class="buttons">

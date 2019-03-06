@@ -9,29 +9,26 @@
       </div> 
     <!-- END - Flow Title banner -->
 
+    
     <!-- BEGIN section -->
-    <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>Is this a GoDaddy IP address?</p>
+    <div class="content has-text-centered" id="flow">    
+      <div class="notification is-danger">
+        <strong>STOP HERE</strong>.
       </div>
-      <p class="buttons">
-        <router-link to="/flow/slow/Sy" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-check-circle"></i>
-          </span>
-          <span><b>Yes.</b> It is a GoDaddy IP.</span>
-        </router-link>  
-        <router-link to="/flow/slow/Sn" class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-check-circle"></i>
-          </span>
-          <span><b>No.</b> It is not a GoDaddy IP.</span>
-        </router-link>
-      </p>
+      <article class="message is-info is-small">
+        <div class="message-body">
+          <p>Advise the customer of the need to restore.</p>
+        </div>
+      </article>
+      <article class="message is-small">
+        <div class="message-body">
+          <p>Submit WSS Backup Restore for an available date that works for the customer. Set correct expectations for time of completion.</p>
+        </div>
+      </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/SwatFlow" class="button is-small is-info">
+        <router-link to="/flow/slow/SyNyY" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
@@ -40,6 +37,7 @@
       </p>
       <!-- END - Back button -->
 
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END section -->
@@ -50,7 +48,9 @@
 </template>
 
 <script>
+export default {
 
+}
 </script>
 
 <style></style>

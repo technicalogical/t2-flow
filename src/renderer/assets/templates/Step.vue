@@ -5,33 +5,35 @@
     
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>Slow</b> Site</p>
+        <p><b>Flow</b> Title</p>
       </div> 
     <!-- END - Flow Title banner -->
 
-    <!-- BEGIN Net Vio flow section -->
+    <!-- BEGIN section -->
     <div class="content has-text-centered" id="flow">
+
       <div class="content is-medium">
-        <p>Is this a Sucuri Firewall IP address or some other third party IP address?</p>
+        <p>Step to be completed</p>
       </div>
+
       <p class="buttons">
-        <router-link to="/flow/slow/SnS" class="button is-light">
+        <router-link to=" connect to next vue " class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>This is a <b>Sucuri</b> IP address.</span>
+          <span>Response based on step</span>
         </router-link>  
-        <router-link to="/flow/slow/SnT" class="button is-light">
-          <span class="icon has-text-success">
+        <router-link to=" connect to next vue " class="button is-light">
+          <span class="icon has-text-danger">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>This is a <b>third party</b> IP address</span>
+          <span>Other response based on step</span>
         </router-link>
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/slow/Slow" class="button is-small is-info">
+        <router-link to=" connect to previous vue " class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
@@ -41,8 +43,9 @@
       <!-- END - Back button -->
 
       <router-view/>
+
     </div>
-    <!-- END Net Vio flow section -->
+    <!-- END flow section -->
 
   </div>
   <!-- END - Primary application deck -->

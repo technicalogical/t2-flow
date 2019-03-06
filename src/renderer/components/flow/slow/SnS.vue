@@ -12,20 +12,20 @@
     <!-- BEGIN Net Vio flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Is this a Sucuri Firewall IP address or some other third party IP address?</p>
+        <p>Does the hosting IP match The IP in <b>TZ</b> and in WSS Firewall?</p>
       </div>
       <p class="buttons">
         <router-link to="/flow/slow/SnS" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>This is a <b>Sucuri</b> IP address.</span>
+          <span><b>Yes</b>. The hosting IP is correct.</span>
         </router-link>  
         <router-link to="/flow/slow/SnT" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>This is a <b>third party</b> IP address</span>
+          <span><b>No</b>. The hosting IP is incorrect.</span>
         </router-link>
       </p>
       

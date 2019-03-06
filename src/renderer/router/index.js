@@ -525,10 +525,28 @@ import SmwYnNyNyNy from '@/components/flow/slow/SmwYnNyNyNy'
 import SmwYnNyNyNn from '@/components/flow/slow/SmwYnNyNyNn'
 import SmwYnNyNn from '@/components/flow/slow/SmwYnNyNn'
 import SmwYnNn from '@/components/flow/slow/SmwYnNn'
+import SmwYnNnY from '@/components/flow/slow/SmwYnNnY'
+import SmwYnNnYy from '@/components/flow/slow/SmwYnNnYy'
+import SmwYnNnYyY from '@/components/flow/slow/SmwYnNnYyY'
+import SmwYnNnYyN from '@/components/flow/slow/SmwYnNnYyN'
+import SmwYnNnYyNy from '@/components/flow/slow/SmwYnNnYyNy'
+import SmwYnNnYyNn from '@/components/flow/slow/SmwYnNnYyNn'
+import SmwYnNnYn from '@/components/flow/slow/SmwYnNnYn'
+import SmwYnNnYnY from '@/components/flow/slow/SmwYnNnYnY'
+import SmwYnNnYnYy from '@/components/flow/slow/SmwYnNnYnYy'
+import SmwYnNnYnYn from '@/components/flow/slow/SmwYnNnYnYn'
+import SmwYnNnYnYnY from '@/components/flow/slow/SmwYnNnYnYnY'
+import SmwYnNnYnYnN from '@/components/flow/slow/SmwYnNnYnYnN'
+import SmwYnNnYnN from '@/components/flow/slow/SmwYnNnYnN'
+import SmwYnNnN from '@/components/flow/slow/SmwYnNnN'
+import SmwYnNnNy from '@/components/flow/slow/SmwYnNnNy'
+import SmwYnNnNn from '@/components/flow/slow/SmwYnNnNn'
 import SmwN from '@/components/flow/slow/SmwN'
 import SyNyN from '@/components/flow/slow/SyNyN'
 import SyNn from '@/components/flow/slow/SyNn'
 import Sn from '@/components/flow/slow/Sn'
+import SnS from '@/components/flow/slow/SnS'
+import SnT from '@/components/flow/slow/SnT'
 // END Slow Site imported routes
 
 Vue.use(Router)
@@ -2883,6 +2901,86 @@ export default new Router({
       component: SmwYnNn,
     },
     {
+      path: '/flow/slow/SmwYnNnY',
+      name: 'SmwYnNnY',
+      component: SmwYnNnY,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYy',
+      name: 'SmwYnNnYy',
+      component: SmwYnNnYy,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYyY',
+      name: 'SmwYnNnYyY',
+      component: SmwYnNnYyY,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYyN',
+      name: 'SmwYnNnYyN',
+      component: SmwYnNnYyN,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYyNy',
+      name: 'SmwYnNnYyNy',
+      component: SmwYnNnYyNy,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYyNn',
+      name: 'SmwYnNnYyNn',
+      component: SmwYnNnYyNn,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYn',
+      name: 'SmwYnNnYn',
+      component: SmwYnNnYn,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYnY',
+      name: 'SmwYnNnYnY',
+      component: SmwYnNnYnY,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYnYy',
+      name: 'SmwYnNnYnYy',
+      component: SmwYnNnYnYy,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYnYn',
+      name: 'SmwYnNnYnYn',
+      component: SmwYnNnYnYn,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYnYnY',
+      name: 'SmwYnNnYnYnY',
+      component: SmwYnNnYnYnY,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYnYnN',
+      name: 'SmwYnNnYnYnN',
+      component: SmwYnNnYnYnN,
+    },
+    {
+      path: '/flow/slow/SmwYnNnYnN',
+      name: 'SmwYnNnYnN',
+      component: SmwYnNnYnN,
+    },
+    {
+      path: '/flow/slow/SmwYnNnN',
+      name: 'SmwYnNnN',
+      component: SmwYnNnN,
+    },
+    {
+      path: '/flow/slow/SmwYnNnNy',
+      name: 'SmwYnNnNy',
+      component: SmwYnNnNy,
+    },
+    {
+      path: '/flow/slow/SmwYnNnNn',
+      name: 'SmwYnNnNn',
+      component: SmwYnNnNn,
+    },
+    {
       path: '/flow/slow/SmwN',
       name: 'SmwN',
       component: SmwN,
@@ -2901,6 +2999,16 @@ export default new Router({
       path: '/flow/slow/Sn',
       name: 'Sn',
       component: Sn,
+    },
+    {
+      path: '/flow/slow/SnS',
+      name: 'SnS',
+      component: SnS,
+    },
+    {
+      path: '/flow/slow/SnT',
+      name: 'SnT',
+      component: SnT,
     },
     // END - Slow Site flow
   ]
