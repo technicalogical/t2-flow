@@ -5,38 +5,27 @@
     
       <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>Flow</b> Title</p>
+        <p><b>Slow</b> Site</p>
       </div> 
       <!-- END - Flow Title banner -->
 
+    
     <!-- BEGIN section -->
     <div class="content has-text-centered" id="flow">
 
-      <div class="content is-medium">
-        <p>Step to be completed</p>
+      <div class="notification is-info">
+        <strong>TIME TO TRANSFER</strong>
       </div>
 
-      <p class="buttons">
-
-        <router-link to=" connect to next vue " class="button is-light">
-          <span class="icon has-text-success">
-            <i class="fas fa-check-circle"></i>
-          </span>
-          <span>Response based on step</span>
-        </router-link>
-      
-        <router-link to=" connect to next vue " class="button is-light">
-          <span class="icon has-text-danger">
-            <i class="fas fa-check-circle"></i>
-          </span>
-          <span>Other response based on step</span>
-        </router-link>
-        
-      </p>
+      <article class="message is-small has-text-left">
+        <div class="message-body">
+          <p>At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to a Tier 2 agent for further assistance with troubleshooting this issue.</p>
+        </div>
+      </article>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to=" connect to previous vue " class="button is-small is-info">
+        <router-link to=" router link to revious page " class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
@@ -45,10 +34,12 @@
       </p>
       <!-- END - Back button -->
 
+      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+
       <router-view/>
 
     </div>
-    <!-- END flow section -->
+    <!-- END section -->
 
   </div>
   <!-- END - Primary application deck -->
@@ -56,7 +47,9 @@
 </template>
 
 <script>
+export default {
 
+}
 </script>
 
 <style></style>

@@ -544,8 +544,17 @@ import SmwYnNnNn from '@/components/flow/slow/SmwYnNnNn'
 import SmwN from '@/components/flow/slow/SmwN'
 import SyNyN from '@/components/flow/slow/SyNyN'
 import SyNn from '@/components/flow/slow/SyNn'
+import SyNnY from '@/components/flow/slow/SyNnY'
+import SyNnYy from '@/components/flow/slow/SyNnYy'
+import SyNnYyG from '@/components/flow/slow/SyNnYyG'
+import SyNnYyP from '@/components/flow/slow/SyNnYyP'
+import SyNnYn from '@/components/flow/slow/SyNnYn'
+import SyNnYnG from '@/components/flow/slow/SyNnYnG'
+import SyNnYnP from '@/components/flow/slow/SyNnYnP'
+import SyNnN from '@/components/flow/slow/SyNnN'
 import Sn from '@/components/flow/slow/Sn'
 import SnS from '@/components/flow/slow/SnS'
+import SnSn from '@/components/flow/slow/SnSn'
 import SnT from '@/components/flow/slow/SnT'
 // END Slow Site imported routes
 
@@ -2996,6 +3005,46 @@ export default new Router({
       component: SyNn,
     },
     {
+      path: '/flow/slow/SyNnY',
+      name: 'SyNnY',
+      component: SyNnY,
+    },
+    {
+      path: '/flow/slow/SyNnYn',
+      name: 'SyNnYn',
+      component: SyNnYn,
+    },
+    {
+      path: '/flow/slow/SyNnYnG',
+      name: 'SyNnYnG',
+      component: SyNnYnG,
+    },
+    {
+      path: '/flow/slow/SyNnYnP',
+      name: 'SyNnYnP',
+      component: SyNnYnP,
+    },
+    {
+      path: '/flow/slow/SyNnYy',
+      name: 'SyNnYy',
+      component: SyNnYy,
+    },
+    {
+      path: '/flow/slow/SyNnYyG',
+      name: 'SyNnYyG',
+      component: SyNnYyG,
+    },
+    {
+      path: '/flow/slow/SyNnYyP',
+      name: 'SyNnYyP',
+      component: SyNnYyP,
+    },
+    {
+      path: '/flow/slow/SyNnN',
+      name: 'SyNnN',
+      component: SyNnN,
+    },
+    {
       path: '/flow/slow/Sn',
       name: 'Sn',
       component: Sn,
@@ -3004,6 +3053,11 @@ export default new Router({
       path: '/flow/slow/SnS',
       name: 'SnS',
       component: SnS,
+    },
+    {
+      path: '/flow/slow/SnSn',
+      name: 'SnSn',
+      component: SnSn,
     },
     {
       path: '/flow/slow/SnT',

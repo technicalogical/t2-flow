@@ -3,40 +3,35 @@
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
     
-      <!-- BEGIN - Flow Title banner -->
+    <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>Flow</b> Title</p>
+        <p><b>Slow</b> Site</p>
       </div> 
-      <!-- END - Flow Title banner -->
+    <!-- END - Flow Title banner -->
 
     <!-- BEGIN section -->
     <div class="content has-text-centered" id="flow">
-
       <div class="content is-medium">
-        <p>Step to be completed</p>
+        <p>Run website through a speed test. What are the results?</p>
       </div>
-
       <p class="buttons">
-
-        <router-link to=" connect to next vue " class="button is-light">
+        <router-link to="/flow/slow/SyNnYyG" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Response based on step</span>
-        </router-link>
-      
-        <router-link to=" connect to next vue " class="button is-light">
-          <span class="icon has-text-danger">
+          <span>The website has <b>good</b> results.</span>
+        </router-link>  
+        <router-link to="/flow/slow/SyNnYyP" class="button is-light">
+          <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
           </span>
-          <span>Other response based on step</span>
+          <span>The website has <b>poor</b> results</span>
         </router-link>
-        
       </p>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to=" connect to previous vue " class="button is-small is-info">
+        <router-link to="/flow/slow/SyNnY" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
@@ -46,9 +41,8 @@
       <!-- END - Back button -->
 
       <router-view/>
-
     </div>
-    <!-- END flow section -->
+    <!-- END section -->
 
   </div>
   <!-- END - Primary application deck -->
