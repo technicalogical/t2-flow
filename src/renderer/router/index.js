@@ -10,6 +10,7 @@ import KiNote from '@/components/note/KiNote'
 import PreNote from '@/components/note/PreNote'
 import SwatTools from '@/components/SwatTools'
 import SwatLinks from '@/components/SwatLinks'
+import FlowIndex from '@/components/FlowIndex'
 import SwatSettings from '@/components/SwatSettings'
 // END Primary imported routes
 
@@ -648,6 +649,11 @@ export default new Router({
       path: '/links/WebsiteLinks',
       name: 'Website Links',
       component: WebsiteLinks
+    },
+    {
+      path: '/FlowIndex',
+      name: 'Flow Index',
+      component: FlowIndex
     },
     {
       path: '/SwatSettings',

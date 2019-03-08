@@ -5,7 +5,7 @@
 
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <center><p><b>SWAT</b> Call Flows</p></center>
+        <center><p><b>Find</b> Call Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
@@ -26,7 +26,7 @@
             </span>
             <span><b>Flow</b> Guide</span>
           </router-link>
-          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+          <router-link to="/FlowIndex" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
               <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
@@ -37,73 +37,13 @@
 
       <div id="flow-break"></div>
 
-      <div class="content" id="flow-deck-two">
+      <!-- <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <router-link to="/flow/FiveError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>500</b> Error</span>
-          </router-link>  
-          <router-link to="/flow/FourThree" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>403</b> Site Error</span>
-          </router-link>
-          <router-link to="/flow/FourFour" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>404</b> Site Error</span>
-          </router-link>
-          <router-link to="/flow/FiveThree" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>503</b> Error</span>
-          </router-link>
-          <router-link to="/flow/FormError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>Form Mail</b> Issues</span>
-          </router-link>
-          <router-link to="/flow/SslError" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>SSL</b> Errors</span>
-          </router-link>
-          <router-link to="/flow/CpEmail" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>cPanel</b> Email issues</span>
-          </router-link>
-          
-          <router-link to="/flow/Malware" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span>Identifying <b>Malware</b></span>
-          </router-link>
-          <router-link to="/flow/Splunk" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>SPLUNK</b> Usage</span>
-          </router-link>
-          <router-link to="/flow/slow/Slow" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
-            <span><b>Slow</b> Sites</span>
-          </router-link>
+ 
         </p>
       </div> 
 
-      <div id="flow-break"></div>
+      <div id="flow-break"></div> -->
 
       <div id="flowinfo" class="content">
         <center><h1>Navigating Call Flows</h1></center>

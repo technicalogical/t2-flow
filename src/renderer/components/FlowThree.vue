@@ -5,7 +5,7 @@
 
     <!-- START Opening comments for Swat FLow Chart -->
     <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <center><p><b>SWAT</b> "Check" Flows</p></center>
+        <center><p><b>InBound</b> Call Flows</p></center>
     </div>
     <!-- END Opening comments for Swat Flow Chart -->
 
@@ -17,7 +17,7 @@
             <span class="icon has-text-success">
               <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span>Server <b>Uptime</b> Check</span>
+            <span><b>VPS</b> Issues</span>
           </router-link>
           <router-link to="/flow/mwp/Migsync" class="button is-dark is-small">
             <span class="icon has-text-success">
