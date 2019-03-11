@@ -13,24 +13,27 @@
     <div class="content" id="flow">
       <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
+          <router-link to="/flow/dns/Dcheck" class="button is-dark is-small" v-on:click="handleDcheck">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/org16.png"/>
             </span>
-            <span><b>VPS</b> Issues</span>
+            <span><p><b>DNS</b> Check</p></span>
           </router-link>
-          <router-link to="/flow/mwp/Migsync" class="button is-dark is-small">
+          <router-link to="/flow/mig/Mig" class="button is-dark is-small" v-on:click="handleMig">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/org16.png"/>
             </span>
-            <span><b>MWP</b> Migration/Sync</span>
+            <span><p><b>Migrations</b></p></span>
           </router-link>
-          <router-link to="/flow/Ftp" class="button is-dark is-small">
+          <router-link to="/flow/restore/Rst" class="button is-dark is-small" v-on:click="handleRst">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/org16.png"/>
             </span>
-            <span><b>FTP</b> Support</span>
+            <span><p><b>Restores</b></p></span>
           </router-link>
+          
+          
+          
           <!--<router-link to="/flow/migration/Mig" class="button is-dark is-small">
             <span class="icon has-text-success">
               <i class="fas fa-play-circle"></i>

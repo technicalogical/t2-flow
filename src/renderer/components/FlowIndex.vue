@@ -15,7 +15,7 @@
       <div id="flow-search" class="content">
         <div class="field">
           <p class="control has-icons-left">
-            <input id="flow-index-search" class="input is-small" type="text" v-on:input="filterIndex" placeholder="Search The Flow Index">
+            <input id="flow-index-search" class="input is-small" type="text" title="Search for Call Flows using keywords here." v-on:input="filterIndex" placeholder="Search The Flow Index">
             <span class="icon is-left">
               <img src="../assets/icons/png/blu16.png"/>
             </span>
@@ -110,19 +110,6 @@
           </li>
           <li>
             <div class="buttons has-addons">
-              <router-link to="/flow/howto/debugmode/Debug" class="button is-dark is-small">
-                <span class="icon has-text-success">
-                  <img src="../assets/icons/png/blu16.png"/>
-                </span>
-                <span>Enable <b>Debug Mode</b></span>
-              </router-link>
-              <span id="idinfo" class="button is-static is-small is-expanded">
-                Turn on WordPress Debug Mode
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="buttons has-addons">
               <router-link to="/flow/CpEmail" class="button is-dark is-small">
                 <span class="icon has-text-success">
                   <img src="../assets/icons/png/blu16.png"/>
@@ -134,6 +121,32 @@
               </span>
             </div>
           </li>
+          <li>
+            <div class="buttons has-addons">
+              <router-link to="/flow/dns/Dcheck" class="button is-dark is-small" v-on:click="handleDcheck">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/org16.png"/>
+                </span>
+                <span><p><b>DNS</b> Check</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Checking global DNS to match server
+              </span>
+            </div>
+          </li>    
+          <li>
+            <div class="buttons has-addons">
+              <router-link to="/flow/howto/debugmode/Debug" class="button is-dark is-small">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/blu16.png"/>
+                </span>
+                <span>Enable <b>Debug Mode</b></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Turn on WordPress Debug Mode
+              </span>
+            </div>
+          </li>    
           <li>
             <div class="buttons has-addons">
               <router-link to="/flow/FormError" class="button is-dark is-small">
@@ -201,6 +214,19 @@
           </li>
           <li>
             <div class="buttons has-addons">
+              <router-link to="/flow/mig/Mig" class="button is-dark is-small" v-on:click="handleMig">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/org16.png"/>
+                </span>
+                <span><p><b>Migrations</b></p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Selling / addressing hosting restores
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="buttons has-addons">
               <router-link to="/flow/mwp/Migsync" class="button is-dark is-small">
                 <span class="icon has-text-success">
                   <img src="../assets/icons/png/blu16.png"/>
@@ -240,6 +266,58 @@
           </li>
           <li>
             <div class="buttons has-addons">
+              <router-link to="/flow/restore/Rst" class="button is-dark is-small" v-on:click="handleRst">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/org16.png"/>
+                </span>
+                <span><p><b>Restores</b></p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Selling / addressing hosting restores 
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="buttons has-addons">
+               <a href="https://www.godaddy.com/help/search-engine-visibility" target="_blank" class="button is-dark is-small">
+              <span class="icon has-text-success">
+                <img src="../assets/icons/png/blu16.png"/>
+              </span>
+              <span><b>SEO</b> &amp; <b>SEV</b></span>
+              </a>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                SEO &amp; SEV GoDaddy HELP article 
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="buttons has-addons">
+              <router-link to="/flow/pfc/ServerCheck" class="button is-dark is-small">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/blu16.png"/>
+                </span>
+                <span><b>Server</b> Checklist</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Checks to complete prior to transfer
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="buttons has-addons">
+              <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/blu16.png"/>
+                </span>
+                <span><b>Server</b> Issues</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Checking SSH and PuTTy access to hosting
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="buttons has-addons">
               <router-link to="/flow/slow/Slow" class="button is-dark is-small">
                 <span class="icon has-text-success">
                   <img src="../assets/icons/png/blu16.png"/>
@@ -263,33 +341,7 @@
                 Guided SPLUNK troubleshooting
               </span>
             </div>
-          </li>
-          <li>
-            <div class="buttons has-addons">
-               <a href="https://www.godaddy.com/help/search-engine-visibility" target="_blank" class="button is-dark is-small">
-              <span class="icon has-text-success">
-                <img src="../assets/icons/png/blu16.png"/>
-              </span>
-              <span><b>SEO</b> &amp; <b>SEV</b></span>
-              </a>
-              <span id="idinfo" class="button is-static is-small is-expanded">
-                SEO &amp; SEV GoDaddy HELP article 
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="buttons has-addons">
-              <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
-                <span class="icon has-text-success">
-                  <img src="../assets/icons/png/blu16.png"/>
-                </span>
-                <span><b>Server</b> Issues</span>
-              </router-link>
-              <span id="idinfo" class="button is-static is-small is-expanded">
-                Checking SSH and PuTTy access to hosting
-              </span>
-            </div>
-          </li>
+          </li>          
           <li>
             <div class="buttons has-addons">
               <router-link to="/flow/SslError" class="button is-dark is-small">
@@ -342,7 +394,19 @@
               </span>
             </div>
           </li>
-          
+          <li>
+            <div class="buttons has-addons">
+              <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/blu16.png"/>
+                </span>
+                <span><b>VPS</b> Uptime check</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Check PuTTy and RDP connectivity 
+              </span>
+            </div>
+          </li>        
           <li>
             <div class="buttons has-addons">
               <router-link to="/flow/howto/wpps/Wpps" class="button is-dark is-small">

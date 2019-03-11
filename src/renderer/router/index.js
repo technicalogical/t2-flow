@@ -44,6 +44,7 @@ import FlowTwo from '@/components/FlowTwo'
 import FlowThree from '@/components/FlowThree'
 import FlowFour from '@/components/FlowFour'
 import Transfer from '@/components/flow/pfc/Transfer'
+import ServerCheck from '@/components/flow/pfc/ServerCheck'
 //SWAT Flow main menu routes
 
 // BEGIN Form Mail error imported routes
@@ -452,44 +453,6 @@ import NetvioRnYnN from '@/components/flow/howto/netvio/NetvioRnYnN'
 import NetvioRnN from '@/components/flow/howto/netvio/NetvioRnN'
 // END Net Vio imported routes
 
-// BEGIN Paid Migration imported routes
-import Mig from '@/components/flow/migration/Mig'
-import MigY from '@/components/flow/migration/MigY'
-import MigYy from '@/components/flow/migration/MigYy'
-import MigYn from '@/components/flow/migration/MigYn'
-import MigN from '@/components/flow/migration/MigN'
-import MigNy from '@/components/flow/migration/MigNy'
-import MigNyY from '@/components/flow/migration/MigNyY'
-import MigNyYy from '@/components/flow/migration/MigNyYy'
-import MigNyYyY from '@/components/flow/migration/MigNyYyY'
-import MigNyYyN from '@/components/flow/migration/MigNyYyN'
-import MigNyYyNy from '@/components/flow/migration/MigNyYyNy'
-import MigNyYyNyY from '@/components/flow/migration/MigNyYyNyY'
-import MigNyYyNyYy from '@/components/flow/migration/MigNyYyNyYy'
-import MigNyYyNyYyY from '@/components/flow/migration/MigNyYyNyYyY'
-import MigNyYyNyYyYy from '@/components/flow/migration/MigNyYyNyYyYy'
-import MigNyYyNyYyYn from '@/components/flow/migration/MigNyYyNyYyYn'
-import MigNyYyNyYyYnY from '@/components/flow/migration/MigNyYyNyYyYnY'
-import MigNyYyNyYyYnN from '@/components/flow/migration/MigNyYyNyYyYnN'
-import MigNyYyNyYyN from '@/components/flow/migration/MigNyYyNyYyN'
-import MigNyYyNyYyNn from '@/components/flow/migration/MigNyYyNyYyNn'
-import MigNyYyNyYyNnY from '@/components/flow/migration/MigNyYyNyYyNnY'
-import MigNyYyNyYyNnN from '@/components/flow/migration/MigNyYyNyYyNnN'
-import MigNyYyNyYyNy from '@/components/flow/migration/MigNyYyNyYyNy'
-import MigNyYyNyYyNyY from '@/components/flow/migration/MigNyYyNyYyNyY'
-import MigNyYyNyYyNyYy from '@/components/flow/migration/MigNyYyNyYyNyYy'
-import MigNyYyNyYyNyYn from '@/components/flow/migration/MigNyYyNyYyNyYn'
-import MigNyYyNyYyNyYnY from '@/components/flow/migration/MigNyYyNyYyNyYnY'
-import MigNyYyNyYyNyYnN from '@/components/flow/migration/MigNyYyNyYyNyYnN'
-import MigNyYyNyYyNyN from '@/components/flow/migration/MigNyYyNyYyNyN'
-import MigNyYyNyYn from '@/components/flow/migration/MigNyYyNyYn'
-import MigNyYyNyN from '@/components/flow/migration/MigNyYyNyN'
-import MigNyYyNn from '@/components/flow/migration/MigNyYyNn'
-import MigNyYn from '@/components/flow/migration/MigNyYn'
-import MigNyN from '@/components/flow/migration/MigNyN'
-import MigNn from '@/components/flow/migration/MigNn'
-// END Paid Migration imported routes
-
 // BEGIN Slow Site imported routes
 import Slow from '@/components/flow/slow/Slow'
 import Sy from '@/components/flow/slow/Sy'
@@ -558,6 +521,64 @@ import SnS from '@/components/flow/slow/SnS'
 import SnSn from '@/components/flow/slow/SnSn'
 import SnT from '@/components/flow/slow/SnT'
 // END Slow Site imported routes
+
+// BEGIN DNS check imported routes
+import Dcheck from '@/components/flow/dns/Dcheck'
+import Dy from '@/components/flow/dns/Dy'
+import DyY from '@/components/flow/dns/DyY'
+import DyYe from '@/components/flow/dns/DyYe'
+import DyYw from '@/components/flow/dns/DyYw'
+import DyYwY from '@/components/flow/dns/DyYwY'
+import DyYwN from '@/components/flow/dns/DyYwN'
+import DyN from '@/components/flow/dns/DyN'
+import Dn from '@/components/flow/dns/Dn'
+import DnY from '@/components/flow/dns/DnY'
+import DnYw from '@/components/flow/dns/DnYw'
+import DnYwY from '@/components/flow/dns/DnYwY'
+import DnYwN from '@/components/flow/dns/DnYwN'
+import DnYe from '@/components/flow/dns/DnYe'
+import DnN from '@/components/flow/dns/DnN'
+// END DNS check imported routes
+
+// BEGIN Migration imported routes
+import Mig from '@/components/flow/mig/Mig'
+import Msel from '@/components/flow/mig/Msel'
+import MselY from '@/components/flow/mig/MselY'
+import MselN from '@/components/flow/mig/MselN'
+import MselNa from '@/components/flow/mig/MselNa'
+import MselNaG from '@/components/flow/mig/MselNaG'
+import MselNg from '@/components/flow/mig/MselNg'
+import MselNgC from '@/components/flow/mig/MselNgC'
+import MselNt from '@/components/flow/mig/MselNt'
+import MselNtC from '@/components/flow/mig/MselNtC'
+import MselNw from '@/components/flow/mig/MselNw'
+import MselNwY from '@/components/flow/mig/MselNwY'
+import MselNwYg from '@/components/flow/mig/MselNwYg'
+import MselNwN from '@/components/flow/mig/MselNwN'
+import Msup from '@/components/flow/mig/Msup'
+import MsupM from '@/components/flow/mig/MsupM'
+import MsupL from '@/components/flow/mig/MsupL'
+// END Migration imported routes
+
+// BEGIN Restore imported routes
+import Rst from '@/components/flow/restore/Rst'
+import Sel from '@/components/flow/restore/Sel'
+import SelC from '@/components/flow/restore/SelC'
+import SelCy from '@/components/flow/restore/SelCy'
+import SelCn from '@/components/flow/restore/SelCn'
+import SelF from '@/components/flow/restore/SelF'
+import SelFy from '@/components/flow/restore/SelFy'
+import SelFn from '@/components/flow/restore/SelFn'
+import SelM from '@/components/flow/restore/SelM'
+import SelMy from '@/components/flow/restore/SelMy'
+import SelMn from '@/components/flow/restore/SelMn'
+import SelP from '@/components/flow/restore/SelP'
+import SelPy from '@/components/flow/restore/SelPy'
+import SelPn from '@/components/flow/restore/SelPn'
+import Sup from '@/components/flow/restore/Sup'
+import SupL from '@/components/flow/restore/SupL'
+import SupM from '@/components/flow/restore/SupM'
+// END Restore imported routes
 
 Vue.use(Router)
 
@@ -2414,13 +2435,18 @@ export default new Router({
     },
     // END - MWP migration/sync flow
 
-    // BEGIN - Transfer PFC Checklist
+    // BEGIN - Checklists
     {
       path: '/flow/pfc/Transfer',
       name: 'Transfer',
       component: Transfer,
     },
-    // END - Transfer PFC Checklist
+    {
+      path: '/flow/pfc/ServerCheck',
+      name: 'ServerCheck',
+      component: ServerCheck,
+    },
+    // END - Checklists
 
     // BEGIN - Net Vio flow
     {
@@ -2559,185 +2585,6 @@ export default new Router({
       component: NetvioRnN,
     },
     // END - Net Vio flow
-
-    // BEGIN - Paid Migration flow
-    {
-      path: '/flow/migration/Mig',
-      name: 'Mig',
-      component: Mig,
-    },
-    {
-      path: '/flow/migration/MigY',
-      name: 'MigY',
-      component: MigY,
-    },
-    {
-      path: '/flow/migration/MigYy',
-      name: 'MigYy',
-      component: MigYy,
-    },
-    {
-      path: '/flow/migration/MigYn',
-      name: 'MigYn',
-      component: MigYn,
-    },
-    {
-      path: '/flow/migration/MigN',
-      name: 'MigN',
-      component: MigN,
-    },
-    {
-      path: '/flow/migration/MigNy',
-      name: 'MigNy',
-      component: MigNy,
-    },
-    {
-      path: '/flow/migration/MigNyY',
-      name: 'MigNyY',
-      component: MigNyY,
-    },
-    {
-      path: '/flow/migration/MigNyYy',
-      name: 'MigNyYy',
-      component: MigNyYy,
-    },
-    {
-      path: '/flow/migration/MigNyYyY',
-      name: 'MigNyYyY',
-      component: MigNyYyY,
-    },
-    {
-      path: '/flow/migration/MigNyYyN',
-      name: 'MigNyYyN',
-      component: MigNyYyN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNy',
-      name: 'MigNyYyNy',
-      component: MigNyYyNy,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyY',
-      name: 'MigNyYyNyY',
-      component: MigNyYyNyY,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYy',
-      name: 'MigNyYyNyYy',
-      component: MigNyYyNyYy,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyY',
-      name: 'MigNyYyNyYyY',
-      component: MigNyYyNyYyY,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyYy',
-      name: 'MigNyYyNyYyYy',
-      component: MigNyYyNyYyYy,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyYn',
-      name: 'MigNyYyNyYyYn',
-      component: MigNyYyNyYyYn,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyYnY',
-      name: 'MigNyYyNyYyYnY',
-      component: MigNyYyNyYyYnY,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyYnN',
-      name: 'MigNyYyNyYyYnN',
-      component: MigNyYyNyYyYnN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyN',
-      name: 'MigNyYyNyYyN',
-      component: MigNyYyNyYyN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNy',
-      name: 'MigNyYyNyYyNy',
-      component: MigNyYyNyYyNy,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNyY',
-      name: 'MigNyYyNyYyNyY',
-      component: MigNyYyNyYyNyY,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNyYy',
-      name: 'MigNyYyNyYyNyYy',
-      component: MigNyYyNyYyNyYy,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNyYn',
-      name: 'MigNyYyNyYyNyYn',
-      component: MigNyYyNyYyNyYn,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNyYnY',
-      name: 'MigNyYyNyYyNyYnY',
-      component: MigNyYyNyYyNyYnY,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNyYnN',
-      name: 'MigNyYyNyYyNyYnN',
-      component: MigNyYyNyYyNyYnN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNyN',
-      name: 'MigNyYyNyYyNyN',
-      component: MigNyYyNyYyNyN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNn',
-      name: 'MigNyYyNyYyNn',
-      component: MigNyYyNyYyNn,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNnY',
-      name: 'MigNyYyNyYyNnY',
-      component: MigNyYyNyYyNnY,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYyNnN',
-      name: 'MigNyYyNyYyNnN',
-      component: MigNyYyNyYyNnN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyYn',
-      name: 'MigNyYyNyYn',
-      component: MigNyYyNyYn,
-    },
-    {
-      path: '/flow/migration/MigNyYyNyN',
-      name: 'MigNyYyNyN',
-      component: MigNyYyNyN,
-    },
-    {
-      path: '/flow/migration/MigNyYyNn',
-      name: 'MigNyYyNn',
-      component: MigNyYyNn,
-    },
-
-    {
-      path: '/flow/migration/MigNyYn',
-      name: 'MigNyYn',
-      component: MigNyYn,
-    },
-    {
-      path: '/flow/migration/MigNyN',
-      name: 'MigNyN',
-      component: MigNyN,
-    },
-    {
-      path: '/flow/migration/MigNn',
-      name: 'MigNn',
-      component: MigNn,
-    },
-    // END - Paid Migration flow
 
     // BEGIN - Slow Site flow
     {
@@ -3071,5 +2918,258 @@ export default new Router({
       component: SnT,
     },
     // END - Slow Site flow
+
+    // BEGIN - DNS Check
+    {
+      path: '/flow/dns/Dcheck',
+      name: 'Dcheck',
+      component: Dcheck,
+    },
+    {
+      path: '/flow/dns/Dy',
+      name: 'Dy',
+      component: Dy,
+    },
+    {
+      path: '/flow/dns/DyY',
+      name: 'DyY',
+      component: DyY,
+    },{
+      path: '/flow/dns/DyYe',
+      name: 'DyYe',
+      component: DyYe,
+    },
+    {
+      path: '/flow/dns/DyYw',
+      name: 'DyYw',
+      component: DyYw,
+    },
+    {
+      path: '/flow/dns/DyYwY',
+      name: 'DyYwY',
+      component: DyYwY,
+    },
+    {
+      path: '/flow/dns/DyYwN',
+      name: 'DyYwN',
+      component: DyYwN,
+    },
+    {
+      path: '/flow/dns/DyN',
+      name: 'DyN',
+      component: DyN,
+    },
+    {
+      path: '/flow/dns/Dn',
+      name: 'Dn',
+      component: Dn,
+    },
+    {
+      path: '/flow/dns/DnY',
+      name: 'DnY',
+      component: DnY,
+    },
+    {
+      path: '/flow/dns/DnYw',
+      name: 'DnYw',
+      component: DnYw,
+    },
+    {
+      path: '/flow/dns/DnYwY',
+      name: 'DnYwY',
+      component: DnYwY,
+    },
+    {
+      path: '/flow/dns/DnYwN',
+      name: 'DnYwN',
+      component: DnYwN,
+    },
+    {
+      path: '/flow/dns/DnYe',
+      name: 'DnYe',
+      component: DnYe,
+    },
+    {
+      path: '/flow/dns/DnN',
+      name: 'DnN',
+      component: DnN,
+    },
+    // END - DNS Check
+
+    // BEGIN - Migration Flow
+    {
+      path: '/flow/mig/Mig',
+      name: 'Mig',
+      component: Mig
+    },
+    {
+      path: '/flow/mig/Msel',
+      name: 'Msel',
+      component: Msel
+    },
+    {
+      path: '/flow/mig/MselY',
+      name: 'MselY',
+      component: MselY
+    },
+    {
+      path: '/flow/mig/MselN',
+      name: 'MselN',
+      component: MselN
+    },
+    {
+      path: '/flow/mig/MselNa',
+      name: 'MselNa',
+      component: MselNa
+    },
+    {
+      path: '/flow/mig/MselNaG',
+      name: 'MselNaG',
+      component: MselNaG
+    },
+    {
+      path: '/flow/mig/MselNg',
+      name: 'MselNg',
+      component: MselNg
+    },
+    {
+      path: '/flow/mig/MselNgC',
+      name: 'MselNgC',
+      component: MselNgC
+    },
+    {
+      path: '/flow/mig/MselNt',
+      name: 'MselNt',
+      component: MselNt
+    },
+    {
+      path: '/flow/mig/MselNtC',
+      name: 'MselNtC',
+      component: MselNtC
+    },
+    {
+      path: '/flow/mig/MselNw',
+      name: 'MselNw',
+      component: MselNw
+    },
+    {
+      path: '/flow/mig/MselNwY',
+      name: 'MselNwY',
+      component: MselNwY
+    },
+    {
+      path: '/flow/mig/MselNwYg',
+      name: 'MselNwYg',
+      component: MselNwYg
+    },
+    {
+      path: '/flow/mig/MselNwN',
+      name: 'MselNwN',
+      component: MselNwN
+    },
+    {
+      path: '/flow/mig/Msup',
+      name: 'Msup',
+      component: Msup
+    },
+    {
+      path: '/flow/mig/MsupM',
+      name: 'MsupM',
+      component: MsupM
+    },
+    {
+      path: '/flow/mig/MsupL',
+      name: 'MsupL',
+      component: MsupL
+    },
+    // END - Migration Flow
+
+    // BEGIN - Restore Flow
+    {
+      path: '/flow/restore/Rst',
+      name: 'Rst',
+      component: Rst
+    },
+    {
+      path: '/flow/restore/Sel',
+      name: 'Sel',
+      component: Sel
+    },
+    {
+      path: '/flow/restore/SelC',
+      name: 'SelC',
+      component: SelC
+    },
+    {
+      path: '/flow/restore/SelCy',
+      name: 'SelCy',
+      component: SelCy
+    },
+    {
+      path: '/flow/restore/SelCn',
+      name: 'SelCn',
+      component: SelCn
+    },
+    {
+      path: '/flow/restore/SelF',
+      name: 'SelF',
+      component: SelF
+    },
+    {
+      path: '/flow/restore/SelFy',
+      name: 'SelFy',
+      component: SelFy
+    },
+    {
+      path: '/flow/restore/SelFn',
+      name: 'SelFn',
+      component: SelFn
+    },
+    {
+      path: '/flow/restore/SelM',
+      name: 'SelM',
+      component: SelM
+    },
+    {
+      path: '/flow/restore/SelMy',
+      name: 'SelMy',
+      component: SelMy
+    },
+    {
+      path: '/flow/restore/SelMn',
+      name: 'SelMn',
+      component: SelMn
+    },
+    {
+      path: '/flow/restore/SelP',
+      name: 'SelP',
+      component: SelP
+    },
+    {
+      path: '/flow/restore/SelPy',
+      name: 'SelPy',
+      component: SelPy
+    },
+    {
+      path: '/flow/restore/SelPn',
+      name: 'SelPn',
+      component: SelPn
+    },
+    {
+      path: '/flow/restore/Sup',
+      name: 'Sup',
+      component: Sup
+    },
+    {
+      path: '/flow/restore/SupL',
+      name: 'SupL',
+      component: SupL
+    },
+    {
+      path: '/flow/restore/SupM',
+      name: 'SupM',
+      component: SupM
+    },
+    // END - Restore Flow
   ]
 })

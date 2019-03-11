@@ -18,12 +18,6 @@
             <span class="icon has-text-success">
               <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
-            <span><b>Transfer</b> PFC</span>
-          </router-link>
-          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
-            <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
-            </span>
             <span><b>Flow</b> Guide</span>
           </router-link>
           <router-link to="/FlowIndex" class="button is-dark is-small" title="Transfer Preflight Checklist">

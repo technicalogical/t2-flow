@@ -4,6 +4,8 @@
     <!-- BEGIN - Stylesheet support -->   
     <link rel="stylesheet" type="text/css" 
         href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
+        <link rel="stylesheet" type="text/css" 
+        href="../../node_modules/@mdi/font/css/materialdesignicons.min.css" >
     <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
     <!-- END - Stylesheet support -->
 
@@ -14,9 +16,9 @@
     <div id="app-top-links">
 
       <!-- Button to link to CRM --> 
-      <a id="deck-icon" title="Launch Menu" class="button is-white is-small">
-        <span class="icon is-small">
-          <i class="fas fa-th fa-lg"></i>
+      <a id="deck-icon" title="Launch Menu" class="button is-white is-medium">
+        <span class="icon">
+          <i class="mdi mdi-apps"></i>
         </span>
       </a>
 
@@ -36,9 +38,9 @@
 
       <!-- Button to close application -->
       <p class="buttons is-right">
-        <a id="close-btn" onclick="self.close()" class="button is-small is-white" title="Close Flow Tool">
-          <span class="icon">
-            <i class="fas fa-times fa-lg"></i>
+        <a id="close-btn" onclick="self.close()" class="button is-medium is-white" title="Close Flow Tool">
+          <span class="icon is-medium">
+            <i class="mdi mdi-close"></i>
           </span> 
         </a>
       </p>
@@ -106,9 +108,9 @@
 
         <!-- Button to link to the conlfuence page -->
         <p class="buttons">
-          <a id="helper-two" class="button is-white" href="https://forms.office.com/Pages/ResponsePage.aspx?id=K2Lx1aMUpkWwaQA_jcSFH83ifk09gUJEjA4J6LWpTc5URU9WMkNHOFgyMEg4RUY3R1A0QlA3UjhEMC4u" target="_blank" title="Give Feedback">
-            <span class="icon">
-              <i class="far fa-comment-alt is-lg"></i>
+          <a id="helper-two" class="button is-white is-medium" href="https://forms.office.com/Pages/ResponsePage.aspx?id=K2Lx1aMUpkWwaQA_jcSFH83ifk09gUJEjA4J6LWpTc5URU9WMkNHOFgyMEg4RUY3R1A0QlA3UjhEMC4u" target="_blank" title="Give Feedback">
+            <span class="icon is-medium">
+              <i class="mdi mdi-comment-outline is-medium"></i>
             </span>
           </a>
         </p>

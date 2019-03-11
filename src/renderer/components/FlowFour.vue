@@ -13,35 +13,59 @@
     <div class="content" id="flow">
       <div class="content" id="flow-deck-two">
         <p class="buttons">
-          <a href="https://www.godaddy.com/help/search-engine-visibility" target="_blank" class="button is-dark is-small">
+          <a href="https://www.godaddy.com/help/configuring-dns-for-your-cpanel-domain-8852" target="_blank" class="button is-dark is-small" v-on:click="handleCpDNS">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/org16.png"/>
             </span>
-            <span><b>SEO</b> & <b>SEV</b></span>
+            <span><b>cPanel</b> DNS</span>
           </a>
-          <a href="https://www.godaddy.com/help/website-builder-7" target="_blank" class="button is-dark is-small">
+          <a href="https://www.godaddy.com/help/godaddy-email-marketing" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/blu16.png"/>
             </span>
-            <span>Website Builder <b>v7</b></span>
+            <span><b>GEM</b></span>
           </a>
           <a href="https://www.godaddy.com/help/gocentral" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/blu16.png"/>
             </span>
             <span><b>Go</b>Central</span>
           </a>
           <a href="https://www.godaddy.com/help/office-365-from-godaddy" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/blu16.png"/>
             </span>
             <span><b>O365</b></span>
           </a>
-          <a href="https://www.godaddy.com/help/godaddy-email-marketing" target="_blank" class="button is-dark is-small">
+          <a href="https://www.godaddy.com/help/search-engine-visibility" target="_blank" class="button is-dark is-small">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/blu16.png"/>
             </span>
-            <span><b>GEM</b></span>
+            <span><b>SEO</b> &amp; <b>SEV</b></span>
+          </a>
+          <router-link to="/flow/pfc/ServerCheck" class="button is-dark is-small" title="Transfer Preflight Checklist">
+            <span class="icon has-text-success">
+              <img src="../assets/icons/png/blu16.png"/>
+            </span>
+            <span><b>Server</b> Checklist</span>
+          </router-link>
+          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+            <span class="icon has-text-success">
+              <img src="../assets/icons/png/blu16.png"/>
+            </span>
+            <span><b>Transfer</b> PFC</span>
+          </router-link>
+          <a href="https://www.godaddy.com/help/website-builder-7" target="_blank" class="button is-dark is-small">
+            <span class="icon has-text-success">
+              <img src="../assets/icons/png/blu16.png"/>
+            </span>
+            <span>Website Builder <b>v7</b></span>
+          </a>
+          <a href="https://www.godaddy.com/help/workspace-email-1000008" target="_blank" class="button is-dark is-small" v-on:click="handleWorkspace">
+            <span class="icon has-text-success">
+              <img src="../assets/icons/png/org16.png"/>
+            </span>
+            <span><b>Workspace</b> Email</span>
           </a>
         </p>
       </div> 

@@ -5,7 +5,7 @@
     
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>Server Up Time</b> Check</p>
+        <p><b>VPS</b> Up Time Check</p>
       </div> 
     <!-- END - Flow Title banner -->
 
