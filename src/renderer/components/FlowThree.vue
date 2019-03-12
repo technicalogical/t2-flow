@@ -30,16 +30,7 @@
               <img src="../assets/icons/png/org16.png"/>
             </span>
             <span><p><b>Restores</b></p></span>
-          </router-link>
-          
-          
-          
-          <!--<router-link to="/flow/migration/Mig" class="button is-dark is-small">
-            <span class="icon has-text-success">
-              <i class="fas fa-play-circle"></i>
-            </span>
-            <span><strong>Paid</strong> Migration</span>
-          </router-link>-->
+          </router-link>           
         </p>
       </div> 
     </div>
@@ -49,18 +40,18 @@
     <div id="flow-toggle" >
       <div class="go-left">
         <p class="buttons">
-          <router-link to="/FlowTwo" class="button is-small is-dark">
+          <router-link to="/FlowTwo" id="smashb" class="button is-small is-dark">
             <span id="go-hover" class="icon is-large">
-              <i class="fas fa-chevron-left"></i>
+              <i class="mdi mdi-chevron-left mdi-18px"></i>
             </span>
           </router-link>
         </p>
       </div>
       <div class="go-right">
         <p class="buttons">
-          <router-link to="/FlowFour" class="button is-small is-dark">
+          <router-link to="/FlowFour" id="smashb" class="button is-small is-dark">
             <span id="go-hover" class="icon is-large">
-              <i class="fas fa-chevron-right"></i>
+              <i class="mdi mdi-chevron-right mdi-18px"></i>
             </span>
           </router-link>
         </p>

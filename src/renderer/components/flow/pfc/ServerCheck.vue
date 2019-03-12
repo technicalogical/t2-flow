@@ -37,25 +37,11 @@
           </div>
         </div>
         <br>
-        <div class="control">
-          <div class="tags has-addons">
-            <span class="tag is-success"><i class="fas fa-check"></i></span>
-            <span class="tag is-dark">step</span>
-          </div>
-        </div>
-        <br>
-        <div class="control">
-          <div class="tags has-addons">
-            <span class="tag is-success"><i class="fas fa-check"></i></span>
-            <span class="tag is-dark">setp</span>
-          </div>
-        </div>
-        <br>
       </div>
       
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/SwatFlow" class="button is-small is-info">
+          <router-link to="/FlowFour" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>

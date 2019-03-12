@@ -16,7 +16,7 @@
     <div id="app-top-links">
 
       <!-- Button to link to CRM --> 
-      <a id="deck-icon" title="Launch Menu" class="button is-white is-medium">
+      <a id="deck-icon" title="Launch Menu" class="button is-medium">
         <span class="icon">
           <i class="mdi mdi-apps"></i>
         </span>
@@ -25,13 +25,51 @@
       <!-- BEGIN Dropdown navigation section -->
       <nav id="prime">
         <ul>
-          <a class="icon" title="Home"><router-link class="fas fa-h-square" to="/"></router-link></a>
-          <router-link class="icon" title="SWAT Flow" to="/SwatFlow"><img src="../renderer/assets/icons/png/fgo-blk.png"></router-link>
-          <a class="icon" title="SWAT Note"><router-link class="fas fa-sticky-note" to="/SwatNote"></router-link></a>
-          <a class="icon" title="SWAT Tools"><router-link class="fas fa-toolbox" to="/SwatTools"></router-link></a>
-          <a class="icon" title="SWAT Links"><router-link class="fas fa-link" to="/SwatLinks"></router-link></a>
-          <a href="http://www.x.co/webcrm" target="_blank" class="icon" title="Launch CRM"><li class="fas fa-search"></li></a>
-          <a href="http://www.x.co/workday" target="_blank" class="icon" title="Workday"><li><img src="../renderer/assets/icons/png/workday.png"></li></a>
+          <router-link id="n-button" to="/" title="Home" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-home"></i>
+            </span>
+          </router-link>
+          <router-link id="n-button" to="/SwatFlow" title="SWAT Flow" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-alpha-f mdi-24px"></i>
+            </span>
+          </router-link>
+          <router-link id="n-button" to="/SwatNote" title="SWAT Note" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-note-text"></i>
+            </span>
+          </router-link>
+          <router-link id="n-button" to="/SwatTools" title="SWAT Tools" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-toolbox"></i>
+            </span>
+          </router-link>
+          <router-link id="n-button" to="/SwatLinks" title="SWAT Links" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-link-variant"></i>
+            </span>
+          </router-link>
+          <a id="n-button" href="http://www.x.co/l2chat" target="_blank" title="ATS Chat" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-headset"></i>
+            </span>
+          </a>
+          <a id="n-button" href="http://www.x.co/webcrm" target="_blank" title="Launch CRM" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-magnify"></i>
+            </span>
+          </a>
+          <a id="n-button" href="http://www.x.co/workday" target="_blank" title="Workday" class="button is-dark">
+            <span class="icon is-small">
+              <img src="../renderer/assets/icons/png/workday.png">
+            </span>
+          </a>
+          <a id="n-button" href="http://owa.godaddy.com" target="_blank" title="Check your email" class="button is-dark">
+            <span class="icon is-small">
+              <img src="../renderer/assets/icons/png/o365.png">
+            </span>
+          </a>
         </ul>  
       </nav>
       <!-- END Dropdown navigation section -->
@@ -69,9 +107,6 @@
           <div class="dropdown-trigger">
             <button id="gmenu" class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
               <span><p><b>G</b></p></span>
-              <span class="icon has-text-light">
-                <i class="fas fa-angle-up" aria-hidden="true"></i>
-              </span>
             </button>
           </div>
           <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
@@ -123,7 +158,7 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.7.22</span>
+            <span class="tag is-dark">Beta version 1.8.23</span>
             <span class="tag verse is-info">(Zephyr)</span>
           </div>
         </div>

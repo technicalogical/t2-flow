@@ -76,18 +76,18 @@
     <div id="flow-toggle" >
       <div class="go-left">
         <p class="buttons">
-          <router-link to="/FlowThree" class="button is-small is-dark">
+          <router-link to="/FlowThree" id="smashb" class="button is-small is-dark">
             <span id="go-hover" class="icon is-large">
-              <i class="fas fa-chevron-left"></i>
+              <i class="mdi mdi-chevron-left mdi-18px"></i>
             </span>
           </router-link>
         </p>
       </div>
       <div class="go-right">
         <p class="buttons">
-          <router-link to="/SwatFlow" class="button is-small is-dark">
+          <router-link to="/SwatFlow" id="smashb" class="button is-small is-dark">
             <span id="go-hover" class="icon is-large">
-              <i class="fas fa-chevron-right"></i>
+              <i class="mdi mdi-chevron-right mdi-18px"></i>
             </span>
           </router-link>
         </p>

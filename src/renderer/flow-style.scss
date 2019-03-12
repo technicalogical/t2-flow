@@ -155,17 +155,13 @@ a:active {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  border-left: 1px solid hsl(0, 0%, 86%);
-  border-top: 1px solid hsl(0, 0%, 86%);
-  border-radius: 0px 0px 3px 0px;
-  background-color: hsl(0, 0%, 98%); 
+  border-radius: 0px;
+  background-color: hsl(204, 86%, 53%); 
 }
 
 #deck-icon:hover {
   background: hsl(204, 86%, 53%);
   color: hsl(0, 0%, 96%);
-  border-left: 1px solid hsl(204, 86%, 53%);
-  border-top: 1px solid hsl(204, 86%, 53%);
 }
 
 #close-btn {
@@ -223,11 +219,12 @@ a:active {
 /* BEGIN | App top nav CSS */
 nav {
   position: absolute;
+  background: hsl(0, 0%, 14%);
   top: 30px;
   left: 0px;
   margin: 0px;
-  display: none;
-  width: 35px;
+  width: 30px;
+  height: 670px ;
   padding: 0px;
   border: 0px;
   z-index: 3;
@@ -237,18 +234,19 @@ nav ul {
   text-decoration: none;
 }
 
+#n-button {
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid hsl(0, 0%, 21%);
+  border-radius: 0px;
+}
+
 nav a {
   display: block;
   float: left;
-  margin: 8px;
-  margin-left: 5px;
-  text-decoration: inherit;
-  color: #262626;
 }
-
-  nav a:hover {
-    color: hsl(204, 86%, 53%);
-  }
 
 #delta {
   position: absolute;
@@ -292,13 +290,23 @@ footer {
 
 #gd-menu {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 0px;
+  left: 0px;
   z-index: 3;
+}
+
+#gmenu {
+  width: 30px;
+  height: 30px;
+  border-radius: 0px;
 }
 
 #gmenu i:hover {
   color: hsl(204, 86%, 53%);
+}
+
+#dropdown-menu {
+  left: 35px;
 }
 
 .dropdown-content {
@@ -764,7 +772,7 @@ footer {
 #flow-toggle {
   position: absolute;
   top: 320px;
-  width: 95%;
+  width: 86%;
   left: 0;
   right: 0;
   margin: auto;
@@ -779,6 +787,16 @@ footer {
 
 .go-right {
   float: right;
+}
+
+#smashb {
+  width: 4px;
+}
+
+#cta {
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: hsl(0, 0%, 98%);
 }
 
 #go-hover:hover {

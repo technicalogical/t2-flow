@@ -16,10 +16,16 @@
         <p class="buttons">
           <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
+              <img src="../assets/icons/png/blu16.png"/>
+            </span>
+            <span><b>Transfer</b> PFC</span>
+          </router-link>
+          <!--<router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+            <span class="icon has-text-success">
               <i id="itcolor" class="fas fa-play-circle"></i>
             </span>
             <span><b>Flow</b> Guide</span>
-          </router-link>
+          </router-link>-->
           <router-link to="/FlowIndex" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
               <i id="itcolor" class="fas fa-play-circle"></i>
@@ -31,19 +37,17 @@
 
       <div id="flow-break"></div>
 
-      <!-- <div class="content" id="flow-deck-two">
-        <p class="buttons">
- 
-        </p>
-      </div> 
-
-      <div id="flow-break"></div> -->
-
       <div id="flowinfo" class="content">
         <center><h1>Navigating Call Flows</h1></center>
-        <p><b>One:</b> Agents can use the <b>Flow Guide</b> at the top of this page to help narrow down which call flows they should use.</p>
-        <p><b>Two:</b> Agents can tab through the organized sections of flows using the left and right page toggles.</p>
-        <p><b>Three:</b> Agents can also use the <b>Flow Index</b> to keyword search or scroll through the full list of available call flows.</p>
+        <!--<p><b>One:</b> Agents can use the <b>Flow Guide</b> at the top of this page to help narrow down which call flows they should use.</p>-->
+        <p><b>One:</b> Agents can tab through the organized sections of flows using the left and right page toggles.</p>
+        <p><b>Two:</b> Agents can also use the <b>Flow Index</b> to keyword search or scroll through the full list of available call flows.</p>
+      </div>
+
+      <div class="tags is-centered has-addons">
+        <span id="cta" class="tag"><span class="mdi mdi-arrow-left mdi-18px"></span></span>
+        <span id="cta" class="tag has-text-centered is-white">Move through the pages of flows using<br> the left and right tabs.</span>
+        <span id="cta" class="tag"><span class="mdi mdi-arrow-right mdi-18px"></span></span>
       </div>
 
     </div>
@@ -53,18 +57,18 @@
     <div id="flow-toggle" >
       <div class="go-left">
         <p class="buttons">
-          <router-link to="/FlowFour" class="button is-small is-dark">
-            <span id="go-hover" class="icon is-large">
-              <i class="fas fa-chevron-left"></i>
+          <router-link to="/FlowFour" id="smashb" class="button is-small is-dark">
+            <span id="go-hover" class="icon">
+              <i class="mdi mdi-chevron-left mdi-18px"></i>
             </span>
           </router-link>
         </p>
       </div>
       <div class="go-right">
         <p class="buttons">
-          <router-link to="/FlowTwo" class="button is-small is-dark">
+          <router-link to="/FlowTwo" id="smashb" class="button is-small is-dark">
             <span id="go-hover" class="icon is-small">
-              <i class="fas fa-chevron-right"></i>
+              <i class="mdi mdi-chevron-right mdi-18px"></i>
             </span>
           </router-link>
         </p>
