@@ -10,7 +10,7 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN Form mail Error section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-info">
         <strong>Create cPanel FTP User</strong>.
@@ -20,6 +20,10 @@
           <p>From the cPanel admin page go to FTP Accounts. The customer can create new FTP users here.</p>
         </div>
       </article>
+      <a href="https://www.godaddy.com/help/add-ftp-users-in-cpanel-hosting-16044" target="_blank" class="tags has-addons">
+        <span class="tag is-success"><i class="mdi mdi-library-books mdi-18px"></i></span>
+        <span class="tag is-dark">GoDaddy HELP article for cPanel FTP</span>
+      </a>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
@@ -33,9 +37,11 @@
       <!-- END - Back button -->
 
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+
       <router-view/>
+
     </div>
-    <!-- END Form mail Error section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->

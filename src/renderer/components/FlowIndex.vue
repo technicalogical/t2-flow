@@ -372,7 +372,7 @@
             <div class="buttons has-addons">
               <router-link to="/flow/howto/sucuri/Sucuri" class="button is-dark is-small">
                 <span class="icon has-text-success">
-                  <i id="itcolor" class="fas fa-play-circle"></i>
+                  <img src="../assets/icons/png/blu16.png"/>
                 </span>
                 <span><b>Sucuri</b> support tickets</span>
               </router-link>

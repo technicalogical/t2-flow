@@ -10,7 +10,7 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN SSL Error flow section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
         <p>What hosting platform are they using?</p>
@@ -48,8 +48,9 @@
         <!-- END - Back button -->
 
       <router-view/>
+      
     </div>
-    <!-- END SSL Error flow section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->

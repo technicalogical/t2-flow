@@ -10,11 +10,10 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN SSL Error flow section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
-        <p>Which <strong>Linux</strong> platform are they using?
-</p>
+        <p>Which <strong>Linux</strong> platform are they using?</p>
       </div>
       <p class="buttons">
           <router-link to="/flow/ftp/create/CftpLc" class="button is-light">
@@ -43,8 +42,9 @@
         <!-- END - Back button -->
 
       <router-view/>
+
     </div>
-    <!-- END SSL Error flow section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->

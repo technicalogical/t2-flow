@@ -20,15 +20,15 @@
             </span>
             <span><b>Transfer</b> PFC</span>
           </router-link>
-          <!--<router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+          <router-link to="/flow/guide/Guide" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/blu16.png"/>
             </span>
             <span><b>Flow</b> Guide</span>
-          </router-link>-->
+          </router-link>
           <router-link to="/FlowIndex" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
-              <i id="itcolor" class="fas fa-play-circle"></i>
+              <img src="../assets/icons/png/blu16.png"/>
             </span>
             <span><b>Flow</b> Index</span>
           </router-link>

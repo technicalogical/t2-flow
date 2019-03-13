@@ -4,7 +4,7 @@
     <!-- BEGIN - Stylesheet support -->   
     <link rel="stylesheet" type="text/css" 
         href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
-        <link rel="stylesheet" type="text/css" 
+    <link rel="stylesheet" type="text/css" 
         href="../../node_modules/@mdi/font/css/materialdesignicons.min.css" >
     <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
     <!-- END - Stylesheet support -->
@@ -15,7 +15,7 @@
     <!-- Button to close the app -->
     <div id="app-top-links">
 
-      <!-- Button to link to CRM --> 
+      <!-- Menu toggle --> 
       <a id="deck-icon" title="Launch Menu" class="button is-medium">
         <span class="icon">
           <i class="mdi mdi-apps"></i>
@@ -55,6 +55,13 @@
               <i class="mdi mdi-headset"></i>
             </span>
           </a>
+          <!-- BEGIN - restoreU & migrateU options -->
+          <a id="n-button" href="https://hs.int.godaddy.com/restore-u/#/index" target="_blank" title="restoreU" class="button is-dark">
+            <span class="icon is-small">
+              <i class="mdi mdi-server"></i>
+            </span>
+          </a>
+          <!-- END - restoreU & migrateU options -->
           <a id="n-button" href="http://www.x.co/webcrm" target="_blank" title="Launch CRM" class="button is-dark">
             <span class="icon is-small">
               <i class="mdi mdi-magnify"></i>
@@ -141,7 +148,7 @@
           </div>
         </div>
 
-        <!-- Button to link to the conlfuence page -->
+        <!-- Button to link to feedback loop -->
         <p class="buttons">
           <a id="helper-two" class="button is-white is-medium" href="https://forms.office.com/Pages/ResponsePage.aspx?id=K2Lx1aMUpkWwaQA_jcSFH83ifk09gUJEjA4J6LWpTc5URU9WMkNHOFgyMEg4RUY3R1A0QlA3UjhEMC4u" target="_blank" title="Give Feedback">
             <span class="icon is-medium">
@@ -158,7 +165,7 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.8.23</span>
+            <span class="tag is-dark">Beta version 1.8.24</span>
             <span class="tag verse is-info">(Zephyr)</span>
           </div>
         </div>

@@ -10,7 +10,7 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN Form mail Error section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-info">
         <strong>Create Plesk FTP User</strong>.
@@ -20,6 +20,10 @@
           <p>From the Plesk admin page click the "show more" tab to see all of the available icons. Click on the "FTP Accounts" icon to create a new Plesk FTP user.</p>
         </div>
       </article>
+      <a href="https://www.godaddy.com/help/add-ftp-users-in-plesk-hosting-16048" target="_blank" class="tags has-addons">
+        <span class="tag is-success"><i class="mdi mdi-library-books mdi-18px"></i></span>
+        <span class="tag is-dark">GoDaddy HELP article for Plesk FTP</span>
+      </a>
       
       <!-- BEGIN - Back button -->
       <p class="buttons">
@@ -35,7 +39,7 @@
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END Form mail Error section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->

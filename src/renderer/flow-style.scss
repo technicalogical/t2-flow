@@ -243,6 +243,15 @@ nav ul {
   border-radius: 0px;
 }
 
+#n-button-alt {
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+  border: 0px;
+  border-radius: 0px;
+}
+
 nav a {
   display: block;
   float: left;
@@ -301,10 +310,6 @@ footer {
   border-radius: 0px;
 }
 
-#gmenu i:hover {
-  color: hsl(204, 86%, 53%);
-}
-
 #dropdown-menu {
   left: 35px;
 }
@@ -328,6 +333,15 @@ footer {
 }
 
 #gd-menu-item:hover {
+  background-color: hsl(204, 86%, 53%);
+  color: hsl(0, 0%, 96%);
+}
+
+#gd-u-item {
+  font-size: 11px;
+}
+
+#gd-u-item:hover {
   background-color: hsl(204, 86%, 53%);
   color: hsl(0, 0%, 96%);
 }

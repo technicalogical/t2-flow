@@ -10,7 +10,7 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN SSL Error flow section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
         <p>Which <strong>Windows</strong> platform are they using?
@@ -44,7 +44,7 @@
 
       <router-view/>
     </div>
-    <!-- END SSL Error flow section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->

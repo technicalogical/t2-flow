@@ -10,7 +10,7 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN Form mail Error section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-info">
         <strong>Managed WordPress FTP User</strong>.
@@ -35,7 +35,7 @@
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END Form mail Error section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->

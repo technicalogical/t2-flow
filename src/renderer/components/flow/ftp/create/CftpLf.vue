@@ -10,7 +10,7 @@
     <!-- END - Flow Title banner -->
 
     
-    <!-- BEGIN Form mail Error section -->
+    <!-- BEGIN - flow section -->
     <div class="content has-text-centered" id="flow">    
       <div class="notification is-info">
         <strong>Create 4gh FTP User</strong>.
@@ -24,7 +24,11 @@
         <div class="message-body">
           <p>This will trigger an Orion event. Advise the customer of the expected time frame for completion of this process.</p>
         </div>
-      </article> 
+      </article>
+      <a href="https://www.godaddy.com/help/add-ftp-users-in-web-and-classic-hosting-1236?" target="_blank" class="tags has-addons">
+        <span class="tag is-success"><i class="mdi mdi-library-books mdi-18px"></i></span>
+        <span class="tag is-dark">GoDaddy HELP article for 4gh FTP</span>
+      </a>
       <!-- BEGIN - Back button -->
       <p class="buttons">
         <router-link to="/flow/ftp/create/CftpL" class="button is-small is-info">
@@ -39,7 +43,7 @@
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
-    <!-- END Form mail Error section -->
+    <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->
