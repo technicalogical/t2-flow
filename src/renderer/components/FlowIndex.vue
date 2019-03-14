@@ -34,6 +34,9 @@
           <a class="icon">
             <img src="../assets/icons/png/org16.png" title="Inbound flows"/>
           </a>
+          <a class="icon">
+            <img src="../assets/icons/png/pur16.png" title="Inbound flows"/>
+          </a>
         </p>
       </div>
 

@@ -45,7 +45,7 @@
     <!--  BEGIN Copy paste notes section -->
     <span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth"><b>CRM Call Notes</b></span>
     <div id="callnotes" class="content is-info getme" wrap="hard">  
-      <p>#SWAT1</p>
+      <p>#SWAT T2</p>
       <p>Customer name: {{ name }}</p>
       <p>Situation: {{ sitch }}</p> 
       <p>Domain(s): {{ domain }}</p> 

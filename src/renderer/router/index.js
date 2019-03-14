@@ -607,6 +607,18 @@ import GemailO from '@/components/flow/guide/GemailO'
 import GemailW from '@/components/flow/guide/GemailW'
 // END Guide imported routes
 
+// BEGIN ALL INBOUND SPECIFIC FLOW ROUTES 
+
+// BEGIN IB 500 error imported routes
+import IBFiveError from '@/components/IBflow/fivehundrederrorIB/IBFiveError'
+import IBY from '@/components/IBflow/fivehundrederrorIB/IBY'
+import IBYfos from '@/components/IBflow/fivehundrederrorIB/IBYfos'
+import IBYadm from '@/components/IBflow/fivehundrederrorIB/IBYadm'
+import IBN from '@/components/IBflow/fivehundrederrorIB/IBN'
+// END IB 500 error imported routes
+
+// END ALL INBOUND SPEPCIFIC FLOW ROUTES
+
 Vue.use(Router)
 
 export default new Router({
@@ -3321,5 +3333,37 @@ export default new Router({
       component: GemailW
     },
     // END - Guide Flow
+
+    // BEGIN ALL INBOUND CALL FLOWS
+
+    // BEGIN - 500 Error Flow
+    {
+      path: '/flow/fivehundrederrorIB/IBFiveError',
+      name: '500 Error',
+      component: IBFiveError
+    },
+    {
+      path: '/flow/fivehundrederrorIB/IBY',
+      name: 'Y',
+      component: IBY
+    },
+    {
+      path: '/flow/fivehundrederrorIB/IBYadm',
+      name: 'Yadm',
+      component: IBYadm
+    },
+    {
+      path: '/flow/fivehundrederrorIB/IBYfos',
+      name: 'Yfos',
+      component: IBYfos
+    },
+    {
+      path: '/flow/fivehundrederrorIB/IBN',
+      name: 'N',
+      component: IBN
+    },
+    // END - 500 Error Flow
+
+    // END ALL INBOUND CALL FLOWS
   ]
 })

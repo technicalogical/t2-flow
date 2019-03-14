@@ -27,6 +27,7 @@ function createWindow () {
     maximizable: false,
     transparent: false,
     backgroundColor: '#fff',
+    resizable: false,
   })
 
   //Needed to open external link in a new default browser window.

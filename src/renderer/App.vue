@@ -165,8 +165,8 @@
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.8.24</span>
-            <span class="tag verse is-info">(Zephyr)</span>
+            <span class="tag is-dark">Beta version 1.0.1</span>
+            <span class="tag verse is-black">(Ollie)</span>
           </div>
         </div>
 
