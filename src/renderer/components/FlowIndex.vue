@@ -17,7 +17,7 @@
           <p class="control has-icons-left">
             <input id="flow-index-search" class="input is-small" type="text" title="Search for Call Flows using keywords here." v-on:input="filterIndex" placeholder="Search The Flow Index">
             <span class="icon is-left">
-              <img src="../assets/icons/png/blu16.png"/>
+              <img src="../assets/icons/png/gld16.png"/>
             </span>
           </p>
         </div>
@@ -29,13 +29,16 @@
             <i id="keystay" class="fas fa-key fa-sm" title="Index key"></i>
           </a>
           <a class="icon">
+            <img src="../assets/icons/png/gld16.png" title="Tier 2 flows"/>
+          </a>
+          <a class="icon">
             <img src="../assets/icons/png/blu16.png" title="Tier 1 flows"/>
           </a>
           <a class="icon">
             <img src="../assets/icons/png/org16.png" title="Inbound flows"/>
           </a>
           <a class="icon">
-            <img src="../assets/icons/png/pur16.png" title="Inbound flows"/>
+            <img src="../assets/icons/png/pur16.png" title="Productivity flows"/>
           </a>
         </p>
       </div>

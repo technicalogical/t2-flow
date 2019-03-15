@@ -5,40 +5,24 @@
 
     <!-- BEGIN Swat Note input section -->
     <div id="swat-note-input" class="content">
+
       <center><p id="warnme" class="help has-text-light"><b>THIS PAGE DOES NOT STORE CUSTOMER DATA</b></p></center>
-      <div class="field-body">
-        <div class="field is-expanded">
-          <div class="field has-addons">
-            <p class="control">
-              <span class="button has-text-light is-link is-small">
-                <b>Customer Name:</b>
-              </span>
-            </p>
-            <p class="control is-expanded">
-              <input class="input is-small" type="text" v-model="name" placeholder="Customer Name">
-            </p>
-          </div>
-        </div>
-      </div>
-      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Customer Situation:</b></span>
+
+      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Customer Issue:</b></span>
       <div id="note-sitch" class="control">
-        <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
+        <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="Customer Issue..." rows="5" cols="30" v-model="issue" wrap="hard"></textarea>
       </div>
-      <div class="field-body">
-        <div class="field is-expanded">
-          <div class="field has-addons">
-            <p class="control">
-              <span class="button is-link has-text-light is-small">
-                <b>Domain(s):</b>
-              </span>
-            </p>
-            <p class="control is-expanded">
-              <input class="input  is-small" type="text" v-model="domain" placeholder="Domain Name">
-            </p>
-          </div>
-          <p id="notehelp" class="help is-small is-dark"><b>Separate domains with commas (,)</b></p>
-        </div>
+
+      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Resolution:</b></span>
+      <div id="note-sitch" class="control">
+        <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="Resolution..." rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
       </div>
+
+      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Anything done out of SOS:</b></span>
+      <div id="note-sitch" class="control">
+        <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="N/A" rows="5" cols="30" v-model="sos" wrap="hard"></textarea>
+      </div>
+      
     </div>
     <!-- END Swat Note input section -->
     
@@ -46,9 +30,9 @@
     <span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth"><b>CRM Call Notes</b></span>
     <div id="callnotes" class="content is-info getme" wrap="hard">  
       <p>#SWAT T2</p>
-      <p>Customer name: {{ name }}</p>
-      <p>Situation: {{ sitch }}</p> 
-      <p>Domain(s): {{ domain }}</p> 
+      <p>Customer Issue: {{ name }}</p>
+      <p>Resolution: {{ sitch }}</p> 
+      <p>Anything done out of SOS: {{ domain }}</p> 
     </div>
     <!-- END Copy paste notes section -->
 

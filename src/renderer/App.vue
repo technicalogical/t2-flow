@@ -30,7 +30,7 @@
               <i class="mdi mdi-home"></i>
             </span>
           </router-link>
-          <router-link id="n-button" to="/SwatFlow" title="SWAT Flow" class="button is-dark">
+          <router-link id="n-button" to="/FlowIndex" title="Flow Index" class="button is-dark">
             <span class="icon is-small">
               <i class="mdi mdi-alpha-f mdi-24px"></i>
             </span>
@@ -50,7 +50,7 @@
               <i class="mdi mdi-link-variant"></i>
             </span>
           </router-link>
-          <a id="n-button" href="http://www.x.co/l2chat" target="_blank" title="ATS Chat" class="button is-dark">
+          <a id="n-button" href="http://www.x.co/l2chat" target="_blank" title="HTL Chat" class="button is-dark">
             <span class="icon is-small">
               <i class="mdi mdi-headset"></i>
             </span>
@@ -159,14 +159,14 @@
 
         <!-- Application footer image -->
         <div id="footer-img">
-          <img src="../renderer/assets/images/flowtool-blu-xs.png">
+          <img src="../renderer/assets/images/flowtool-gld-xs.png">
         </div>
 
         <!-- Application version note -->
         <div id="app-vers">
           <div class="tags has-addons">
             <span class="tag is-dark">Beta version 1.0.1</span>
-            <span class="tag verse is-black">(Ollie)</span>
+            <span id="ibcolor" class="tag verse is-info">(Ollie)</span>
           </div>
         </div>
 

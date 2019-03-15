@@ -39,10 +39,10 @@
 
 /* Begin Application system wide color */
 #ibcolor {
-  background-color: hsl(204, 86%, 53%);
+  background-color: hsl(45, 100%, 40%);
 }
 #itcolor {
-  color: hsl(204, 86%, 53%);
+  color: hsl(45, 100%, 40%);
 }
 b {
   font-family: 'Open Sans Bold';
@@ -156,11 +156,11 @@ a:active {
   padding: 0px;
   border: 0px;
   border-radius: 0px;
-  background-color: hsl(204, 86%, 53%); 
+  background-color: hsl(45, 100%, 40%); 
 }
 
 #deck-icon:hover {
-  background: hsl(204, 86%, 53%);
+  background: hsl(45, 100%, 40%);
   color: hsl(0, 0%, 96%);
 }
 
@@ -279,7 +279,7 @@ nav a {
 }
 
 #delta a:hover {
-  color: hsl(204, 86%, 53%);
+  color: hsl(45, 100%, 40%);
 }
 
 /* END | App top nav CSS */
@@ -333,7 +333,7 @@ footer {
 }
 
 #gd-menu-item:hover {
-  background-color: hsl(204, 86%, 53%);
+  background-color: hsl(45, 100%, 40%);
   color: hsl(0, 0%, 96%);
 }
 
@@ -342,7 +342,7 @@ footer {
 }
 
 #gd-u-item:hover {
-  background-color: hsl(204, 86%, 53%);
+  background-color: hsl(45, 100%, 40%);
   color: hsl(0, 0%, 96%);
 }
 
@@ -396,7 +396,7 @@ footer {
 }
 
 #helper-icon:hover {
-  color: hsl(204, 86%, 53%);
+  color: hsl(45, 100%, 40%);
 }
 
 #helper-two {
@@ -416,9 +416,9 @@ footer {
 
 #helper-two:hover {
   color: hsl(0, 0%, 96%);
-  background: hsl(204, 86%, 53%);
-  border-right: 1px solid hsl(204, 86%, 53%);
-  border-bottom: 1px solid hsl(204, 86%, 53%);
+  background: hsl(45, 100%, 40%);
+  border-right: 1px solid hsl(45, 100%, 40%);
+  border-bottom: 1px solid hsl(45, 100%, 40%);
 }
 
 /* END | App footer CSS */
@@ -460,7 +460,7 @@ footer {
 }
 
 #get-start-item:hover {
-  border: 0px solid hsl(204, 86%, 53%);
+  border: 0px solid hsl(45, 100%, 40%);
 }
 
 #swat-motto {
@@ -579,7 +579,7 @@ footer {
   left: 3px;
   right: 3px;
   bottom: 3px;
-  background: hsl(204, 86%, 53%);
+  background: hsl(45, 100%, 40%);
   border-radius: 50%;
 }
 .pagination a:hover {
@@ -647,7 +647,7 @@ footer {
 #sitch-text {
   margin: 0px;
   padding: 5px;
-  height: 100px;
+  height: 50px;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 0px 0px 4px 4px;
   overflow: scroll;
@@ -675,7 +675,7 @@ footer {
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 0px 0px 4px 4px;
   width: 70%;
-  height: 170px;
+  height: 150px;
   overflow: scroll;
   -ms-overflow-style: scrollbar;
   -webkit-app-region: no-drag;
@@ -814,12 +814,13 @@ footer {
 }
 
 #go-hover:hover {
-  color: hsl(204, 86%, 53%);
+  color: hsl(45, 100%, 40%);
 }
 
 #note-copy-title {
   position: relative;
   margin: 0px;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
@@ -872,7 +873,7 @@ footer {
   top: -15px;
 }
 #who-tool span:hover {
-  color: hsl(204, 86%, 53%);
+  color: hsl(45, 100%, 40%);
 }
 
 #speed-deck {
@@ -1264,7 +1265,7 @@ a {
   margin-bottom: 5px; 
   padding: 0px;
   height: 30px;
-  width: 100px;
+  width: 130px;
   right: 0px;
   border: 0px;
 }

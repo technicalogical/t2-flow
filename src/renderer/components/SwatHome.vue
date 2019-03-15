@@ -8,7 +8,7 @@
 
       <!-- BEGIN Home page logo section -->
       <div id="logo-main" title="Inbound Flow Tool">
-        <img src="../assets/images/blue.png">
+        <img src="../assets/images/gold.png">
       </div>
       <!-- END Home page logo section -->
 
