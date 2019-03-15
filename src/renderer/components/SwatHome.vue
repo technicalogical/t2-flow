@@ -17,8 +17,8 @@
     <!-- BEGIN Start button -->
     <div id="get-start" class="field is-grouped">
       <p class="control">
-        <router-link to="/FlowIndex" class="button is-small is-fullwidth is-dark">
-          <p><b>SWAT</b> INDEX</p>
+        <router-link to="/SwatFlow" class="button is-small is-fullwidth is-dark">
+          <p><b>SWAT</b> FLOW</p>
         </router-link>
         <br>
         <router-link to="/SwatNote" class="button is-small is-fullwidth is-dark">

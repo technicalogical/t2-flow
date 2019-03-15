@@ -10,7 +10,7 @@
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <span class="button has-text-light is-link is-small">
+              <span class="button has-text-light is-dark is-small">
                 <b>INC ID:</b>
               </span>
             </p>
@@ -24,7 +24,7 @@
         <div class="field is-expanded">
           <div class="field has-addons">
             <p class="control">
-              <span class="button is-link has-text-light is-small">
+              <span class="button is-dark has-text-light is-small">
                 <b>Domain:</b>
               </span>
             </p>
@@ -34,7 +34,7 @@
           </div>
           <div class="field has-addons">
             <p class="control">
-              <span class="button is-link has-text-light is-small">
+              <span class="button is-dark has-text-light is-small">
                 <b>Customer Number:</b>
               </span>
             </p>
@@ -44,7 +44,7 @@
           </div>
           <div class="field has-addons">
             <p class="control">
-              <span class="button is-link has-text-light is-small">
+              <span class="button is-dark has-text-light is-small">
                 <b>Hosting GUID:</b>
               </span>
             </p>
@@ -69,7 +69,7 @@
     <!-- END KI Note input section -->
     
     <!--  BEGIN Copy paste notes section -->
-    <span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth"><b>KI Call Notes</b></span>
+    <span id="ki-copy-title" class="button is-dark has-text-light is-small is-fullwidth"><b>KI Call Notes</b></span>
     <div id="kinotes" class="content is-info getme" wrap="hard">  
       <p>#KI</p>
       <p>Incident ID: {{ inc }}</p>
@@ -82,9 +82,6 @@
     <div id="copy-clear" class="buttons">
       <router-link id="noteswap" to="/SwatNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
         <b>T1</b>
-      </router-link>
-      <router-link id="noteswap" to="/note/PreNote" title="Switch to Pre Tech Chat Template" class="button is-small is-dark has-text-light">
-        <b>Pr</b>
       </router-link>
       <button id="copyButton"  class="button is-small is-link btn" data-clipboard-target="#kinotes" title="Click to copy your notes to clipboard">
         <span class="icon is-medium has-text-light">

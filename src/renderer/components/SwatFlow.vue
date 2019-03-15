@@ -12,23 +12,11 @@
     <!-- BEGIN - Primary application deck -->
     <div class="content" id="flow">
 
-      <div class="content">
+      <div id="sflow-content" class="content">
         <p class="buttons">
-          <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
+          <router-link to="/FlowIndex" id="sflow" class="button is-dark is-small" title="Transfer Preflight Checklist">
             <span class="icon has-text-success">
-              <img src="../assets/icons/png/blu16.png"/>
-            </span>
-            <span><b>Transfer</b> PFC</span>
-          </router-link>
-          <router-link to="/flow/guide/Guide" class="button is-dark is-small" title="Transfer Preflight Checklist">
-            <span class="icon has-text-success">
-              <img src="../assets/icons/png/blu16.png"/>
-            </span>
-            <span><b>Flow</b> Guide</span>
-          </router-link>
-          <router-link to="/FlowIndex" class="button is-dark is-small" title="Transfer Preflight Checklist">
-            <span class="icon has-text-success">
-              <img src="../assets/icons/png/blu16.png"/>
+              <img src="../assets/icons/png/gld16.png"/>
             </span>
             <span><b>Flow</b> Index</span>
           </router-link>
@@ -40,8 +28,8 @@
       <div id="flowinfo" class="content">
         <center><h1>Navigating Call Flows</h1></center>
         <!--<p><b>One:</b> Agents can use the <b>Flow Guide</b> at the top of this page to help narrow down which call flows they should use.</p>-->
-        <p><b>One:</b> Agents can tab through the organized sections of flows using the left and right page toggles.</p>
-        <p><b>Two:</b> Agents can also use the <b>Flow Index</b> to keyword search or scroll through the full list of available call flows.</p>
+        <p><b>One:</b> Agents can tab through the organized sections of the tier 2 flows and checklists using the left and right page toggles.</p>
+        <p><b>Two:</b> Agents can use the <b>Flow Index</b> to keyword search or scroll through the full selection of available call flows and checklists.</p>
       </div>
 
       <div class="tags is-centered has-addons">
@@ -57,7 +45,7 @@
     <div id="flow-toggle" >
       <div class="go-left">
         <p class="buttons">
-          <router-link to="/FlowFour" id="smashb" class="button is-small is-dark">
+          <router-link to="/FlowThree" id="smashb" class="button is-small is-dark">
             <span id="go-hover" class="icon">
               <i class="mdi mdi-chevron-left mdi-18px"></i>
             </span>
@@ -84,7 +72,6 @@
           <li><router-link to="/SwatFlow" class="active"></router-link></li>
           <li><router-link to="/FlowTwo"></router-link></li>
           <li><router-link to="/FlowThree"></router-link></li>
-          <li><router-link to="/FlowFour"></router-link></li>
         </ul>
       </div>
     <!-- END - Flow gaination -->

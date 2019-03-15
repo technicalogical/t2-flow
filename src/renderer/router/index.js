@@ -7,7 +7,6 @@ import SwatHome from '@/components/SwatHome'
 import SwatFlow from '@/components/SwatFlow'
 import SwatNote from '@/components/SwatNote'
 import KiNote from '@/components/note/KiNote'
-import PreNote from '@/components/note/PreNote'
 import SwatTools from '@/components/SwatTools'
 import SwatLinks from '@/components/SwatLinks'
 import FlowIndex from '@/components/FlowIndex'
@@ -42,7 +41,6 @@ import Splunk from '@/components/flow/Splunk'
 import Malware from '@/components/flow/Malware'
 import FlowTwo from '@/components/FlowTwo'
 import FlowThree from '@/components/FlowThree'
-import FlowFour from '@/components/FlowFour'
 import Transfer from '@/components/flow/pfc/Transfer'
 import ServerCheck from '@/components/flow/pfc/ServerCheck'
 //SWAT Flow main menu routes
@@ -607,18 +605,6 @@ import GemailO from '@/components/flow/guide/GemailO'
 import GemailW from '@/components/flow/guide/GemailW'
 // END Guide imported routes
 
-// BEGIN ALL INBOUND SPECIFIC FLOW ROUTES 
-
-// BEGIN IB 500 error imported routes
-import IBFiveError from '@/components/IBflow/fivehundrederrorIB/IBFiveError'
-import IBY from '@/components/IBflow/fivehundrederrorIB/IBY'
-import IBYfos from '@/components/IBflow/fivehundrederrorIB/IBYfos'
-import IBYadm from '@/components/IBflow/fivehundrederrorIB/IBYadm'
-import IBN from '@/components/IBflow/fivehundrederrorIB/IBN'
-// END IB 500 error imported routes
-
-// END ALL INBOUND SPEPCIFIC FLOW ROUTES
-
 Vue.use(Router)
 
 export default new Router({
@@ -639,11 +625,6 @@ export default new Router({
       path: '/SwatNote',
       name: 'Swat Note',
       component: SwatNote
-    },
-    {
-      path: '/note/PreNote',
-      name: 'Pre Note',
-      component: PreNote
     },
     {
       path: '/note/KiNote',
@@ -732,11 +713,6 @@ export default new Router({
       path: '/FlowThree',
       name: 'Flow Three',
       component: FlowThree
-    },
-    {
-      path: '/FlowFour',
-      name: 'Flow Four',
-      component: FlowFour
     },
     //END SWAT Flow pages
 
@@ -3334,36 +3310,5 @@ export default new Router({
     },
     // END - Guide Flow
 
-    // BEGIN ALL INBOUND CALL FLOWS
-
-    // BEGIN - 500 Error Flow
-    {
-      path: '/flow/fivehundrederrorIB/IBFiveError',
-      name: '500 Error',
-      component: IBFiveError
-    },
-    {
-      path: '/flow/fivehundrederrorIB/IBY',
-      name: 'Y',
-      component: IBY
-    },
-    {
-      path: '/flow/fivehundrederrorIB/IBYadm',
-      name: 'Yadm',
-      component: IBYadm
-    },
-    {
-      path: '/flow/fivehundrederrorIB/IBYfos',
-      name: 'Yfos',
-      component: IBYfos
-    },
-    {
-      path: '/flow/fivehundrederrorIB/IBN',
-      name: 'N',
-      component: IBN
-    },
-    // END - 500 Error Flow
-
-    // END ALL INBOUND CALL FLOWS
   ]
 })

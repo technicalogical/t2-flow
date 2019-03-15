@@ -597,7 +597,7 @@ footer {
 #flowinfo {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 175px;
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 4px;
   background-color: hsl(0, 0%, 92%);
@@ -613,6 +613,16 @@ footer {
 
 #flowinfo p {
   font-size: 12px;
+}
+
+#sflow-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sflow {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* END | Swat Flow Vue CSS */
@@ -820,7 +830,17 @@ footer {
 #note-copy-title {
   position: relative;
   margin: 0px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+#ki-copy-title {
+  position: relative;
+  margin: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 70%;

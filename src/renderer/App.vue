@@ -30,7 +30,7 @@
               <i class="mdi mdi-home"></i>
             </span>
           </router-link>
-          <router-link id="n-button" to="/FlowIndex" title="Flow Index" class="button is-dark">
+          <router-link id="n-button" to="/SwatFlow" title="SWAT Flow" class="button is-dark">
             <span class="icon is-small">
               <i class="mdi mdi-alpha-f mdi-24px"></i>
             </span>
@@ -197,6 +197,7 @@ export default {
     // functions for accessing the Vuex store.
     ...mapFields([
       'name',
+      'issue',
       'sitch',
 	    'domain',
       'method',
@@ -204,7 +205,8 @@ export default {
       'inc',
       'kidomain',
       'cusnum',
-      'guid'
+      'guid',
+      'sos'
     ]),
   },
 };

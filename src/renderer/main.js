@@ -28,7 +28,9 @@ const store = new Vuex.Store({
     predom:'',
     phost:'',
     psitch:'',
-    pquest:''
+    pquest:'',
+    issue:'',
+    sos:'',
   },
   getters: {
     // Add the `getField` getter to the

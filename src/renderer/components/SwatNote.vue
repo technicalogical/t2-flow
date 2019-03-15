@@ -8,17 +8,17 @@
 
       <center><p id="warnme" class="help has-text-light"><b>THIS PAGE DOES NOT STORE CUSTOMER DATA</b></p></center>
 
-      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Customer Issue:</b></span>
+      <span id="ssl-sans-title" class="button is-dark has-text-light is-small is-fullwidth"><b>Customer Issue:</b></span>
       <div id="note-sitch" class="control">
         <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="Customer Issue..." rows="5" cols="30" v-model="issue" wrap="hard"></textarea>
       </div>
 
-      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Resolution:</b></span>
+      <span id="ssl-sans-title" class="button is-dark has-text-light is-small is-fullwidth"><b>Resolution:</b></span>
       <div id="note-sitch" class="control">
         <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="Resolution..." rows="5" cols="30" v-model="sitch" wrap="hard"></textarea>
       </div>
 
-      <span id="ssl-sans-title" class="button is-link has-text-light is-small is-fullwidth"><b>Anything done out of SOS:</b></span>
+      <span id="ssl-sans-title" class="button is-dark has-text-light is-small is-fullwidth"><b>Anything done out of SOS:</b></span>
       <div id="note-sitch" class="control">
         <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="N/A" rows="5" cols="30" v-model="sos" wrap="hard"></textarea>
       </div>
@@ -27,21 +27,18 @@
     <!-- END Swat Note input section -->
     
     <!--  BEGIN Copy paste notes section -->
-    <span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth"><b>CRM Call Notes</b></span>
+    <span id="note-copy-title" class="button is-dark has-text-light is-small is-fullwidth"><b>CRM Call Notes</b></span>
     <div id="callnotes" class="content is-info getme" wrap="hard">  
       <p>#SWAT T2</p>
-      <p>Customer Issue: {{ name }}</p>
+      <p>Customer Issue: {{ issue }}</p>
       <p>Resolution: {{ sitch }}</p> 
-      <p>Anything done out of SOS: {{ domain }}</p> 
+      <p>Anything done out of SOS: {{ sos }}</p> 
     </div>
     <!-- END Copy paste notes section -->
 
     <div id="copy-clear" class="buttons">
       <router-link id="noteswap" to="/note/KiNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
         <b>KI</b>
-      </router-link>
-      <router-link id="noteswap" to="/note/PreNote" title="Switch to Pre Tech Chat Template" class="button is-small is-dark has-text-light">
-        <b>Pr</b>
       </router-link>
       <button id="copyButton"  class="button is-small is-link btn" data-clipboard-target="#callnotes" title="Click to copy your notes to clipboard">
         <span class="icon is-medium has-text-light">
@@ -74,16 +71,16 @@ export default {
     // computed properties with getter and setter
     // functions for accessing the Vuex store.
     ...mapFields([
-      'name',
+      'issue',
       'sitch',
-      'domain',
+      'sos',
     ]),
   },
   methods: {
     clearForm: function(e) {
-      this.name = "";
+      this.issue = "";
       this.sitch = "";
-      this.domain = "";
+      this.sos = "";
       e.preventDefault();
     }
   }
