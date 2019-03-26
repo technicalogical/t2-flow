@@ -18,7 +18,7 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({frame: false,
-    width: 450, 
+    width: 450,
     height: 700,
     minWidth: 450,
     minHeigth: 700,
@@ -28,6 +28,10 @@ function createWindow () {
     transparent: false,
     backgroundColor: '#fff',
     resizable: false,
+    "node-integration": "iframe", // and this line
+    "webPreferences": {
+      "webSecurity": false
+   }
   })
 
   //Needed to open external link in a new default browser window.

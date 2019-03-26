@@ -1,21 +1,20 @@
 <template>
   <div id="app">
 
-    <!-- BEGIN - Stylesheet support -->   
-    <link rel="stylesheet" type="text/css" 
-        href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
-    <link rel="stylesheet" type="text/css" 
-        href="../../node_modules/@mdi/font/css/materialdesignicons.min.css" >
+    <!-- BEGIN - Stylesheet support -->
+    <link rel="stylesheet" type="text/css"
+    href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" >
+    <link rel="stylesheet" type="text/css"
+    href="../../node_modules/@mdi/font/css/materialdesignicons.min.css" >
     <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
     <!-- END - Stylesheet support -->
 
     <!-- BEGIN - Application top links section -->
-    
-    
+
     <!-- Button to close the app -->
     <div id="app-top-links">
 
-      <!-- Menu toggle --> 
+      <!-- Menu toggle -->
       <a id="deck-icon" title="Launch Menu" class="button is-medium">
         <span class="icon">
           <i class="mdi mdi-apps"></i>
@@ -77,7 +76,7 @@
               <img src="../renderer/assets/icons/png/o365.png">
             </span>
           </a>
-        </ul>  
+        </ul>
       </nav>
       <!-- END Dropdown navigation section -->
 
@@ -86,100 +85,105 @@
         <a id="close-btn" onclick="self.close()" class="button is-medium is-white" title="Close Flow Tool">
           <span class="icon is-medium">
             <i class="mdi mdi-close"></i>
-          </span> 
+          </span>
         </a>
       </p>
 
-      <div id="time">
-        <p id="clock"></p>
-      </div>    
+    <Queue></Queue>
+
+</div>
+<!-- END - Application top links section -->
+
+<!-- BEGIN Swat Flow Tool application deck -->
+<div id="prime-app-deck">
+
+  <br>
+
+  <!-- BEGIN - Vue router insertion point -->
+  <router-view/>
+  <!-- END - Vue router insertion point -->
+
+</div>
+<!-- END Swat Flow Tool application deck -->
+
+<!-- BEGIN - Application footer section -->
+<footer>
+
+  <!-- GoDaddy.com Front of site menu -->
+  <div id="gd-menu" class="dropdown is-small is-up">
+    <div class="dropdown-trigger">
+      <button id="gmenu" class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
+        <span><p><b>G</b></p></span>
+      </button>
     </div>
-    <!-- END - Application top links section -->
-
-    <!-- BEGIN Swat Flow Tool application deck -->
-    <div id="prime-app-deck">
-
-      <!-- BEGIN - Vue router insertion point -->
-      <router-view/>
-      <!-- END - Vue router insertion point -->
-      
+    <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
+      <div class="dropdown-content is-small">
+        <a id="gd-menu-item" href="https://www.godaddy.com/email/professional-business-email" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+          O365 professional Business Email
+        </a>
+        <a id="gd-menu-item" href="https://www.godaddy.com/websites/website-builder/plans-and-pricing" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+          GoCentral Website Builder
+        </a>
+        <a id="gd-menu-item" href="https://www.godaddy.com/smartline/" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+          Smartline
+        </a>
+        <hr class="dropdown-divider">
+        <a id="gd-menu-item" href="https://www.godaddy.com/wordpress/premium-support" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
+          WordPress Premium Support
+        </a>
+        <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-security" target="_blank" title="Website Security" class="dropdown-item is-small">
+          Website Security
+        </a>
+        <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-backup" target="_blank" title="Website Backups" class="dropdown-item is-small">
+          Website Backups
+        </a>
+        <a id="gd-menu-item" href="https://www.godaddy.com/web-security/ssl-certificate" target="_blank" title="SSL Standard" class="dropdown-item is-small">
+          SSL
+        </a>
+        <hr class="dropdown-divider">
+        <div id="gd-menu-item" title="WordPress Premium Support" class="dropdown-item is-small">
+          <strong><p>Press (esc) to close</p></strong>
+        </div>
+      </div>
     </div>
-    <!-- END Swat Flow Tool application deck -->
-  
-    <!-- BEGIN - Application footer section -->
-      <footer>
-
-        <!-- GoDaddy.com Front of site menu -->
-        <div id="gd-menu" class="dropdown is-small is-up">
-          <div class="dropdown-trigger">
-            <button id="gmenu" class="button is-small is-dark" title="GoDaddy.com Product Links" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span><p><b>G</b></p></span>
-            </button>
-          </div>
-          <div class="dropdown-menu is-small" id="dropdown-menu" role="menu">
-            <div class="dropdown-content is-small">
-              <a id="gd-menu-item" href="https://www.godaddy.com/email/professional-business-email" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
-                O365 professional Business Email
-              </a>
-              <a id="gd-menu-item" href="https://www.godaddy.com/websites/website-builder/plans-and-pricing" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
-                GoCentral Website Builder
-              </a>
-              <a id="gd-menu-item" href="https://www.godaddy.com/smartline/" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
-                Smartline
-              </a>
-               <hr class="dropdown-divider">
-              <a id="gd-menu-item" href="https://www.godaddy.com/wordpress/premium-support" target="_blank" title="WordPress Premium Support" class="dropdown-item is-small">
-                WordPress Premium Support
-              </a>
-              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-security" target="_blank" title="Website Security" class="dropdown-item is-small">
-                Website Security
-              </a>
-              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/website-backup" target="_blank" title="Website Backups" class="dropdown-item is-small">
-                Website Backups
-              </a>
-              <a id="gd-menu-item" href="https://www.godaddy.com/web-security/ssl-certificate" target="_blank" title="SSL Standard" class="dropdown-item is-small">
-                SSL
-              </a>
-              <hr class="dropdown-divider">
-              <div id="gd-menu-item" title="WordPress Premium Support" class="dropdown-item is-small">
-                <strong><p>Press (esc) to close</p></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Button to link to feedback loop -->
-        <p class="buttons">
-          <a id="helper-two" class="button is-white is-medium" href="https://forms.office.com/Pages/ResponsePage.aspx?id=K2Lx1aMUpkWwaQA_jcSFH83ifk09gUJEjA4J6LWpTc5URU9WMkNHOFgyMEg4RUY3R1A0QlA3UjhEMC4u" target="_blank" title="Give Feedback">
-            <span class="icon is-medium">
-              <i class="mdi mdi-comment-outline is-medium"></i>
-            </span>
-          </a>
-        </p>
-
-        <!-- Application footer image -->
-        <div id="footer-img">
-          <img src="../renderer/assets/images/flowtool-gld-xs.png">
-        </div>
-
-        <!-- Application version note -->
-        <div id="app-vers">
-          <div class="tags has-addons">
-            <span class="tag is-dark">Beta version 1.0.1</span>
-            <span id="ibcolor" class="tag verse is-info">(Ollie)</span>
-          </div>
-        </div>
-
-      </footer>
-    <!-- END - Application footer section -->
   </div>
+
+  <!-- Button to link to feedback loop -->
+  <p class="buttons">
+    <a id="helper-two" class="button is-white is-medium" href="https://forms.office.com/Pages/ResponsePage.aspx?id=K2Lx1aMUpkWwaQA_jcSFH83ifk09gUJEjA4J6LWpTc5URU9WMkNHOFgyMEg4RUY3R1A0QlA3UjhEMC4u" target="_blank" title="Give Feedback">
+      <span class="icon is-medium">
+        <i class="mdi mdi-comment-outline is-medium"></i>
+      </span>
+    </a>
+  </p>
+
+  <!-- Application footer image -->
+  <div id="footer-img">
+    <img src="../renderer/assets/images/flowtool-gld-xs.png">
+  </div>
+
+  <!-- Application version note -->
+  <div id="app-vers">
+    <div class="tags has-addons">
+      <span class="tag is-dark">Beta version 1.0.1</span>
+      <span id="ibcolor" class="tag verse is-info">(Ollie)</span>
+    </div>
+  </div>
+
+</footer>
+<!-- END - Application footer section -->
+</div>
 </template>
 
 <script>
 import { mapFields } from 'vuex-map-fields';
-
+import axios from 'axios';
+import Queue from './components/Queue.vue';
 export default {
   name: 'App',
+  components: {
+  Queue
+},
   data: function(){
     return {
       darkTheme: false,
@@ -188,7 +192,7 @@ export default {
   methods: {
     handleThemeChange: function () {
       this.darkTheme= !this.darkTheme;
-    }
+    },
   },
   computed: {
     // The `mapFields` function takes an array of
@@ -199,7 +203,7 @@ export default {
       'name',
       'issue',
       'sitch',
-	    'domain',
+      'domain',
       'method',
       'selected',
       'inc',
@@ -211,24 +215,13 @@ export default {
   },
 };
 
-
-// Javascript for time piece
-var myVar = setInterval(function() {
-  myTimer();
-}, 1000);
-
-function myTimer() {
-  var d = new Date();
-  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
-}
-
 // jQuery insertion for $ dependancy
 import JQuery from 'jquery'
 let $ = JQuery
 
 // jQuery for Deck menu functionality
 $(document).ready(function(){
- $("#deck-icon").click(function(){
+  $("#deck-icon").click(function(){
     $("#prime").slideToggle("fast");
   });
 });
@@ -275,3 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style src="./flow-style.scss" ></style>
+<style>
+
+
+</style>
