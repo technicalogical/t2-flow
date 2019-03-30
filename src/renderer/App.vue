@@ -29,7 +29,7 @@
               <i class="mdi mdi-home"></i>
             </span>
           </router-link>
-          <router-link id="n-button" to="/SwatFlow" title="SWAT Flow" class="button is-dark">
+          <router-link id="n-button" to="/FlowIndex" title="SWAT Flow" class="button is-dark">
             <span class="icon is-small">
               <i class="mdi mdi-alpha-f mdi-24px"></i>
             </span>
@@ -90,6 +90,8 @@
       </p>
 
     <Queue></Queue>
+    <center>{{ theuser }}</center>
+    <!-- <center>Free Memory: {{ mem/ Math.pow(1024, 1) }}</center> -->
 
 </div>
 <!-- END - Application top links section -->
@@ -185,8 +187,11 @@ export default {
   Queue
 },
   data: function(){
+    var os = require('os');
+
     return {
       darkTheme: false,
+      theuser: os.userInfo().username,
     }
   },
   methods: {

@@ -2,7 +2,7 @@
 
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck" class="hello">
-    
+
     <!-- START - Message of Swat FLow Chart -->
     <div class="content " id="flow-start-message">
 
@@ -17,7 +17,7 @@
     <!-- BEGIN Start button -->
     <div id="get-start" class="field is-grouped">
       <p class="control">
-        <router-link to="/SwatFlow" class="button is-small is-fullwidth is-dark">
+        <router-link to="/FlowIndex" class="button is-small is-fullwidth is-dark">
           <p><b>SWAT</b> FLOW</p>
         </router-link>
         <br>
@@ -43,17 +43,17 @@
     <!-- END swat motto statement -->
 
     <!-- END - Message of Swat FLow Chart -->
-    
+
       <router-view/>
 
   </div>
   <!-- END - Primary application deck -->
-  
+
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 

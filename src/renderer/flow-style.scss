@@ -86,11 +86,13 @@ input[type="button"],
 input[type="text"],
 input[type="tel"],
 input[type="number"],
+input[type="checkbox"],
 button,
 select,
 a,
 li,
-textarea {
+textarea,
+ {
 	-webkit-app-region: no-drag;
 }
 

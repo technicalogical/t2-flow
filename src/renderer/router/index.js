@@ -603,6 +603,9 @@ import GemailCc from '@/components/flow/guide/GemailCc'
 import GemailCn from '@/components/flow/guide/GemailCn'
 import GemailO from '@/components/flow/guide/GemailO'
 import GemailW from '@/components/flow/guide/GemailW'
+
+// T2 Imports
+import T2_403 from '@/components/t2flows/fourthree/index'
 // END Guide imported routes
 
 Vue.use(Router)
@@ -3307,6 +3310,14 @@ export default new Router({
       path: '/flow/guide/GemailW',
       name: 'GemailW',
       component: GemailW
+    },
+
+
+    // T2 Flows
+    {
+      path: '/t2flow/fourthree/index',
+      name: 'T2_403',
+      component: T2_403
     },
     // END - Guide Flow
 

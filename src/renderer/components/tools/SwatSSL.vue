@@ -1,5 +1,5 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
 
@@ -16,18 +16,19 @@
 
         <!-- BEGIN Swat SSL input section -->
         <div id="ssl-tool-input" class="content">
-  
+
           <router-link id="ssl-title" to="/SwatTools" class="button is-small is-link">
             <span class="icon is-large has-text-light">
               <i class="fa fa-angle-left fa-2x"></i>
             </span>
             <span>Back</span>
           </router-link>
-          
+
           <div class="field has-addons ">
             <div id="ssl-search" class="control ">
               <p class="control has-icons-left">
                 <input id="speedinput" class="input is-small is-hovered" v-model="domainName" type="text" placeholder="Search Domain Name">
+
                 <span class="icon is-small is-left">
                   <i class="fas fa-lock"></i>
                 </span>
@@ -145,13 +146,13 @@
 
       </form>
       <!--END Swat DNS section -->
-      
+
     </div>
     <!-- END Swat DNS section -->
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
