@@ -10,7 +10,7 @@ yarn add ***
 
 # serve with hot reload at localhost:8080
 yarn run dev - This will allow for hot reload upon saving changes.
-
+zach was here
 # run app from local 
 There is no longer a need to run second console. through vue CLI 3 the hot reload happens within first window. 
 
