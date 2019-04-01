@@ -2,7 +2,7 @@
   <div>
   This is the Checklist Component
   <ul>
-    <li class="">Item</li>
+    <li>Item</li>
     <li>Item</li>
 
     <li>Item</li>

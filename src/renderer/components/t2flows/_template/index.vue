@@ -5,7 +5,7 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>403</b> Website Error</p>
+        <p><b>Example</b> Template</p>
       </div>
     <!-- END - Flow Title banner -->
 
