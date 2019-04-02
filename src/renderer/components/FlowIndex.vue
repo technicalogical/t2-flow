@@ -183,6 +183,19 @@
               </span>
             </div>
           </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flow/form/index" class="button is-dark is-small">
+                <span class="icon has-text-success">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span><b>Form Mail</b> Issues</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Website form submission error
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/Ftp" class="button is-dark is-small">
