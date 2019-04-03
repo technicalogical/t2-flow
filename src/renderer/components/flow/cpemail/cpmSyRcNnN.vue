@@ -11,13 +11,21 @@
 
     
     <!-- BEGIN Form mail Error section -->
-    <div class="content has-text-centered" id="flow">    
+    <div class="content has-text-centered" id="flow">
+
       <div class="notification is-info">
         <b>TIME TO TRANSFER</b>.
       </div>
-      <article class="message is-info is-small">
+
+      <article class="message is-small has-text-left">
         <div class="message-body">
-          	<p>At this point you have done all that you can do for this customer as a <b>Tier 1</b> agent. Advise the customer and transfer your call to a <b>Tier 2</b> agent.</p>
+          <p>At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to an <b>Advanced Hosting Support</b> agent for further assistance with troubleshooting this issue.</p>
+        </div>
+      </article>
+
+      <article class="message is-small">
+        <div class="message-body">
+          <p><b>Transfer to x59171</b></p>
         </div>
       </article>
       

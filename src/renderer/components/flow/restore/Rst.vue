@@ -31,7 +31,7 @@
 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/FlowThree" class="button is-small is-info">
+        <router-link to="/ibFlow" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

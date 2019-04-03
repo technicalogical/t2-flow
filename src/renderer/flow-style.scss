@@ -86,12 +86,13 @@ input[type="button"],
 input[type="text"],
 input[type="tel"],
 input[type="number"],
+input[type="password"],
 input[type="checkbox"],
 button,
 select,
 a,
 li,
-textarea,
+textarea
  {
 	-webkit-app-region: no-drag;
 }
@@ -167,6 +168,9 @@ a:active {
 }
 
 #close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
   height: 30px;
   width: 30px;
   margin: 0px;
@@ -306,7 +310,61 @@ footer {
   z-index: 3;
 }
 
+#gd-menu-alt {
+  position: relative;
+  top:330px;
+  z-index: 4;
+}
+
+#gd-menu-tri {
+  position: relative;
+  float: left;
+  top:0px;
+  z-index: 2;
+}
+
+#gd-menu-fi {
+  position: relative;
+  left: -34px;
+  top:300px;
+  z-index: 5;
+}
+
 #gmenu {
+  width: 30px;
+  height: 30px;
+  border-radius: 0px;
+}
+
+#gmenu-alt {
+  width: 30px;
+  height: 30px;
+  border-radius: 0px;
+}
+
+#gmenu-tri {
+  top:1px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline:none;
+  margin-top: 0px;
+  margin-left: 3px;
+  padding-top: 0px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+#gmenu-tri:focus {
+  border: 0px;
+  outline: none;
+}
+
+#gmenu-tri:active {
+  border: 0px;
+  outline: none;
+}
+
+#gmenu-fi {
   width: 30px;
   height: 30px;
   border-radius: 0px;
@@ -316,8 +374,27 @@ footer {
   left: 35px;
 }
 
+#dropdown-menu-alt {
+  top: -10px;
+  left: 35px;
+}
+
+#dropdown-menu-tri {
+  top: 20px;
+  left: 15px;
+}
+
+#dropdown-menu-fi {
+  top: -10px;
+  left: 35px;
+}
+
 .dropdown-content {
   width: 205px;
+}
+
+#ddcontent {
+  width: 135px;
 }
 
 .dropdown-divider {
@@ -1245,7 +1322,7 @@ a {
   margin-top: 10px;
   padding: 0px;
   width: 100%;
-  height: 450px ;
+  height: 417px;
   font-size: 12px;
   overflow: scroll;
   -ms-overflow-style: scrollbar;
@@ -1287,7 +1364,7 @@ a {
   margin-bottom: 5px;
   padding: 0px;
   height: 30px;
-  width: 130px;
+  width: 100px;
   right: 0px;
   border: 0px;
 }

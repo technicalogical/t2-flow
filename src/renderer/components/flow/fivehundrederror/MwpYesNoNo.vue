@@ -31,7 +31,7 @@
       <!-- END - Primary application deck -->
       	  <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/fivehundrederror/MwpYesNo" class="button is-small is-info">
+        <router-link to="/flow/fivehundrederror/MwpYes" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
