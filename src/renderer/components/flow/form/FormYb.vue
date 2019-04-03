@@ -11,10 +11,12 @@
 
     
     <!-- BEGIN 500 Error flow section -->
-    <div class="content has-text-centered" id="flow">    
+    <div class="content has-text-centered" id="flow">
+
       <div class="notification is-info">
         <strong>TIME TO TRANSFER</strong>.
       </div>
+      
       <article class="message is-info is-small">
         <div class="message-body">
           Transfer the customer to a <strong>Tier 2</strong> agent for further troubleshooting.

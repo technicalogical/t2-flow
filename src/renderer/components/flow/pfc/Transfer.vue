@@ -1,7 +1,7 @@
 <template>
   
   <!-- BEGIN - Primary application deck -->
-  <div id="swat-deck">
+  <div id="flow-deck">
     
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
@@ -12,9 +12,11 @@
     
     <!-- BEGIN Transfer PFC Checklist section -->
     <div class="content has-text-centered" id="flow">
-      <div class="content is-medium">
-        <p>One or more of the following criteria must be met before transferring your call to Tier 2.</p>
+
+      <div class="content">
+        <p>One or more of the following criteria must be met before transferring your call to an <b>Advanced Hosting Specialist</b>.</p>
       </div>
+
       <div id="pfcdeck" class="field">
         <div class="control">
           <div class="tags has-addons">
@@ -23,6 +25,7 @@
           </div>
         </div>
         <br>
+
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-success"><i class="fas fa-check"></i></span>
@@ -30,6 +33,7 @@
           </div>
         </div>
         <br>
+
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-success"><i class="fas fa-check"></i></span>
@@ -37,6 +41,7 @@
           </div>
         </div>
         <br>
+
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-success"><i class="fas fa-check"></i></span>
@@ -44,6 +49,7 @@
           </div>
         </div>
         <br>
+
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-success"><i class="fas fa-check"></i></span>
@@ -51,13 +57,21 @@
           </div>
         </div>
         <br>
+
         <div class="control">
           <div class="tags has-addons">
             <span class="tag is-success"><i class="fas fa-check"></i></span>
             <span class="tag is-dark">Need to reach ATS or HTL</span>
           </div>
         </div>
+
       </div>
+
+      <article class="message is-small">
+        <div class="message-body">
+          <p><b>Transfer to x59171</b></p>
+        </div>
+      </article>
       
         <!-- BEGIN - Back button -->
         <p class="buttons">
