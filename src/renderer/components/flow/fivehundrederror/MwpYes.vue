@@ -20,7 +20,7 @@
             </span>
             <span><b>Yes</b>. The website now loads.</span>
           </router-link>  
-          <router-link to="/flow/fivehundrederror/MwpYesNo" class="button is-light">
+          <router-link to="/flow/fivehundrederror/MwpYesNoNo" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>

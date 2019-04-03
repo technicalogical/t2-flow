@@ -20,7 +20,7 @@
             </span>
             <span><b>Yes</b>. There is extra code.</span>
           </router-link>  
-          <router-link to="/flow/fivehundrederror/MwpYesNoNo" class="button is-light">
+          <router-link to="/flow/fivehundrederror/WpadNo" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
             </span>
@@ -31,7 +31,7 @@
       <!-- END - Primary application deck -->
       	  <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/flow/fivehundrederror/MwpYes" class="button is-small is-info">
+        <router-link to="/flow/fivehundrederror/Wpad" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>

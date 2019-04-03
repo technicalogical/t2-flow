@@ -1,5 +1,31 @@
+// :::::::::: INBOUND ROUTER ::::::::::
 
-// BEGIN INBOUND SPECIFIC ROUTES
+// BEGIN Guide imported routes
+import Guide from '@/components/flow/guide/Guide'
+import Gw from '@/components/flow/guide/Gw'
+import GwL from '@/components/flow/guide/GwL'
+import GwLy from '@/components/flow/guide/GwLy'
+import GwLn from '@/components/flow/guide/GwLn'
+import GwS from '@/components/flow/guide/GwS'
+import GwW from '@/components/flow/guide/GwW'
+import Gh from '@/components/flow/guide/Gh'
+import GhH from '@/components/flow/guide/GhH'
+import GhW from '@/components/flow/guide/GhW'
+import GhWl from '@/components/flow/guide/GhWl'
+import GhWlY from '@/components/flow/guide/GhWlY'
+import GhWlN from '@/components/flow/guide/GhWlN'
+import GhWs from '@/components/flow/guide/GhWs'
+import GhWw from '@/components/flow/guide/GhWw'
+import Gwpps from '@/components/flow/guide/Gwpps'
+import Grestore from '@/components/flow/guide/Grestore'
+import Gmig from '@/components/flow/guide/Gmig'
+import Gemail from '@/components/flow/guide/Gemail'
+import GemailC from '@/components/flow/guide/GemailC'
+import GemailCc from '@/components/flow/guide/GemailCc'
+import GemailCn from '@/components/flow/guide/GemailCn'
+import GemailO from '@/components/flow/guide/GemailO'
+import GemailW from '@/components/flow/guide/GemailW'
+// END Guide imported routes
 
 // Begin 404 error imported routes
 import ibFourFour from '../components/flow/ib/ibFourFour'
@@ -52,6 +78,132 @@ export default [
 
     // BEGIN PRIMARY INBOUND FLOW SECTION
 
+<<<<<<< HEAD
+=======
+    // BEGIN - Guide Flow
+    {
+      path: '/flow/guide/Guide',
+      name: 'Guide',
+      component: Guide
+    },
+    {
+      path: '/flow/guide/Gw',
+      name: 'Gw',
+      component: Gw
+    },
+    {
+      path: '/flow/guide/GwL',
+      name: 'GwL',
+      component: GwL
+    },
+    {
+      path: '/flow/guide/GwLy',
+      name: 'GwLy',
+      component: GwLy
+    },
+    {
+      path: '/flow/guide/GwLn',
+      name: 'GwLn',
+      component: GwLn
+    },
+    {
+      path: '/flow/guide/GwS',
+      name: 'GwS',
+      component: GwS
+    },
+    {
+      path: '/flow/guide/GwW',
+      name: 'GwW',
+      component: GwW
+    },
+    {
+      path: '/flow/guide/Gh',
+      name: 'Gh',
+      component: Gh
+    },
+    {
+      path: '/flow/guide/GhH',
+      name: 'GhH',
+      component: GhH
+    },
+    {
+      path: '/flow/guide/GhW',
+      name: 'GhW',
+      component: GhW
+    },
+    {
+      path: '/flow/guide/GhWl',
+      name: 'GhWl',
+      component: GhWl
+    },
+    {
+      path: '/flow/guide/GhWlY',
+      name: 'GhWlY',
+      component: GhWlY
+    },
+    {
+      path: '/flow/guide/GhWlN',
+      name: 'GhWlN',
+      component: GhWlN
+    },
+    {
+      path: '/flow/guide/GhWs',
+      name: 'GhWs',
+      component: GhWs
+    },
+    {
+      path: '/flow/guide/GhWw',
+      name: 'GhWw',
+      component: GhWw
+    },
+    {
+      path: '/flow/guide/Gwpps',
+      name: 'Gwpps',
+      component: Gwpps
+    },
+    {
+      path: '/flow/guide/Grestore',
+      name: 'Grestore',
+      component: Grestore
+    },
+    {
+      path: '/flow/guide/Gmig',
+      name: 'Gmig',
+      component: Gmig
+    },
+    {
+      path: '/flow/guide/Gemail',
+      name: 'Gemail',
+      component: Gemail
+    },
+    {
+      path: '/flow/guide/GemailC',
+      name: 'GemailC',
+      component: GemailC
+    },
+    {
+      path: '/flow/guide/GemailCc',
+      name: 'GemailCc',
+      component: GemailCc
+    },
+    {
+      path: '/flow/guide/GemailCn',
+      name: 'GemailCn',
+      component: GemailCn
+    },
+    {
+      path: '/flow/guide/GemailO',
+      name: 'GemailO',
+      component: GemailO
+    },
+    {
+      path: '/flow/guide/GemailW',
+      name: 'GemailW',
+      component: GemailW
+    },
+    // END - Guide Flow
+
+>>>>>>> d4b220606e93b4fc531082b263f6c958fde1e88e
     // Begin IB 403 Error Flow
     {
       path: '/flow/ib/ibFourThree',

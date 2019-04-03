@@ -25,13 +25,19 @@
           <span class="icon has-text-success">
             <i id="itcolor" class="fas fa-play-circle"></i>
           </span>
-          <span><p>Addressing an <b>open</b> migration.</p></span>
+          <span><p>Addressing an <b>open</b> migration ticket.</p></span>
+        </router-link>
+        <router-link to="/flow/mig/closed/cFirst" class="button is-light">
+          <span class="icon has-text-success">
+            <i id="itcolor" class="fas fa-play-circle"></i>
+          </span>
+          <span><p>Addressing a <b>closed</b> migration ticket.</p></span>
         </router-link>
       </p>
 
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/FlowThree" class="button is-small is-info">
+        <router-link to="/ibFlow" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
