@@ -1,6 +1,6 @@
 <template>
 
-  <div class="has-text-centered" id="queue-data">
+  <div class="has-text-centered" id="queuedata">
     <div id="gd-menu-tri" class="dropdown">
       <div class="dropdown-trigger">
         <a id="gmenu-tri" class="button" aria-haspopup="true" aria-controls="dropdown-menu" draggable="false">
@@ -11,7 +11,7 @@
         <div class="dropdown-content">
 
           <!-- <option v-for="queue in queues" v-bind:value="queue.code"> -->
-            <a v-model="queueSelected" v-for="queue in queues" v-bind:value="queue.code" href="#" id="gd-menu-item" class="dropdown-item is-small" draggable="false">
+            <a v-model="queueSelected" v-for="queue in queues" :key="queue.queues" v-bind:value="queue.code" href="#" id="gd-menu-item" class="dropdown-item is-small" draggable="false">
               <option v-on:click="changeQueSelected(queue.code)">
                 <p>{{ queue.name }}</p>
               </option>
@@ -95,7 +95,7 @@ export default{
       for (var i = 0; i < this.responseData.length; i++) {
         if (this.responseData[i].includes('wtspan')) {
           let _wtspan = this.responseData[i].replace('LWT&nbsp;<span id="wtspan" class="reportDetail" style="font-size:90px;"><span id="lblLWT" style="font-size:120px;">', "");
-          _wtspan = _wtspan.replace('LWT&nbsp;<span id="wtspan" class="redReportDetail" style="font-size:90px;"><span id="lblLWT" style="font-size:120px;">', "")
+          _wtspan = _wtspan.replace('LWT&nbsp;<span id="wtspan" class="redReportDetail" style="font-size:90px;"><span id="lblLWT" style="font-size:120px;">', "");    
           _wtspan = _wtspan.replace('</span>&nbsp;</span>', "");
           _wtspan = _wtspan.replace(/ /gi, '');
           this.wtspan = _wtspan
@@ -113,14 +113,14 @@ export default{
 </script>
 
 <style>
-#queue-data{
+#queuedata{
   position: absolute;
-  bottom: 0px;
+  top: 12px;
   padding: 0px;
   margin: 0px;
   left: 43%;
   margin-left: -100px;
-  width:260px;
+  width:280px;
   height: 20px;
   border: 0px;
   font-family: Courier, monospace;
