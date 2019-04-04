@@ -62,7 +62,7 @@
 
           <li v-if="showing === 'showingT2'">
             <div class="buttons has-addons">
-              <router-link to="/flow/t2flows/form/index" class="button is-dark is-small has-addons">
+              <router-link to="/t2flows/fourthree/index" class="button is-dark is-small has-addons">
                 <span class="icon has-text-success" v-on:click="handleTTFourThree">
                   <img src="../assets/icons/png/gld16.png"/>
                 </span>
@@ -143,7 +143,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/fivehundrederror/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTFiveHundred">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTFiveHundred"><p><b>500</b> Error</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                W.S.O.D. (White Screen of Death)
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingInbound'">
             <div class="buttons has-addons">
               <router-link to="/flow/ib/fiveerror/ibFiveError" class="button is-dark is-small">
@@ -171,7 +183,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/slow/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTSlowFiveThree">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTSlowFiveThree"><p><b>503/Slow </b> Sites</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Slow site/ 503 errors
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingInbound'">
             <div class="buttons has-addons">
               <router-link to="/flow/ib/fiveothreeerror/ibFiveThree" class="button is-dark is-small">
@@ -286,7 +310,7 @@
 
           <li v-if="showing === 'showingT2'">
             <div class="buttons has-addons">
-              <router-link to="/flow/t2flows/form/index" class="button is-dark is-small has-addons">
+              <router-link to="/t2flows/form/index" class="button is-dark is-small has-addons">
                 <span class="icon has-text-success" v-on:click="handleTTFormMail">
                   <img src="../assets/icons/png/gld16.png"/>
                 </span>
@@ -297,7 +321,32 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/mwpdomainchange/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTMwpDomain">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTMwpDomain"><p><b>MWP Domain Change</b> Error</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Domain Change Stuck/Error
+              </span>
+            </div>
+          </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/mwprestore/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTMwpRestore">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTMwpRestore"><p><b>MWP Restore</b> Error</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+               MWP Restore Errors
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/FormError" class="button is-dark is-small">
@@ -377,7 +426,7 @@
                 <span v-on:click="handleIbHstRst"><p><b>Hosting</b> Restores</p></span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                Selling / addressing hosting restores 
+                Selling / addressing hosting restores
               </span>
             </div>
           </li>
@@ -423,7 +472,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/Migsync/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTMigSync">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTMigSync"><p><b>MWP</b> Migration/Sync</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                "One-Click" Migrations &amp; Sync
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/howto/netvio/Netvio" class="button is-dark is-small">
@@ -475,7 +536,7 @@
                 <span v-on:click="handleOfcMig"><p>O<b>365</b> Migrations</p></span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                Successfully migrate email to O365 
+                Successfully migrate email to O365
               </span>
             </div>
           </li>
@@ -531,7 +592,7 @@
               <span v-on:click="handleSeoSev"><b>SEO</b> &amp; <b>SEV</b></span>
               </a>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                SEO &amp; SEV GoDaddy HELP article 
+                SEO &amp; SEV GoDaddy HELP article
               </span>
             </div>
           </li>
@@ -601,7 +662,7 @@
                 <span v-on:click="handleSslErr"><b>SSL</b> Errors</span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                Guided SSL error troubleshooting 
+                Guided SSL error troubleshooting
               </span>
             </div>
           </li>
@@ -615,7 +676,7 @@
                 <span v-on:click="handleSslSetup"><b>SSL</b> Setup</span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                Guided "After The Sale" product setup 
+                Guided "After The Sale" product setup
               </span>
             </div>
           </li>
@@ -629,7 +690,7 @@
                 <span v-on:click="handleScrSpt"><b>Sucuri</b> support tickets</span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                Checking &amp; Setting up Sucuri Tickets 
+                Checking &amp; Setting up Sucuri Tickets
               </span>
             </div>
           </li>
@@ -643,7 +704,7 @@
                 <span v-on:click="handleTrfPfc"><b>Transfer</b> PFC</span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                The Official Transfer Preflight Checklist 
+                The Official Transfer Preflight Checklist
               </span>
             </div>
           </li>
@@ -671,7 +732,7 @@
                 <span v-on:click="handleVpsUptime"><b>VPS</b> Uptime check</span>
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
-                Check PuTTy and RDP connectivity 
+                Check PuTTy and RDP connectivity
               </span>
             </div>
           </li>
@@ -702,7 +763,7 @@
                 Workspace Email HELP article
               </span>
             </div>
-          </li> 
+          </li>
 
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
@@ -762,6 +823,7 @@
 
 <script>
 import JQuery from 'jquery'
+import axios from 'axios'
 let $ = JQuery
 
 export default {
@@ -840,9 +902,33 @@ export default {
 
     },
 
+    handleTTFiveHundred: function(){
+
+      let data = {flowname: 't2-500-error', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
     handleFiveThree: function(){
 
       let data = {flowname: '503-error', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTSlowFiveThree: function(){
+
+      let data = {flowname: 't2-503-slow-error', toolname: "t2-tool"};
 
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
 
@@ -915,6 +1001,42 @@ export default {
     handleIdMalware: function(){
 
       let data = {flowname: 'identify-malware', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTMwpRestore: function(){
+
+      let data = {flowname: 't2-mwp-restore', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTMwpDomain: function(){
+
+      let data = {flowname: 't2-mwp-domain', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTMigSync: function(){
+
+      let data = {flowname: 't2-mwp-migsync', toolname: "t2-tool"};
 
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
 
@@ -1380,7 +1502,7 @@ export default {
 
     },
 
-    
+
 // Index key word filtering
 
     filterIndex: function () {

@@ -78,8 +78,6 @@ export default [
 
     // BEGIN PRIMARY INBOUND FLOW SECTION
 
-<<<<<<< HEAD
-=======
     // BEGIN - Guide Flow
     {
       path: '/flow/guide/Guide',
@@ -203,7 +201,7 @@ export default [
     },
     // END - Guide Flow
 
->>>>>>> d4b220606e93b4fc531082b263f6c958fde1e88e
+
     // Begin IB 403 Error Flow
     {
       path: '/flow/ib/ibFourThree',

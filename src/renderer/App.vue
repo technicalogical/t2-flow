@@ -69,7 +69,7 @@
               <img src="../renderer/assets/icons/png/o365.png" draggable="false">
             </span>
           </a>
-        </ul>  
+        </ul>
       </nav>
       <!-- BEGIN - Prod Tool options -->
       <div id="gd-menu-alt" class="dropdown is-small">
@@ -130,7 +130,7 @@
         <div class="dropdown-menu is-small" id="dropdown-menu-fi" role="menu">
           <div id="ddcontent" class="dropdown-content is-small">
             <a id="gd-menu-item" href="https://exserv.int.godaddy.com/services/migrations" target="_blank" title="Migrate hosting accounts" class="dropdown-item is-small" draggable="false">
-              
+
               <span><p>Migrate<b>U</b></p></span>
             </a>
             <a id="gd-menu-item" href="https://hs.int.godaddy.com/restore-u/#/index" target="_blank" title="Restore hosting accounts" class="dropdown-item is-small" draggable="false">
@@ -155,7 +155,7 @@
       </p>
 
     <Queue></Queue>
-    <center>{{ theuser }}</center>
+
     <!-- <center>Free Memory: {{ mem/ Math.pow(1024, 1) }}</center> -->
 
 </div>
@@ -170,6 +170,7 @@
   <router-view/>
   <!-- END - Vue router insertion point -->
 
+  <center>{{ theuser }}</center>
 </div>
 <!-- END Swat Flow Tool application deck -->
 
@@ -256,7 +257,7 @@ export default {
 
     return {
       darkTheme: false,
-      theuser: os.userInfo().username,
+      theuser:  os.userInfo().username,
     }
   },
   methods: {

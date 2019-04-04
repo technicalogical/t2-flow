@@ -7,7 +7,7 @@ import Router from 'vue-router'
 import toneRouter from './toneRouter'
 import ibRouter from './ibRouter'
 import prdRouter from './prdRouter'
-import ttwoRouter from './ttwoRouter'
+import t2Router from './t2Router'
 // END Import of Department specific routers
 
 import '../../../node_modules/bulma/css/bulma.min.css'
@@ -57,10 +57,10 @@ export default new Router({
 
   routes: [
 
-    ...toneRouter, 
-    ...ibRouter, 
+    ...toneRouter,
+    ...ibRouter,
     ...prdRouter,
-    ...ttwoRouter, 
+    ...t2Router,
 
     //BEGIN Primary Menu Routes
     {
