@@ -6,6 +6,8 @@ import T2_mwpdomainchange from '@/components/t2flows/mwpdomainchange/index'
 import T2_Migsync from '@/components/t2flows/Migsync/index'
 import T2_mwpRestore from '@/components/t2flows/mwprestore/index'
 import T2_mwpDbPrefix from '@/components/t2flows/dbprefix/index'
+import T2_esmigration from '@/components/t2flows/esmigration/index'
+import T2_esrestore from '@/components/t2flows/esrestore/index'
 
 export default [
 
@@ -43,11 +45,25 @@ export default [
 {
   path: '/t2flows/mwprestore/index',
   name: 'T2_mwpRestore',
+
   component: T2_mwpRestore  
 },
 {
   path: '/t2flows/dbprefix/index',
   name: 'T2_mwpDbPrefix',
   component: T2_mwpDbPrefix  
+
+  component: T2_mwpRestore
+},
+{
+  path: '/t2flows/esmigration/index',
+  name: 'T2_esmigration',
+  component: T2_esmigration
+},
+{
+  path: '/t2flows/esrestore/index',
+  name: 'T2_esrestore',
+  component: T2_esrestore
+
 },
 ]

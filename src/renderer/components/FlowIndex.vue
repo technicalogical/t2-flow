@@ -237,7 +237,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/esrestore/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTesrestore">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTesrestore"><p><b>ES</b> Restores</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Expert service restore &amp; cleanup
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/CpEmail" class="button is-dark is-small">
@@ -495,6 +507,19 @@
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
                 "One-Click" Migrations &amp; Sync
+              </span>
+            </div>
+          </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/esmigration/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTesmigration">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTesmigration"><p><b>ES</b> Migrations</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Expert Service migration &amp; cleanup
               </span>
             </div>
           </li>
@@ -1518,6 +1543,29 @@ export default {
     handleWsEmail: function(){
 
       let data = {flowname: 'msc-workspace-email', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTesmigration: function(){
+
+      let data = {flowname: 't2-esmigration', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+    handleTTesrestore: function(){
+
+      let data = {flowname: 't2-esrestore', toolname: "t2-tool"};
 
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
 

@@ -1,35 +1,35 @@
 <template>
   <div>
-
-    <span class="tag is-danger is-small">Medium</span>
+    <br>
   <ul class="no-style">
-  <br>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Check for Malware</label>
+      <label v-bind:class="{strike: checked_01}" for="checkbox">Was correct content moved</label>
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Control Files</label>
+      <label v-bind:class="{strike: checked_02}" for="checkbox">Check screenshoot to check if it was ever working</label>
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Enable Debug Mode</label>
+      <label v-bind:class="{strike: checked_03}" for="checkbox">Cloudtech lines in config</label>
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Disable Plugin/Themes</label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Toggle PHP version to see if it helps(do not change if lower than 5.4 on 4gh)</label>
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Clear Cache / Kill Processes / Toggle PHP</label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Debug and reapir if simple</label>
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_06}" for="checkbox">Resubmit / Sandbox and Resubmit</label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Reopen ticket if in timeframe</label>
     </li>
   </ul>
-
+  <div v-if="checked">
+    Clicked
+  </div>
 </div>
 </template>
 
@@ -45,6 +45,7 @@ export default{
       checked_06: false,
     }
   }
+  // toggle_1: false,
 }
 
 </script>
