@@ -341,5 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <style src="./flow-style.scss" ></style>
 <style>
 
-
+.t2link{
+  font-size: .75em;
+}
 </style>
