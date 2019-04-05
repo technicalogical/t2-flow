@@ -1,15 +1,15 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>TRANSFER</b> Pre-Flight Checklist</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN Transfer PFC Checklist section -->
     <div class="content has-text-centered" id="flow">
 
@@ -72,10 +72,10 @@
           <p><b>Transfer to x59171</b></p>
         </div>
       </article>
-      
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/SwatFlow" class="button is-small is-info">
+          <router-link to="/FlowIndex" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
@@ -90,7 +90,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
