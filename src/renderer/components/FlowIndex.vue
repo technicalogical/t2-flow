@@ -359,6 +359,19 @@
               </span>
             </div>
           </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/dbprefix/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTMwpDbprefix">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTMwpDbprefix"><p><b>MWP Database Prefix</b> Issue</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+               MWP Database Prefix Issue
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/FormError" class="button is-dark is-small">
@@ -1050,6 +1063,18 @@ export default {
     handleTTMwpDomain: function(){
 
       let data = {flowname: 't2-mwp-domain', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTMwpDbprefix: function(){
+
+      let data = {flowname: 't2-mwp-dbprefix', toolname: "t2-tool"};
 
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
 
