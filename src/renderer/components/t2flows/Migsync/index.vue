@@ -19,7 +19,10 @@
       <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Articles</small></a>
     </div>
 
-    <!-- BEGIN 403 Error flow section -->
+    <!-- Spacing for Format-->
+    <br>
+
+    <!-- BEGIN Mwp Migration Sync Issueflow section -->
     <div class="content" id="flow">
 
       <div v-if="navigationIsChecklist">
@@ -28,9 +31,11 @@
       <div v-if="navigationIsArticles">
         <Articles></Articles>
       </div>
+        <!-- Spacing for Format-->
+        <br>
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/FLowIndex" class="button is-small is-info">
+          <router-link to="/FlowIndex" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
