@@ -5,18 +5,18 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>403</b> Website Error</p>
+        <p><b>ES Migration</b> Cleanup</p>
       </div>
     <!-- END - Flow Title banner -->
 
     <div class="content has-text-centered is-medium">
       <p v-if="navTo === 'checklist'" style="margin-top: 10px;">Checklist</p>
-      <p v-else-if="navTo === 'articles'" style="margin-top: 10px;">Articles</p>
+      <p v-else-if="navTo === 'articles'" style="margin-top: 10px;">Resources</p>
     </div>
     <div id="navigationMenu" style="margin-right: 20px;" class="is-pulled-right result-navigation">
       <a v-on:click="navToChecklist" v-bind:class="navigationIsChecklist ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Check Lists</small></a>
       <b>|</b>
-      <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Articles</small></a>
+      <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
     </div>
 
     <!-- BEGIN 403 Error flow section -->
