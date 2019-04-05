@@ -18,16 +18,14 @@
 
 
     </div>
-    <div id="navigationMenu" style="margin-right: 20px;" class="is-pulled-right result-navigation">
+    <div id="navigationMenu" style="margin-right: 20px;" class="t2link is-pulled-right result-navigation">
       <a v-on:click="navToChecklist" v-bind:class="navigationIsChecklist ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Check Lists</small></a>
       <b>|</b>
       <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
-
-
     </div>
 
-    <!-- BEGIN 403 Error flow section -->
     <div class="content" id="flow">
+      <br>
 
       <div v-if="navigationIsChecklist">
         <Checklist></Checklist>
@@ -35,6 +33,7 @@
       <div v-if="navigationIsArticles">
         <Articles></Articles>
       </div>
+      <br>
         <!-- BEGIN - Back button -->
         <p class="buttons">
           <router-link to="/FLowIndex" class="button is-small is-info">
@@ -44,6 +43,7 @@
             <span>BACK</span>
           </router-link>
         </p>
+
         <!-- END - Back button -->
 
       <!-- <router-view/> -->
@@ -92,4 +92,5 @@ export default {
   .list-item{
     padding: 4px;
   }
+
 </style>

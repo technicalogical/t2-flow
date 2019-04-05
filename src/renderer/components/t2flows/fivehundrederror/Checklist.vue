@@ -1,6 +1,7 @@
 <template>
   <div>
-  <ul>
+    <span class="tag is-danger is-small">Medium</span>
+  <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
       <label v-bind:class="{strike: checked_01}" for="checkbox">Check for Malware</label>
@@ -18,12 +19,15 @@
       <label v-bind:class="{strike: checked_04}" for="checkbox">Disable Plugin/Themes</label>
     </li>
     <li>
-      Clear Cache / Kill Processes / Toggle PHP
+      <input type="checkbox" id="checkbox" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox">Clear Cache / Kill Processes / Toggle PHP</label>
     </li>
     <li>
-      Resubmit / Sandbox and Resubmit
+      <input type="checkbox" id="checkbox" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox">Resubmit / Sandbox and Resubmit</label>
     </li>
   </ul>
+
 </div>
 </template>
 
@@ -36,7 +40,6 @@ export default{
       checked_03: false,
       checked_04: false,
       checked_05: false,
-      checked_06: false,
     }
   }
 }
