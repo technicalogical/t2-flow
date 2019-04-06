@@ -1,6 +1,5 @@
 <template>
   <div>
-    <br>
     <ul>
 
       <li><a href="https://cheatsheet.godaddy.com/hosting-migration" target="_blank">Migrations CheatSheet</a></li>

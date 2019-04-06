@@ -1,7 +1,6 @@
 <template>
   <div>
-    <br>
-  <ul>
+  <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
       <label v-bind:class="{strike: checked_01}" for="checkbox">Upload mail_test.php</label>

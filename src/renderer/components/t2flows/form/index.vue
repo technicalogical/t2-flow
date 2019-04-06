@@ -19,7 +19,10 @@
       <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
     </div>
 
-    <!-- BEGIN 403 Error flow section -->
+    <!-- Spacing for Format-->
+    <br>
+
+    <!-- BEGIN Form Issue flow section -->
     <div class="content" id="flow">
 
       <div v-if="navigationIsChecklist">
@@ -28,6 +31,8 @@
       <div v-if="navigationIsArticles">
         <Articles></Articles>
       </div>
+        <!-- Spacing for Format-->
+        <br>
         <!-- BEGIN - Back button -->
         <p class="buttons">
           <router-link to="/FLowIndex" class="button is-small is-info">
