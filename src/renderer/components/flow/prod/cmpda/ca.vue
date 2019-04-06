@@ -1,12 +1,12 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-    
+
       <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>Compromised</b> Email Accounts</p>
-      </div> 
+      </div>
       <!-- END - Flow Title banner -->
 
     <!-- BEGIN section -->
@@ -24,16 +24,16 @@
           </span>
           <span><b>O365</b>. They are using Office 365 with us.</span>
         </router-link>
-      
+
         <router-link to="/flow/prod/cmpda/caW" class="button is-light">
           <span class="icon has-text-danger">
             <i id="itcolor" class="fas fa-chevron-circle-right"></i>
           </span>
           <span><b>Workspace</b>. They are using Workspace.</span>
         </router-link>
-        
+
       </p>
-      
+
       <!-- BEGIN - Back button -->
       <p class="buttons">
         <router-link to="/prodFlow" class="button is-small is-info">
@@ -52,7 +52,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

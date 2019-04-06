@@ -1,17 +1,17 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-    
+
       <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p>Cannot Login into <b>OWA</b></p>
-      </div> 
+      </div>
       <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN section -->
-    <div class="content has-text-centered" id="flow"> 
+    <div class="content has-text-centered" id="flow">
 
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
@@ -28,7 +28,7 @@
           <p id="atschat"><b>"Customer unable to log into OWA. Getting an error message after they enter in their credentials. Confirmed DNS is good, mailbox is setup, there is not a login lock, customer reset password and I have sent to apsupport@godaddy.com a full page screenshot within a private browser."</b></p>
         </div>
       </article>
-      
+
       <!-- BEGIN - Back button -->
       <p class="buttons">
         <router-link to="/flow/prod/owa/nowaYyNy" class="button is-small is-info">
@@ -43,13 +43,13 @@
       <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
 
       <router-view/>
-      
+
     </div>
     <!-- END section -->
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
