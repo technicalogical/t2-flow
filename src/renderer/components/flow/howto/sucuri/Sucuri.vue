@@ -1,12 +1,12 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>HOW TO:</b> Sucuri Support Tickets</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
@@ -20,7 +20,7 @@
             <i class="fas fa-check-circle"></i>
           </span>
           <span>It is a <b>Cleanup</b> ticket.</span>
-        </router-link>  
+        </router-link>
         <router-link to="/flow/howto/sucuri/SucuriB" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
@@ -34,10 +34,10 @@
           <span>It is a <b>Firewall</b> ticket.</span>
         </router-link>
       </p>
-      
+
       <!-- BEGIN - Back button -->
       <p class="buttons">
-        <router-link to="/toneFlow" class="button is-small is-info">
+        <router-link to="/FlowIndex" class="button is-small is-info">
           <span class="icon has-text-light">
             <i class="fas fa-chevron-left"></i>
           </span>
@@ -52,7 +52,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

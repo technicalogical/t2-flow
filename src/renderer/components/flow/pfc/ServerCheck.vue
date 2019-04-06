@@ -1,15 +1,15 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="flow-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>Server</b> Checklist</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN Checklist section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
@@ -38,10 +38,10 @@
         </div>
         <br>
       </div>
-      
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/miscFlow" class="button is-small is-info">
+          <router-link to="/FlowIndex" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
@@ -56,7 +56,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

@@ -1,12 +1,12 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>HOW TO:</b> WordPress Premium Support</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
     <!-- BEGIN SSL Error flow section -->
@@ -20,7 +20,7 @@
             <i class="fas fa-check-circle"></i>
           </span>
           <span><b>WPPS</b> Product Setup.</span>
-        </router-link>  
+        </router-link>
         <router-link to="/flow/howto/wpps/WppsN" class="button is-light">
           <span class="icon has-text-success">
             <i class="fas fa-check-circle"></i>
@@ -34,7 +34,7 @@
           <span>Existing <b>WPPS</b> Ticket.</span>
         </router-link>
       </p>
-      
+
       <!-- BEGIN - Back button -->
       <p class="buttons">
         <router-link to="/FlowIndex" class="button is-small is-info">
@@ -52,7 +52,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

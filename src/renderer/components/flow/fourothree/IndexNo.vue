@@ -1,17 +1,17 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>403</b> Website Error</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN 403 Error flow section -->
-    <div class="content has-text-centered" id="flow">    
+    <div class="content has-text-centered" id="flow">
       <div class="notification is-danger">
         <strong>STOP HERE</strong>.
       </div>
@@ -39,7 +39,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

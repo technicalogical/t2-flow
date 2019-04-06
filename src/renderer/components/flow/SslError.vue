@@ -1,15 +1,15 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>SSL</b> Website Error</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN SSL Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
@@ -21,7 +21,7 @@
               <i class="fas fa-check-circle"></i>
             </span>
             <span>Site connection not secure</span>
-          </router-link>  
+          </router-link>
           <router-link to="/flow/ssl/SslN" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
@@ -29,10 +29,10 @@
             <span>Too many redirects</span>
           </router-link>
         </p>
-      
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/toneFlow" class="button is-small is-info">
+          <router-link to="/FlowIndex" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
@@ -47,12 +47,12 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 
