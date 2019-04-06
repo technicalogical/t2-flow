@@ -1,6 +1,5 @@
 <template>
   <div>
-  This is the Checklist Component
   <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">

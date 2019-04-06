@@ -1,8 +1,6 @@
 <template>
   <div>
-    <br>
-  <ul>
-
+  <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
       <label v-bind:class="{strike: checked_01}" for="checkbox">DNS</label>
@@ -23,8 +21,6 @@
       <input type="checkbox" id="checkbox" v-model="checked_05">
       <label v-bind:class="{strike: checked_05}" for="checkbox">Reach out to HTL</label>
     </li>
-
-
   </ul>
 </div>
 </template>

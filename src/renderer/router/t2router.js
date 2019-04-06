@@ -51,7 +51,6 @@ export default [
   path: '/t2flows/dbprefix/index',
   name: 'T2_mwpDbPrefix',
   component: T2_mwpDbPrefix
-
 },
 {
   path: '/t2flows/esmigration/index',
