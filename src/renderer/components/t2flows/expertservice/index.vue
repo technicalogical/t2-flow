@@ -5,37 +5,43 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>ES Restore</b> Cleanup</p>
+        <p><b>Expert</b> Services</p>
       </div>
-    <!-- END - Flow Title banner -->
 
-    <div class="content has-text-centered is-medium">
-      <p v-if="navTo === 'checklist'" style="margin-top: 10px;">Checklist</p>
-      <p v-else-if="navTo === 'articles'" style="margin-top: 10px;">Resources</p>
-    </div>
-    <div id="navigationMenu" style="margin-right: 20px;" class="t2link is-pulled-right result-navigation">
-      <a v-on:click="navToChecklist" v-bind:class="navigationIsChecklist ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Check Lists</small></a>
-      <b>|</b>
-      <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
-    </div>
+    <br>
+
+
+    <div class="content" id="flow">
+
+
+      <br>
+      <ul>
+        <router-link to="/t2flows/esmigration/index"  class="button is-small is-dark is-fullwidth t2widebutton">
+          <span class="icon is-large has-text-info">
+            <i id="itcolor" class="fas fa-bug"></i>
+          </span>
+          <span><b></b>Migrations</span>
+        </router-link>
+
+
+
+        <router-link to="/t2flows/esrestore/index"  class="button is-small is-dark is-fullwidth t2widebutton">
+          <span class="icon is-large has-text-info">
+            <i id="itcolor" class="fas fa-exclamation-triangle"></i>
+          </span>
+          <span><b></b>Restore</span>
+        </router-link>
+
+      </ul>
+
+
 
     <!-- Spacing for Format-->
     <br>
 
-    <!-- BEGIN Es Restore flow section -->
-    <div class="content" id="flow">
-
-      <div v-if="navigationIsChecklist">
-        <Checklist></Checklist>
-      </div>
-      <div v-if="navigationIsArticles">
-        <Articles></Articles>
-      </div>
-        <!-- Spacing for Format-->
-        <br>
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/t2flows/expertservice/index" class="button is-small is-info">
+          <router-link to="/FLowIndex" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>

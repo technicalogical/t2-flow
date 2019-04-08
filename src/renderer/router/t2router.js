@@ -11,6 +11,7 @@ import T2_esrestore from '@/components/t2flows/esrestore/index'
 import T2_ssh from '@/components/t2flows/ssh/index'
 import T2_server from '@/components/t2flows/server/index'
 import T2_ftp from '@/components/t2flows/ftp/index'
+import T2_expertservice from '@/components/t2flows/expertservice/index'
 export default [
 
 
@@ -78,5 +79,10 @@ component: T2_server
 path: '/t2flows/ftp/index',
 name: 'T2_ftp',
 component: T2_ftp
+},
+{
+path: '/t2flows/expertservice/index',
+name: 'T2_expertservice',
+component: T2_expertservice
 },
 ]

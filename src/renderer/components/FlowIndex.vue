@@ -237,7 +237,7 @@
               </span>
             </div>
           </li>
-          <li v-if="showing === 'showingT2'">
+          <!-- <li v-if="showing === 'showingT2'">
             <div class="buttons has-addons">
               <router-link to="/t2flows/esrestore/index" class="button is-dark is-small has-addons">
                 <span class="icon has-text-success" v-on:click="handleTTesrestore">
@@ -249,7 +249,7 @@
                 Expert service restore &amp; cleanup
               </span>
             </div>
-          </li>
+          </li> -->
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/CpEmail" class="button is-dark is-small">
@@ -522,7 +522,7 @@
               </span>
             </div>
           </li>
-          <li v-if="showing === 'showingT2'">
+          <!-- <li v-if="showing === 'showingT2'">
             <div class="buttons has-addons">
               <router-link to="/t2flows/esmigration/index" class="button is-dark is-small has-addons">
                 <span class="icon has-text-success" v-on:click="handleTTesmigration">
@@ -534,7 +534,7 @@
                 Expert Service migration &amp; cleanup
               </span>
             </div>
-          </li>
+          </li> -->
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/howto/netvio/Netvio" class="button is-dark is-small">
@@ -877,6 +877,20 @@
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
                 Move Workspace to other Account
+              </span>
+            </div>
+          </li>
+
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/expertservice/index" class="button is-dark is-small">
+                <span class="icon has-text-success" v-on:click="handleTTesMenu">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTesMenu"><b>Expert</b> Services</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Managed Services | Cloudtech
               </span>
             </div>
           </li>
@@ -1577,72 +1591,37 @@ export default {
     },
 
     handleWsEmail: function(){
-
       let data = {flowname: 'msc-workspace-email', toolname: "t2-tool"};
-
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
         .then(response => { console.log('response: ' + response.data); })
-
         .catch(error => { console.log("Axios Post Application Error"); })
-
     },
 
-    handleTTesmigration: function(){
-
-      let data = {flowname: 't2-esmigration', toolname: "t2-tool"};
-
-      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
-        .then(response => { console.log('response: ' + response.data); })
-
-        .catch(error => { console.log("Axios Post Application Error"); })
-
-    },
-    handleTTesrestore: function(){
-
-      let data = {flowname: 't2-esrestore', toolname: "t2-tool"};
-
-      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
-        .then(response => { console.log('response: ' + response.data); })
-
-        .catch(error => { console.log("Axios Post Application Error"); })
-
-    },
     handleTTssh: function(){
-
       let data = {flowname: 't2-ssh', toolname: "t2-tool"};
-
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
         .then(response => { console.log('response: ' + response.data); })
-
         .catch(error => { console.log("Axios Post Application Error"); })
-
     },
     handleTTserver: function(){
-
       let data = {flowname: 't2-server', toolname: "t2-tool"};
-
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
         .then(response => { console.log('response: ' + response.data); })
-
         .catch(error => { console.log("Axios Post Application Error"); })
-
     },
 
     handleTTftp: function(){
-
       let data = {flowname: 't2-ftp', toolname: "t2-tool"};
-
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
         .then(response => { console.log('response: ' + response.data); })
-
         .catch(error => { console.log("Axios Post Application Error"); })
+    },
 
+    handleTTesMenu: function() {
+      let data = {flowname: 't2-esmenu', toolname: "t2-tool"};
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+        .then(response => { console.log('response: ' + response.data); })
+        .catch(error => { console.log("Axios Post Application Error"); })
     },
 
 // Index key word filtering
