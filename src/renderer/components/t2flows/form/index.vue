@@ -13,6 +13,7 @@
       <p v-if="navTo === 'checklist'" style="margin-top: 10px;">Checklist</p>
       <p v-else-if="navTo === 'articles'" style="margin-top: 10px;">Resources</p>
     </div>
+
     <div id="navigationMenu" style="margin-right: 20px;" class="t2link is-pulled-right result-navigation">
       <a v-on:click="navToChecklist" v-bind:class="navigationIsChecklist ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Check Lists</small></a>
       <b>|</b>

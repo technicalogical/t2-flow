@@ -1,7 +1,6 @@
 <template>
   <div>
 
-    <span class="tag is-danger is-small">Medium</span>
   <ul class="no-style">
   <br>
     <li>
