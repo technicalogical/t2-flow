@@ -1,15 +1,26 @@
 <template>
   <div>
-    <h1 class="title">The Articles</h1>
+    <br>
     <ul>
       <router-link id="ssl-title" to="tools/SwatSPEED" class="button is-small is-dark is-fullwidth">
         <span class="icon is-large has-text-info">
-          <i id="itcolor" class="fas fa-stopwatch"></i>
+          <i id="itcolor" class="fas fa-anchor"></i>
         </span>
         <span><b>SPEED</b> CHECK</span>
       </router-link>
-      <li><a href="https://www.godaddy.com/help/resource-limits-12001?" target="_blank">Hosting resource limits</a></li>
-      <li><a href="https://www.ecenica.com/support/answer/fix-high-cpu-load-wordpress/" target="_blank">Wordpress high resource troubleshooting</a></li>
+      <a id="ssl-title" href="https://www.godaddy.com/help/resource-limits-12001?" target="_blank" class="button is-small is-dark is-fullwidth">
+        <span class="icon is-large has-text-info">
+          <i id="itcolor" class="fas fa-anchor"></i>
+        </span>
+        <span><b>RESOURCE</b> CHECK</span>
+      </a>
+      <a id="ssl-title" href="https://www.godaddy.com/help/resource-limits-12001?" target="_blank" class="button is-small is-dark is-fullwidth">
+        <span class="icon is-large has-text-info">
+          <i id="itcolor" class="fas fa-anchor"></i>
+        </span>
+        <span><b>WORDPRESS</b> RESOURCE TROUBLESHOOTING</span>
+      </a>
+
 
 
     </ul>

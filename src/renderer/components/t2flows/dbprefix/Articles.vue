@@ -1,9 +1,19 @@
 <template>
   <div>
-    <h1 class="title">Resources</h1>
+    <br>
     <ul>
-      <li><a href="https://www.godaddy.com/help/change-the-table-prefixes-27399?" target="_blank">Change Table Prefixes in DB</a></li>
-      <li><a href="https://www.webnots.com/how-to-search-and-replace-words-in-wordpress-mysql-database/" target="_blank">Wordpress Find and Replace</a></li>
+      <a id="ssl-title" href="https://www.godaddy.com/help/change-the-table-prefixes-27399?" target="_blank" class="button is-small is-dark is-fullwidth">
+        <span class="icon is-large has-text-info">
+          <i id="itcolor" class="fas fa-database"></i>
+        </span>
+        <span><b>CHANGE</b> DB PREFIX</span>
+      </a>
+      <a id="ssl-title" href="https://www.webnots.com/how-to-search-and-replace-words-in-wordpress-mysql-database/" target="_blank" class="button is-small is-dark is-fullwidth">
+        <span class="icon is-large has-text-info">
+          <i id="itcolor" class="fas fa-database"></i>
+        </span>
+        <span><b>WORDFPRESS</b> FIND AND REPPLACE</span>
+      </a>
 
     </ul>
   </div>
