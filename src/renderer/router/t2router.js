@@ -45,12 +45,21 @@ export default [
 {
   path: '/t2flows/mwprestore/index',
   name: 'T2_mwpRestore',
+<<<<<<< HEAD
+
+=======
+>>>>>>> 53864300f256b3979151b20eaf0ed37c1689e1b4
   component: T2_mwpRestore
 },
 {
   path: '/t2flows/dbprefix/index',
   name: 'T2_mwpDbPrefix',
   component: T2_mwpDbPrefix
+<<<<<<< HEAD
+
+  // component: T2_mwpRestore
+=======
+>>>>>>> 53864300f256b3979151b20eaf0ed37c1689e1b4
 },
 {
   path: '/t2flows/esmigration/index',
