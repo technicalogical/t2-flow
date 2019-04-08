@@ -399,7 +399,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/ftp/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTftp">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTftp"><p><b>FTP</b> Issue</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+               FTP connection issues
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <a href="https://www.godaddy.com/help/godaddy-email-marketing" target="_blank" class="button is-dark is-small">
@@ -648,7 +660,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/server/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTserver">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTserver"><p><b>VPS/Ded</b> Issues</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Issues with VPS/Ded
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/howto/uptime/Uptime" class="button is-dark is-small">
@@ -662,7 +686,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/ssh/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTssh">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTssh"><p><b>SSH</b> Issues</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Issues connecting to ssh
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/slow/Slow" class="button is-dark is-small">
@@ -1574,7 +1610,40 @@ export default {
         .catch(error => { console.log("Axios Post Application Error"); })
 
     },
+    handleTTssh: function(){
 
+      let data = {flowname: 't2-ssh', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+    handleTTserver: function(){
+
+      let data = {flowname: 't2-server', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
+
+    handleTTftp: function(){
+
+      let data = {flowname: 't2-ftp', toolname: "t2-tool"};
+
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+
+        .then(response => { console.log('response: ' + response.data); })
+
+        .catch(error => { console.log("Axios Post Application Error"); })
+
+    },
 
 // Index key word filtering
 

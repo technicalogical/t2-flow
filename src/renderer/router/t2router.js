@@ -8,7 +8,9 @@ import T2_mwpRestore from '@/components/t2flows/mwprestore/index'
 import T2_mwpDbPrefix from '@/components/t2flows/dbprefix/index'
 import T2_esmigration from '@/components/t2flows/esmigration/index'
 import T2_esrestore from '@/components/t2flows/esrestore/index'
-
+import T2_ssh from '@/components/t2flows/ssh/index'
+import T2_server from '@/components/t2flows/server/index'
+import T2_ftp from '@/components/t2flows/ftp/index'
 export default [
 
 
@@ -45,21 +47,12 @@ export default [
 {
   path: '/t2flows/mwprestore/index',
   name: 'T2_mwpRestore',
-<<<<<<< HEAD
-
-=======
->>>>>>> 53864300f256b3979151b20eaf0ed37c1689e1b4
   component: T2_mwpRestore
 },
 {
   path: '/t2flows/dbprefix/index',
   name: 'T2_mwpDbPrefix',
   component: T2_mwpDbPrefix
-<<<<<<< HEAD
-
-  // component: T2_mwpRestore
-=======
->>>>>>> 53864300f256b3979151b20eaf0ed37c1689e1b4
 },
 {
   path: '/t2flows/esmigration/index',
@@ -70,6 +63,20 @@ export default [
   path: '/t2flows/esrestore/index',
   name: 'T2_esrestore',
   component: T2_esrestore
-
+},
+{
+path: '/t2flows/ssh/index',
+name: 'T2_ssh',
+component: T2_ssh
+},
+{
+path: '/t2flows/server/index',
+name: 'T2_server',
+component: T2_server
+},
+{
+path: '/t2flows/ftp/index',
+name: 'T2_ftp',
+component: T2_ftp
 },
 ]

@@ -5,7 +5,7 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>Form Mail</b>error</p>
+        <p><b>SSH</b> connection issues</p>
       </div>
     <!-- END - Flow Title banner -->
 
@@ -22,7 +22,7 @@
     <!-- Spacing for Format-->
     <br>
 
-    <!-- BEGIN Form Issue flow section -->
+    <!-- BEGIN 403 Error flow section -->
     <div class="content" id="flow">
 
       <div v-if="navigationIsChecklist">
@@ -31,8 +31,10 @@
       <div v-if="navigationIsArticles">
         <Articles></Articles>
       </div>
-        <!-- Spacing for Format-->
-        <br>
+
+    <!-- Spacing for Format-->
+    <br>
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
           <router-link to="/FLowIndex" class="button is-small is-info">

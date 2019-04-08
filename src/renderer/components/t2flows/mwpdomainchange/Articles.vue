@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">The Articles</h1>
+    <br>
     <ul>
       <router-link id="ssl-title" to="tools/SwatDNS" class="button is-small is-dark is-fullwidth">
         <span class="icon is-large has-text-info">
@@ -14,7 +14,7 @@
         </span>
         <span><b>SSL</b> LOOKUP</span>
       </router-link>
-    
+
 
 
     </ul>
