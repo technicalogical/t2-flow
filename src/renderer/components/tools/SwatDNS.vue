@@ -45,7 +45,7 @@
           </div>
         </div>
         <!-- END Swat SSL input section -->
-    
+
         <!-- BEGIN SSL Readout section -->
         <div v-if="dnsSubmitted" id="dns-output-area" class="content">
 
@@ -96,7 +96,7 @@
               </li>
             </ul>
           </div>
-          
+
         </div>
         <!-- END SSL Readout section -->
 
@@ -153,7 +153,7 @@ export default {
       var cleanedDnsUrl = this.cleanUrl(this.dnsDomainName);
       let apiDnsPrefix = 'https://test.testmyssl.xyz/api/swat-flow/dnstool/';
       axios.get(apiDnsPrefix + cleanedDnsUrl)
-      .then(response => {  
+      .then(response => {
         this.aRecords = response.data.a;
         this.mxRecords = response.data.mx;
         this.txtRecords = response.data.txt;
