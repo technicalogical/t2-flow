@@ -981,6 +981,19 @@
               </span>
             </div>
           </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/mailissues/cpanelemail/index" class="button is-dark is-small">
+                <span class="icon has-text-success" v-on:click="">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTcpanelemail"><b>Cpanel</b> Email</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Handling Cpanel email issues
+              </span>
+            </div>
+          </li>
         </ul>
       </div>
       <!-- End Flow Index -->

@@ -25,7 +25,7 @@ import T2_sucuri from '@/components/t2flows/sucuri/index'
 import T2_backups from '@/components/t2flows/sucuri/backups/index'
 import T2_firewall from '@/components/t2flows/sucuri/firewall/index'
 import T2_mailissues from '@/components/t2flows/mailissues/index'
-
+import T2_cpanelemail from '@/components/t2flows/mailissues/cpanelemail/index'
 
 export default [
 {
@@ -163,5 +163,10 @@ component: T2_sslerrors
   path: '/t2flows/mailissues/index',
   name: 'T2_mailissues',
   component: T2_mailissues
+},
+{
+  path: '/t2flows/mailissues/cpanelemail/index',
+  name: 'T2_cpanelemail',
+  component: T2_cpanelemail
 },
 ]
