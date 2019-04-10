@@ -5,7 +5,7 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>Net</b> Vios</p>
+        <p><b>Mail</b> Issues</p>
       </div>
 
     <br>
