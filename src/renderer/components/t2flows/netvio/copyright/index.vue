@@ -5,7 +5,7 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>500</b> Errors</p>
+        <p><b>Copyright/Trademark</b> Net Vios</p>
       </div>
     <!-- END - Flow Title banner -->
 
@@ -19,6 +19,7 @@
       <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
     </div>
 
+    <!-- BEGIN Netvio Copyright flow section -->
     <div class="content" id="flow">
 
       <div v-if="navigationIsChecklist">
@@ -27,17 +28,19 @@
       <div v-if="navigationIsArticles">
         <Articles></Articles>
       </div>
-      <br>
+
+    <!-- Spacing for Format-->
+    <br>
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/FLowIndex" class="button is-small is-info">
+          <router-link to="/t2flows/netvio/index" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
             <span>BACK</span>
           </router-link>
         </p>
-
         <!-- END - Back button -->
 
       <!-- <router-view/> -->
@@ -86,5 +89,4 @@ export default {
   .list-item{
     padding: 4px;
   }
-
 </style>

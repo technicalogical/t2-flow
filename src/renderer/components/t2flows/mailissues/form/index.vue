@@ -5,7 +5,7 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>500</b> Errors</p>
+        <p><b>Form Mail</b>error</p>
       </div>
     <!-- END - Flow Title banner -->
 
@@ -13,12 +13,17 @@
       <p v-if="navTo === 'checklist'" style="margin-top: 10px;">Checklist</p>
       <p v-else-if="navTo === 'articles'" style="margin-top: 10px;">Resources</p>
     </div>
+
     <div id="navigationMenu" style="margin-right: 20px;" class="t2link is-pulled-right result-navigation">
       <a v-on:click="navToChecklist" v-bind:class="navigationIsChecklist ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Check Lists</small></a>
       <b>|</b>
       <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
     </div>
 
+    <!-- Spacing for Format-->
+    <br>
+
+    <!-- BEGIN Form Issue flow section -->
     <div class="content" id="flow">
 
       <div v-if="navigationIsChecklist">
@@ -27,17 +32,17 @@
       <div v-if="navigationIsArticles">
         <Articles></Articles>
       </div>
-      <br>
+        <!-- Spacing for Format-->
+        <br>
         <!-- BEGIN - Back button -->
         <p class="buttons">
-          <router-link to="/FLowIndex" class="button is-small is-info">
+          <router-link to="/t2flows/mailissues/index" class="button is-small is-info">
             <span class="icon has-text-light">
               <i class="fas fa-chevron-left"></i>
             </span>
             <span>BACK</span>
           </router-link>
         </p>
-
         <!-- END - Back button -->
 
       <!-- <router-view/> -->
@@ -86,5 +91,4 @@ export default {
   .list-item{
     padding: 4px;
   }
-
 </style>

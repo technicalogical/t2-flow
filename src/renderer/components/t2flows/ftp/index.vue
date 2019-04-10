@@ -19,10 +19,7 @@
       <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
     </div>
 
-    <!-- Spacing for Format-->
-    <br>
-
-    <!-- BEGIN 403 Error flow section -->
+    <!-- BEGIN FTP Error flow section -->
     <div class="content" id="flow">
 
       <div v-if="navigationIsChecklist">
