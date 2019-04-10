@@ -19,11 +19,11 @@
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Debug and reapir if simple</label>
+      <label v-bind:class="{strike: checked_05}" for="checkbox">Debug and reapir if simple</label>
     </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Reopen ticket if in timeframe</label>
+      <label v-bind:class="{strike: checked_06}" for="checkbox">Reopen ticket if in timeframe</label>
     </li>
   </ul>
   <div v-if="checked">
