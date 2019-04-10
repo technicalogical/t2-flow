@@ -115,7 +115,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/fourfour/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTFourFour">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTFourFour"><p><b>404</b> Error</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Website error file not found
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingInbound'">
             <div class="buttons has-addons">
               <router-link to="/flow/ib/ibFourFour" class="button is-dark is-small">
@@ -277,6 +289,19 @@
               </span>
             </div>
           </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/cronjob/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTcron">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTcron"><p><b>Cron Job</b> Test</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Cron Job Test Script
+              </span>
+            </div>
+          </li>
 
           <li v-if="showing === 'showingInbound'">
             <div class="buttons has-addons">
@@ -288,6 +313,19 @@
               </router-link>
               <span id="idinfo" class="button is-static is-small is-expanded">
                 Checking global DNS to match server
+              </span>
+            </div>
+          </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/dnscheck/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTDns">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTDns"><p><b>DNS</b> Check</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                DNS Check
               </span>
             </div>
           </li>
@@ -320,19 +358,6 @@
             </div>
           </li>
 
-          <li v-if="showing === 'showingT2'">
-            <div class="buttons has-addons">
-              <router-link to="/t2flows/form/index" class="button is-dark is-small has-addons">
-                <span class="icon has-text-success" v-on:click="handleTTFormMail">
-                  <img src="../assets/icons/png/gld16.png"/>
-                </span>
-                <span v-on:click="handleTTFormMail"><p><b>Form Mail</b> Error</p></span>
-              </router-link>
-              <span id="idinfo" class="button is-static is-small is-expanded">
-                Form mail errors...
-              </span>
-            </div>
-          </li>
           <li v-if="showing === 'showingT2'">
             <div class="buttons has-addons">
               <router-link to="/t2flows/mwpdomainchange/index" class="button is-dark is-small has-addons">
@@ -385,7 +410,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/mailissues/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTmailissues">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTmailissues"><p><b>Form mail/Email</b> Issues</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+               Issues with form mail and email
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/Ftp" class="button is-dark is-small">
@@ -740,7 +777,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/sslerrors/index" class="button is-dark is-small has-addons">
+                <span class="icon has-text-success" v-on:click="handleTTsslerrors">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTsslerrors"><p><b>SSL</b> Errors</p></span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Secure connection issues
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/ssl/howto/Ssl" class="button is-dark is-small">
@@ -768,7 +817,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/sucuri/index" class="button is-dark is-small">
+                <span class="icon has-text-success" v-on:click="handleTTsucuri">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTsucuri"><b>Sucuri</b> Products</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Troubleshooting Sucuri products
+              </span>
+            </div>
+          </li>
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
               <router-link to="/flow/pfc/Transfer" class="button is-dark is-small" title="Transfer Preflight Checklist">
@@ -852,6 +913,19 @@
               </span>
             </div>
           </li>
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/wpps/index" class="button is-dark is-small">
+                <span class="icon has-text-success" v-on:click="handleTTWpps">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTWpps"><b>WPPS</b> Issues</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                WPPS Ticket Issues
+              </span>
+            </div>
+          </li>
 
           <li v-if="showing === 'showingT1'">
             <div class="buttons has-addons">
@@ -894,7 +968,19 @@
               </span>
             </div>
           </li>
-
+          <li v-if="showing === 'showingT2'">
+            <div class="buttons has-addons">
+              <router-link to="/t2flows/netvio/index" class="button is-dark is-small">
+                <span class="icon has-text-success" v-on:click="handleTTnetvio">
+                  <img src="../assets/icons/png/gld16.png"/>
+                </span>
+                <span v-on:click="handleTTnetvio"><b>Net</b> Vios</span>
+              </router-link>
+              <span id="idinfo" class="button is-static is-small is-expanded">
+                Handling network violations
+              </span>
+            </div>
+          </li>
         </ul>
       </div>
       <!-- End Flow Index -->
@@ -945,18 +1031,6 @@ export default {
     handleFourThree: function(){
 
       let data = {flowname: '403-error', toolname: "t2-tool"};
-
-      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
-
-        .then(response => { console.log('response: ' + response.data); })
-
-        .catch(error => { console.log("Axios Post Application Error"); })
-
-    },
-
-    handleTTFormMail: function(){
-
-      let data = {flowname: 't2-form-mail', toolname: "t2-tool"};
 
       axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
 
@@ -1623,7 +1697,53 @@ export default {
         .then(response => { console.log('response: ' + response.data); })
         .catch(error => { console.log("Axios Post Application Error"); })
     },
+    handleTTnetvio:function() {
+      let data = {flowname: 't2-netvio', toolname: "t2-tool"};
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+        .then(response => { console.log('response: ' + response.data); })
+        .catch(error => { console.log("Axios Post Application Error"); })
+    },
+    handleTTsslerrors:function() {
+      let data = {flowname: 't2-sslerrors', toolname: "t2-tool"};
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+        .then(response => { console.log('response: ' + response.data); })
+        .catch(error => { console.log("Axios Post Application Error"); })
+    },
 
+    handleTTsucuri:function() {
+      let data = {flowname: 't2-sucuri', toolname: "t2-tool"};
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+        .then(response => { console.log('response: ' + response.data); })
+        .catch(error => { console.log("Axios Post Application Error"); })
+    },
+
+    handleWpps: function(){
+      let data = {flowname: 'hst-wpps', toolname: "t2-tool"};
+      axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+        .then(response => { console.log('response: ' + response.data); })
+        .catch(error => { console.log("Axios Post Application Error"); })
+    },
+
+        handleFourFour: function(){
+          let data = {flowname: '404-error', toolname: "t2-tool"};
+          axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+            .then(response => { console.log('response: ' + response.data); })
+            .catch(error => { console.log("Axios Post Application Error"); })
+        },
+
+        handleTTcron: function(){
+          let data = {flowname: 't2-cron', toolname: "t2-tool"};
+          axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+            .then(response => { console.log('response: ' + response.data); })
+            .catch(error => { console.log("Axios Post Application Error"); })
+        },
+
+      handleTTDns: function(){
+        let data = {flowname: 't2-dns-check', toolname: "t2-tool"};
+        axios.post('https://test.testmyssl.xyz/api/swat-flow/newuse', data)
+        .then(response => { console.log('response: ' + response.data); })
+        .catch(error => { console.log("Axios Post Application Error"); })
+    },
 // Index key word filtering
 
     filterIndex: function () {

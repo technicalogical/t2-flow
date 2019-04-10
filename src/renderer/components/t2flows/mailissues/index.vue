@@ -5,29 +5,38 @@
 
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p><b>500</b> Errors</p>
+        <p><b>Net</b> Vios</p>
       </div>
-    <!-- END - Flow Title banner -->
 
-    <div class="content has-text-centered is-medium">
-      <p v-if="navTo === 'checklist'" style="margin-top: 10px;">Checklist</p>
-      <p v-else-if="navTo === 'articles'" style="margin-top: 10px;">Resources</p>
-    </div>
-    <div id="navigationMenu" style="margin-right: 20px;" class="t2link is-pulled-right result-navigation">
-      <a v-on:click="navToChecklist" v-bind:class="navigationIsChecklist ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-right: 4px;"><small>Check Lists</small></a>
-      <b>|</b>
-      <a v-on:click="navToArticles" v-bind:class="navigationIsArticles ? 'active-results-link' : 'inactive-results-link'" class="speed-nav" style="margin-left: 4px; margin-right: 4px;"><small>Resources</small></a>
-    </div>
+    <br>
+
 
     <div class="content" id="flow">
 
-      <div v-if="navigationIsChecklist">
-        <Checklist></Checklist>
-      </div>
-      <div v-if="navigationIsArticles">
-        <Articles></Articles>
-      </div>
+
       <br>
+      <ul>
+        <router-link to="/t2flows/mailissues/form/index"  class="button is-small is-dark is-fullwidth t2widebutton">
+          <span class="icon is-large has-text-info">
+            <i id="itcolor" class="fas fa-envelope"></i>
+          </span>
+          <span><b></b>Form Mail</span>
+        </router-link>
+        <router-link to="/t2flows/mailissues/cpanelemail/index"  class="button is-small is-dark is-fullwidth t2widebutton">
+          <span class="icon is-large has-text-info">
+            <i id="itcolor" class="fas fa-envelope"></i>
+          </span>
+          <span><b></b>Cpanel Email</span>
+        </router-link>
+
+
+      </ul>
+
+
+
+    <!-- Spacing for Format-->
+    <br>
+
         <!-- BEGIN - Back button -->
         <p class="buttons">
           <router-link to="/FLowIndex" class="button is-small is-info">
@@ -37,7 +46,6 @@
             <span>BACK</span>
           </router-link>
         </p>
-
         <!-- END - Back button -->
 
       <!-- <router-view/> -->
@@ -86,5 +94,4 @@ export default {
   .list-item{
     padding: 4px;
   }
-
 </style>

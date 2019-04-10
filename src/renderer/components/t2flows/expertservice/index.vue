@@ -16,7 +16,7 @@
 
       <br>
       <ul>
-        <router-link to="/t2flows/esmigration/index"  class="button is-small is-dark is-fullwidth t2widebutton">
+        <router-link to="/t2flows/expertservice/esmigration/index"  class="button is-small is-dark is-fullwidth t2widebutton">
           <span class="icon is-large has-text-info">
             <i id="itcolor" class="fas fa-bug"></i>
           </span>
@@ -25,7 +25,7 @@
 
 
 
-        <router-link to="/t2flows/esrestore/index"  class="button is-small is-dark is-fullwidth t2widebutton">
+        <router-link to="/t2flows/expertservice/esrestore/index"  class="button is-small is-dark is-fullwidth t2widebutton">
           <span class="icon is-large has-text-info">
             <i id="itcolor" class="fas fa-exclamation-triangle"></i>
           </span>
