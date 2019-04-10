@@ -47,7 +47,7 @@
         </router-link>
       </p>
       <!-- END - Back button -->
-      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+      <router-link to="/FlowIndex" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
 
       <router-view/>

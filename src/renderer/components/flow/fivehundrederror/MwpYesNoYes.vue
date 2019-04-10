@@ -1,21 +1,21 @@
 <template>
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>500 Error</b> / W.S.O.D. (White Screen of Death)</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN 500 Error flow section -->
-    <div class="content has-text-centered" id="flow">    
+    <div class="content has-text-centered" id="flow">
       <div class="notification is-danger">
         <b>STOP HERE</b>.
-      </div> 
+      </div>
       <article class="message is-small is-success">
         <div class="message-body">
-          Sell <b>WSS (Website Security)</b>. Your customer has an issue with their configuration file. 
+          Sell <b>WSS (Website Security)</b>. Your customer has an issue with their configuration file.
         </div>
       </article>
       <article class="message is-small is-success">
@@ -35,14 +35,14 @@
       </p>
       <!-- END - Back button -->
 
-      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+      <router-link to="/FlowIndex" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END 500 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

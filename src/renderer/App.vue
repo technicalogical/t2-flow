@@ -29,7 +29,7 @@
               <i class="mdi mdi-home"></i>
             </span>
           </router-link>
-          <router-link id="n-button" to="/SwatFlow" title="SWAT Flow" class="button is-dark" draggable="false">
+          <router-link id="n-button" to="/FlowIndex" title="SWAT Flow" class="button is-dark" draggable="false">
             <span class="icon is-small">
               <i class="mdi mdi-alpha-f mdi-24px"></i>
             </span>

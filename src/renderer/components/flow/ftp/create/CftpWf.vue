@@ -1,17 +1,17 @@
 <template>
- 
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>FTP</b> (File Transfer Protocol) Support</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN - flow section -->
-    <div class="content has-text-centered" id="flow">    
+    <div class="content has-text-centered" id="flow">
       <div class="notification is-info">
         <strong>Create 4gh FTP User</strong>.
       </div>
@@ -24,7 +24,7 @@
         <div class="message-body">
           <p>This will trigger an Orion event. Advise the customer of the expected time frame for completion of this process.</p>
         </div>
-      </article> 
+      </article>
       <a href="https://www.godaddy.com/help/add-ftp-users-in-web-and-classic-hosting-1236?" target="_blank" class="tags has-addons">
         <span class="tag is-success"><i class="mdi mdi-library-books mdi-18px"></i></span>
         <span class="tag is-dark">GoDaddy HELP article for 4gh FTP</span>
@@ -40,14 +40,14 @@
       </p>
       <!-- END - Back button -->
 
-      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+      <router-link to="/FlowIndex" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END - flow section -->
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

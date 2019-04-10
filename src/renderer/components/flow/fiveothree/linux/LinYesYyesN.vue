@@ -1,15 +1,15 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>503</b> Server Response Error</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
       <div class="content is-medium">
@@ -21,7 +21,7 @@
               <i class="fas fa-check-circle"></i>
             </span>
             <span><b>Yes</b>. The resources are still spiking.</span>
-          </router-link>  
+          </router-link>
           <router-link to="/flow/fiveothree/linux/LinYesYyesNn" class="button is-light">
             <span class="icon has-text-danger">
               <i class="fas fa-exclamation-circle"></i>
@@ -45,12 +45,12 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 

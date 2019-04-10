@@ -20,7 +20,7 @@
           The customer has corrupt permalinks. Advise them to log into their Wordpress Dashboard and "Refresh" permalinks.
         </div>
       </article>
-      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+      <router-link to="/FlowIndex" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END 404 Error flow section -->

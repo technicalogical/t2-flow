@@ -1,15 +1,15 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
-    
+
     <!-- BEGIN - Flow Title banner -->
       <div id="flow-start-message" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>503</b> Server Response Error</p>
-      </div> 
+      </div>
     <!-- END - Flow Title banner -->
 
-    
+
     <!-- BEGIN 503 Error flow section -->
     <div class="content has-text-centered" id="flow">
 
@@ -40,14 +40,14 @@
       </p>
       <!-- END - Back button -->
 
-      <router-link to="/SwatFlow" class="button is-dark is-fullwidth">Return to start</router-link>
+      <router-link to="/FlowIndex" class="button is-dark is-fullwidth">Return to start</router-link>
       <router-view/>
     </div>
     <!-- END 503 Error flow section -->
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
