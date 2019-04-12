@@ -1,5 +1,14 @@
 <template>
   <div>
+    <div style="height: 50vh !important;
+                overflow: scroll;
+                -ms-overflow-style: scrollbar;
+                -webkit-app-region: no-drag;
+                width: 100%;
+                margin-left: -12px;
+                border-left: 6px solid #A37A00;
+                ">
+
   <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
@@ -39,6 +48,7 @@
 	</div>
 
   </ul>
+</div>
   <div v-if="checked">
     Clicked
   </div>
@@ -55,7 +65,6 @@ export default{
       checked_04: false,
     }
   }
-  // toggle_1: false,
 }
 
 </script>

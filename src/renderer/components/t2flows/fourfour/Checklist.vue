@@ -1,10 +1,18 @@
 <template>
   <div>
+    <div style="height: 50vh !important;
+                overflow: scroll;
+                -ms-overflow-style: scrollbar;
+                -webkit-app-region: no-drag;
+                width: 100%;
+                margin-left: -12px;
+                border-left: 6px solid #A37A00;
+                ">
     <br>
   <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Check <b>DNS</b></label>
+      <label v-bind:class="{strike: checked_01}" for="checkbox">Check DNS</label>
     </li>
 
     <div class="box">
@@ -13,7 +21,7 @@
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Disable <b>Control Files</b></label>
+      <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Control Files</label>
     </li>
 
     <div class="box">
@@ -22,7 +30,7 @@
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Upload <b>Test Script</b></label>
+      <label v-bind:class="{strike: checked_03}" for="checkbox">Upload Test Script</label>
     </li>
 
     <div class="box">
@@ -31,7 +39,7 @@
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Check <b>Domain</b> is Pointed to the Right <b>File Structure</b></label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Check Domain is Pointed to the Right File Structure</label>
     </li>
 
     <div class="box">
@@ -40,7 +48,7 @@
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Check <b>Permissions</b></label>
+      <label v-bind:class="{strike: checked_05}" for="checkbox">Check Permissions</label>
     </li>
 
     <div class="box">
@@ -56,9 +64,10 @@
     </div>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_07">
-      <label v-bind:class="{strike: checked_07}" for="checkbox">If none above works, <b>HTL</b></label>
+      <label v-bind:class="{strike: checked_07}" for="checkbox">If none above works, HTL</label>
     </li>
   </ul>
+</div>
   <div v-if="checked">
     Clicked
   </div>
@@ -76,9 +85,9 @@ export default{
       checked_05: false,
       checked_06: false,
       checked_07: false,
+
     }
   }
-  // toggle_1: false,
 }
 
 </script>
