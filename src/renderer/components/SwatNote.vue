@@ -1,5 +1,5 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <form id="note-deck">
 
@@ -22,17 +22,17 @@
       <div id="note-sitch" class="control">
         <textarea id="sitch-text" class="textarea is-small has-fixed-size" placeholder="N/A" rows="5" cols="30" v-model="sos" wrap="hard"></textarea>
       </div>
-      
+
     </div>
     <!-- END Swat Note input section -->
-    
+
     <!--  BEGIN Copy paste notes section -->
     <span id="note-copy-title" class="button is-dark has-text-light is-small is-fullwidth"><b>CRM Call Notes</b></span>
-    <div id="callnotes" class="content is-info getme" wrap="hard">  
+    <div id="callnotes" class="content is-info getme" wrap="hard">
       <p>#SWAT T2</p>
       <p>Customer Issue: {{ issue }}</p>
-      <p>Resolution: {{ sitch }}</p> 
-      <p>Anything done out of SOS: {{ sos }}</p> 
+      <p>Resolution: {{ sitch }}</p>
+      <p>Anything done out of SOS: {{ sos }}</p>
     </div>
     <!-- END Copy paste notes section -->
 
@@ -56,7 +56,7 @@
 
   </form>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

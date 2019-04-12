@@ -1,5 +1,5 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="note-deck">
 
@@ -53,7 +53,7 @@
             </p>
           </div>
         </div>
-      </div> 
+      </div>
 
       <!-- BEGIN KI link section -->
       <div id="kilink" class="content">
@@ -67,21 +67,23 @@
       <!-- END KI link section -->
     </div>
     <!-- END KI Note input section -->
-    
+
     <!--  BEGIN Copy paste notes section -->
     <span id="ki-copy-title" class="button is-dark has-text-light is-small is-fullwidth"><b>KI Call Notes</b></span>
-    <div id="kinotes" class="content is-info getme" wrap="hard">  
+    <div id="kinotes" class="content is-info getme" wrap="hard">
       <p>#KI</p>
       <p>Incident ID: {{ inc }}</p>
       <p>Domain: {{ kidomain }}</p>
-      <p>Customer Number: {{ cusnum }}</p> 
+      <p>Customer Number: {{ cusnum }}</p>
       <p>Hosting GUID: {{ guid }}</p>
     </div>
     <!-- END Copy paste notes section -->
 
     <div id="copy-clear" class="buttons">
       <router-link id="noteswap" to="/SwatNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
-        <b>T1</b>
+        <span class="icon is-medium has-text-light">
+          <i class="fas fa-sticky-note"></i>
+        </span>
       </router-link>
       <button id="copyButton"  class="button is-small is-link btn" data-clipboard-target="#kinotes" title="Click to copy your notes to clipboard">
         <span class="icon is-medium has-text-light">
@@ -99,7 +101,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

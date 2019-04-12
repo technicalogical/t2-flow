@@ -71,6 +71,15 @@
           </a>
         </ul>
       </nav>
+
+
+
+
+
+
+
+
+
       <!-- BEGIN - Prod Tool options -->
       <div id="gd-menu-alt" class="dropdown is-small">
         <div class="dropdown-trigger">
@@ -170,7 +179,7 @@
   <router-view/>
   <!-- END - Vue router insertion point -->
 
-  <center>{{ theuser }}</center>
+
 </div>
 <!-- END Swat Flow Tool application deck -->
 

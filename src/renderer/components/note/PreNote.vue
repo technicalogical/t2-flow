@@ -1,5 +1,5 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="note-deck">
 
@@ -41,24 +41,24 @@
             <textarea id="pre-text" class="textarea is-small has-fixed-size" placeholder="Customer Situation" rows="5" cols="30" v-model="pquest" wrap="hard"></textarea>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
     <!-- END KI Note input section -->
-    
+
     <!--  BEGIN Copy paste notes section -->
     <span id="note-copy-title" class="button is-link has-text-light is-small is-fullwidth"><b>KI Call Notes</b></span>
-    <div id="prenotes" class="content is-info getme" wrap="hard">  
+    <div id="prenotes" class="content is-info getme" wrap="hard">
       <p>Domain: {{ predom }}</p>
-      <p>Hosting: {{ phost }}</p> 
+      <p>Hosting: {{ phost }}</p>
       <p>What I've tried: {{ psitch }}</p>
       <p>My question: {{ pquest }}</p>
     </div>
     <!-- END Copy paste notes section -->
 
     <div id="copy-clear" class="buttons">
-      <router-link id="noteswap" to="/note/KiNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
+      <!-- <router-link id="noteswap" to="/note/KiNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
         <b>KI</b>
-      </router-link>
+      </router-link> -->
       <router-link id="noteswap" to="/SwatNote" title="Switch to Tier 1 template" class="button is-small is-dark has-text-light">
         <b>T1</b>
       </router-link>
@@ -78,7 +78,7 @@
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>

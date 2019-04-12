@@ -1,5 +1,5 @@
 <template>
-  
+
   <!-- BEGIN - Primary application deck -->
   <div id="swat-deck">
 
@@ -66,16 +66,23 @@
             </span>
             <span><b>SUCURI</b> CHECK</span>
           </router-link>
+          <br>
+          <router-link id="ssl-title" to="tools/SwatSUCURI" class="button is-small is-dark is-fullwidth">
+            <span class="icon is-large has-text-info">
+              <i id="itcolor" class="fas fa-exclamation-triangle"></i>
+            </span>
+            <span><b>KNOWN</b> ISSUES</span>
+          </router-link>
         </p>
       </div>
       <!-- END Start button -->
-      
+
     </div>
     <!-- END Swat DNS section -->
 
   </div>
   <!-- END - Primary application deck -->
-    
+
 </template>
 
 <script>
@@ -91,7 +98,7 @@ export default {
       expireDate: '',
       issuer: '',
       serialNumber: '',
-      sans: '' 
+      sans: ''
     }
   },
   methods: {

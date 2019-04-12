@@ -1,6 +1,6 @@
 {
   "name": "swat-flow-tool",
-  "version": "1.8.23",
+  "version": "1.0.0",
   "author": "macegd",
   "description": "A Flow Tool Project",
   "license": "MIT",
@@ -61,6 +61,7 @@
     "electron-contextmenu-middleware": "^1.0.3",
     "electron-input-menu": "^2.1.0",
     "jquery": "^3.3.1",
+    "typescript": "^3.4.3",
     "vue": "^2.5.22",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.2",
@@ -95,6 +96,7 @@
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
     "style-loader": "^0.21.0",
+    "typescript": "^3.4.3",
     "url-loader": "^1.0.1",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^15.6.2",
