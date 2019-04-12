@@ -7,9 +7,7 @@
     </li>
 
       <div class="box">
-
       <p style="font-size: 10px">Some common control files are <b>php.ini</b>, <b>web.config</b>, <b>.htaccess</b>. They can be disabled by renaming or appending <b><i>.disabled</i></b> to the name. More info about ini files<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913"> here</a></p>
-
       </div>
 
     <li>
@@ -70,10 +68,10 @@ export default{
   list-style-type: none;
 }
 .box{
-  background-color: #ddd;
+  background-color: hsl(0, 0%, 96%);
   border-radius: 1px;
   padding: 5px 5px 5px 12px;
-  margin-bottom: 1px !important;
+  margin-bottom: 6px !important;
   -webkit-box-shadow: -0.6px 1px 5px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: -0.6px 1px 5px -2px rgba(0,0,0,0.75);
   box-shadow: -0.6px 1px 5px -2px rgba(0,0,0,0.75);
