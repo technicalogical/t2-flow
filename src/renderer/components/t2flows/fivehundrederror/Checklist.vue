@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div style="height: 50vh !important;
                 overflow: scroll;
                 -ms-overflow-style: scrollbar;
@@ -10,7 +11,6 @@
                 ">
 
   <ul class="no-style">
-  <br>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
       <label v-bind:class="{strike: checked_01}" for="checkbox">Check for Malware</label>

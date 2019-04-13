@@ -1,6 +1,5 @@
 <template>
   <div>
-    <br>
     <div style="height: 50vh !important;
                 overflow: scroll;
                 -ms-overflow-style: scrollbar;

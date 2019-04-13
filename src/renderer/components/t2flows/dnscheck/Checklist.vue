@@ -8,7 +8,6 @@
                 margin-left: -12px;
                 border-left: 6px solid #A37A00;
                 ">
-    <br>
 
   <ul class="no-style">
     <li>

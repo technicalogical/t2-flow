@@ -1,14 +1,6 @@
 <template>
   <div>
-    <div style="height: 50vh !important;
-                overflow: scroll;
-                -ms-overflow-style: scrollbar;
-                -webkit-app-region: no-drag;
-                width: 100%;
-                margin-left: -12px;
-                border-left: 6px solid #A37A00;
-                ">
-    <br>
+
     <div style="height: 50vh !important;
                 overflow: scroll;
                 -ms-overflow-style: scrollbar;
@@ -76,9 +68,7 @@
     </li>
   </ul>
 </div>
-  <div v-if="checked">
-    Clicked
-  </div>
+
 </div>
 </template>
 
