@@ -1,6 +1,14 @@
 <template>
   <div>
     <br>
+    <div style="height: 50vh !important;
+                overflow: scroll;
+                -ms-overflow-style: scrollbar;
+                -webkit-app-region: no-drag;
+                width: 100%;
+                margin-left: -12px;
+                border-left: 6px solid #A37A00;
+                ">
   <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
@@ -59,6 +67,7 @@
       <label v-bind:class="{strike: checked_07}" for="checkbox">If none above works, <b>HTL</b></label>
     </li>
   </ul>
+</div>
   <div v-if="checked">
     Clicked
   </div>
@@ -95,6 +104,7 @@ export default{
   border-radius: 1px;
   padding: 5px 5px 5px 12px;
   margin-bottom: 6px !important;
+  margin-left: -6px !important;
   -webkit-box-shadow: -0.6px 1px 5px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: -0.6px 1px 5px -2px rgba(0,0,0,0.75);
   box-shadow: -0.6px 1px 5px -2px rgba(0,0,0,0.75);
@@ -103,5 +113,6 @@ export default{
 .orange-link{
   color: #ff7900 !important;
 }
+
 
 </style>
