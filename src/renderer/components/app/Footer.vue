@@ -59,8 +59,8 @@
     <!-- Application version note -->
     <div id="app-vers">
       <div class="tags has-addons">
-        <span class="tag is-dark">Dev version 1.0.0</span>
-        <span id="itcolor" class="tag verse is-black has-text-weight-bold">(Yoda)</span>
+        <span class="tag is-dark">Tier 2 Flowtool 1.0.2</span>
+        <span id="itcolor" class="tag verse is-black has-text-weight-bold">(Ollie)</span>
       </div>
     </div>
 
@@ -219,7 +219,7 @@ footer {
   right: 0;
   margin: auto;
   height: 20px;
-  width: 133px; 
+  width: 133px;
   top: 15px;
   border: 0px;
 }
@@ -239,7 +239,7 @@ footer {
   left: 0;
   right: 0;
   margin: auto;
-  width: 196px;
+  width: 220px;
   bottom: 8px;
   height: 20px;;
   border: 0px;
@@ -250,7 +250,7 @@ footer {
   height: 18px;
   font-style: italic;
   letter-spacing: .1em;
-} 
+}
 
 #helper-one {
   position: absolute;

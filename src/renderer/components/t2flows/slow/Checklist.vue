@@ -41,15 +41,21 @@
       <label v-bind:class="{strike: checked_04}" for="checkbox">Resources</label>
     </li>
     <div class="box">
-    <p style="font-size: 10px">If Cpanel, check resource usage to make sure they are not being maxed out. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/resource-limits-12001"> here</a></p>
+    <p style="font-size: 10px">If the website is hosted in Cpanel, check resource usage in <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/check-your-accounts-resource-usage-19126">CPU and Concurrent Conection Usage</a>. Standard Shared hosting resource limits can be found <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/resource-limits-12001"> here</a>.
+    <br>You can select a time range to display a <span style="cursor: pointer;" class="orange-link" v-on:click="showGraph">graph</span>, which can help pinpoint the start of an issue</p>
     </div>
+    <div v-if="graphShow" id="graph">
+      <center><img style="width:70%;" src="./metrics.png"></center>
+    </div>
+
+
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_05">
       <label v-bind:class="{strike: checked_05}" for="checkbox">Malware Files</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Check common locations for malware such as config files, index files, randon named files, and control files<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913"> here</a></p>
+    <p style="font-size: 10px">While malware may be difficult to discover, there are tools like <a target="_blank" class="orange-link" href="https://sitecheck.sucuri.net/">Sucuri's Sitecheck</a> which can detect common front end infections. On the server some common hacks can be found in the .htaccess file. Here is a common <a target="_blank" class="orange-link" href="https://blog.sucuri.net/2011/05/understanding-htaccess-attacks-part-1.html">redirect hack</a> When in doubt recommend a cleanup service, and consider the possibility cross site contamination.</p>
     </div>
 
     <li>
@@ -58,8 +64,14 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Open shell conncetion and run top command to check active cpu usage</p>
+    <p style="font-size: 10px">Using an SSH connection, one can run the <b>top -c</b> command which will show all processes running in your cPanel acct. Most customers will likely only run PHP & MySQL processes. If you notice a process from a service like Python or Perl, it may be an indication of malware, especially if the CX is unaware of them.
+    If the output shows more than 10 php processes, like in the <span style="cursor: pointer;" class="orange-link" v-on:click="showSSL">example</span> it could indicate memory issues. If running multiple sites, the command <b>lsof</b> will indicate which files are currently open and running those processes</p>
+    <div style="margin-top: -7px;padding: 3px;" class="notification is-danger"><p style="font-size: 10px">Using SSH is very powerful & potentially dangerous, it's important to limit it's use in a CX account</p></div>
     </div>
+    <div v-if="sslShow" id="graph">
+      <center><img style="width:90%;" src="./ssh.png"></center>
+    </div>
+
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_07">
@@ -67,7 +79,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">If mwp flush cache, if they have a firewall flush cache in firewall. Try loading in private/incognito window. Kill php processes using agent tool kit if available. Toggle php versions to see if syntax errors. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/clear-your-cache-12444"> MWP cache flush</a>, <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/view-or-change-your-php-version-in-cpanel-hosting-16090"> Cpanel php version change</a>, <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/clear-cache-for-your-web-application-firewall-waf-27383"> Flush cache - firewall</a></p>
+    <p style="font-size: 10px">Currently, killing PHP processes can be done in the Agent toolkit. Individual Processes can also be killed in the command line. However, do not perform this from the command line for a customer.</a></p>
     </div>
 
   </ul>
@@ -89,8 +101,17 @@ export default{
       checked_05: false,
       checked_06: false,
       checked_07: false,
-
+      graphShow: false,
+      sslShow: false,
     }
+  },
+  methods:{
+    showGraph: function(){
+      this.graphShow = !this.graphShow;
+    },
+    showSSL: function(){
+      this.sslShow = !this.sslShow;
+    },
   }
 }
 
