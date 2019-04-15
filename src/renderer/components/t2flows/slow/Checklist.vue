@@ -16,8 +16,9 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">If working with Wordpress <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013">Enable debug</a> mode and check error logs looking for files, plugins, or themes that might be causing issues.</b> One can also <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/setup-php-error-logging-26423">enable PHP custom error</a> logging.</p>
+      <p style="font-size: 10px">If working with Wordpress <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013">Enable debug</a> mode and check error logs looking for files, plugins, or themes that might be causing issues.</b> One can also <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/setup-php-error-logging-26423">enable PHP custom error</a> logging.</p>
     </div>
+
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_02">
       <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Plugins/ Change theme</label>

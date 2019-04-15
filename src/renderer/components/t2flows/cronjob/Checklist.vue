@@ -9,7 +9,11 @@
                 border-left: 6px solid #A37A00;
                 ">
 
+
   <ul class="no-style">
+    <div style="margin-top: -7px;padding: 3px;" class="notification is-warning">
+      <p style="font-size: 10px">A Cron Job allows a web admin to schedule tasks. The Crontab task runs a script on the schedule defined by the user. <b>A common gotcha is failing to use the <i>absolute path</i> to the file in the Cron job</b></p>
+    </div>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
       <label v-bind:class="{strike: checked_01}" for="checkbox">Upload and <b>Follow Steps</b> for Test Script <b>cron_test.php</b></label>
