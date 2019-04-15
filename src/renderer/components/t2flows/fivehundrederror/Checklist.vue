@@ -17,7 +17,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Check common locations for malware such as <b>config files</b>, <b>index files</b>, <b>randon named files</b>, and <b>control files</b><a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913"> here</a></p>
+    <p style="font-size: 10px">While malware may be difficult to discover, there are tools like <a target="_blank" class="orange-link" href="https://sitecheck.sucuri.net/">Sucuri's Sitecheck</a> which can detect common front end infections. On the server some common hacks can be found in the .htaccess file. Here is a common <a target="_blank" class="orange-link" href="https://blog.sucuri.net/2011/05/understanding-htaccess-attacks-part-1.html">redirect hack</a> When in doubt recommend a cleanup service, and consider the possibility cross site contamination.</p>
     </div>
 
     <li>
@@ -35,7 +35,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Enable debug mode and check error logs looking for files, plugins, or themes that might be causing issues.</b><a target="_blank" class="orange-link" href="https://www.godaddy.com/help/setup-php-error-logging-26423"> PHP error</a>, <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013"> Wordpress Debug</a></p>
+    <p style="font-size: 10px">If working with Wordpress <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013">Enable debug</a> mode and check error logs looking for files, plugins, or themes that might be causing issues.</b> One can also <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/setup-php-error-logging-26423">enable PHP custom error</a> logging.</p>
     </div>
 
     <li>
@@ -44,7 +44,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Once debug is enabled and can pin point what plugin/theme is causing it go into database and disabled plugins/themes found in the options table.<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/disable-wordpress-plugins-in-the-database-26345"> here</a></p>
+    <p style="font-size: 10px">If debugging a WordPress site and debugging points to an error generating from plugin/theme, it can be <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/disable-wordpress-plugins-in-the-database-26345">disabled in the database</a></p>
     </div>
 
     <li>
@@ -53,7 +53,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">If mwp flush cache, if they have a firewall flush cache in firewall. Try loading in private/incognito window. Kill php processes using agent tool kit if available. Toggle php versions to see if syntax errors. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/clear-your-cache-12444"> MWP cache flush</a>, <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/view-or-change-your-php-version-in-cpanel-hosting-16090"> Cpanel php version change</a>, <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/clear-cache-for-your-web-application-firewall-waf-27383"> Flush cache - firewall</a></p>
+    <p style="font-size: 10px">If MWP hosting, be sure to <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/clear-your-cache-12444">flush cache</a>, if they have a firewall <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/clear-cache-for-your-web-application-firewall-waf-27383">flush firewall/CDN cache</a>. Try loading in private/incognito window. Kill php processes using agent tool kit if available. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/view-or-change-your-php-version-in-cpanel-hosting-16090">Toggle php version</a> to see if syntax errors appear or change.</p>
     </div>
 
     <li>
@@ -61,7 +61,7 @@
       <label v-bind:class="{strike: checked_06}" for="checkbox">Resubmit / Sandbox and Resubmit</label>
 
       <div class="box">
-      <p style="font-size: 10px">Rename wp-content, wp-includes, mu-plugins and resubmit account to rebuild core files. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/disable-wordpress-plugins-in-the-database-26345"> here</a></p>
+      <p style="font-size: 10px">Rename wp-admin, wp-includes, mu-plugins and resubmit account in <a target="_blank" class="orange-link" href="https://toolzilla.int.godaddy.com/">Toolzilla</a> to rebuild core files.</p>
       </div>
 
 

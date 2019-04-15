@@ -16,7 +16,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Make sure the domain is pointed to the correct server</p>
+    <p style="font-size: 10px">Make sure the domain is pointed to the correct server. Check the DNS <router-link to="../../tools/SwatDNS" class="orange-link">here</router-link> and verify the IP address to the hosting server using <a target="_blank" class="orange-link" href="https://toolzilla.int.godaddy.com/">Toolzilla</a></p>
     </div>
 
     <li>
@@ -34,16 +34,17 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Upload any test script after disabling control files and try pathing to test script in browser.<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913"> here</a></p>
+    <p style="font-size: 10px">Upload any test script after disabling control files and try pathing to test script in browser <i>http://exampledomain.tld/<b>script-name.ext</b></i>. Find approved test scripts <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913">here</a></p>
+    <div style="margin-top: -7px;padding: 3px;" class="notification is-danger"><p style="font-size: 10px">It is important to remember that all scripts must be removed from a customer's account after testing has been completed!</p></div>
     </div>
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Check Domain is Pointed to the Right File Structure</label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Verify Domain is pointed to the correct document root</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">If an addon domain check the folder that the domain is pointed to. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/add-addon-domains-to-host-multiple-websites-8877?"> here</a></p>
+    <p style="font-size: 10px">If working on an addon domain, verify the document root does in fact have the files we expect to load. Use <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/add-addon-domains-to-host-multiple-websites-8877?"> this article</a> as a reference.</p>
     </div>
 
     <li>
