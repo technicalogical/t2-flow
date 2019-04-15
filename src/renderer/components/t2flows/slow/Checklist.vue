@@ -16,16 +16,15 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Enable debug mode and check error logs looking for files, plugins, or themes that might be causing issues.</b><a target="_blank" class="orange-link" href="https://www.godaddy.com/help/setup-php-error-logging-26423"> PHP error</a>, <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013"> Wordpress Debug</a></p>
+    <p style="font-size: 10px">If working with Wordpress <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/enable-debug-errors-in-wordpress-24013">Enable debug</a> mode and check error logs looking for files, plugins, or themes that might be causing issues.</b> One can also <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/setup-php-error-logging-26423">enable PHP custom error</a> logging.</p>
     </div>
-
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_02">
       <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Plugins/ Change theme</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Once debug is enabled and can pin point what plugin/theme is causing it go into database and disabled plugins/themes found in the options table.<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/disable-wordpress-plugins-in-the-database-26345"> here</a></p>
+    <p style="font-size: 10px">If working with WordPress, plugins or themes may be causing site slowness or 503 errors and can be can be <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/disable-wordpress-plugins-in-the-database-26345">disabled in the database</a>. The browser <a target="_blank" class="orange-link" href="https://developers.google.com/web/tools/chrome-devtools/network/">dev tools</a> Network Tab is also an invaluable tool when troubleshooting slow sites. Look for the status code in each response, if you see a 500 level code, find what file is causing it, and start troubleshooting there.</p>
     </div>
 
     <li>
