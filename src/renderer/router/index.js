@@ -4,7 +4,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // BEGIN Import of Department specific routers
-import toneRouter from './toneRouter'
+import t1Router from './t1Router'
 import ibRouter from './ibRouter'
 import prdRouter from './prdRouter'
 import t2Router from './t2Router'
@@ -57,7 +57,7 @@ export default new Router({
 
   routes: [
 
-    ...toneRouter,
+    ...t1Router,
     ...ibRouter,
     ...prdRouter,
     ...t2Router,
