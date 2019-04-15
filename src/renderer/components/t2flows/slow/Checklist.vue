@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+
     <div style="height: 50vh !important;
                 overflow: scroll;
                 -ms-overflow-style: scrollbar;
@@ -50,7 +50,7 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Check common locations for malware such as <b>config files</b>, <b>index files</b>, <b>randon named files</b>, and <b>control files</b><a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913"> here</a></p>
+    <p style="font-size: 10px">Check common locations for malware such as config files, index files, randon named files, and control files<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/what-filename-does-my-php-initialization-file-need-to-use-8913"> here</a></p>
     </div>
 
     <li>
