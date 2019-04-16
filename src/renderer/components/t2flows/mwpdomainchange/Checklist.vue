@@ -38,11 +38,11 @@
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Resubmit (wait until install.php is gone)</label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Resubmit Acct</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">resubmit account and wait until account gets set active. </p>
+    <p style="font-size: 10px">Resubmit account and wait until account gets set active. Whebn the <b>wp-content/install.php</b> file is gone, recheck the site</p>
     </div>
 
     <li>
