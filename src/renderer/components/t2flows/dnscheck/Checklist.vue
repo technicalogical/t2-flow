@@ -12,20 +12,21 @@
   <ul class="no-style">
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Ping Domain / Check DNS with tool</label>
+      <label v-bind:class="{strike: checked_01}" for="checkbox">Check DNS with tool</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Ping site with command prompt or run site in dns tool <router-link to="../../tools/SwatDNS" class="orange-link">DNS Tool</router-link></p>
+    <p style="font-size: 10px">Use the <router-link to="../../tools/SwatDNS" class="orange-link">DNS Tool</router-link> to verify the DNS is correctly configured to point to the hosting server. Verify the IP address to the hosting server using <a target="_blank" class="orange-link" href="https://toolzilla.int.godaddy.com/">Toolzilla</a></p>
     </div>
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Check if the Domain is in Account</label>
+      <label v-bind:class="{strike: checked_02}" for="checkbox">Ping Domain</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Go to domain control center and see if domain is there <a target="_blank" class="orange-link" href="dcc.godaddy.com"> here</a></p>
+    <p style="font-size: 10px">Using the Windows command prompt, perform a ping test, and verify in the output that the domain is in fact navigating to the correct hosting IP. The command to ping is <br><b>C:\>ping mydomain.tld</b><br>
+      More info can be found<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/how-do-i-ping-a-domain-name-3304"> here</a></p>
     </div>
 
     <li>
@@ -34,22 +35,18 @@
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Use DNS Tool <router-link to="../../tools/SwatDNS" class="orange-link">DNS Tool</router-link></p>
+    <p style="font-size: 10px">Use the <router-link to="../../tools/SwatDNS" class="orange-link">DNS Tool</router-link> to verify we are in fact their nameservers. If the nameservers are not <b>domaincontrol.com</b> they are managing their DNS elsewhere.</p>
     </div>
 
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">If NS dont match, resave NS to force update</label>
+      <label v-bind:class="{strike: checked_04}" for="checkbox">Reconcile Nameservers</label>
     </li>
 
     <div class="box">
-    <p style="font-size: 10px">Go to Domain control center and resave nameservers <a target="_blank" class="orange-link" href="dcc.godaddy.com"> here</a></p>
+    <p style="font-size: 10px">Using the <router-link to="../../tools/SwatDNS" class="orange-link">DNS Tool</router-link> verify the nameservers match what displays in the <a target="_blank" class="orange-link" href="http://dcc.godaddy.com">DCC</a>. Otherwise simply "re-save" the nameservers in </p>
     </div>
 
-    <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">If NS are 3rd party, verify they match and then refer to domain provider</label>
-    </li>
     <li>
       <input type="checkbox" id="checkbox" v-model="checked_06">
       <label v-bind:class="{strike: checked_06}" for="checkbox">Verify Reggie status</label>
