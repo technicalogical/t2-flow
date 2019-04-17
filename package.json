@@ -1,7 +1,7 @@
 {
   "name": "swat-flow-tool",
-  "version": "1.0.0",
-  "author": "macegd",
+  "version": "1.0.2",
+  "author": "macegd & stevenpastrana",
   "description": "A Flow Tool Project",
   "license": "MIT",
   "main": "./dist/electron/main.js",
@@ -17,7 +17,7 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "S.W.A.T. Flow Tool (Beta)",
+    "productName": "Tier 2 Flow Tool",
     "appId": "swat.flowtool",
     "directories": {
       "output": "build"

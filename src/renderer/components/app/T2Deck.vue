@@ -4,7 +4,7 @@
   <div id="gd-menu-deck" class="dropdown is-small">
     <div class="dropdown-trigger">
       <button id="gmenu-deck" class="button is-small is-dark" title="T2 Deck" aria-haspopup="true" aria-controls="dropdown-menu" draggable="false">
-        <span><img src="src\renderer\assets\icons\png\gld16.png"></span>
+        <span><img src="src/renderer/assets/icons/png/gld16.png"></span>
       </button>
     </div>
     <div class="dropdown-menu is-small" id="dropdown-menu-deck" role="menu">
@@ -55,7 +55,7 @@
         <a id="gd-menu-item" href="https://dza.int.secureserver.net/index.php" target="_blank" title="Internal DNS Zone Audit Tool" class="dropdown-item is-small has-text-grey-lighter" draggable="false">
           <p><b>DNS Zone Audit Tool</b></p>
         </a>
-        
+
         <hr class="dropdown-divider has-background-grey-dark">
         <div id="gd-menu-bottom" title="WordPress Premium Support" class="dropdown-item is-small">
           <b><p>Press (esc) to close</p></b>
@@ -89,7 +89,7 @@
   left: 35px;
 }
 
-#deck { 
+#deck {
   background-color: hsl(0, 0%, 21%);
 }
 
