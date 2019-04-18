@@ -53,7 +53,7 @@
 
     <!-- Application footer image -->
     <div id="footer-img">
-      <img src="src\renderer\assets\images\flowtool-gld-xs.png">
+      <img src="../../assets/images/flowtool-gld-xs.png">
     </div>
 
     <!-- Application version note -->

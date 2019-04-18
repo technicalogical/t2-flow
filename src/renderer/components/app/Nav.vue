@@ -48,13 +48,13 @@
 
       <a id="n-button" href="http://www.x.co/workday" target="_blank" title="Workday" class="button is-dark" draggable="false">
         <span class="icon is-small">
-          <img src="src/renderer/assets/icons/png/workday.png" draggable="false">
+          <img src="../../assets/icons/png/workday.png" draggable="false">
         </span>
       </a>
 
       <a id="n-button" href="http://owa.godaddy.com" target="_blank" title="Check your email" class="button is-dark" draggable="false">
         <span class="icon is-small">
-          <img src="src/renderer/assets/icons/png/o365.png" draggable="false">
+          <img src="../../assets/icons/png/o365.png" draggable="false">
         </span>
       </a>
     </ul>

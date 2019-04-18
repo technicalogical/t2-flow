@@ -5,7 +5,7 @@
 
     <div class="dropdown-trigger">
       <button id="gmenu-mig" class="button is-small is-dark" title="Migrations & Restores" aria-haspopup="true" aria-controls="dropdown-menu" draggable="false">
-        <span><img src="src/renderer/assets/icons/png/mig20.png"></span>
+        <span><img src="../../assets/icons/png/mig20.png"></span>
       </button>
     </div>
     <div class="dropdown-menu is-small" id="dropdown-menu-mig" role="menu">
