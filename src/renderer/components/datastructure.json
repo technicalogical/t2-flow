@@ -1,7 +1,7 @@
 {
   "flows": [
     { "name": "403 Website Error",
-      "approved": true,
+      "approved": "true",
       "steps": [
         {
           "id": "403.0.0",
@@ -16,7 +16,7 @@
             "links": [
               {"icon": "yes", "bold-text": "Yes.", "text": "There is a proper index file.", "link-to": "403.1.0"},
               {"icon": "no", "bold-text": "No.", "text": "The index file is missing.", "link-to": "403.1.1"},
-            ],
+            ]
           },
           "back-button": "0.0.0",
           "end-flow": false,
