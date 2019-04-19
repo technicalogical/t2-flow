@@ -11,8 +11,8 @@
                 ">
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Error Logs</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Error Logs</label>
     </li>
 
     <div class="box">
@@ -20,8 +20,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Plugins/ Change theme</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Disable Plugins/ Change theme</label>
     </li>
 
     <div class="box">
@@ -29,8 +29,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Speed Check Tool</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Speed Check Tool</label>
     </li>
 
     <div class="box">
@@ -38,8 +38,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Resources</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Resources</label>
     </li>
     <div class="box">
     <p style="font-size: 10px">If the website is hosted in Cpanel, check resource usage in <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/check-your-accounts-resource-usage-19126">CPU and Concurrent Conection Usage</a>. Standard Shared hosting resource limits can be found <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/resource-limits-12001"> here</a>.
@@ -51,8 +51,8 @@
 
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Malware Files</label>
+      <input type="checkbox" id="checkbox_05" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox_05">Malware Files</label>
     </li>
 
     <div class="box">
@@ -60,8 +60,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_06}" for="checkbox">Top Command in SSH</label>
+      <input type="checkbox" id="checkbox_06" v-model="checked_06">
+      <label v-bind:class="{strike: checked_06}" for="checkbox_06">Top Command in SSH</label>
     </li>
 
     <div class="box">
@@ -75,8 +75,8 @@
 
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_07">
-      <label v-bind:class="{strike: checked_07}" for="checkbox">Kill Processes</label>
+      <input type="checkbox" id="checkbox_07" v-model="checked_07">
+      <label v-bind:class="{strike: checked_07}" for="checkbox_07">Kill Processes</label>
     </li>
 
     <div class="box">

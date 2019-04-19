@@ -11,8 +11,8 @@
   <ul class="no-style">
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Update prefix in wp-config</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Update prefix in wp-config</label>
     </li>
 
     <div class="box">
@@ -20,8 +20,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Run Search and Replace</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Run Search and Replace</label>
     </li>
 
     <div class="box">
@@ -29,8 +29,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">HTL can update that</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">HTL can update that</label>
     </li>
 
     <div class="box">

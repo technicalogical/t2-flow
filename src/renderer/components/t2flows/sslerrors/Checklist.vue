@@ -10,8 +10,8 @@
                 ">
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Is SSL installed?</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Is SSL installed?</label>
     </li>
 
     <div class="box">
@@ -19,8 +19,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Does the browser see the correct serial number?</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Does the browser see the correct serial number?</label>
     </li>
 
     <div class="box">
@@ -28,8 +28,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Is the site going to www not covered under a SAN?</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Is the site going to www not covered under a SAN?</label>
     </li>
 
     <div class="box">
@@ -37,8 +37,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">is the addon domain ssl installed on Cpanel</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">is the addon domain ssl installed on Cpanel</label>
     </li>
 
     <div class="box">
@@ -60,6 +60,7 @@ export default{
       checked_01: false,
       checked_02: false,
       checked_03: false,
+      checked_04: false,
     }
   }
   // toggle_1: false,

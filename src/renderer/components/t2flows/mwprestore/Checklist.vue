@@ -11,8 +11,8 @@
   <ul class="no-style">
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Try doing the Files and Database seperately</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Try doing the Files and Database seperately</label>
     </li>
 
     <div class="box">
@@ -20,8 +20,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Try a different date.</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Try a different date.</label>
     </li>
 
     <div class="box">
@@ -29,8 +29,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Look at Database for dropped tables (ex. user table)</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Look at Database for dropped tables (ex. user table)</label>
     </li>
 
     <div class="box">
@@ -38,8 +38,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Look at Database prefix in DB and wp-config.php</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Look at Database prefix in DB and wp-config.php</label>
     </li>
 
     <div class="box">
@@ -47,8 +47,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Look at home/site url in DB</label>
+      <input type="checkbox" id="checkbox_05" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox_05">Look at home/site url in DB</label>
     </li>
     <div class="box">
     <p style="font-size: 10px"> Open the database and take a look at the options table and make sure the home url and site url are what they are supposed to be. </p>

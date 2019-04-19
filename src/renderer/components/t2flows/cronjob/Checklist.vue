@@ -15,15 +15,15 @@
       <p style="font-size: 10px">A Cron Job allows a web admin to schedule tasks. The Crontab task runs a script on the schedule defined by the user. <b>A common gotcha is failing to use the <i>absolute path</i> to the file in the Cron job</b></p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Upload and <b>Follow Steps</b> for Test Script <b>cron_test.php</b></label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Upload and <b>Follow Steps</b> for Test Script <b>cron_test.php</b></label>
     </li>
     <div class="box">
     <p style="font-size: 10px">If cpanel follow follow confluence article on creating cron job to test. If 4gh download cron_test.php and upload to host and create cron to run that file. <a target="_blank" class="orange-link" href="https://confluence.godaddy.com/display/C3PHS/cPanel+-+Cron+Job+Troubleshooting"> Cpanel Cron</a>, <a target="_blank" class="orange-link" href="https://confluence.godaddy.com/display/C3PHS/General+-+Tools+-+Approved+Test+Scripts"> approved test scripts</a></p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">If it doesnt work, <b>HTL</b></label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">If it doesnt work, <b>HTL</b></label>
     </li>
   </ul>
 </div>

@@ -10,8 +10,8 @@
                 ">
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Check DNS and MX records</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Check DNS and MX records</label>
     </li>
 
     <div class="box">
@@ -19,8 +19,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Check mail routing make sure it is set to local</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Check mail routing make sure it is set to local</label>
     </li>
 
     <div class="box">
@@ -28,8 +28,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Upload Mail Script and test</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Upload Mail Script and test</label>
     </li>
 
     <div class="box">
@@ -38,8 +38,8 @@
 
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Check Splunk</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Check Splunk</label>
     </li>
 
     <div class="box">
@@ -48,8 +48,8 @@
 
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Check Webmail</label>
+      <input type="checkbox" id="checkbox_05" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox_05">Check Webmail</label>
     </li>
 
     <div class="box">
@@ -57,8 +57,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_06}" for="checkbox">Check for malware</label>
+      <input type="checkbox" id="checkbox_06" v-model="checked_06">
+      <label v-bind:class="{strike: checked_06}" for="checkbox_06">Check for malware</label>
     </li>
 
     <div class="box">
@@ -66,8 +66,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_07">
-      <label v-bind:class="{strike: checked_07}" for="checkbox">Check KI and SMTP queue</label>
+      <input type="checkbox" id="checkbox_07" v-model="checked_07">
+      <label v-bind:class="{strike: checked_07}" for="checkbox_07">Check KI and SMTP queue</label>
     </li>
 
     <div class="box">
@@ -75,8 +75,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_08">
-      <label v-bind:class="{strike: checked_08}" for="checkbox">Reach out to HTL if none of the above works</label>
+      <input type="checkbox" id="checkbox_08" v-model="checked_08">
+      <label v-bind:class="{strike: checked_08}" for="checkbox_08">Reach out to HTL if none of the above works</label>
     </li>
   </ul>
 
