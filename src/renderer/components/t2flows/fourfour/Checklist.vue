@@ -11,8 +11,8 @@
                 ">
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Check DNS</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Check DNS</label>
     </li>
 
     <div class="box">
@@ -20,8 +20,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Control Files</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Disable Control Files</label>
     </li>
 
     <div class="box">
@@ -29,8 +29,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Upload Test Script</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Upload Test Script</label>
     </li>
 
     <div class="box">
@@ -39,8 +39,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Verify Domain is pointed to the correct document root</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Verify Domain is pointed to the correct document root</label>
     </li>
 
     <div class="box">
@@ -48,8 +48,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Check Permissions</label>
+      <input type="checkbox" id="checkbox_05" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox_05">Check Permissions</label>
     </li>
 
     <div class="box">
@@ -57,15 +57,15 @@
 
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_06}" for="checkbox">Resave permalinks</label>
+      <input type="checkbox" id="checkbox_06" v-model="checked_06">
+      <label v-bind:class="{strike: checked_06}" for="checkbox_06">Resave permalinks</label>
     </li>
     <div class="box">
     <p style="font-size: 10px">If test scripts load and the website is built with a common CMS it will most likely use permalinks and will need to be resaved.<a target="_blank" class="orange-link" href="https://www.godaddy.com/help/reset-permalinks-in-wordpress-26351"> Reset permalinks in wordpress</a></p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_07">
-      <label v-bind:class="{strike: checked_07}" for="checkbox">If none above works, HTL</label>
+      <input type="checkbox" id="checkbox_07" v-model="checked_07">
+      <label v-bind:class="{strike: checked_07}" for="checkbox_07">If none above works, HTL</label>
     </li>
   </ul>
 </div>

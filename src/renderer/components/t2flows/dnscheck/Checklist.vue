@@ -11,8 +11,8 @@
 
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Check DNS with tool</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Check DNS with tool</label>
     </li>
 
     <div class="box">
@@ -20,8 +20,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Ping Domain</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Ping Domain</label>
     </li>
 
     <div class="box">
@@ -30,8 +30,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Verify Name Servers (NS)</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Verify Name Servers (NS)</label>
     </li>
 
     <div class="box">
@@ -39,8 +39,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Reconcile Nameservers</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Reconcile Nameservers</label>
     </li>
 
     <div class="box">
@@ -48,16 +48,16 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_06}" for="checkbox">Verify Reggie status</label>
+      <input type="checkbox" id="checkbox_06" v-model="checked_06">
+      <label v-bind:class="{strike: checked_06}" for="checkbox_06">Verify Reggie status</label>
     </li>
 
     <div class="box">
     <p style="font-size: 10px">Make sure domain name does not have a suspension of any kind in reggie. <a target="_blank" class="orange-link" href="https://www.godaddy.com/help/reggie-definitions-and-usage-tips-4985?"> Reggie Definitions</a>, <a target="_blank" class="orange-link" href="https://reggie.int.godaddy.com"> Reggie </a></p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_07">
-      <label v-bind:class="{strike: checked_07}" for="checkbox">Account for Propagation 24-48 hours</label>
+      <input type="checkbox" id="checkbox_07" v-model="checked_07">
+      <label v-bind:class="{strike: checked_07}" for="checkbox_07">Account for Propagation 24-48 hours</label>
     </li>
 
     <div class="box">
@@ -65,8 +65,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_08">
-      <label v-bind:class="{strike: checked_08}" for="checkbox">If still having issues, ATS</label>
+      <input type="checkbox" id="checkbox_08" v-model="checked_08">
+      <label v-bind:class="{strike: checked_08}" for="checkbox_08">If still having issues, ATS</label>
     </li>
   </ul>
 </div>

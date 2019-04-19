@@ -11,36 +11,36 @@
                   ">
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Is there actually a database on the site?</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Is there actually a database on the site?</label>
     </li>
     <div class='box'>
       <p style="font-size: 10px">If the site is a CMS (wordpress, joomla, drupal, etc) than the answer is yes the customer has a database. Here is how to check if there is a database in the account <a href="https://www.godaddy.com/help/view-your-database-details-for-cpanel-hosting-16021 " target="_blank" class="orange-link"> Cpanel</a>, <a href="https://www.godaddy.com/help/view-my-database-details-in-plesk-hosting-16022 " target="_blank" class="orange-link"> Plesk</a>, <a href="https://www.godaddy.com/help/viewing-your-database-details-with-shared-hosting-accounts-39?" target="_blank" class="orange-link"> 2gh/4gh</a> </p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Is ftp/database info correct?</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Is ftp/database info correct?</label>
     </li>
     <div class='box'>
       <p style="font-size: 10px">check the connection to the backups by going to sec.godaddy.com > click the manage button under backups > click on settings top right corner > look under website details</p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Is there other Sucuri products setup on the same domain?  Reach out to htl</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Is there other Sucuri products setup on the same domain?  Reach out to htl</label>
     </li>
     <div class='box'>
       <p style="font-size: 10px">go to products page, click on website security/backups and make sure that products are not set up already for the doamin you are trying to set one up on. if so click  <a href="https://l2chat.godaddy.com/" target="_blank" class="orange-link">here</a> and talk to HTL</p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Does the ftp user exist?</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Does the ftp user exist?</label>
     </li>
     <div class='box'>
       <p style="font-size: 10px">Checking to make sure the FTP user exists gaurantees that the credentials you are using will allow for the connection <a href="https://www.godaddy.com/help/edit-ftp-users-in-cpanel-hosting-16057? " target="_blank" class="orange-link"> Cpanel FTP users</a> <a href="https://www.godaddy.com/help/edit-ftp-users-in-plesk-hosting-16058? " target="_blank" class="orange-link"> Plesk FTP users</a> </p>
     </div>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Create help ticket with Sucuri</label>
+      <input type="checkbox" id="checkbox_05" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox_05">Create help ticket with Sucuri</label>
     </li>
     <div class='box'>
       <p style="font-size: 10px">Creating tickets with Sucuri allows for someone who specializes in these products to take a look and fix the issues. This is how to create a <a href="https://www.godaddy.com/help/c3-hosting-support-general-website-security-create-new-support-ticket-32084?" target="_blank" class="orange-link">ticket</a> with Sucuri.</p>

@@ -3,16 +3,16 @@
     <br>
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Do the things</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Do the things</label>
     </li>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Do the other thing</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Do the other thing</label>
     </li>
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Don't forget to boogie</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Don't forget to boogie</label>
     </li>
   </ul>
   <div v-if="checked">

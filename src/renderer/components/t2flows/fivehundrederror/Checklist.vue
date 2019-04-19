@@ -12,8 +12,8 @@
 
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Check for Malware</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Check for Malware</label>
     </li>
 
     <div class="box">
@@ -21,8 +21,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_02">
-      <label v-bind:class="{strike: checked_02}" for="checkbox">Disable Control Files</label>
+      <input type="checkbox" id="checkbox_02" v-model="checked_02">
+      <label v-bind:class="{strike: checked_02}" for="checkbox_02">Disable Control Files</label>
     </li>
 
     <div class="box">
@@ -30,8 +30,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_03">
-      <label v-bind:class="{strike: checked_03}" for="checkbox">Enable Debug Mode</label>
+      <input type="checkbox" id="checkbox_03" v-model="checked_03">
+      <label v-bind:class="{strike: checked_03}" for="checkbox_03">Enable Debug Mode</label>
     </li>
 
     <div class="box">
@@ -39,8 +39,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_04">
-      <label v-bind:class="{strike: checked_04}" for="checkbox">Disable Plugin/Themes</label>
+      <input type="checkbox" id="checkbox_04" v-model="checked_04">
+      <label v-bind:class="{strike: checked_04}" for="checkbox_04">Disable Plugin/Themes</label>
     </li>
 
     <div class="box">
@@ -48,8 +48,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_05">
-      <label v-bind:class="{strike: checked_05}" for="checkbox">Clear Cache / Kill Processes / Toggle PHP</label>
+      <input type="checkbox" id="checkbox_05" v-model="checked_05">
+      <label v-bind:class="{strike: checked_05}" for="checkbox_05">Clear Cache / Kill Processes / Toggle PHP</label>
     </li>
 
     <div class="box">
@@ -57,8 +57,8 @@
     </div>
 
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_06">
-      <label v-bind:class="{strike: checked_06}" for="checkbox">Resubmit / Sandbox and Resubmit</label>
+      <input type="checkbox" id="checkbox_06" v-model="checked_06">
+      <label v-bind:class="{strike: checked_06}" for="checkbox_06">Resubmit / Sandbox and Resubmit</label>
 
       <div class="box">
       <p style="font-size: 10px">Rename wp-admin, wp-includes, mu-plugins and resubmit account in <a target="_blank" class="orange-link" href="https://toolzilla.int.godaddy.com/">Toolzilla</a> to rebuild core files.</p>

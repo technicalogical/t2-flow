@@ -11,8 +11,8 @@
                 ">
   <ul class="no-style">
     <li>
-      <input type="checkbox" id="checkbox" v-model="checked_01">
-      <label v-bind:class="{strike: checked_01}" for="checkbox">Customer needs to email copyright@/trademark@</label>
+      <input type="checkbox" id="checkbox_01" v-model="checked_01">
+      <label v-bind:class="{strike: checked_01}" for="checkbox_01">Customer needs to email copyright@/trademark@</label>
     </li>
     <div class='box'>
       <p style="font-size: 10px"> Advise the customer that they need to email <b>copyright@</b> or <b>trademark@</b></p>
