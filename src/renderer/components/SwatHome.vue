@@ -32,6 +32,10 @@
         <router-link to="/SwatLinks" class="button is-small is-fullwidth is-dark">
           <p><b>SWAT</b> LINKS</p>
         </router-link>
+        <br>
+        <router-link to="/TestIndex" class="button is-small is-fullwidth is-dark">
+          <p><b>TEST</b> INDEX</p>
+        </router-link>
       </p>
     </div>
     <!-- END Start button -->

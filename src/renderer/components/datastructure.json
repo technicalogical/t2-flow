@@ -1,0 +1,378 @@
+{
+  "flows": [
+    { "name": "403 Website Error",
+      "approved": true,
+      "steps": [
+        {
+          "id": "403.0.0",
+          "question": { "active": true, "text": "Is there a proper and correct index file?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "There is a proper index file.", "link-to": "403.1.0"},
+              {"icon": "no", "bold-text": "No.", "text": "The index file is missing.", "link-to": "403.1.1"},
+            ],
+          },
+          "back-button": "0.0.0",
+          "end-flow": false,
+        },
+
+        {
+          "id": "403.1.0",
+          "question": { "active": true, "text": "Is the index file spelled correctly?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "The index file is spelled correctly.", "link-to": "403.2.0"},
+              {"icon": "no", "bold-text": "No.", "text": "The index file is missing or invalid.", "link-to": "403.2.1"},
+            ],
+          },
+          "back-button": "403.0.0",
+          "end-flow": false,
+        },
+        {
+          "id": "403.2.0",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "blue", "text": "Time to Transfer" },
+          "banners": [
+            { "active": true, "color": "gray", "text": "At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to an Advanced Hosting Suport agent for further assistance with troubleshooting this issue." },
+            { "active": false, "color": "gray", "text": "Transfer to x59171" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "", "link-to": ""},
+              {"icon": "no", "bold-text": "No.", "text": "", "link-to": ""},
+            ],
+          },
+          "back-button": "403.1.0",
+          "end-flow": true,
+        },
+        {
+          "id": "403.1.1",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer that they need to upload a valid index file to their hosting file structure for the website to load correctly." },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "", "link-to": ""},
+              {"icon": "no", "bold-text": "No.", "text": "", "link-to": ""},
+            ],
+          },
+          "back-button": "403.0.0",
+          "end-flow": true,
+        },
+        {
+          "id": "403.2.1",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer to correct the spelling of their index file in oprder to show thwe website correctly." },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "", "link-to": ""},
+              {"icon": "no", "bold-text": "No.", "text": "", "link-to": ""},
+            ],
+          },
+          "back-button": "403.0.0",
+          "end-flow": true,
+        },
+      ]
+    },
+
+
+    { "name": "404 Website Error",
+      "approved": true,
+      "steps": [
+        {
+          "id": "404.0.0",
+          "question": { "active": true, "text": "Is this a Wordpress website?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "There is a Wordpress Website.", "link-to": "404.1.0"},
+              {"icon": "no", "bold-text": "No.", "text": "This is not a Wordpress website", "link-to": "404.1.1"},
+            ],
+          },
+          "back-button": "0.0.0",
+          "end-flow": false,
+        },
+        {
+          "id": "404.1.0",
+          "question": { "active": true, "text": "Is there a valid .htaccess file?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "There is an .htaccess file.", "link-to": "404.2.1"},
+              {"icon": "no", "bold-text": "No.", "text": "The .htaccess file is not present", "link-to": "404.2.2"},
+            ],
+          },
+          "back-button": "404.0.0",
+          "end-flow": false,
+        },
+        {
+          "id": "404.1.1",
+          "question": { "active": true, "text": "Can you upload geoff.php and view it in the browser?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "geoff.php loads in the browser.", "link-to": "404.2.3"},
+              {"icon": "no", "bold-text": "No.", "text": "geoff.php does not load in the browser", "link-to": "404.2.4"},
+            ],
+          },
+          "back-button": "404.0.0",
+          "end-flow": false,
+        },
+        {
+          "id": "404.2.1",
+          "question": { "active": true, "text": "Is the home page the only page that loads?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              {"icon": "yes", "bold-text": "Yes.", "text": "Only the home page loads", "link-to": "404.3.1"},
+              {"icon": "no", "bold-text": "No.", "text": "None of the pages load", "link-to": "404.3.2"},
+            ],
+          },
+          "back-button": "404.1.0",
+          "end-flow": false,
+        },
+        {
+          "id": "404.2.2",
+          "question": { "active": true, "text": "Can you upload geoff.php and view it in browser?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "geoff.php loads in browser.", "link-to": "404.3.3" },
+              { "icon": "no", "bold-text": "No.", "text": "geoff.php dows not load in browser.", "link-to": "404.3.4" },
+            ],
+          },
+          "back-button": "404.1.0",
+          "end-flow": false,
+        },
+        {
+          "id": "404.2.3",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer that they will need to review the code for their site further." },
+            { "active": true, "color": "green", "text": "If this is a WordPress based website you can offer WPPS (WordPress Premium Support) to help resolve this issue." },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.1.1",
+          "end-flow": true,
+        },
+        {
+          "id": "404.2.4",
+          "question": { "active": true, "text": "Can you load geoff.php and view it in the browser after disabling control files?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "geoff.php loads in browser.", "link-to": "404.3.5" },
+              { "icon": "no", "bold-text": "No.", "text": "geoff.php does not load in the browser.", "link-to": "404.3.6" },
+            ],
+          },
+          "back-button": "404.1.1",
+          "end-flow": false,
+        },
+        {
+          "id": "404.3.1",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer to log into thei WopdPress Dashboard and 'refresh' the permalinks." },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.2.1",
+          "end-flow": true,
+        },
+        {
+          "id": "404.3.2",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "blue", "text": "Time to Transfer" },
+          "banners": [
+            { "active": true, "color": "gray", "text": "At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to an Advanced Hosting Support agent for further assistance with troubleshooting this issue." },
+            { "active": true, "color": "gray", "text": "Transfer to x59171" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.2.1",
+          "end-flow": true,
+        },
+        {
+          "id": "404.3.3",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer that they will need to review the code for their site further." },
+            { "active": true, "color": "green", "text": "If this is a WordPRess based website you can offer WPPS (WordPress Premium Support) to help resolve this issue." },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.2.2",
+          "end-flow": true,
+        },
+        {
+          "id": "404.3.4",
+          "question": { "active": true, "text": "Can you load geoff.php and view it in the browser after disabling control files?" },
+          "alert": { "active": false, "color": "", "text": "" },
+          "banners": [
+            { "active": false, "color": "", "text": "" },
+            { "active": false, "color": "", "text": "" },
+          ],
+          "answers": {
+            "active": true,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "geoff.php loads in browser.", "link-to": "404.4.1" },
+              { "icon": "no", "bold-text": "No.", "text": "geoff.php does not load in the browser.", "link-to": "404.4.2" },
+            ],
+          },
+          "back-button": "404.2.2",
+          "end-flow": false,
+        },
+        {
+          "id": "404.3.5",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer that they will need to review the code for their site further." },
+            { "active": true, "color": "green", "text": "If this is a WordPress based website you can offer WPPS (WordPress Premium Support) to help resolve this issue." },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.2.4",
+          "end-flow": true,
+        },
+        {
+          "id": "404.3.6",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "blue", "text": "Time to Transfer" },
+          "banners": [
+            { "active": true, "color": "gray", "text": "At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to an Advanced Hosting Support agent for further assistance with troubleshooting this issue." },
+            { "active": true, "color": "gray", "text": "Transfer to x59171" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.2.4",
+          "end-flow": true,
+        },
+        {
+          "id": "404.4.1",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "red", "text": "Stop Here" },
+          "banners": [
+            { "active": true, "color": "blue", "text": "Advise the customer that they will need to review the code for their site further." },
+            { "active": true, "color": "green", "text": "If this is a WordPress based website you can offer WPPS (WordPress Premium Support) to help resolve this issue." },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.3.4",
+          "end-flow": true,
+        },
+        {
+          "id": "404.4.2",
+          "question": { "active": false, "text": "" },
+          "alert": { "active": true, "color": "blue", "text": "Time to Transfer" },
+          "banners": [
+            { "active": true, "color": "gray", "text": "At this point you have done all that you can as a Tier 1 agent. Advise the customer and transfer your call to an Advanced Hosting Support agent for further assistance with troubleshooting this issue." },
+            { "active": true, "color": "gray", "text": "Transfer to x59171" },
+          ],
+          "answers": {
+            "active": false,
+            "links": [
+              { "icon": "yes", "bold-text": "Yes.", "text": "", "link-to": "" },
+              { "icon": "no", "bold-text": "No.", "text": "", "link-to": "" },
+            ],
+          },
+          "back-button": "404.3.4",
+          "end-flow": true,
+        },
+      ]
+    },
+
+  ]
+}

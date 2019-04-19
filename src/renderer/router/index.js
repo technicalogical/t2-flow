@@ -14,7 +14,7 @@ import '../../../node_modules/bulma/css/bulma.min.css'
 
 
 
-
+import TestIndex from '@/components/TestIndex'
 
 // BEGIN Primary imported routes
 import SwatHome from '@/components/SwatHome'
@@ -61,6 +61,12 @@ export default new Router({
     ...ibRouter,
     ...prdRouter,
     ...t2Router,
+
+    {
+      path: '/TestIndex',
+      name: 'TestIndex',
+      component: TestIndex
+    },
 
     //BEGIN Primary Menu Routes
     {
