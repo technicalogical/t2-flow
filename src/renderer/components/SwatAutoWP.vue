@@ -72,7 +72,7 @@
               <i class="mdi mdi-close mdi-18px"></i>
             </span>
             <span>Disconnect</span>
-            <span>Disconnect</span>
+            
           </button>
 
           <button id="copyButton"  class="button is-small is-dark btn" @click="clearFTP" title="Click to clear FTP inputs">
