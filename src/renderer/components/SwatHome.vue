@@ -32,6 +32,10 @@
         <router-link to="/SwatLinks" class="button is-small is-fullwidth is-dark">
           <p><b>SWAT</b> LINKS</p>
         </router-link>
+        <br>
+        <router-link to="/SwatAutoWP" class="button is-small is-fullwidth is-dark">
+          <p><b>CODENAME:</b> ABOVE THE CURVE</p>
+        </router-link>
       </p>
     </div>
     <!-- END Start button -->

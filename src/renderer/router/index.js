@@ -24,6 +24,7 @@ import PreNote from '@/components/note/PreNote'
 import SwatTools from '@/components/SwatTools'
 import FlowIndex from '@/components/FlowIndex'
 import SwatSettings from '@/components/SwatSettings'
+import SwatAutoWP from '@/components/SwatAutoWP'
 // END Primary imported routes
 
 // BEGIN Flow Page routes
@@ -87,6 +88,11 @@ export default new Router({
       path: '/SwatTools',
       name: 'Swat Tools',
       component: SwatTools
+    },
+    {
+      path: '/SwatAutoWP',
+      name: 'Swat Auto WP',
+      component: SwatAutoWP
     },
     {
       path: '/tools/SwatDNS',
