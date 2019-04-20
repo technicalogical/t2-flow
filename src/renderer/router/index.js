@@ -25,7 +25,6 @@ import SwatTools from '@/components/SwatTools'
 import FlowIndex from '@/components/FlowIndex'
 import SwatSettings from '@/components/SwatSettings'
 import SwatAutoWP from '@/components/SwatAutoWP'
-
 // END Primary imported routes
 
 // BEGIN Flow Page routes

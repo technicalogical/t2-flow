@@ -79,7 +79,7 @@
             <span class="icon is-medium has-text-light">
               <i class="fas fa-eraser"></i>
             </span>
-            <span>Clear Inputs</span>
+            <span>Clear Inputs </span>
           </button>
           
         </div>
