@@ -18,49 +18,49 @@
         <span><strong>Back</strong></span>
       </router-link>
 
-      <!-- BEGIN FTP Login -->
-      <div id="ftp-login" class="content">
+      <!-- BEGIN ssh Login -->
+      <div id="ssh-login" class="content">
 
-        <div id="ftp-host" class="field is-horizontal">
+        <div id="ssh-host" class="field is-horizontal">
           <label id="log" class="field-label is-small has-text-bold"><b>Host</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="sshHost" placeholder="ftp.domain.com" value="50.63.14.87">
+            <input class="input is-small is-hovered" type="text" v-model="sshHost" placeholder="IP Address">
             <span class="icon is-small is-left">
               <i class="fas fa-globe"></i>
             </span>
           </div>
         </div>
 
-        <div id="ftp-host" class="field is-horizontal">
+        <div id="ssh-host" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>User</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshUsername" type="text" placeholder="Username" value="blehman">
+            <input class="input is-small is-hovered" v-model="sshUsername" type="text" placeholder="Username">
             <span class="icon is-small is-left">
               <i class="fas fa-user-circle"></i>
             </span>
           </div>
         </div>
 
-        <div id="ftp-host" class="field is-horizontal">
+        <div id="ssh-host" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>Password</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshPassword" type="password" placeholder="••••••••" value="DetroitLions2!">
+            <input class="input is-small is-hovered" v-model="sshPassword" type="password" placeholder="••••••••">
             <span class="icon is-small is-left">
               <i class="fas fa-key"></i>
             </span>
           </div>
         </div>
 
-        <div id="ftp-prt" class="field is-horizontal">
+        <div id="ssh-prt" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>Port</b></label>
           <div class="field-control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22" value="22">
+            <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22">
           </div>
         </div>
 
         <div id="copy-clear" class="buttons">
        
-          <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via FTP">
+          <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
@@ -68,11 +68,32 @@
           </button>
           <div id="copy-clear" class="buttons">
        
-          <button id="copyButton" class="button is-small is-success btn" @click="checkPhpMail"  title="Connect via FTP">
+          <button id="copyButton" class="button is-small is-success btn" @click="checkPhpMail"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
             <span>Check PHP Mail</span>
+          </button>
+
+          <button id="copyButton" class="button is-small is-success btn" @click="dbBackup"  title="Connect via ssh">
+            <span class="icon has-text-light">
+              <i class="mdi mdi-power mdi-18px"></i>
+            </span>
+            <span>Database Backup</span>
+          </button>
+
+          <button id="copyButton" class="button is-small is-success btn" @click="listThemes"  title="Connect via ssh">
+            <span class="icon has-text-light">
+              <i class="mdi mdi-power mdi-18px"></i>
+            </span>
+            <span>Show Themes</span>
+          </button>
+
+          <button id="copyButton" class="button is-small is-success btn" @click="getConfig"  title="Connect via ssh">
+            <span class="icon has-text-light">
+              <i class="mdi mdi-power mdi-18px"></i>
+            </span>
+            <span>Show wp-config.php</span>
           </button>
 
         </div>
@@ -95,8 +116,8 @@ export default {
     return {
       sshHost: '50.63.14.87',
       sshPort: '22',
-      sshUsername: 'blehman',
-      sshPassword: 'DetroitLions2!',
+      sshUsername: '',
+      sshPassword: '',
     }
   },
   methods: {  
@@ -140,7 +161,81 @@ export default {
         }).stderr.on('data', function(data) {
           console.log('STDERR: ' + data);
         });
-        stream.end('php -r \'$from = "blheman@s166-62-125-174.secureserver.net"; $to = "lehman.brandon@gmail.com, nic8869@godaddy.com, steven1096@godaddy.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
+        stream.end('php -r \'$from = "blheman@s166-62-125-174.secureserver.net"; $to = "lehman.brandon@gmail.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
+      });
+        }).connect({
+          host: this.sshHost,
+          port: this.sshPort,
+          username: this.sshUsername,
+          password: this.sshPassword,
+        });
+    },
+  dbBackup: function(){
+    var Client = require('ssh2').Client;
+    var conn = new Client();
+    conn.on('ready', function() {
+      console.log('Client :: ready');
+      conn.shell(function(err, stream) {
+        if (err) throw err;
+        stream.on('close', function() {
+          console.log('Stream :: close');
+          conn.end();
+        }).on('data', function(data) {
+          console.log('STDOUT: ' + data);
+        }).stderr.on('data', function(data) {
+          console.log('STDERR: ' + data);
+        });
+        stream.end('cd /var/www/html && wp db export\nexit\n');
+      });
+        }).connect({
+          host: this.sshHost,
+          port: this.sshPort,
+          username: this.sshUsername,
+          password: this.sshPassword,
+        });
+    },
+
+    listThemes: function(){
+    var Client = require('ssh2').Client;
+    var conn = new Client();
+    conn.on('ready', function() {
+      console.log('Client :: ready');
+      conn.shell(function(err, stream) {
+        if (err) throw err;
+        stream.on('close', function() {
+          console.log('Stream :: close');
+          conn.end();
+        }).on('data', function(data) {
+          console.log('STDOUT: ' + data);
+        }).stderr.on('data', function(data) {
+          console.log('STDERR: ' + data);
+        });
+        stream.end('cd /var/www/html && wp theme status\nexit\n');
+      });
+        }).connect({
+          host: this.sshHost,
+          port: this.sshPort,
+          username: this.sshUsername,
+          password: this.sshPassword,
+        });
+    },
+
+    getConfig: function(){
+    var Client = require('ssh2').Client;
+    var conn = new Client();
+    conn.on('ready', function() {
+      console.log('Client :: ready');
+      conn.shell(function(err, stream) {
+        if (err) throw err;
+        stream.on('close', function() {
+          console.log('Stream :: close');
+          conn.end();
+        }).on('data', function(data) {
+          console.log('STDOUT: ' + data);
+        }).stderr.on('data', function(data) {
+          console.log('STDERR: ' + data);
+        });
+        stream.end('cd /var/www/html && wp config get\nexit\n');
       });
         }).connect({
           host: this.sshHost,
@@ -154,7 +249,7 @@ export default {
 </script>
 
 <style>
-#ftp-login {
+#ssh-login {
   position: relative;
   margin: 0px;
   margin-top: 20px;
@@ -166,7 +261,7 @@ export default {
   height: 460px;
 }
 
-#ftp-page {
+#ssh-page {
   position: relative;
   width: 80%;
   height: 600px;
@@ -176,12 +271,12 @@ export default {
   border: 0px;
 }
 
-#ftp-host {
+#ssh-host {
   width: 220px;
   margin-right: 20px;
   float: left;
 }
-#ftp-prt {
+#ssh-prt {
   width: 60px;
   margin-right: 20px;
   float: left;
