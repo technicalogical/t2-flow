@@ -24,7 +24,7 @@
         <div id="ftp-host" class="field is-horizontal">
           <label id="log" class="field-label is-small has-text-bold"><b>Host</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="ftpHost" placeholder="ftp.domain.com">
+            <input class="input is-small is-hovered" type="text" v-model="sshHost" placeholder="ftp.domain.com" value="50.63.14.87">
             <span class="icon is-small is-left">
               <i class="fas fa-globe"></i>
             </span>
@@ -34,7 +34,7 @@
         <div id="ftp-host" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>User</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="ftpUser" type="text" placeholder="Username">
+            <input class="input is-small is-hovered" v-model="sshUsername" type="text" placeholder="Username" value="blehman">
             <span class="icon is-small is-left">
               <i class="fas fa-user-circle"></i>
             </span>
@@ -44,7 +44,7 @@
         <div id="ftp-host" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>Password</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="ftpPswd" type="password" placeholder="••••••••">
+            <input class="input is-small is-hovered" v-model="sshPassword" type="password" placeholder="••••••••" value="DetroitLions2!">
             <span class="icon is-small is-left">
               <i class="fas fa-key"></i>
             </span>
@@ -54,70 +54,32 @@
         <div id="ftp-prt" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>Port</b></label>
           <div class="field-control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="ftpPort" type="number" min="21" max="22" placeholder="21">
+            <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22" value="22">
           </div>
         </div>
 
         <div id="copy-clear" class="buttons">
        
-          <button id="copyButton" class="button is-small is-success btn" @click="openFTP"  title="Connect via FTP">
+          <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via FTP">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
             <span>Connect</span>
           </button>
-
-          <button id="copyButton"  class="button is-small is-danger btn" @click="closeFTP" title="Click to disconnect FTP">
+          <div id="copy-clear" class="buttons">
+       
+          <button id="copyButton" class="button is-small is-success btn" @click="checkPhpMail"  title="Connect via FTP">
             <span class="icon has-text-light">
-              <i class="mdi mdi-close mdi-18px"></i>
+              <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>Disconnect</span>
-            
+            <span>Check PHP Mail</span>
           </button>
 
-          <button id="copyButton"  class="button is-small is-dark btn" @click="clearFTP" title="Click to clear FTP inputs">
-            <span class="icon is-medium has-text-light">
-              <i class="fas fa-eraser"></i>
-            </span>
-            <span>Clear Inputs </span>
-          </button>
-          
         </div>
-        <div id="fileDir">
-
-          <!-- File List Display Header -->
-          <ul id="flhead">
-            <li id="listheadone"><b>File Type</b></li>
-            <li id="listhead"><b>File Name</b></li>
-            <li id="listheadtwo"><b>File Size</b></li>
-          </ul>
-
-          <!-- File List Item Type -->
-          <ul id="ftype"> 
-            <li v-for="files in ftpFiles" :key="files.ftpFiles">
-              {{ files.type }}
-            </li>
-          </ul>
-
-          <!-- File List Item Name -->
-          <ul id="fname">           
-            <li v-for="files in ftpFiles" :key="files.ftpFiles">
-              {{ files.name }}
-            </li>
-          </ul>
-
-          <!-- File List Item Size -->
-          <ul id="fsize">
-            <li v-for="files in ftpFiles" :key="files.ftpFiles">
-              {{ files.size + "KB" }}
-            </li>
-          </ul>
-
-        </div>
-
       </div>
-      
-    </div>
+      </div>
+      </div>
+    
     <!-- END Swat DNS section -->
 
   </div>
@@ -128,64 +90,66 @@
 <script>
 import axios from 'axios';
 export default {
-  name: 'FlowTP',
+  name: 'SwatAutoWP',
   data() {
     return {
-      ftpHost: '',
-      ftpUser: '',
-      ftpPswd: '',
-      ftpPort: '',
-      ftpFiles: [], 
+      sshHost: '50.63.14.87',
+      sshPort: '22',
+      sshUsername: 'blehman',
+      sshPassword: 'DetroitLions2!',
     }
   },
-  methods: {
-    openFTP: function(){
-      var jsftp = require("jsftp");
-
-      var ftp = new jsftp({
-        host: this.ftpHost,
-        port: this.ftpPort, // defaults to 21
-        user: this.ftpUser, // defaults to "anonymous"
-        pass: this.ftpPswd, // defaults to "@anonymous"
-      })
-
-      ftp.ls(".", (err, res) => {
-
-        res.forEach(object => {
-            console.log(object)
-            this.ftpFiles = res;
+  methods: {  
+  connectSSH: function(){
+    var Client = require('ssh2').Client;
+    var conn = new Client();
+    conn.on('ready', function() {
+      console.log('Client :: ready');
+      conn.shell(function(err, stream) {
+        if (err) throw err;
+        stream.on('close', function() {
+          console.log('Stream :: close');
+          conn.end();
+        }).on('data', function(data) {
+          console.log('STDOUT: ' + data);
+        }).stderr.on('data', function(data) {
+          console.log('STDERR: ' + data);
         });
+        stream.end('cd /var/www/html/ && wp plugin update --all\nexit\n');
       });
+        }).connect({
+          host: this.sshHost,
+          port: this.sshPort,
+          username: this.sshUsername,
+          password: this.sshPassword,
+        });
     },
-
-    closeFTP: function(e){
-      var jsftp = require("jsftp");
-
-      var ftp = new jsftp({
-        host: this.ftpHost,
-        port: this.ftpPort, // defaults to 21
-        user: this.ftpUser, // defaults to "anonymous"
-        pass: this.ftpPswd, // defaults to "@anonymous"
-      })
-
-      ftp.raw("QUIT"); ftp.destroy(
-        this.ftpHost = "",
-        this.ftpUser = "",
-        this.ftpPswd = "",
-        this.ftpPort = "",
-        this.ftpFiles = ""  
-      )
-      e.preventDefault();
+    
+  checkPhpMail: function(){
+    var Client = require('ssh2').Client;
+    var conn = new Client();
+    conn.on('ready', function() {
+      console.log('Client :: ready');
+      conn.shell(function(err, stream) {
+        if (err) throw err;
+        stream.on('close', function() {
+          console.log('Stream :: close');
+          conn.end();
+        }).on('data', function(data) {
+          console.log('STDOUT: ' + data);
+        }).stderr.on('data', function(data) {
+          console.log('STDERR: ' + data);
+        });
+        stream.end('php -r \'$from = "blheman@s166-62-125-174.secureserver.net"; $to = "lehman.brandon@gmail.com, nic8869@godaddy.com, steven1096@godaddy.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
+      });
+        }).connect({
+          host: this.sshHost,
+          port: this.sshPort,
+          username: this.sshUsername,
+          password: this.sshPassword,
+        });
     },
-
-    clearFTP: function(){
-      this.ftpHost = ""
-      this.ftpUser = ""
-      this.ftpPswd = ""
-      this.ftpPort = ""
-    }   
   },
-  
 }
 </script>
 
