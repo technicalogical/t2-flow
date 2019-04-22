@@ -57,16 +57,16 @@
             <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22">
           </div>
         </div>
-
+  
         <div id="copy-clear" class="buttons">
        
           <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>Connect</span>
+            <span>Show Installed Plugins</span>
           </button>
-          <div id="copy-clear" class="buttons">
+          
        
           <button id="copyButton" class="button is-small is-success btn" @click="checkPhpMail"  title="Connect via ssh">
             <span class="icon has-text-light">
@@ -96,8 +96,24 @@
             <span>Show wp-config.php</span>
           </button>
 
-        </div>
+        
       </div>
+      <br><br>
+      <!-- <div class="box" id="output">{{ output }}</div> -->
+      
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Results
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content" id="output"> {{ data }} 
+    </div>
+  </div>
+
+</div>
+
       </div>
       </div>
     
@@ -118,26 +134,46 @@ export default {
       sshPort: '22',
       sshUsername: '',
       sshPassword: '',
+      data: '',
     }
   },
   methods: {  
   connectSSH: function(){
     var Client = require('ssh2').Client;
+    // var conn = new Client();
+    // conn.on('ready', function() {
+    //   console.log('Client :: ready');
+    //   conn.shell(function(err, stream) {
+    //     if (err) throw err;
+    //     stream.on('close', function() {
+    //       console.log('Stream :: close');
+    //       conn.end();
+    //     }).on('data', function(data) {
+    //       console.log('STDOUT: ' + data);
+    //       document.getElementById('output').innerHTML = (data);
+    //     }).stderr.on('data', function(data) {
+    //       console.log('STDERR: ' + data);
+    //       document.getElementById('output').innerHTML = (data);
+    //     });
+        
+    //     stream.end('cd /var/www/html/ && wp plugin status\n');
+    //   });
     var conn = new Client();
-    conn.on('ready', function() {
-      console.log('Client :: ready');
-      conn.shell(function(err, stream) {
-        if (err) throw err;
-        stream.on('close', function() {
-          console.log('Stream :: close');
-          conn.end();
-        }).on('data', function(data) {
-          console.log('STDOUT: ' + data);
-        }).stderr.on('data', function(data) {
-          console.log('STDERR: ' + data);
-        });
-        stream.end('cd /var/www/html/ && wp plugin update --all\nexit\n');
-      });
+conn.on('ready', function() {
+  console.log('Client :: ready');
+  conn.exec('cd /var/www/html/ && wp plugin status', function(err, stream) {
+    if (err) throw err;
+    stream.on('close', function(code, signal) {
+      console.log('Stream :: close :: code: ' + code + ', signal: ' + signal);
+      conn.end();
+    }).on('data', function(data) {
+      console.log('STDOUT: ' + data);
+      document.getElementById('output').innerHTML = (data);
+    }).stderr.on('data', function(data) {
+      console.log('STDERR: ' + data);
+    });
+  });
+      
         }).connect({
           host: this.sshHost,
           port: this.sshPort,
