@@ -59,7 +59,14 @@
         </div>
   
         <div id="copy-clear" class="buttons">
-       
+          
+          <button id="copyButton" class="button is-small is-success btn" @click="testing"  title="Connect via ssh">
+            <span class="icon has-text-light">
+              <i class="mdi mdi-power mdi-18px"></i>
+            </span>
+            <span>Show Installed Plugins</span>
+          </button>
+
           <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
@@ -110,6 +117,13 @@
   <div class="card-content">
     <div class="content" id="output"> {{ data }} 
     </div>
+
+    <div v-if="result === 'showTheme'">
+      <b>Themes: </b>{{ hmt }}
+    </div>
+    <div v-else-if="result === 'showPlugins'">
+      Show Plugins
+    </div>
   </div>
 
 </div>
@@ -126,19 +140,64 @@
 
 <script>
 import axios from 'axios';
+import { log } from 'util';
 export default {
   name: 'SwatAutoWP',
   data() {
     return {
+      result: 'showTheme',
+      howManyThemes: 'empty',
       sshHost: '50.63.14.87',
       sshPort: '22',
-      sshUsername: '',
-      sshPassword: '',
+      sshUsername: 'blehman',
+      sshPassword: 'DetroitLions2!',
       data: '',
     }
   },
-  methods: {  
+  computed: {
+    hmt: function(){
+      return this.howManyThemes;
+    }
+  },
+  methods: { 
+    testing: function() {
+      var SSH2Promise = require('ssh2-promise');
+var sshconfig = {
+  host: this.sshHost,
+  port: this.sshPort,
+  username: this.sshUsername,
+  password: this.sshPassword,
+}
+var ssh = new SSH2Promise(sshconfig);
+ssh.exec("whoami").then((data) => {
+  console.log(data); //ubuntu
+});
+//use spawn, if you want to stream on output of command
+ssh.spawn("tail -f /var/log.txt").then((socket) => {
+  socket.on('data', () => {
+    //file content will be available here
+  })
+});
+ 
+ 
+//Async Await
+//use exec, if output of command is limited
+(async function(){
+    var data = await ssh.exec("whoami");
+    console.log(data); //ubuntu
+})();
+ 
+//use spawn, if you want to stream on output of command
+(async function(){
+    var socket = await ssh.spawn("tail -f /var/log.txt");
+    socket.on('data', () => {
+      //file content will be available here
+    })
+})(); 
+},
+    
   connectSSH: function(){
+    this.result = 'showPlugins';
     var Client = require('ssh2').Client;
     // var conn = new Client();
     // conn.on('ready', function() {
@@ -181,7 +240,8 @@ conn.on('ready', function() {
           password: this.sshPassword,
         });
     },
-    
+
+
   checkPhpMail: function(){
     var Client = require('ssh2').Client;
     var conn = new Client();
@@ -231,18 +291,25 @@ conn.on('ready', function() {
         });
     },
 
+
     listThemes: function(){
+      this.result = 'showTheme';
+      
     var Client = require('ssh2').Client;
     var conn = new Client();
     conn.on('ready', function() {
       console.log('Client :: ready');
+      this.howManyThemes = 'steven';
       conn.shell(function(err, stream) {
+        
         if (err) throw err;
         stream.on('close', function() {
           console.log('Stream :: close');
           conn.end();
         }).on('data', function(data) {
+          this.howManyThemes = 'steven';
           console.log('STDOUT: ' + data);
+          
         }).stderr.on('data', function(data) {
           console.log('STDERR: ' + data);
         });
