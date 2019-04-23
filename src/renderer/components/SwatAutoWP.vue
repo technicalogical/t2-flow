@@ -64,7 +64,7 @@
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>Show Installed Plugins</span>
+            <span>Testing ssh2-promise</span>
           </button>
 
           <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via ssh">
@@ -109,20 +109,24 @@
       <!-- <div class="box" id="output">{{ output }}</div> -->
       
 <div class="card">
-  <header class="card-header">
+  <!-- <header class="card-header">
     <p class="card-header-title">
       Results
     </p>
-  </header>
+  </header> -->
   <div class="card-content">
-    <div class="content" id="output"> {{ data }} 
+    <div class="content" id="results"> {{ showSSH }} {{ configResult }}
     </div>
 
     <div v-if="result === 'showTheme'">
-      <b>Themes: </b>{{ hmt }}
+      {{ howManyThemes }}
     </div>
     <div v-else-if="result === 'showPlugins'">
-      Show Plugins
+      <b>test: </b>{{ showPlugins2 }}
+    </div>
+    <div v-else-if="result === 'showSSH'">
+      <!-- <b>test: </b>{{ showSSH }}  -->
+      
     </div>
   </div>
 
@@ -146,12 +150,15 @@ export default {
   data() {
     return {
       result: 'showTheme',
-      howManyThemes: 'empty',
+      howManyThemes: '',
       sshHost: '50.63.14.87',
       sshPort: '22',
       sshUsername: 'blehman',
       sshPassword: 'DetroitLions2!',
       data: '',
+      showSSH: '',
+      showPlugins2: '',
+      configResult: '',
     }
   },
   computed: {
@@ -161,77 +168,94 @@ export default {
   },
   methods: { 
     testing: function() {
-      var SSH2Promise = require('ssh2-promise');
-var sshconfig = {
-  host: this.sshHost,
-  port: this.sshPort,
-  username: this.sshUsername,
-  password: this.sshPassword,
-}
-var ssh = new SSH2Promise(sshconfig);
-ssh.exec("whoami").then((data) => {
-  console.log(data); //ubuntu
-});
-//use spawn, if you want to stream on output of command
-ssh.spawn("tail -f /var/log.txt").then((socket) => {
-  socket.on('data', () => {
-    //file content will be available here
-  })
-});
+      
+    var SSH2Promise = require('ssh2-promise');
+      var sshconfig = {
+      host: this.sshHost,
+      port: this.sshPort,
+      username: this.sshUsername,
+      password: this.sshPassword,
+    }
+        var ssh = new SSH2Promise(sshconfig);
+        ssh.exec('cd /var/www/html && wp plugin status --color=none').then((data) => {
+          let s = String(data);
+
+            var buffArray = JSON.stringify(s).split('\n');
+
+            buffArray.forEach((ba)=>{
+
+              this.howManyThemes.push(ba);
+          console.log(howManyThemes); //ubuntu
+          this.showSSH=(howManyThemes);
+          })
+        });
+        //use spawn, if you want to stream on output of command
+        ssh.spawn("tail /var/www/html/log.txt").then((socket) => {
+          // this.showSSH(data);
+          socket.on('data', () => {
+            // this.showSSH=(data);
+            //file content will be available here
+          })
+        });
  
  
-//Async Await
-//use exec, if output of command is limited
-(async function(){
-    var data = await ssh.exec("whoami");
-    console.log(data); //ubuntu
-})();
- 
-//use spawn, if you want to stream on output of command
-(async function(){
-    var socket = await ssh.spawn("tail -f /var/log.txt");
-    socket.on('data', () => {
-      //file content will be available here
-    })
-})(); 
-},
+          //Async Await
+          //use exec, if output of command is limited
+          (async function(){
+              // var showSSH = (data);
+              var data = await ssh.exec("cd /var/www/html && wp plugin status --color=none");
+              console.log(data); //ubuntu
+              // this.showSSH=(data);
+              
+              
+          })();
+          
+          //use spawn, if you want to stream on output of command
+          (async function(){
+              var socket = await ssh.spawn("tail -f /var/log.txt");
+              socket.on('data', () => {
+                //file content will be available here
+              })
+          })(); 
+          },
     
   connectSSH: function(){
     this.result = 'showPlugins';
     var Client = require('ssh2').Client;
-    // var conn = new Client();
-    // conn.on('ready', function() {
-    //   console.log('Client :: ready');
-    //   conn.shell(function(err, stream) {
-    //     if (err) throw err;
-    //     stream.on('close', function() {
-    //       console.log('Stream :: close');
-    //       conn.end();
-    //     }).on('data', function(data) {
-    //       console.log('STDOUT: ' + data);
-    //       document.getElementById('output').innerHTML = (data);
-    //     }).stderr.on('data', function(data) {
-    //       console.log('STDERR: ' + data);
-    //       document.getElementById('output').innerHTML = (data);
-    //     });
-        
-    //     stream.end('cd /var/www/html/ && wp plugin status\n');
-    //   });
     var conn = new Client();
-conn.on('ready', function() {
-  console.log('Client :: ready');
-  conn.exec('cd /var/www/html/ && wp plugin status', function(err, stream) {
-    if (err) throw err;
-    stream.on('close', function(code, signal) {
-      console.log('Stream :: close :: code: ' + code + ', signal: ' + signal);
-      conn.end();
-    }).on('data', function(data) {
-      console.log('STDOUT: ' + data);
-      document.getElementById('output').innerHTML = (data);
-    }).stderr.on('data', function(data) {
-      console.log('STDERR: ' + data);
-    });
-  });
+    conn.on('ready', function() {
+      console.log('Client :: ready');
+      conn.shell(function(err, stream) {
+        if (err) throw err;
+        stream.on('close', function() {
+          console.log('Stream :: close');
+          conn.end();
+        }).on('data', function(data) {
+          console.log('STDOUT: ' + data);
+          this.showPlugins2=(data);
+          
+        }).stderr.on('data', function(data) {
+          console.log('STDERR: ' + data);
+          
+        });
+        
+        stream.end('cd /var/www/html/ && wp plugin status\n');
+      });
+//     var conn = new Client();
+// conn.on('ready', function() {
+//   console.log('Client :: ready');
+//   conn.exec('cd /var/www/html/ && wp plugin status', function(err, stream) {
+//     if (err) throw err;
+//     stream.on('close', function(code, signal) {
+//       console.log('Stream :: close :: code: ' + code + ', signal: ' + signal);
+//       conn.end();
+//     }).on('data', function(data) {
+//       console.log('STDOUT: ' + data);
+//       document.getElementById('output').innerHTML = (data);
+//     }).stderr.on('data', function(data) {
+//       console.log('STDERR: ' + data);
+//     });
+//   });
       
         }).connect({
           host: this.sshHost,
@@ -257,7 +281,7 @@ conn.on('ready', function() {
         }).stderr.on('data', function(data) {
           console.log('STDERR: ' + data);
         });
-        stream.end('php -r \'$from = "blheman@s166-62-125-174.secureserver.net"; $to = "lehman.brandon@gmail.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
+        stream.end('php -r \'$from = "blehman@s166-62-125-174.secureserver.net"; $to = "lehman.brandon@gmail.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
       });
         }).connect({
           host: this.sshHost,
@@ -307,7 +331,7 @@ conn.on('ready', function() {
           console.log('Stream :: close');
           conn.end();
         }).on('data', function(data) {
-          this.howManyThemes = 'steven';
+          this.howManyThemes = (data);
           console.log('STDOUT: ' + data);
           
         }).stderr.on('data', function(data) {
@@ -338,7 +362,8 @@ conn.on('ready', function() {
         }).stderr.on('data', function(data) {
           console.log('STDERR: ' + data);
         });
-        stream.end('cd /var/www/html && wp config get\nexit\n');
+        stream.end('cd /var/www/html && wp config get > log2.txt && tail log2.txt\nexit\n');
+        this.configResult=(data);
       });
         }).connect({
           host: this.sshHost,
@@ -464,6 +489,11 @@ input[type=number]::-webkit-inner-spin-button {
   padding-right: 4px;
   border: 0px;
   border-bottom: 1px solid hsl(0, 0%, 60%); 
+}
+
+#results {
+  overflow-y: scroll;
+    overflow-x:hidden;
 }
 
 
