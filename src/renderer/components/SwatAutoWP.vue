@@ -10,13 +10,29 @@
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
         <p><b>CODENAME:</b> ABOVE THE CURVE</p>
       </div>
+        <!-- Swat Tools opening note -->
+        
+        <!-- BEGIN - Swat Tool Tabs -->
+      <div id="tool-tabs">
+        <div id="tool-tab-left">
+          <router-link to="/SwatHome" class="button is-small is-dark">
+            <span class="icon is-large has-text-link">
+              <i id="itcolor" class="fa fa-angle-left fa-2x"></i>
+            </span>
+            <span><b>Hosting</b> Links</span>
+          </router-link>
+        </div>
 
-      <router-link id="ssl-title" to="/SwatTools" class="button is-small is-link">
-        <span class="icon is-large has-text-light">
-          <i class="fa fa-angle-left fa-2x"></i>
-        </span>
-        <span><strong>Back</strong></span>
-      </router-link>
+        <div id="tool-tab-right">
+          <router-link to="/tools/SwatMAIL" class="button is-small is-dark">
+            <span><b>PHP</b> Mail Test</span>
+            <span class="icon is-large has-text-link">
+              <i id="itcolor" class="fa fa-angle-right fa-2x"></i>
+            </span>
+          </router-link>
+        </div>
+      </div>
+      <!-- END - Swat Tool Tabs -->
 
       <!-- BEGIN ssh Login -->
       <div id="ssh-login" class="content">
@@ -57,7 +73,15 @@
             <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22">
           </div>
         </div>
-  
+
+      <router-link to="/tools/SwatMAIL" class="button is-small is-fullwidth is-dark">
+          <p><b>PHP</b> Mail Test</p>
+         </router-link>
+        <br>
+      <router-link to="/tools/SwatCHILD" class="button is-small is-fullwidth is-dark">
+          <p><b>WP</b> Child Theme Maker</p>
+         </router-link>
+
         <div id="copy-clear" class="buttons">
           
           <button id="copyButton" class="button is-small is-success btn" @click="testing"  title="Connect via ssh">
@@ -178,16 +202,16 @@ export default {
     }
         var ssh = new SSH2Promise(sshconfig);
         ssh.exec('cd /var/www/html && wp plugin status --color=none').then((data) => {
-          let s = String(data);
+          // let s = String(data);
 
-            var buffArray = JSON.stringify(s).split('\n');
+          //   var buffArray = JSON.stringify(s).split('\n');
 
-            buffArray.forEach((ba)=>{
+          //   buffArray.forEach((ba)=>{
 
-              this.howManyThemes.push(ba);
-          console.log(howManyThemes); //ubuntu
-          this.showSSH=(howManyThemes);
-          })
+          //     this.howManyThemes.push(ba);
+          console.log(data); //ubuntu
+          this.showSSH=(data);
+          
         });
         //use spawn, if you want to stream on output of command
         ssh.spawn("tail /var/www/html/log.txt").then((socket) => {
@@ -281,7 +305,7 @@ export default {
         }).stderr.on('data', function(data) {
           console.log('STDERR: ' + data);
         });
-        stream.end('php -r \'$from = "blehman@s166-62-125-174.secureserver.net"; $to = "lehman.brandon@gmail.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
+        stream.end('php -r \'$from = "blehman@s166-62-125-174.secureserver.net"; $to =  "blehman@godaddy.com"; $subject = "PHP Mail test from FlowTool"; $message = "This came directly from the flowtool, no scripts were uploaded, just commands through shell script";$headers = "From:" . $from; mail($to,$subject,$message, $headers);echo "Test email sent";\'\nexit\n');
       });
         }).connect({
           host: this.sshHost,

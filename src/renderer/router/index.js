@@ -48,6 +48,8 @@ import SwatSUCURI from '@/components/tools/SwatSUCURI'
 import SwatWHOIS from '@/components/tools/SwatWHOIS'
 import SwatSPLUNK from '@/components/tools/SwatSPLUNK'
 import FlowTP from '@/components/tools/FlowTP'
+import SwatMAIL from '@/components/tools/SwatMAIL'
+import SwatCHILD from '@/components/tools/SwatCHILD'
 // END Swat Tools imported routes
 
 
@@ -139,6 +141,16 @@ export default new Router({
       path: '/tools/FlowTP',
       name: 'Flow TP',
       component: FlowTP
+    },
+    {
+      path: '/tools/SwatMAIL',
+      name: 'Flow TP',
+      component: SwatMAIL
+    },
+    {
+      path: '/tools/SwatCHILD',
+      name: 'SWAT CHILD',
+      component: SwatCHILD
     },
     {
       path: '/SwatLinks',
