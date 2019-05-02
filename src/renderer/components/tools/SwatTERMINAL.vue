@@ -8,7 +8,7 @@
 
        <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p>WP Child Theme Maker</p>
+        <p>WP Plugin Installer</p>
       </div>
         <!-- Swat Tools opening note -->
         
@@ -31,113 +31,57 @@
           </router-link>
         </div>
 
-        <!-- <div id="tool-tab-right">
-          <router-link to="/links/WebsiteLinks" class="button is-small is-dark">
-            <span><b>Website</b> Links</span>
-            <span class="icon is-large has-text-link">
-              <i id="itcolor" class="fa fa-angle-right fa-2x"></i>
-            </span>
-          </router-link>
-        </div> -->
       </div>
       <!-- END - Swat Tool Tabs -->
 
       <!-- BEGIN ssh Login -->
       <div id="ssh-login" class="content">
         <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small has-text-bold"><b>Parent Theme Name</b></label>
+          <label id="log" class="field-label is-small has-text-bold"><b>Search for Plugin</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="parent" placeholder="Parent Theme">
+            <input class="input is-small is-hovered" type="text" v-model="searchedPlugin" placeholder="Parent Theme">
             <span class="icon is-small is-left">
               <i class="fas fa-globe"></i>
             </span>
           </div>
         </div>
         <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small has-text-bold"><b>Desired Child Theme Name</b></label>
+          <label id="log" class="field-label is-small has-text-bold"><b>Plugin to Install</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="child" placeholder="Child Theme">
+            <input class="input is-small is-hovered" type="text" v-model="installedPlugin" placeholder="Child Theme">
             <span class="icon is-small is-left">
               <i class="fas fa-globe"></i>
             </span>
           </div>
         </div>
-        <!-- <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small has-text-bold"><b>Host</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="sshHost" placeholder="IP Address">
-            <span class="icon is-small is-left">
-              <i class="fas fa-globe"></i>
-            </span>
-          </div>
-        </div>
-
-        <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>User</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshUsername" type="text" placeholder="Username">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user-circle"></i>
-            </span>
-          </div>
-        </div>
-
-        <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>Password</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshPassword" type="password" placeholder="••••••••">
-            <span class="icon is-small is-left">
-              <i class="fas fa-key"></i>
-            </span>
-          </div>
-        </div> -->
-
-        <!-- <div id="ssh-prt" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>Port</b></label>
-          <div class="field-control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22">
-          </div>
-        </div> -->
         <br><br><br><br><br>
-        <!-- <div id="ssh-to" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>To</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="phpTo" type="text" placeholder="To Address">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user-circle"></i>
-            </span>
-          </div>
-        </div>
-
-        <div id="ssh-from" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>From</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="phpFrom" type="text" placeholder="From Address">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user-circle"></i>
-            </span>
-          </div>
-        </div> -->
   
         <div id="copy-clear" class="buttons">
 
-          <button id="copyButton" class="button is-small is-success btn" @click="listThemes"  title="Connect via ssh">
+          <button id="copyButton" class="button is-small is-success btn" @click="listPlugin"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>List Themes</span>
+            <span>List Installed Plugins</span>
+          </button>
+
+          <button id="copyButton" class="button is-small is-success btn" @click="searchPlugin"  title="Connect via ssh">
+            <span class="icon has-text-light">
+              <i class="mdi mdi-power mdi-18px"></i>
+            </span>
+            <span>Search Plugins</span>
           </button>
           
-          <button id="copyButton" class="button is-small is-success btn" @click="createChild"  title="Connect via ssh">
+          <button id="copyButton" class="button is-small is-success btn" @click="installPlugin"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>Create and Activate Child Theme</span>
+            <span>Install and Activate Plugin</span>
           </button>
       
       </div>
       <br><br>
-      <!-- <div class="box" id="output">{{ output }}</div> -->
+
       
 <div class="card">
   <!-- <header class="card-header">
@@ -169,7 +113,7 @@
 import AnsiUp from 'ansi_up'
 import axios from 'axios';
 export default {
-  name: 'SwatCHILD',
+  name: 'SwatTERMINAL',
   data() {
     return {
 
@@ -179,12 +123,12 @@ export default {
       sshPassword: 'DetroitLions2!',
       data: '',
       content: '',
-      parent: '',
-      child: ''
+      searchedPlugin: '',
+      installedPlugin: ''
     }
   },
   methods: {
-  listThemes: function() {
+  searchPlugin: function() {
     var SSH2Promise = require('ssh2-promise');
       var sshconfig = {
       host: this.sshHost,
@@ -193,8 +137,10 @@ export default {
       password: this.sshPassword,
     }
         var ansi_up = new AnsiUp();
+        let searchedPlugin = this.searchedPlugin;
+        let parent = this.parent;
         var ssh = new SSH2Promise(sshconfig);
-        ssh.exec('cd /var/www/html && wp theme status\n').then((data) => {
+        ssh.exec('cd /var/www/html && wp plugin search ' + searchedPlugin + '\n').then((data) => {
           
           let content = ansi_up.ansi_to_html(data);
           console.log(content); //ubuntu
@@ -202,7 +148,7 @@ export default {
           
         });
   },
-    createChild: function() {
+    listPlugin: function() {
     var SSH2Promise = require('ssh2-promise');
       var sshconfig = {
       host: this.sshHost,
@@ -211,10 +157,28 @@ export default {
       password: this.sshPassword,
     }
         var ansi_up = new AnsiUp();
-        let child = this.child;
-        let parent = this.parent;
+        let searchedPlugin = this.searchedPlugin;
         var ssh = new SSH2Promise(sshconfig);
-        ssh.exec('cd /var/www/html && wp scaffold child-theme ' + child + ' --parent_theme=' + parent + ' --theme_name=' + child + '\n').then((data) => {
+        ssh.exec('cd /var/www/html && wp plugin list\n').then((data) => {
+          
+          let content = ansi_up.ansi_to_html(data);
+          console.log(content); //ubuntu
+          this.content=(content.replace(/\n/gm, '<br>'));
+          
+        });
+  },
+      installPlugin: function() {
+    var SSH2Promise = require('ssh2-promise');
+      var sshconfig = {
+      host: this.sshHost,
+      port: this.sshPort,
+      username: this.sshUsername,
+      password: this.sshPassword,
+    }
+        var ansi_up = new AnsiUp();
+        let installedPlugin = this.installedPlugin;
+        var ssh = new SSH2Promise(sshconfig);
+        ssh.exec('cd /var/www/html && wp plugin install ' + installedPlugin + ' --activate\n').then((data) => {
           
           let content = ansi_up.ansi_to_html(data);
           console.log(content); //ubuntu
@@ -351,9 +315,63 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 #results {
+  overflow-y: scroll;
+    overflow-x:hidden;
+}
+#content {
   overflow: scroll;
   
 }
-
+#card-content {
+    position: relative;
+  border-style: none !important;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+  
+}
+.content {
+    position: relative;
+  border-style: none !important;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+  
+}
+.card-content {
+    position: relative;
+  border-style: none !important;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+  
+}
 
 </style>

@@ -81,6 +81,10 @@
       <router-link to="/tools/SwatCHILD" class="button is-small is-fullwidth is-dark">
           <p><b>WP</b> Child Theme Maker</p>
          </router-link>
+         <br>
+      <router-link to="/tools/SwatTERMINAL" class="button is-small is-fullwidth is-dark">
+          <p><b>TERMINAL</b> Testing</p>
+         </router-link>
 
         <div id="copy-clear" class="buttons">
           
@@ -89,35 +93,6 @@
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
             <span>Testing ssh2-promise</span>
-          </button>
-
-          <button id="copyButton" class="button is-small is-success btn" @click="connectSSH"  title="Connect via ssh">
-            <span class="icon has-text-light">
-              <i class="mdi mdi-power mdi-18px"></i>
-            </span>
-            <span>Show Installed Plugins</span>
-          </button>
-          
-       
-          <button id="copyButton" class="button is-small is-success btn" @click="checkPhpMail"  title="Connect via ssh">
-            <span class="icon has-text-light">
-              <i class="mdi mdi-power mdi-18px"></i>
-            </span>
-            <span>Check PHP Mail</span>
-          </button>
-
-          <button id="copyButton" class="button is-small is-success btn" @click="dbBackup"  title="Connect via ssh">
-            <span class="icon has-text-light">
-              <i class="mdi mdi-power mdi-18px"></i>
-            </span>
-            <span>Database Backup</span>
-          </button>
-
-          <button id="copyButton" class="button is-small is-success btn" @click="listThemes"  title="Connect via ssh">
-            <span class="icon has-text-light">
-              <i class="mdi mdi-power mdi-18px"></i>
-            </span>
-            <span>Show Themes</span>
           </button>
 
           <button id="copyButton" class="button is-small is-success btn" @click="getConfig"  title="Connect via ssh">
@@ -183,6 +158,7 @@ export default {
       showSSH: '',
       showPlugins2: '',
       configResult: '',
+      
     }
   },
   computed: {
