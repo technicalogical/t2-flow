@@ -22,15 +22,6 @@
             <span><b>Hosting</b> Links</span>
           </router-link>
         </div>
-
-        <div id="tool-tab-right">
-          <router-link to="/tools/SwatMAIL" class="button is-small is-dark">
-            <span><b>PHP</b> Mail Test</span>
-            <span class="icon is-large has-text-link">
-              <i id="itcolor" class="fa fa-angle-right fa-2x"></i>
-            </span>
-          </router-link>
-        </div>
       </div>
       <!-- END - Swat Tool Tabs -->
 
@@ -77,59 +68,20 @@
       <router-link to="/tools/SwatMAIL" class="button is-small is-fullwidth is-dark">
           <p><b>PHP</b> Mail Test</p>
          </router-link>
-        <br>
+        <!-- <br> -->
       <router-link to="/tools/SwatCHILD" class="button is-small is-fullwidth is-dark">
           <p><b>WP</b> Child Theme Maker</p>
          </router-link>
-         <br>
-      <router-link to="/tools/SwatTERMINAL" class="button is-small is-fullwidth is-dark">
-          <p><b>TERMINAL</b> Testing</p>
+        <!-- <br> -->
+      <router-link to="/tools/SwatPLUGIN" class="button is-small is-fullwidth is-dark">
+          <p><b>WP</b> Update or Install Plugin</p>
          </router-link>
+        <!-- <br> -->
+      <router-link to="/tools/SwatDBSEARCH" class="button is-small is-fullwidth is-dark">
+          <p><b>WP</b> Search and Replace</p>
+         </router-link>
+         <br>
 
-        <div id="copy-clear" class="buttons">
-          
-          <button id="copyButton" class="button is-small is-success btn" @click="testing"  title="Connect via ssh">
-            <span class="icon has-text-light">
-              <i class="mdi mdi-power mdi-18px"></i>
-            </span>
-            <span>Testing ssh2-promise</span>
-          </button>
-
-          <button id="copyButton" class="button is-small is-success btn" @click="getConfig"  title="Connect via ssh">
-            <span class="icon has-text-light">
-              <i class="mdi mdi-power mdi-18px"></i>
-            </span>
-            <span>Show wp-config.php</span>
-          </button>
-
-        
-      </div>
-      <br><br>
-      <!-- <div class="box" id="output">{{ output }}</div> -->
-      
-<div class="card">
-  <!-- <header class="card-header">
-    <p class="card-header-title">
-      Results
-    </p>
-  </header> -->
-  <div class="card-content">
-    <div class="content" id="results"> {{ showSSH }} {{ configResult }}
-    </div>
-
-    <div v-if="result === 'showTheme'">
-      {{ howManyThemes }}
-    </div>
-    <div v-else-if="result === 'showPlugins'">
-      <b>test: </b>{{ showPlugins2 }}
-    </div>
-    <div v-else-if="result === 'showSSH'">
-      <!-- <b>test: </b>{{ showSSH }}  -->
-      
-    </div>
-  </div>
-
-</div>
 
       </div>
       </div>

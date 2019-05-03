@@ -22,14 +22,6 @@
             <span><b>Auto</b> WPPS</span>
           </router-link>
         </div>
-        <div id="tool-tab-right">
-          <router-link to="/tools/SwatTERMINAL" class="button is-small is-dark">
-            <span><b>PHP</b> Mail Test</span>
-            <span class="icon is-large has-text-link">
-              <i id="itcolor" class="fa fa-angle-right fa-2x"></i>
-            </span>
-          </router-link>
-        </div>
 
       </div>
       <!-- END - Swat Tool Tabs -->
@@ -82,19 +74,11 @@
       </div>
       <br><br>
 
-      
-<div class="card">
-  <!-- <header class="card-header">
-    <p class="card-header-title">
-      Results
-    </p>
-  </header> -->
-  <div class="card-content">
-    <div class="content" v-html="content">
-    </div>
-      
-    </div>
-  </div>
+              <div class="content" id="output-area-plugin">
+            
+                <div class="db-list-med content" v-html="content"></div> 
+
+        </div>
 
 
 </div>
@@ -139,13 +123,17 @@ export default {
         var ansi_up = new AnsiUp();
         let searchedPlugin = this.searchedPlugin;
         let parent = this.parent;
+        let regex = /([+\-])/gi;
+        let regex1 = /([|])/g;
         var ssh = new SSH2Promise(sshconfig);
         ssh.exec('cd /var/www/html && wp plugin search ' + searchedPlugin + '\n').then((data) => {
           
           let content = ansi_up.ansi_to_html(data);
           console.log(content); //ubuntu
           this.content=(content.replace(/\n/gm, '<br>'));
-          
+          this.content=this.content.replace(regex, "")
+          this.content=this.content.replace(regex1, ",")
+          console.log(this.content.split("|"));
         });
   },
     listPlugin: function() {
@@ -158,12 +146,17 @@ export default {
     }
         var ansi_up = new AnsiUp();
         let searchedPlugin = this.searchedPlugin;
+        let regex = /([+\-])/gi;
+        let regex1 = /([|])/g;
         var ssh = new SSH2Promise(sshconfig);
         ssh.exec('cd /var/www/html && wp plugin list\n').then((data) => {
           
           let content = ansi_up.ansi_to_html(data);
           console.log(content); //ubuntu
           this.content=(content.replace(/\n/gm, '<br>'));
+          this.content=this.content.replace(regex, "")
+          this.content=this.content.replace(regex1, ",")
+          console.log(this.content.split("|"));
           
         });
   },
@@ -339,7 +332,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 11px;
   
 }
-.content {
+/* .content {
     position: relative;
   border-style: none !important;
   margin: 0px;
@@ -355,7 +348,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   font-size: 11px;
   
-}
+} */
 .card-content {
     position: relative;
   border-style: none !important;
@@ -372,6 +365,19 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   font-size: 11px;
   
+}
+.output-area-plugin {
+  position: relative;
+  margin: 0px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 0px;
+  width: 100%;
+  height: 100px;
 }
 
 </style>

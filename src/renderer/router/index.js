@@ -50,7 +50,8 @@ import SwatSPLUNK from '@/components/tools/SwatSPLUNK'
 import FlowTP from '@/components/tools/FlowTP'
 import SwatMAIL from '@/components/tools/SwatMAIL'
 import SwatCHILD from '@/components/tools/SwatCHILD'
-import SwatTERMINAL from '@/components/tools/SwatTERMINAL'
+import SwatPLUGIN from '@/components/tools/SwatPLUGIN'
+import SwatDBSEARCH from '@/components/tools/SwatDBSEARCH'
 // END Swat Tools imported routes
 
 
@@ -154,9 +155,14 @@ export default new Router({
       component: SwatCHILD
     },  
     {
-      path: '/tools/SwatTERMINAL',
-      name: 'SWAT TERMINAL',
-      component: SwatTERMINAL
+      path: '/tools/SwatPLUGIN',
+      name: 'SWAT PLUGIN',
+      component: SwatPLUGIN
+    },
+    {
+      path: '/tools/SwatDBSEARCH',
+      name: 'SwatDBSEARCH',
+      component: SwatDBSEARCH
     },
     {
       path: '/SwatLinks',

@@ -22,58 +22,11 @@
             <span><b>Auto</b> WPPS</span>
           </router-link>
         </div>
-
-        <div id="tool-tab-right">
-          <router-link to="/tools/SwatCHILD" class="button is-small is-dark">
-            <span><b>Child</b> Theme</span>
-            <span class="icon is-large has-text-link">
-              <i id="itcolor" class="fa fa-angle-right fa-2x"></i>
-            </span>
-          </router-link>
-        </div>
       </div>
       <!-- END - Swat Tool Tabs -->
 
       <!-- BEGIN ssh Login -->
       <div id="ssh-login" class="content">
-
-        <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small has-text-bold"><b>Host</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="sshHost" placeholder="IP Address">
-            <span class="icon is-small is-left">
-              <i class="fas fa-globe"></i>
-            </span>
-          </div>
-        </div>
-
-        <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>User</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshUsername" type="text" placeholder="Username">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user-circle"></i>
-            </span>
-          </div>
-        </div>
-
-        <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>Password</b></label>
-          <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshPassword" type="password" placeholder="••••••••">
-            <span class="icon is-small is-left">
-              <i class="fas fa-key"></i>
-            </span>
-          </div>
-        </div>
-
-        <!-- <div id="ssh-prt" class="field is-horizontal">
-          <label id="log" class="field-label is-small"><b>Port</b></label>
-          <div class="field-control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" v-model="sshPort" type="number" min="21" max="22" placeholder="22">
-          </div>
-        </div> -->
-        <br><br><br><br><br><br><br><br><br><br>
         <div id="ssh-to" class="field is-horizontal">
           <label id="log" class="field-label is-small"><b>To</b></label>
           <div class="field-control control has-icons-left has-icons-right">
@@ -105,21 +58,7 @@
       
       </div>
       <br><br>
-      <!-- <div class="box" id="output">{{ output }}</div> -->
-      
-<div class="card">
-  <!-- <header class="card-header">
-    <p class="card-header-title">
-      Results
-    </p>
-  </header> -->
-  <div class="card-content">
-    <div class="content"> {{ data }} 
-    </div>
-      
-    </div>
-  </div>
-
+      <div class="notification is-info" v-html="data"></div> 
 </div>
 
       </div>

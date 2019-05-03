@@ -8,7 +8,7 @@
 
        <!-- Swat Tools opening note -->
       <div id="tool-note" class="notification is-dark has-text-centered is-static is-active" readonly>
-        <p>WP Child Theme Maker</p>
+        <p>WP Database Search and Replace</p>
       </div>
         <!-- Swat Tools opening note -->
         
@@ -27,57 +27,52 @@
       <!-- END - Swat Tool Tabs -->
 
       <!-- BEGIN ssh Login -->
+      
       <div id="ssh-login" class="content">
         <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small has-text-bold"><b>Parent Theme Name</b></label>
+          <label id="log" class="field-label is-small has-text-bold"><b>Old Value</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="parent" placeholder="Parent Theme">
+            <input class="input is-small is-hovered" type="text" v-model="oldValue" placeholder="Old Value">
             <span class="icon is-small is-left">
               <i class="fas fa-globe"></i>
             </span>
           </div>
         </div>
         <div id="ssh-host" class="field is-horizontal">
-          <label id="log" class="field-label is-small has-text-bold"><b>Desired Child Theme Name</b></label>
+          <label id="log" class="field-label is-small has-text-bold"><b>New Value</b></label>
           <div class="field-control control has-icons-left has-icons-right">
-            <input class="input is-small is-hovered" type="text" v-model="child" placeholder="Child Theme">
+            <input class="input is-small is-hovered" type="text" v-model="newValue" placeholder="New Value">
             <span class="icon is-small is-left">
               <i class="fas fa-globe"></i>
             </span>
           </div>
         </div>
-
+        <br><br><br><br><br>
   
         <div id="copy-clear" class="buttons">
 
-          <button id="copyButton" class="button is-small is-success btn" @click="listThemes"  title="Connect via ssh">
+          <button id="copyButton" class="button is-small is-success btn" @click="dryRun"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>List Themes</span>
+            <span>Dry Run</span>
           </button>
-          
-          <button id="copyButton" class="button is-small is-success btn" @click="createChild"  title="Connect via ssh">
+
+          <button id="copyButton" class="button is-small is-success btn" @click="searchReplace"  title="Connect via ssh">
             <span class="icon has-text-light">
               <i class="mdi mdi-power mdi-18px"></i>
             </span>
-            <span>Create and Activate Child Theme</span>
+            <span>Search and Replace</span>
           </button>
       
       </div>
       <br><br>
-
-            <div class="content" id="output-area-child">
+        <div class="content" id="output-area-dbsearch">
             
-            <div class="db-list-med content" v-html="content">
-              
-            </div> 
+                <div class="db-list-med content" v-html="content"></div> 
 
         </div>
-
-
-
-</div>
+        </div>
 
       </div>
       </div>
@@ -93,7 +88,7 @@
 import AnsiUp from 'ansi_up'
 import axios from 'axios';
 export default {
-  name: 'SwatCHILD',
+  name: 'SwatTERMINAL',
   data() {
     return {
 
@@ -103,12 +98,12 @@ export default {
       sshPassword: 'DetroitLions2!',
       data: '',
       content: '',
-      parent: '',
-      child: ''
+      oldValue: '',
+      newValue: ''
     }
   },
   methods: {
-  listThemes: function() {
+  dryRun: function() {
     var SSH2Promise = require('ssh2-promise');
       var sshconfig = {
       host: this.sshHost,
@@ -117,16 +112,23 @@ export default {
       password: this.sshPassword,
     }
         var ansi_up = new AnsiUp();
+        let newValue = this.newValue;
+        let oldValue = this.oldValue;
+        let regex = /([+\-])/g;
+        let regex1 = /([|])/g;
         var ssh = new SSH2Promise(sshconfig);
-        ssh.exec('cd /var/www/html && wp theme status\n').then((data) => {
+        ssh.exec('cd /var/www/html && wp search-replace ' + oldValue + ' ' + newValue + ' --dry-run --format=count\n').then((data) => {
           
-          let content = ansi_up.ansi_to_html(data);
-          console.log(content); //ubuntu
-          this.content=(content.replace(/\n/gm, '<br>'));
+          let results = ansi_up.ansi_to_html(data);
+          this.content="There are " +results+ "changes to be made.";
+        //   this.results=results.replace(/\n/gm, '<br>');
+        //   this.content=this.results.replace(regex, "");
+        //   this.content=this.content.replace(regex1, ",")
+          console.log(results);
           
         });
   },
-    createChild: function() {
+    searchReplace: function() {
     var SSH2Promise = require('ssh2-promise');
       var sshconfig = {
       host: this.sshHost,
@@ -135,14 +137,18 @@ export default {
       password: this.sshPassword,
     }
         var ansi_up = new AnsiUp();
-        let child = this.child;
-        let parent = this.parent;
+        let newValue = this.newValue;
+        let oldValue = this.oldValue;
+        let regex = /([+\-])/gi;
         var ssh = new SSH2Promise(sshconfig);
-        ssh.exec('cd /var/www/html && wp scaffold child-theme ' + child + ' --parent_theme=' + parent + ' --theme_name=' + child + '\n').then((data) => {
+        ssh.exec('cd /var/www/html && wp search-replace ' + oldValue + ' ' + newValue + ' --format=count\n').then((data) => {
           
-          let content = ansi_up.ansi_to_html(data);
-          console.log(content); //ubuntu
-          this.content=(content.replace(/\n/gm, '<br>'));
+          let results = ansi_up.ansi_to_html(data);
+          this.content= +results+ " changes have been made.";
+        //   this.results=results.replace(/\n/gm, '<br>');
+        //   this.content=this.results.replace(regex, "");
+        //   this.content=this.content.replace(regex1, ",")
+          console.log(results);
           
         });
   },
@@ -275,10 +281,78 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 #results {
+  overflow-y: scroll;
+    overflow-x:hidden;
+}
+#content {
   overflow: scroll;
   
 }
-.output-area-child {
+#card-content {
+    position: relative;
+  border-style: none !important;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+  
+}
+/* .content {
+    position: relative;
+  border-style: none !important;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+  
+} */
+.card-content {
+    position: relative;
+  border-style: none !important;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-app-region: no-drag;
+  width: 100%;
+  font-size: 11px;
+  
+}
+.db-list-med{
+  border-style: none !important;
+  margin: 0px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  margin-left: -40px;
+  margin-right: -40px;
+  height: 42vh;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: scroll;
+  -webkit-app-region: no-drag;
+}
+.output-area-dbsearch {
   position: relative;
   margin: 0px;
   margin-top: 0px;
@@ -291,6 +365,5 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   height: 100px;
 }
-
 
 </style>
